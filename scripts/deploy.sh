@@ -1,36 +1,64 @@
 #!/bin/bash
+set -e # Exit with nonzero exit code if anything fails
 
-set -e # exit with nonzero exit code if anything fails
+SOURCE_BRANCH="master"
+TARGET_BRANCH="gh-pages"
 
-if [[ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]]; then
+
+# Pull requests and commits to other branches shouldn't try to deploy, just build to verify
+if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
+    echo "Skipping deploy; just doing a build."
+    exit 0
+fi
 
 echo "Starting to update gh-pages\n"
 
+
 #copy data we're interested in to other place
-cp -R dist $HOME/dist
+cp -R _site $HOME/_site
 
-#go to home and setup git
-cd $HOME
-git config --global user.email "joseph.luccisano@gmail.com"
-git config --global user.name "jluccisano"
+# Save some useful information
+REPO=`git config remote.origin.url`
+SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+SHA=`git rev-parse --verify HEAD`
 
-#using token clone gh-pages branch
-git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/${GH_USER}/${GH_REPO}.git gh-pages > /dev/null
-
-#go into directory and copy data we're interested in to that directory
+# Clone the existing gh-pages for this repo into out/
+# Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
+git clone $REPO gh-pages
+# Now let's go have some fun with the cloned repo
 cd gh-pages
-cp -Rf $HOME/dist/* .
+git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+#cd ..
 
-echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
-echo "[View live](https://${GH_USER}.github.io/${GH_REPO}/)" > README.md
+# Clean out existing contents
+rm -rf gh-pages/**/* || exit
+#go into directory and copy data we're interested in to that directory
+cp -Rf $HOME/_site/* .
 
-#add, commit and push files
-git add -f .
-git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
-git push -fq origin gh-pages > /dev/null
 
-echo "Done updating gh-pages\n"
+git config user.name "Travis CI"
+git config user.email "$COMMIT_AUTHOR_EMAIL"
 
-else
- echo "Skipped updating gh-pages, because build is not triggered from the master branch."
-fi;
+# If there are no changes to the compiled out (e.g. this is a README update) then just bail.
+if git diff --quiet; then
+    echo "No changes to the output on this push; exiting."
+    exit 0
+fi
+
+# Commit the "changes", i.e. the new version.
+# The delta will show diffs between new and old versions.
+git add -A .
+git commit -m "Deploy to GitHub Pages: ${SHA}"
+
+# Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
+ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
+ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
+ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
+ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
+openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../deploy_key.enc -out ../deploy_key -d
+chmod 600 ../deploy_key
+eval `ssh-agent -s`
+ssh-add ../deploy_key
+
+# Now that we're all set up, we can push.
+git push $SSH_REPO $TARGET_BRANCH
