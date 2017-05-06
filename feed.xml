@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-06T12:23:48+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Nextrun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="Nextrun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;sudo docker run –name mongo-nextrun -v /home/desktop/data/db:/data/db -d mongo:tag -p 27017:27017&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="NodeJs" /><category term="AngularJS" /><category term="MongoDB" /><category term="SASS" /><category term="CSS" /><category term="HTML5" /><category term="JavaScript" /><category term="Google Maps API" /><summary type="html">sudo docker run –name mongo-nextrun -v /home/desktop/data/db:/data/db -d mongo:tag -p 27017:27017</summary></entry><entry><title type="html">Install GIT</title><link href="https://jluccisano.github.io/linux/install-git/" rel="alternate" type="text/html" title="Install GIT" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/install-git</id><content type="html" xml:base="https://jluccisano.github.io/linux/install-git/">&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
+
+&lt;p&gt;https://orga.cat/posts/most-useful-git-commands&lt;/p&gt;
+
+&lt;p&gt;gitg&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rename last commit
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit --amend
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p&gt;or&lt;/p&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase -i HEAD~1
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Squash 2 commits in one
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase -i HEAD~2
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Set core editor
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global core.editor &lt;span class=&quot;s2&quot;&gt;&quot;vim&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;git stash
+git stash apply&lt;/p&gt;
+
+&lt;p&gt;git graph -a&lt;/p&gt;
+
+&lt;p&gt;git log&lt;/p&gt;
+
+&lt;p&gt;rename branch&lt;/p&gt;
+
+&lt;p&gt;git branch -m old new&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;M&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;create branch&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;git co -b&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;git reset HEAD~1 –hard&lt;/p&gt;
+
+&lt;p&gt;cherry-pick&lt;/p&gt;
+
+&lt;p&gt;git rebase develop&lt;/p&gt;
+
+&lt;p&gt;git config remote.origin.url git@github.com:your_username/your_project.git&lt;/p&gt;
+
+&lt;p&gt;https://gist.github.com/jexchan/2351996
+git config user.name “jls”
+git config user.email “j.luccisano@evs.com”&lt;/p&gt;
+
+&lt;p&gt;git fetch&lt;/p&gt;
+
+&lt;p&gt;git branch -a&lt;/p&gt;
+
+&lt;p&gt;git push –force&lt;/p&gt;
+
+&lt;p&gt;git push –set-upstream origin feature/jls-INGFUN-1219-StoryboardLoggingBadVolumeId&lt;/p&gt;
+
+&lt;p&gt;git rebase –interactive –root&lt;/p&gt;
+
+&lt;p&gt;git commit –amend –date=”Sun Feb 12 17:22 2017 +0100”&lt;/p&gt;
+
+&lt;h4 id=&quot;travis&quot;&gt;Travis&lt;/h4&gt;
+
+&lt;p&gt;ssh-keygen -t rsa -b 4096 -C “joseph.luccisano@gmail.com”&lt;/p&gt;
+
+&lt;p&gt;gem install travis&lt;/p&gt;
+
+&lt;p&gt;/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Git" /><summary type="html">Useful commands</summary></entry><entry><title type="html">Google maps route builder</title><link href="https://jluccisano.github.io/project/google-maps-route-builder/" rel="alternate" type="text/html" title="Google maps route builder" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/google-maps-route-builder</id><content type="html" xml:base="https://jluccisano.github.io/project/google-maps-route-builder/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="JavaScript" /><category term="Google Maps API" /><summary type="html"></summary></entry><entry><title type="html">Push data to RabbitMQ</title><link href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="alternate" type="text/html" title="Push data to RabbitMQ" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/push-data-on-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/computer/push-data-on-rabbitmq/">&lt;p&gt;The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Run RabbitMQ container&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-a-publisher-on-your-raspberry&quot;&gt;Create a publisher on your Raspberry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-a-consumer-on-your-raspberry&quot;&gt;Create a consumer on your Raspberry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#start-publisher-as-service&quot;&gt;Start publisher as Service&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3 &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-docker&quot;&gt;A server or your own computer with Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Install Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;run-rabbitmq-container&quot;&gt;Run RabbitMQ container&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run -d --hostname my-rabbit --name my-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;see more &lt;a href=&quot;https://hub.docker.com/_/rabbitmq/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see RabbitMQ management interface on port 8080.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-publisher-on-your-raspberry&quot;&gt;Create a publisher on your Raspberry&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clone raspberry-scripts project&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:jluccisano/raspberry-scripts.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;raspberry-scripts/scripts
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Edit the _config.yml&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Replace by your config&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim _config.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rabbitmq:
+    url: amqp://guest:guest@RABBIT_DOCKER_HOST:5672
+    gatewayId: raspberry_1
+    sendFrom: RASPBERRY_IP_ADDRESS
+    exchange: events
+    publish_interval: 60
+    queue: event     
+    logPath: /var/log/dht22
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Start virtualenv (optional)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virtualenv -p /usr/bin/python2.7 ~/env2.7/
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/env2.7/bin/activate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;see more &lt;a href=&quot;https://jluccisano.github.io/linux/install-python#create-virtualenv&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Install dependencies:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install pika
+pip install adafruit_python_dht
+pip install pyyaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;see more &lt;a href=&quot;https://pika.readthedocs.io/en/0.10.0/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start publisher&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python publisher.py &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Show log:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail -f /var/log/dht22/publisher.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Note: code based on &lt;a href=&quot;&amp;quot;https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_publisher_example.html&amp;quot;&quot;&gt;Asynchronous publisher example&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;create-a-consumer-on-your-raspberry&quot;&gt;Create a consumer on your Raspberry&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start publisher&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python consumer.py &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Show log:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail -f /var/log/dht22/consumer.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;code based on &lt;a href=&quot;&amp;quot;https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html&amp;quot;&quot;&gt;Asynchronous consumer example&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;start-publisher-as-service&quot;&gt;Start publisher as Service&lt;/h3&gt;
+
+&lt;p&gt;Follow this &lt;a href=&quot;https://jluccisano.github.io/linux/create-service&quot;&gt;tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Edit publisher.py and change config.yml to /opt/dht22/_config.yml&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start dht22_publisher.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Check&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl status dht22_publisher.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(env2.7) pi@raspberrypi:/opt/dht22 $ sudo systemctl status dht22.service
+● dht22.service - DHT22
+   Loaded: loaded (/lib/systemd/system/dht22.service; enabled)
+   Active: active (running) since Fri 2017-03-24 13:21:46 UTC; 1s ago
+ Main PID: 14457 (python)
+   CGroup: /system.slice/dht22.service
+           └─14457 /usr/bin/python /opt/dht22/publisher.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Show log:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail -f /var/log/dht22/publisher.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Great publisher works fine !!&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2017-03-24 13:21:48,032 Start publishing
+2017-03-24 13:21:48,033 Scheduling next message &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;60.0 seconds
+2017-03-24 13:22:47,668 Received 0 heartbeat frames, sent 0
+2017-03-24 13:22:47,669 Sending heartbeat frame
+2017-03-24 13:22:47,784 Received heartbeat frame
+2017-03-24 13:22:48,701 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;gt;] Published data &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'expire'&lt;/span&gt;: 38231000, &lt;span class=&quot;s1&quot;&gt;'data'&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'humidity'&lt;/span&gt;: 34.20000076293945, &lt;span class=&quot;s1&quot;&gt;'@type'&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;'DHT22'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'temperature'&lt;/span&gt;: 24.399999618530273&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'created'&lt;/span&gt;: 1490361768&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 1&lt;/span&gt;
+2017-03-24 13:22:48,701 Scheduling next message &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;60.0 seconds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add service to start on Boot&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="RabbitMQ" /><category term="Docker" /><category term="Python" /><category term="Git" /><category term="μService" /><category term="Internet of Things" /><summary type="html">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.</summary></entry><entry><title type="html">Store data into InfluxDB</title><link href="https://jluccisano.github.io/computer/install-influxDB/" rel="alternate" type="text/html" title="Store data into InfluxDB" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/install-influxDB</id><content type="html" xml:base="https://jluccisano.github.io/computer/install-influxDB/">&lt;p&gt;The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#run-influxdb-on-docker&quot;&gt;Run influxDB on Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-database&quot;&gt;Create Database&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#connect-to-influxdb&quot;&gt;Connect to influxDB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-retention-policy&quot;&gt;Create retention policy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-continuous-query&quot;&gt;Create continuous query&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#useful-commands&quot;&gt;Useful commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3 &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-docker&quot;&gt;A server or your own computer with Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Install Git (optional)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/push-data-on-rabbitmq&quot;&gt;Push data to rabbitMQ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;run-influxdb-on-docker&quot;&gt;Run influxDB on Docker&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run -d -p 8083:8083 -p 8086:8086 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      --name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;influxdb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      -v /usr/lib/influxdb:/var/lib/influxdb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      influxdb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;see more &lt;a href=&quot;https://hub.docker.com/_/influxdb/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;create-database&quot;&gt;Create Database&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE DATABASE IF NOT EXISTS sensor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;connect-to-influxdb&quot;&gt;Connect to influxDB&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;influx
+use sensor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;create-retention-policy&quot;&gt;Create retention policy&lt;/h3&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RETENTION&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;POLICY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one_years_only&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DURATION&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;52&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;REPLICATION&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DEFAULT&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;create-continuous-query&quot;&gt;Create continuous query&lt;/h3&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cq_dht22_1h&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;mean_temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_humidity&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;one_years_only&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;cq_dht22_1h&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dht22&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gatewayId&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cq_dht22_1d&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;mean_temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_temperature&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MAX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MAX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_humidity&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;one_years_only&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;cq_dht22_1d&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dht22&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gatewayId&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RETENTION&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;POLICIES&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RETENTION&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;POLICY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one_years_only&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERIES&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;autogen&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downsampled_dht22&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cq_1h&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="InfluxDB" /><category term="Docker" /><summary type="html">The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.</summary></entry><entry><title type="html">Consume data from reactive client</title><link href="https://jluccisano.github.io/computer/consume-from-reactive-client/" rel="alternate" type="text/html" title="Consume data from reactive client" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/consume-from-reactive-client</id><content type="html" xml:base="https://jluccisano.github.io/computer/consume-from-reactive-client/">&lt;p&gt;The objective of this tutorial is to develop a reactive client which consuming temperature and 
+ humidity via websocket and showing a dashboard of continuous data via a REST API.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-docker&quot;&gt;A server or your own computer with Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Install Git (optional)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/push-data-on-rabbitmq&quot;&gt;Push data to rabbitMQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-influxdb&quot;&gt;Install InfluxDB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/consume-data-from-rabbitmq&quot;&gt;Consume data from Reactive-server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-x-funtainjs&quot;&gt;Step X: FuntainJs&lt;/h3&gt;
+
+&lt;p&gt;1) Install FuntainJs&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/FountainJS/generator-fountain-webapp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yo fountain-webapp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-1-create-a-reactjs-component&quot;&gt;Step 1: Create a ReactJS component&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git co 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Simple&lt;/p&gt;
+
+&lt;p&gt;```ecmascript 6
+import React from ‘react’;&lt;/p&gt;
+
+&lt;p&gt;class ReactiveMeteoStation extends React.Component {
+  render() {
+    return (
+      &amp;lt;div&amp;gt;
+        &amp;lt;h2&amp;gt;Hello World !&amp;lt;/h2&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  }
+}&lt;/p&gt;
+
+&lt;p&gt;export default ReactiveMeteoStation;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+With JSX
+
+```ecmascript 6
+import React from 'react';
+
+class ReactiveMeteoStation extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      title: &quot;Hello World!&quot;
+    };
+  }
+
+  render() {
+    const title = this.state.title;
+    return (
+      &amp;lt;div&amp;gt;
+        &amp;lt;h2&amp;gt; {title}&amp;lt;/h2&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  }
+}
+
+export default ReactiveMeteoStation;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-2-create-a-reactjs-socket-module-via-stomp-and-sockjs&quot;&gt;Step 2: Create a ReactJS socket module via STOMP and sockJS&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git co 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;```ecmascript 6
+import React from ‘react’;
+import SockJS from ‘sockjs-client’;
+import Stomp from ‘stompjs’;
+import Config from ‘Config’;&lt;/p&gt;
+
+&lt;p&gt;class ReactiveMeteoStation extends React.Component {
+  constructor(props, context) {
+    super(props, context);&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;this.state = {
+  dht22: {temperature: 0, humidity: 0}
+};
+
+this.socket = new SockJS(Config.serverURL + Config.webSocketEndpoint);
+this.stompClient = Stomp.over(this.socket);
+
+this.stompClient.connect({}, frame =&amp;gt; {
+  console.log(`connected, ${frame}!`);
+  this.stompClient.subscribe('/queue/DHT22', data =&amp;gt; {
+    console.log(JSON.parse(data.body).data);
+    this.setState({dht22: JSON.parse(data.body).data});
+  });
+});   }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;render() {
+    const dht22 = this.state.dht22;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;return (
+  &amp;lt;div&amp;gt;
+    &amp;lt;h2&amp;gt;Temperature: {dht22.temperature.toFixed(2)} °C&amp;lt;/h2&amp;gt;
+    &amp;lt;h2&amp;gt;Humidity: {dht22.humidity.toFixed(2)} %&amp;lt;/h2&amp;gt;
+  &amp;lt;/div&amp;gt;
+);   } }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;export default ReactiveMeteoStation;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;### Step 3: Get data from Rest API
+
+
+### Step 4: Create widget with D3JS
+
+### Final Result
+
+```bash
+git clone ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run --name reactive-client -p 8084:8084 -d jluccisano/reactive-server:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Docker" /><category term="Gulp" /><category term="ReactJs" /><category term="ES6" /><category term="WebSocket" /><category term="Git" /><category term="REST" /><category term="D3js" /><category term="HTML5" /><category term="JavaScript" /><category term="Stomp" /><category term="Internet of Things" /><summary type="html">The objective of this tutorial is to develop a reactive client which consuming temperature and humidity via websocket and showing a dashboard of continuous data via a REST API.</summary></entry><entry><title type="html">Consume data from RabbitMQ</title><link href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" rel="alternate" type="text/html" title="Consume data from RabbitMQ" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/consume-data-from-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/">&lt;p&gt;The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
+publishing data to client via websocket.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3 &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-docker&quot;&gt;A server or your own computer with Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Git installed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/push-data-on-rabbitmq&quot;&gt;Push data to rabbitMQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-influxdb&quot;&gt;Install InfluxDB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;clone-the-project&quot;&gt;Clone the project&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:jluccisano/reactive-server.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn clean install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-1-consume-data-from-rabbitmq&quot;&gt;Step 1: Consume data from Rabbitmq&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git co step1-consumeDataFromRabbitMQ
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn clean install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-2-store-data-into-influxdb&quot;&gt;Step 2: Store data into InfluxDB&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git co step2-store-data-into-influxDB
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn clean install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3-create-rest-api-with-swagger&quot;&gt;Step 3: Create Rest API with Swagger&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git co step3-Create-REST-API-Swagger
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn clean install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;http://YOUR_HOST:YOUR_PORT/swagger-ui.html&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-forward-data-to-client-via-websocket&quot;&gt;Step 4: Forward data to client via Websocket&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git co step4-publish-to-websocket
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;final-result&quot;&gt;Final Result&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker pull jluccisano/reactive-server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run --name reactive-server -p 8084:8084 -d jluccisano/reactive-server:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="RabbitMQ" /><category term="Docker" /><category term="Java" /><category term="Maven" /><category term="Spring" /><category term="Swagger" /><category term="Python" /><category term="Git" /><category term="μService" /><category term="REST" /><category term="Internet of Things" /><summary type="html">The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and publishing data to client via websocket.</summary></entry><entry><title type="html">Install Python</title><link href="https://jluccisano.github.io/linux/install-python/" rel="alternate" type="text/html" title="Install Python" /><published>2017-03-23T00:00:00+00:00</published><updated>2017-03-23T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/install-python</id><content type="html" xml:base="https://jluccisano.github.io/linux/install-python/">&lt;p&gt;The objective of this tutorial is to install Python and run it with virtual environment.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#install-pip&quot;&gt;Install PIP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-virtualenv&quot;&gt;Create VirtualEnv (optional)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;Usually Python is already installed with the Raspbian image.&lt;/p&gt;
+
+&lt;p&gt;Check install:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python --version
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Otherwise you can install it&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get update
+apt-get install build-essential python-dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;install-pip&quot;&gt;Install PIP&lt;/h3&gt;
+
+&lt;p&gt;PIP is a package management system used to install and manage some packages written in Python.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://bootstrap.pypa.io/get-pip.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python get-pip.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;See more &lt;a href=&quot;https://pip.pypa.io/en/latest/installing&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;create-virtualenv-optional&quot;&gt;Create VirtualEnv (optional)&lt;/h3&gt;
+
+&lt;p&gt;A Virtual Environment is useful to keep the dependencies required by different projects.&lt;/p&gt;
+
+&lt;p&gt;Note: virtualenv includes PIP&lt;/p&gt;
+
+&lt;h4 id=&quot;installation-1&quot;&gt;Installation&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo pip install virtualenv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h5 id=&quot;create-a-workspace-directory-for-the-python-version&quot;&gt;Create a workspace directory for the Python version.&lt;/h5&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir -p ~/workspace/venv2.7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h4 id=&quot;create-virtualenv-links-with-python-interpreter-of-your-choice&quot;&gt;Create virtualenv links with Python interpreter of your choice.&lt;/h4&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;h4 id=&quot;start-the-virtual-environment&quot;&gt;Start the virtual environment.&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/workspace/venv2.7/bin/activate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;You can now install all packages you need into your isolated environment.
+Example:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install requests
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;See more &lt;a href=&quot;http://docs.python-guide.org/en/latest/dev/virtualenvs/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><category term="Python" /><summary type="html">The objective of this tutorial is to install Python and run it with virtual environment.</summary></entry><entry><title type="html">Create a Linux service</title><link href="https://jluccisano.github.io/linux/create-service/" rel="alternate" type="text/html" title="Create a Linux service" /><published>2017-03-23T00:00:00+00:00</published><updated>2017-03-23T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/create-service</id><content type="html" xml:base="https://jluccisano.github.io/linux/create-service/">&lt;p&gt;The objective of this tutorial is to create a system service in order to run a standalone program on background.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-service&quot;&gt;Create service&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#useful-commands&quot;&gt;Useful commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;create-service&quot;&gt;Create Service&lt;/h3&gt;
+
+&lt;p&gt;a. Create new service&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vim /lib/systemd/system/myservice.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;b. Edit parameters&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Unit]
+Description=MyService
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /opt/script.py
+Restart=on-abort
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;c. Enable execution permission of your service&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod 644 /lib/systemd/system/myservice.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;d. Enable execution permission of your script&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod u+x /opt/script.py 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;e. Create symbolic link&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ln -s /opt/script.py /usr/bin/myservice
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;f. Reload daemon&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl daemon-reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;g. Enable the service&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;myservice.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;h. Start the service&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start myservice.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;i. Check status&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl status myservice.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stop the service
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl stop myservice.service
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See more &lt;a href=&quot;http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><summary type="html">The objective of this tutorial is to create a system service in order to run a standalone program on background.</summary></entry><entry><title type="html">Generating new SSH Key</title><link href="https://jluccisano.github.io/linux/generate-rsa-key/" rel="alternate" type="text/html" title="Generating new SSH Key" /><published>2017-03-22T00:00:00+00:00</published><updated>2017-03-22T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/generate-rsa-key</id><content type="html" xml:base="https://jluccisano.github.io/linux/generate-rsa-key/">&lt;p&gt;The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your 
+password each time.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#generating-new-ssh-key&quot;&gt;Generating new SSH Key&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#useful-commands&quot;&gt;Useful commands&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sending-ssh-key-to-a-server&quot;&gt;Sending SSH key to a server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSH installed (ex: OpenSSH, OpenBSD Secure Shell server)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;generating-new-ssh-key&quot;&gt;Generating new SSH Key&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Execute this command below, substuting in your email address
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen -t rsa -b 4096 -C &lt;span class=&quot;s2&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add the ssh key into ssh-agent&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;You can see more in this &lt;a href=&quot;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot;&gt;tuto&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands:&lt;/h3&gt;
+
+&lt;p&gt;a. Get list of key:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add -L
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;b. Remove a key&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add -D ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;c. Copy the key into the clipboard&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pbcopy &amp;lt; id_rsa_git_evs.pub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;If you don’t have pbcopy, you can install it easily. Here an example for
+&lt;a href=&quot;https://gist.github.com/chriscandy/753eb149e9735e852b0b&quot;&gt;ArchLinux&lt;/a&gt; users.&lt;/p&gt;
+
+&lt;h3 id=&quot;sending-ssh-key-to-a-server&quot;&gt;Sending SSH key to a server&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-copy-id -i ~/.ssh/id_rsa.pub -p X username@address
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="SSH" /><category term="Unix" /><summary type="html">The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your password each time.</summary></entry></feed>
