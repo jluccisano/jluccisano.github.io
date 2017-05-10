@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-10T05:58:17+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Nextrun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="Nextrun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-10T12:03:04+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Nextrun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="Nextrun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
 
 &lt;p&gt;Web site: &lt;a href=&quot;www.nextrun.fr&quot;&gt;www.nextrun.fr&lt;/a&gt;&lt;/p&gt;
 
@@ -84,8 +84,6 @@ git config user.email “j.luccisano@evs.com”&lt;/p&gt;
 &lt;p&gt;gem install travis&lt;/p&gt;
 
 &lt;p&gt;/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Git" /><summary type="html">Useful commands</summary></entry><entry><title type="html">Google maps route builder</title><link href="https://jluccisano.github.io/project/google-maps-route-builder/" rel="alternate" type="text/html" title="Google maps route builder" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/google-maps-route-builder</id><content type="html" xml:base="https://jluccisano.github.io/project/google-maps-route-builder/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="JavaScript" /><category term="Google Maps API" /><summary type="html"></summary></entry><entry><title type="html">Push data to RabbitMQ</title><link href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="alternate" type="text/html" title="Push data to RabbitMQ" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/push-data-on-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/computer/push-data-on-rabbitmq/">&lt;p&gt;The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/plantuml/e05ea5bef2d94438d9a03889b9de5ca4.png&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
@@ -240,7 +238,7 @@ pip install pyyaml
 2017-03-24 13:22:47,668 Received 0 heartbeat frames, sent 0
 2017-03-24 13:22:47,669 Sending heartbeat frame
 2017-03-24 13:22:47,784 Received heartbeat frame
-2017-03-24 13:22:48,701 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;gt;] Published data &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'expire'&lt;/span&gt;: 38231000, &lt;span class=&quot;s1&quot;&gt;'data'&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'humidity'&lt;/span&gt;: 34.20000076293945, &lt;span class=&quot;s1&quot;&gt;'@type'&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;'DHT22'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'temperature'&lt;/span&gt;: 24.399999618530273&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'created'&lt;/span&gt;: 1490361768&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 1&lt;/span&gt;
+2017-03-24 13:22:48,701 &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; Published data &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'expire'&lt;/span&gt;: 38231000, &lt;span class=&quot;s1&quot;&gt;'data'&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'humidity'&lt;/span&gt;: 34.20000076293945, &lt;span class=&quot;s1&quot;&gt;'@type'&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;'DHT22'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'temperature'&lt;/span&gt;: 24.399999618530273&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'created'&lt;/span&gt;: 1490361768&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 1&lt;/span&gt;
 2017-03-24 13:22:48,701 Scheduling next message &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;60.0 seconds
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -331,7 +329,7 @@ use sensor
 
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="InfluxDB" /><category term="Docker" /><summary type="html">The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.</summary></entry><entry><title type="html">Consume data from reactive client</title><link href="https://jluccisano.github.io/computer/consume-from-reactive-client/" rel="alternate" type="text/html" title="Consume data from reactive client" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/consume-from-reactive-client</id><content type="html" xml:base="https://jluccisano.github.io/computer/consume-from-reactive-client/">&lt;p&gt;The objective of this tutorial is to develop a reactive client which consuming temperature and 
+&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="InfluxDB" /><category term="Docker" /><summary type="html">The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.</summary></entry><entry><title type="html">Consume data from reactive client</title><link href="https://jluccisano.github.io/computer/consume-data-from-reactive-client/" rel="alternate" type="text/html" title="Consume data from reactive client" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/consume-data-from-reactive-client</id><content type="html" xml:base="https://jluccisano.github.io/computer/consume-data-from-reactive-client/">&lt;p&gt;The objective of this tutorial is to develop a reactive client which consuming temperature and 
  humidity via websocket and showing a dashboard of continuous data via a REST API.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -472,35 +470,10 @@ git clone ...
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run --name reactive-client -p 8084:8084 -d jluccisano/reactive-server:latest
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Docker" /><category term="Gulp" /><category term="ReactJs" /><category term="ES6" /><category term="WebSocket" /><category term="Git" /><category term="REST" /><category term="D3js" /><category term="HTML5" /><category term="JavaScript" /><category term="Stomp" /><category term="Internet of Things" /><summary type="html">The objective of this tutorial is to develop a reactive client which consuming temperature and humidity via websocket and showing a dashboard of continuous data via a REST API.</summary></entry><entry><title type="html">Consume Data From Rabbitmq</title><link href="https://jluccisano.github.io/consume-data-from-rabbitmq/" rel="alternate" type="text/html" title="Consume Data From Rabbitmq" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/consume-data-from-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/consume-data-from-rabbitmq/">&lt;hr /&gt;
-&lt;p&gt;title: “Consume data from RabbitMQ”
-related: true
-header:
-  overlay_color: “#333”
-  overlay_filter: “0.5”
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
-  caption: “Photo credit: &lt;a href=&quot;https://unsplash.com&quot;&gt;&lt;strong&gt;Unsplash&lt;/strong&gt;&lt;/a&gt;”
-  teaser: /assets/images/caspar-rubin-224229.jpg
-categories:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Computer
-tags:&lt;/li&gt;
-  &lt;li&gt;Raspberry PI&lt;/li&gt;
-  &lt;li&gt;RabbitMQ&lt;/li&gt;
-  &lt;li&gt;Docker&lt;/li&gt;
-  &lt;li&gt;Java&lt;/li&gt;
-  &lt;li&gt;Maven&lt;/li&gt;
-  &lt;li&gt;Spring&lt;/li&gt;
-  &lt;li&gt;Swagger&lt;/li&gt;
-  &lt;li&gt;Python&lt;/li&gt;
-  &lt;li&gt;Git&lt;/li&gt;
-  &lt;li&gt;μService&lt;/li&gt;
-  &lt;li&gt;REST&lt;/li&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;internet-of-things&quot;&gt;Internet of Things&lt;/h2&gt;
-    &lt;p&gt;The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
+&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Docker" /><category term="Gulp" /><category term="ReactJs" /><category term="ES6" /><category term="WebSocket" /><category term="Git" /><category term="REST" /><category term="D3js" /><category term="HTML5" /><category term="JavaScript" /><category term="Stomp" /><category term="Internet of Things" /><summary type="html">The objective of this tutorial is to develop a reactive client which consuming temperature and humidity via websocket and showing a dashboard of continuous data via a REST API.</summary></entry><entry><title type="html">Consume data from RabbitMQ</title><link href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" rel="alternate" type="text/html" title="Consume data from RabbitMQ" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/consume-data-from-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/">&lt;p&gt;The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
 publishing data to client via websocket.&lt;/p&gt;
-  &lt;/li&gt;
+
+&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -590,7 +563,7 @@ publishing data to client via websocket.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run --name reactive-server -p 8084:8084 -d jluccisano/reactive-server:latest
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><summary type="html">title: “Consume data from RabbitMQ” related: true header: overlay_color: “#333” overlay_filter: “0.5” overlay_image: /assets/images/caspar-rubin-224229.jpg caption: “Photo credit: Unsplash” teaser: /assets/images/caspar-rubin-224229.jpg categories: Computer tags: Raspberry PI RabbitMQ Docker Java Maven Spring Swagger Python Git μService REST Internet of Things The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and publishing data to client via websocket.</summary></entry><entry><title type="html">Install Python</title><link href="https://jluccisano.github.io/linux/install-python/" rel="alternate" type="text/html" title="Install Python" /><published>2017-03-23T00:00:00+00:00</published><updated>2017-03-23T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/install-python</id><content type="html" xml:base="https://jluccisano.github.io/linux/install-python/">&lt;p&gt;The objective of this tutorial is to install Python and run it with virtual environment.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="RabbitMQ" /><category term="Docker" /><category term="Java" /><category term="Maven" /><category term="Spring" /><category term="Swagger" /><category term="Python" /><category term="Git" /><category term="μService" /><category term="REST" /><category term="Internet of Things" /><summary type="html">The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and publishing data to client via websocket.</summary></entry><entry><title type="html">Install Python</title><link href="https://jluccisano.github.io/linux/install-python/" rel="alternate" type="text/html" title="Install Python" /><published>2017-03-23T00:00:00+00:00</published><updated>2017-03-23T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/install-python</id><content type="html" xml:base="https://jluccisano.github.io/linux/install-python/">&lt;p&gt;The objective of this tutorial is to install Python and run it with virtual environment.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
