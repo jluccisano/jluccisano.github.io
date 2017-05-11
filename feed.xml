@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-11T12:05:01+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Nextrun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="Nextrun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-11T18:46:38+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Nextrun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="Nextrun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
 
 &lt;p&gt;Web site: &lt;a href=&quot;www.nextrun.fr&quot;&gt;www.nextrun.fr&lt;/a&gt;&lt;/p&gt;
 
@@ -1026,17 +1026,140 @@ Using database influx_db_name
 
 &lt;h3 id=&quot;step-3-create-rest-api-with-swagger&quot;&gt;Step 3: Create Rest API with Swagger&lt;/h3&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git co step3-Create-REST-API-Swagger
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout step3-Create-REST-API-Swagger
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn clean install
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;io.springfox&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;springfox-swagger2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;${springfox.version}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;io.springfox&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;springfox-swagger-ui&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;${springfox.version}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+&lt;h4 id=&quot;swagger-config&quot;&gt;Swagger Config&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Configuration
+@EnableSwagger2
+public class SwaggerConfig &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    @Bean
+    public Docket api&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;new Docket&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;DocumentationType.SWAGGER_2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                .select&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+                .apis&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;RequestHandlerSelectors.any&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+                .paths&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;PathSelectors.any&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+                .build&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@SpringBootApplication
+@Import&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;WebConfig.class,
+		JacksonConfig.class,
+		InfluxDBConfig.class,
+		RabbitMQConfig.class,
+		SwaggerConfig.class&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+public class ReactiveServerApplication extends WebMvcConfigurerAdapter &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+	public static void main&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;String[] args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		SpringApplication.run&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ReactiveServerApplication.class, args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	@Override
+	public void addResourceHandlers&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ResourceHandlerRegistry registry&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		registry.addResourceHandler&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;swagger-ui.html&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.addResourceLocations&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;classpath:/META-INF/resources/&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+		registry.addResourceHandler&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/webjars/**&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.addResourceLocations&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;classpath:/META-INF/resources/webjars/&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;controller&quot;&gt;Controller&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@RestController
+@RequestMapping&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/api/v1/sensor/dht22&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+@Api&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;dht22&quot;&lt;/span&gt;, description &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;DHT22 Sensor data&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+public class DHT22Controller &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    @Autowired
+    InfluxDBService influxDBService;
+
+    private ListResource&amp;lt;Map&amp;gt; toListResource&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;QueryResult queryResult&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        ListResource&amp;lt;Map&amp;gt; listResource &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new ListResource&amp;lt;&amp;gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;queryResult.getResults&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; !&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; null &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; queryResult.getResults&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.size&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &amp;gt; 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            QueryResult.Result result &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; queryResult.getResults&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;result !&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; null &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; result.getSeries&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; !&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; null &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; result.getSeries&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.size&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &amp;gt; 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                QueryResult.Series series &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; result.getSeries&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+                series.getValues&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.forEach&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value -&amp;gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    Map&amp;lt;String,Object&amp;gt; mappedValues &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new HashMap&amp;lt;&amp;gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+                    IntStream.range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0,  value.size&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+                            .forEach&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;index -&amp;gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                                mappedValues.put&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;series.getColumns&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;index&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, value.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;index&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;;
+                            &lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;;
+                    listResource.getItems&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mappedValues&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+                &lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;listResource;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    @SneakyThrows
+    private DHT22Sensor toTransferObject&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;QueryResult queryResult&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        DHT22Sensor dht22Sensor &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new DHT22Sensor&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+        QueryResult.Series series &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; queryResult.getResults&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.getSeries&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+        dht22Sensor.setTime&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ZonedDateTime.parse&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;String&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; series.getValues&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)))&lt;/span&gt;;
+        dht22Sensor.setGatewayId&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;String&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; series.getValues&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;;
+        dht22Sensor.setHumidity&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;Double&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; series.getValues&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;;
+        dht22Sensor.setTemperature&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;Double&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; series.getValues&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;;
+        &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;dht22Sensor;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    //http://localhost:8084//api/v1/sensor/dht22/fresh/raspberry_1
+    @RequestMapping&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/fresh/{gatewayId}&quot;&lt;/span&gt;, method &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; RequestMethod.GET, produces &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; MediaType.APPLICATION_JSON_VALUE&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    @ApiOperation&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Get latest fresh data&quot;&lt;/span&gt;, notes &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Get latest fresh data&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    public ResponseEntity&amp;lt;DHT22Sensor&amp;gt; getFreshSensorData&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;@PathVariable&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gatewayId&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; String gatewayId&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+        String getLastValueQuery &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+                new SelectBuilder&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+                        .column&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                        .from&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dht22&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                        .where&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gatewayId = '&quot;&lt;/span&gt; + gatewayId + &lt;span class=&quot;s2&quot;&gt;&quot;'&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                        .orderBy&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;time&quot;&lt;/span&gt;, &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                        .toString&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+        getLastValueQuery &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; getLastValueQuery.concat&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; LIMIT 1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+
+        &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;new ResponseEntity&amp;lt;&amp;gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;toTransferObject&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;influxDBService.query&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;getLastValueQuery&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;,  HttpStatus.OK&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    //http://localhost:8084/api/v1/sensor/dht22/continuous/raspberry_1?sample&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1h&amp;amp;range&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;12h
+    @RequestMapping&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/continuous/{gatewayId}&quot;&lt;/span&gt;, method &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; RequestMethod.GET, produces &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; MediaType.APPLICATION_JSON_VALUE&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    @ApiOperation&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Get Continuous Data&quot;&lt;/span&gt;, notes &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Get Continuous Data&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    public ResponseEntity&amp;lt;ListResource&amp;lt;Map&amp;gt;&amp;gt; getContinuousData&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;@PathVariable&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gatewayId&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; String gatewayId,
+                                                               @RequestParam&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sample&quot;&lt;/span&gt;, required &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; String sample,
+                                                               @RequestParam&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;value &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;range&quot;&lt;/span&gt;, required &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; String range&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        String getContinuousQuey &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+            new SelectBuilder&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+                    .column&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                    .from&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cq_dht22_&quot;&lt;/span&gt; + sample&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                    .where&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gatewayId = '&quot;&lt;/span&gt; + gatewayId + &lt;span class=&quot;s2&quot;&gt;&quot;' AND time &amp;gt;= now() - &quot;&lt;/span&gt; + range&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                    .orderBy&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;time&quot;&lt;/span&gt;, &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                    .toString&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+
+        &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;new ResponseEntity&amp;lt;&amp;gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;toListResource&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;influxDBService.query&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;getContinuousQuey&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;, HttpStatus.OK&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;p&gt;http://YOUR_HOST:YOUR_PORT/swagger-ui.html&lt;/p&gt;
 
 &lt;h3 id=&quot;step-4-forward-data-to-client-via-websocket&quot;&gt;Step 4: Forward data to client via Websocket&lt;/h3&gt;
