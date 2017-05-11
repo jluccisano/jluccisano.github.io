@@ -358,45 +358,227 @@ publishing data to client via websocket.</p>
   <li><a href="https://jluccisano.github.io/computer/install-influxdb">Install InfluxDB</a></li>
 </ul>
 
+<h3 id="overview">Overview</h3>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/consume-data-from-rabbitmq.png" alt="Reactive Server Overview" />
+  
+    <figcaption>Reactive Server Overview
+</figcaption>
+  
+</figure>
+
 <h3 id="clone-the-project">Clone the project</h3>
+
+<p><a href="https://github.com/jluccisano/reactive-server">Get source here</a></p>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:jluccisano/reactive-server.git
 </code></pre>
 </div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mvn clean install
-</code></pre>
-</div>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
-</code></pre>
-</div>
-
 <h3 id="step-1-consume-data-from-rabbitmq">Step 1: Consume data from Rabbitmq</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git co step1-consumeDataFromRabbitMQ
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step1-consumeDataFromRabbitMQ
 </code></pre>
 </div>
+<h4 id="configuration-properties">Configuration properties</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mvn clean install
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Data</span>
+<span class="nd">@ConfigurationProperties</span><span class="o">(</span><span class="s">"spring.rabbitmq"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">RabbitMQProperties</span> <span class="o">{</span>
+
+    <span class="nd">@NotEmpty</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">endpoint</span><span class="o">;</span>
+    <span class="nd">@NotEmpty</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">exchange</span><span class="o">;</span>
+    <span class="nd">@NotEmpty</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">queue</span><span class="o">;</span>
+    <span class="nd">@NotEmpty</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">gatewayId</span><span class="o">;</span>
+<span class="o">}</span>
 </code></pre>
 </div>
+<h4 id="setup-configuration">Setup configuration</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<span class="nd">@EnableRabbit</span>
+<span class="nd">@EnableConfigurationProperties</span><span class="o">(</span><span class="n">RabbitMQProperties</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">RabbitMQConfig</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="n">RabbitMQProperties</span> <span class="n">rabbitMQProperties</span><span class="o">;</span>
+
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">Jackson2JsonMessageConverter</span> <span class="nf">jackson2MessageConverter</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">Jackson2JsonMessageConverter</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">ConnectionFactory</span> <span class="nf">connectionFactory</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">CachingConnectionFactory</span> <span class="n">connectionFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CachingConnectionFactory</span><span class="o">(</span><span class="n">URI</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">rabbitMQProperties</span><span class="o">.</span><span class="na">getEndpoint</span><span class="o">()));</span>
+        <span class="k">return</span> <span class="n">connectionFactory</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">SimpleRabbitListenerContainerFactory</span> <span class="nf">simpleRabbitListenerContainerFactory</span><span class="o">(</span><span class="n">ConnectionFactory</span> <span class="n">connectionFactory</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">SimpleRabbitListenerContainerFactory</span> <span class="n">factory</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SimpleRabbitListenerContainerFactory</span><span class="o">();</span>
+        <span class="n">factory</span><span class="o">.</span><span class="na">setConnectionFactory</span><span class="o">(</span><span class="n">connectionFactory</span><span class="o">);</span>
+        <span class="n">factory</span><span class="o">.</span><span class="na">setMessageConverter</span><span class="o">(</span><span class="n">jackson2MessageConverter</span><span class="o">());</span>
+        <span class="n">factory</span><span class="o">.</span><span class="na">setConcurrentConsumers</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+        <span class="n">factory</span><span class="o">.</span><span class="na">setMaxConcurrentConsumers</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">factory</span><span class="o">;</span>
+    <span class="o">}</span>
+
+
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">ReceiveHandlerImpl</span> <span class="nf">receiveHandler</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">ReceiveHandlerImpl</span><span class="o">();</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre>
+</div>
+<h4 id="create-consumer">Create consumer</h4>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveHandlerImpl</span> <span class="kd">implements</span> <span class="n">ReceiveHandler</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Logger</span> <span class="n">logger</span> <span class="o">=</span> <span class="n">LoggerFactory</span><span class="o">.</span><span class="na">getLogger</span><span class="o">(</span><span class="n">ReceiveHandlerImpl</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+    <span class="nd">@RabbitListener</span><span class="o">(</span><span class="n">bindings</span> <span class="o">=</span> <span class="nd">@QueueBinding</span><span class="o">(</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nd">@Queue</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.queue}"</span><span class="o">,</span> <span class="n">durable</span> <span class="o">=</span> <span class="s">"true"</span><span class="o">),</span>
+            <span class="n">exchange</span> <span class="o">=</span> <span class="nd">@Exchange</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.exchange}"</span><span class="o">,</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ExchangeTypes</span><span class="o">.</span><span class="na">HEADERS</span><span class="o">,</span> <span class="n">durable</span> <span class="o">=</span> <span class="s">"true"</span><span class="o">),</span>
+            <span class="n">arguments</span> <span class="o">=</span> <span class="o">{</span>
+                    <span class="nd">@Argument</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"x-match"</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">"all"</span><span class="o">),</span>
+                    <span class="nd">@Argument</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"gatewayId"</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.gatewayId}"</span><span class="o">)</span>
+            <span class="o">})</span>
+    <span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">handleMessage</span><span class="o">(</span><span class="nd">@Payload</span> <span class="n">Message</span> <span class="n">message</span><span class="o">,</span> <span class="nd">@Header</span><span class="o">(</span><span class="s">"gatewayId"</span><span class="o">)</span> <span class="n">String</span> <span class="n">gatewayId</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">logger</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">message</span><span class="o">.</span><span class="na">toString</span><span class="o">()));</span>
+    <span class="o">}</span>
+    
+<span class="o">}</span>
+</code></pre>
+</div>
+<h4 id="run">Run</h4>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mv application.tpl.yml application.yml
+</code></pre>
+</div>
+<ul>
+  <li>
+    <p>Set your value into application.yml</p>
+  </li>
+  <li>
+    <p>Start server</p>
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>mvn spring-boot:run -Drun.profiles<span class="o">=</span>dev
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<h4 id="result">Result</h4>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>2017-05-11 13:48:51.283  INFO 16434 --- <span class="o">[</span>cTaskExecutor-1] com.jls.service.impl.ReceiveHandlerImpl  : Message<span class="o">(</span><span class="nv">expire</span><span class="o">=</span>43869000, <span class="nv">created</span><span class="o">=</span>1494503330, <span class="nv">data</span><span class="o">=</span>DHT22Sensor<span class="o">{</span><span class="nv">temperature</span><span class="o">=</span><span class="s1">'23.799999237060547'</span>, <span class="nv">humidity</span><span class="o">=</span>47.29999923706055<span class="o">})</span>
 </code></pre>
 </div>
 
 <h3 id="step-2-store-data-into-influxdb">Step 2: Store data into InfluxDB</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git co step2-store-data-into-influxDB
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step2-store-data-into-influxDB
+</code></pre>
+</div>
+<h4 id="configuration">Configuration</h4>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<span class="nd">@EnableConfigurationProperties</span><span class="o">(</span><span class="n">InfluxDBProperties</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">InfluxDBConfig</span> <span class="o">{</span>
+
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">InfluxDBConnectionFactory</span> <span class="nf">influxDBConnectionFactory</span><span class="o">(</span><span class="kd">final</span> <span class="n">InfluxDBProperties</span> <span class="n">properties</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">InfluxDBConnectionFactory</span><span class="o">(</span><span class="n">properties</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">InfluxDBTemplate</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&gt;</span> <span class="nf">influxDBTemplate</span><span class="o">(</span><span class="kd">final</span> <span class="n">InfluxDBConnectionFactory</span> <span class="n">connectionFactory</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="n">InfluxDBTemplate</span><span class="o">&lt;&gt;(</span><span class="n">connectionFactory</span><span class="o">,</span> <span class="k">new</span> <span class="n">PointConverter</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre>
 </div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mvn clean install
+<h4 id="service">Service</h4>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">InfluxDBServiceImpl</span> <span class="kd">implements</span> <span class="n">InfluxDBService</span><span class="o">,</span> <span class="n">InitializingBean</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="n">InfluxDBTemplate</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&gt;</span> <span class="n">influxDBTemplate</span><span class="o">;</span>
+
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">write</span><span class="o">(</span><span class="n">Point</span> <span class="n">point</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">influxDBTemplate</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">point</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">QueryResult</span> <span class="nf">query</span><span class="o">(</span><span class="n">String</span> <span class="n">queryString</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Query</span> <span class="n">query</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Query</span><span class="o">(</span><span class="n">queryString</span><span class="o">,</span> <span class="n">influxDBTemplate</span><span class="o">.</span><span class="na">getDatabase</span><span class="o">());</span>
+        <span class="k">return</span> <span class="n">influxDBTemplate</span><span class="o">.</span><span class="na">query</span><span class="o">(</span><span class="n">query</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">afterPropertiesSet</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="n">influxDBTemplate</span><span class="o">.</span><span class="na">createDatabase</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre>
 </div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+<h4 id="store">Store</h4>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveHandlerImpl</span> <span class="kd">implements</span> <span class="n">ReceiveHandler</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="n">InfluxDBService</span> <span class="n">influxDBService</span><span class="o">;</span>
+
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Logger</span> <span class="n">logger</span> <span class="o">=</span> <span class="n">LoggerFactory</span><span class="o">.</span><span class="na">getLogger</span><span class="o">(</span><span class="n">ReceiveHandlerImpl</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+    <span class="nd">@RabbitListener</span><span class="o">(</span><span class="n">bindings</span> <span class="o">=</span> <span class="nd">@QueueBinding</span><span class="o">(</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nd">@Queue</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.queue}"</span><span class="o">,</span> <span class="n">durable</span> <span class="o">=</span> <span class="s">"true"</span><span class="o">),</span>
+            <span class="n">exchange</span> <span class="o">=</span> <span class="nd">@Exchange</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.exchange}"</span><span class="o">,</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ExchangeTypes</span><span class="o">.</span><span class="na">HEADERS</span><span class="o">,</span> <span class="n">durable</span> <span class="o">=</span> <span class="s">"true"</span><span class="o">),</span>
+            <span class="n">arguments</span> <span class="o">=</span> <span class="o">{</span>
+                    <span class="nd">@Argument</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"x-match"</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">"all"</span><span class="o">),</span>
+                    <span class="nd">@Argument</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"gatewayId"</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.gatewayId}"</span><span class="o">)</span>
+            <span class="o">})</span>
+    <span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">handleMessage</span><span class="o">(</span><span class="nd">@Payload</span> <span class="n">Message</span> <span class="n">message</span><span class="o">,</span> <span class="nd">@Header</span><span class="o">(</span><span class="s">"gatewayId"</span><span class="o">)</span> <span class="n">String</span> <span class="n">gatewayId</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">logger</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">message</span><span class="o">.</span><span class="na">toString</span><span class="o">()));</span>
+
+        <span class="n">Point</span> <span class="n">point</span> <span class="o">=</span> <span class="n">Point</span><span class="o">.</span><span class="na">measurement</span><span class="o">(</span><span class="s">"dht22"</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">time</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">(),</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">MILLISECONDS</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">tag</span><span class="o">(</span><span class="s">"gatewayId"</span><span class="o">,</span><span class="n">gatewayId</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">addField</span><span class="o">(</span><span class="s">"temperature"</span><span class="o">,</span><span class="n">message</span><span class="o">.</span><span class="na">getData</span><span class="o">().</span><span class="na">getTemperature</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">addField</span><span class="o">(</span><span class="s">"humidity"</span><span class="o">,</span> <span class="n">message</span><span class="o">.</span><span class="na">getData</span><span class="o">().</span><span class="na">getHumidity</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+        <span class="n">influxDBService</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">point</span><span class="o">);</span>
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<h4 id="result-1">Result</h4>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">bash-4.3# </span>influx
+Connected to http://localhost:8086 version 1.2.0
+InfluxDB shell version: 1.2.0
+<span class="gp">&gt; </span>use influx_db_name
+Using database influx_db_name
+<span class="gp">&gt; </span>SELECT <span class="k">*</span> FROM dht22
+1494503402044000000 your_gateway_id 47.20000076293945    23.899999618530273
 </code></pre>
 </div>
 
@@ -747,7 +929,7 @@ publishing data to client via websocket.</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/install-influxDB/" rel="permalink">Store data into InfluxDB
+        <a href="https://jluccisano.github.io/computer/install-influxdb/" rel="permalink">Store data into InfluxDB
 </a>
       
     </h2>
