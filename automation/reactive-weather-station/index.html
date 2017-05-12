@@ -375,34 +375,34 @@
     <tr>
       <th>Component</th>
       <th style="text-align: center">Role</th>
-      <th style="text-align: right">Description</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Raspberry PI 3</td>
       <td style="text-align: center">μService</td>
-      <td style="text-align: right">The Raspberry PI get data sensor and push them over RabbitMQ</td>
+      <td>The Raspberry PI get data sensor and push them over RabbitMQ</td>
     </tr>
     <tr>
       <td>RabbitMQ</td>
       <td style="text-align: center">MOM(message-oriented middleware)</td>
-      <td style="text-align: right">RabbitMQ is message broker that implements the Advanced Message Queuing Protocol (AMQP)  see more <a href="https://www.rabbitmq.com/features.html">here</a></td>
+      <td>RabbitMQ is message broker that implements the Advanced Message Queuing Protocol (AMQP)  see more <a href="https://www.rabbitmq.com/features.html">here</a></td>
     </tr>
     <tr>
       <td>Reactive-server</td>
       <td style="text-align: center">Proxy</td>
-      <td style="text-align: right">The server has 2 functions: consumes data from the RabbitMQ and push data directly on the socket</td>
+      <td>The server has 2 functions: consumes data from the RabbitMQ and push data directly on the socket</td>
     </tr>
     <tr>
       <td>InfluxDB</td>
       <td style="text-align: center">Metric database</td>
-      <td style="text-align: right">InfluxDB is a time series database.</td>
+      <td>InfluxDB is a time series database.</td>
     </tr>
     <tr>
       <td>Reactive-client</td>
       <td style="text-align: center">GUI</td>
-      <td style="text-align: right">The GUI consumes data via WebSocket with Reactive-Server</td>
+      <td>The GUI consumes data via WebSocket with Reactive-Server</td>
     </tr>
   </tbody>
 </table>
@@ -482,14 +482,25 @@
 <p><a href="https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml">See code here</a></p>
 
 <p>c. Run</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker-compose up -d
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker-compose pull
+docker-compose build
+docker-compose up -d
 </code></pre>
 </div>
-<p>d. Go to http://YOUR_HOST:8089</p>
+<p>d. Go to http://${YOUR_HOST}:8089</p>
+
+<p><a href="http://hermes.ddns.net:8089">Show online version here</a></p>
 
 <h3 id="final-result">Final Result</h3>
 
-<p>ScreenShots</p>
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/final-result.png" alt="Final result" />
+  
+    <figcaption>Final result
+</figcaption>
+  
+</figure>
+
 
         
       </section>
