@@ -345,6 +345,13 @@ publishing data to client via websocket.</p>
 
 <ul>
   <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#architecture-overview">Architecture overview</a></li>
+  <li><a href="#setup-environment">Setup environment</a></li>
+  <li><a href="#consume-data-from-rabbitmq">Consume data from Rabbitmq</a></li>
+  <li><a href="#store-data-into-influxdb">Store data into InfluxDB</a></li>
+  <li><a href="#create-rest-api-with-swagger">Create Rest API with Swagger</a></li>
+  <li><a href="#publish-data-to-client-via-websocket">Publish data to client via Websocket</a></li>
+  <li><a href="#final-result">Final Result</a></li>
 </ul>
 
 <h3 id="prerequisites">Prerequisites</h3>
@@ -352,13 +359,11 @@ publishing data to client via websocket.</p>
 <ul>
   <li><a href="https://jluccisano.github.io/raspberry/setup-raspberry">Set up a Raspberry PI 3 </a></li>
   <li><a href="https://jluccisano.github.io/raspberry/dht22-raspberry">Interacting with DHT22 Sensor</a></li>
-  <li><a href="https://jluccisano.github.io/linux/install-docker">A server or your own computer with Docker</a></li>
-  <li><a href="https://git-scm.com/download/linux">Git installed</a></li>
-  <li><a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq">Push data to rabbitMQ</a></li>
-  <li><a href="https://jluccisano.github.io/computer/install-influxdb">Install InfluxDB</a></li>
+  <li><a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq">Push data to RabbitMQ</a></li>
+  <li><a href="https://jluccisano.github.io/computer/install-influxdb">InfluxDB</a></li>
 </ul>
 
-<h3 id="overview">Overview</h3>
+<h3 id="architecture-overview">Architecture overview</h3>
 
 <figure class="">
   <img src="https://jluccisano.github.io/assets/images/consume-data-from-rabbitmq.png" alt="Reactive Server Overview" />
@@ -368,7 +373,18 @@ publishing data to client via websocket.</p>
   
 </figure>
 
-<h3 id="clone-the-project">Clone the project</h3>
+<h3 id="setup-environment">Setup environment</h3>
+
+<h5 id="prerequisites-1">Prerequisites</h5>
+
+<ul>
+  <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html">Java 8</a></li>
+  <li><a href="https://maven.apache.org/download.cgi">Maven</a></li>
+  <li><a href="https://jluccisano.github.io/linux/install-docker">Docker</a></li>
+  <li><a href="https://git-scm.com/download/linux">Git</a></li>
+</ul>
+
+<h5 id="clone-the-project">Clone the project</h5>
 
 <p><a href="https://github.com/jluccisano/reactive-server">Get source here</a></p>
 
@@ -376,9 +392,27 @@ publishing data to client via websocket.</p>
 </code></pre>
 </div>
 
-<h3 id="step-1-consume-data-from-rabbitmq">Step 1: Consume data from Rabbitmq</h3>
+<h5 id="run">Run</h5>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step1-consumeDataFromRabbitMQ
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mv application.tpl.yml application.yml
+</code></pre>
+</div>
+<ul>
+  <li>
+    <p>Set your value into application.yml</p>
+  </li>
+  <li>
+    <p>Start server</p>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mvn spring-boot:run -Drun.profiles<span class="o">=</span>dev
+</code></pre>
+</div>
+
+<h3 id="consume-data-from-rabbitmq">Consume data from Rabbitmq</h3>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b step1-consumeDataFromRabbitMQ origin/step1-consumeDataFromRabbitMQ
 </code></pre>
 </div>
 <h4 id="configuration-properties">Configuration properties</h4>
@@ -440,6 +474,8 @@ publishing data to client via websocket.</p>
 </div>
 <h4 id="create-consumer">Create consumer</h4>
 
+<p><img src="/images/plantuml/512c156fca0a67c93e234fbe34018e91.png" /></p>
+
 <div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveHandlerImpl</span> <span class="kd">implements</span> <span class="n">ReceiveHandler</span> <span class="o">{</span>
 
@@ -460,22 +496,6 @@ publishing data to client via websocket.</p>
 <span class="o">}</span>
 </code></pre>
 </div>
-<h4 id="run">Run</h4>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mv application.tpl.yml application.yml
-</code></pre>
-</div>
-<ul>
-  <li>
-    <p>Set your value into application.yml</p>
-  </li>
-  <li>
-    <p>Start server</p>
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>mvn spring-boot:run -Drun.profiles<span class="o">=</span>dev
-</code></pre>
-    </div>
-  </li>
-</ul>
 
 <h4 id="result">Result</h4>
 
@@ -483,9 +503,24 @@ publishing data to client via websocket.</p>
 </code></pre>
 </div>
 
-<h3 id="step-2-store-data-into-influxdb">Step 2: Store data into InfluxDB</h3>
+<h3 id="store-data-into-influxdb">Store data into InfluxDB</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step2-store-data-into-influxDB
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b step2-store-data-into-influxDB origin/step2-store-data-into-influxDB
+</code></pre>
+</div>
+
+<h4 id="maven-dependencies">Maven dependencies</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>com.github.miwurster<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-data-influxdb<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>1.5<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.influxdb<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>influxdb-java<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>2.5<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
 </code></pre>
 </div>
 <h4 id="configuration">Configuration</h4>
@@ -572,21 +607,23 @@ publishing data to client via websocket.</p>
 
 <h4 id="result-1">Result</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">bash-4.3# </span>influx
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>bash-4.3# influx
 Connected to http://localhost:8086 version 1.2.0
 InfluxDB shell version: 1.2.0
-<span class="gp">&gt; </span>use influx_db_name
+&gt; use influx_db_name
 Using database influx_db_name
-<span class="gp">&gt; </span>SELECT <span class="k">*</span> FROM dht22
+&gt; SELECT * FROM dht22
 1494503402044000000 your_gateway_id 47.20000076293945    23.899999618530273
 </code></pre>
 </div>
 
-<h3 id="step-3-create-rest-api-with-swagger">Step 3: Create Rest API with Swagger</h3>
+<h3 id="create-rest-api-with-swagger">Create Rest API with Swagger</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step3-Create-REST-API-Swagger
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b origin/step3-create-rest-api-with-swagger step3-create-rest-api-with-swagger
 </code></pre>
 </div>
+
+<h4 id="maven-dependencies-1">Maven dependencies</h4>
 
 <div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>io.springfox<span class="nt">&lt;/groupId&gt;</span>
@@ -603,39 +640,39 @@ Using database influx_db_name
 
 <h4 id="swagger-config">Swagger Config</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>@Configuration
-@EnableSwagger2
-public class SwaggerConfig <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<span class="nd">@EnableSwagger2</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SwaggerConfig</span> <span class="o">{</span>
 
-    @Bean
-    public Docket api<span class="o">()</span> <span class="o">{</span>
-        <span class="k">return </span>new Docket<span class="o">(</span>DocumentationType.SWAGGER_2<span class="o">)</span>
-                .select<span class="o">()</span>
-                .apis<span class="o">(</span>RequestHandlerSelectors.any<span class="o">())</span>
-                .paths<span class="o">(</span>PathSelectors.any<span class="o">())</span>
-                .build<span class="o">()</span>;
+    <span class="nd">@Bean</span>
+    <span class="kd">public</span> <span class="n">Docket</span> <span class="nf">api</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">Docket</span><span class="o">(</span><span class="n">DocumentationType</span><span class="o">.</span><span class="na">SWAGGER_2</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">select</span><span class="o">()</span>
+                <span class="o">.</span><span class="na">apis</span><span class="o">(</span><span class="n">RequestHandlerSelectors</span><span class="o">.</span><span class="na">any</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">paths</span><span class="o">(</span><span class="n">PathSelectors</span><span class="o">.</span><span class="na">any</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
     <span class="o">}</span>
 <span class="o">}</span>
 
 </code></pre>
 </div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>@SpringBootApplication
-@Import<span class="o">({</span>WebConfig.class,
-		JacksonConfig.class,
-		InfluxDBConfig.class,
-		RabbitMQConfig.class,
-		SwaggerConfig.class<span class="o">})</span>
-public class ReactiveServerApplication extends WebMvcConfigurerAdapter <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span>
+<span class="nd">@Import</span><span class="o">({</span><span class="n">WebConfig</span><span class="o">.</span><span class="na">class</span><span class="o">,</span>
+		<span class="n">JacksonConfig</span><span class="o">.</span><span class="na">class</span><span class="o">,</span>
+		<span class="n">InfluxDBConfig</span><span class="o">.</span><span class="na">class</span><span class="o">,</span>
+		<span class="n">RabbitMQConfig</span><span class="o">.</span><span class="na">class</span><span class="o">,</span>
+		<span class="n">SwaggerConfig</span><span class="o">.</span><span class="na">class</span><span class="o">})</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReactiveServerApplication</span> <span class="kd">extends</span> <span class="n">WebMvcConfigurerAdapter</span> <span class="o">{</span>
 
-	public static void main<span class="o">(</span>String[] args<span class="o">)</span> <span class="o">{</span>
-		SpringApplication.run<span class="o">(</span>ReactiveServerApplication.class, args<span class="o">)</span>;
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">ReactiveServerApplication</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
 	<span class="o">}</span>
 
-	@Override
-	public void addResourceHandlers<span class="o">(</span>ResourceHandlerRegistry registry<span class="o">)</span> <span class="o">{</span>
-		registry.addResourceHandler<span class="o">(</span><span class="s2">"swagger-ui.html"</span><span class="o">)</span>.addResourceLocations<span class="o">(</span><span class="s2">"classpath:/META-INF/resources/"</span><span class="o">)</span>;
-		registry.addResourceHandler<span class="o">(</span><span class="s2">"/webjars/**"</span><span class="o">)</span>.addResourceLocations<span class="o">(</span><span class="s2">"classpath:/META-INF/resources/webjars/"</span><span class="o">)</span>;
+	<span class="nd">@Override</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">addResourceHandlers</span><span class="o">(</span><span class="n">ResourceHandlerRegistry</span> <span class="n">registry</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">registry</span><span class="o">.</span><span class="na">addResourceHandler</span><span class="o">(</span><span class="s">"swagger-ui.html"</span><span class="o">).</span><span class="na">addResourceLocations</span><span class="o">(</span><span class="s">"classpath:/META-INF/resources/"</span><span class="o">);</span>
+		<span class="n">registry</span><span class="o">.</span><span class="na">addResourceHandler</span><span class="o">(</span><span class="s">"/webjars/**"</span><span class="o">).</span><span class="na">addResourceLocations</span><span class="o">(</span><span class="s">"classpath:/META-INF/resources/webjars/"</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
 </code></pre>
@@ -643,102 +680,268 @@ public class ReactiveServerApplication extends WebMvcConfigurerAdapter <span cla
 
 <h4 id="controller">Controller</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>@RestController
-@RequestMapping<span class="o">(</span><span class="s2">"/api/v1/sensor/dht22"</span><span class="o">)</span>
-@Api<span class="o">(</span>value <span class="o">=</span> <span class="s2">"dht22"</span>, description <span class="o">=</span> <span class="s2">"DHT22 Sensor data"</span><span class="o">)</span>
-public class DHT22Controller <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@RestController</span>
+<span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/api/v1/sensor/dht22"</span><span class="o">)</span>
+<span class="nd">@Api</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"dht22"</span><span class="o">,</span> <span class="n">description</span> <span class="o">=</span> <span class="s">"DHT22 Sensor data"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DHT22Controller</span> <span class="o">{</span>
 
-    @Autowired
-    InfluxDBService influxDBService;
+    <span class="nd">@Autowired</span>
+    <span class="n">InfluxDBService</span> <span class="n">influxDBService</span><span class="o">;</span>
 
-    private ListResource&lt;Map&gt; toListResource<span class="o">(</span>QueryResult queryResult<span class="o">)</span> <span class="o">{</span>
-        ListResource&lt;Map&gt; listResource <span class="o">=</span> new ListResource&lt;&gt;<span class="o">()</span>;
-        <span class="k">if</span><span class="o">(</span>queryResult.getResults<span class="o">()</span> !<span class="o">=</span> null <span class="o">&amp;&amp;</span> queryResult.getResults<span class="o">()</span>.size<span class="o">()</span> &gt; 0<span class="o">)</span> <span class="o">{</span>
-            QueryResult.Result result <span class="o">=</span> queryResult.getResults<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>;
-            <span class="k">if</span><span class="o">(</span>result !<span class="o">=</span> null <span class="o">&amp;&amp;</span> result.getSeries<span class="o">()</span> !<span class="o">=</span> null <span class="o">&amp;&amp;</span> result.getSeries<span class="o">()</span>.size<span class="o">()</span> &gt; 0<span class="o">)</span> <span class="o">{</span>
-                QueryResult.Series series <span class="o">=</span> result.getSeries<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>;
-                series.getValues<span class="o">()</span>.forEach<span class="o">(</span>value -&gt; <span class="o">{</span>
-                    Map&lt;String,Object&gt; mappedValues <span class="o">=</span> new HashMap&lt;&gt;<span class="o">()</span>;
-                    IntStream.range<span class="o">(</span>0,  value.size<span class="o">())</span>
-                            .forEach<span class="o">(</span>index -&gt; <span class="o">{</span>
-                                mappedValues.put<span class="o">(</span>series.getColumns<span class="o">()</span>.get<span class="o">(</span>index<span class="o">)</span>, value.get<span class="o">(</span>index<span class="o">))</span>;
-                            <span class="o">})</span>;
-                    listResource.getItems<span class="o">()</span>.add<span class="o">(</span>mappedValues<span class="o">)</span>;
-                <span class="o">})</span>;
+    <span class="kd">private</span> <span class="n">ListResource</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&gt;</span> <span class="nf">toListResource</span><span class="o">(</span><span class="n">QueryResult</span> <span class="n">queryResult</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">ListResource</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&gt;</span> <span class="n">listResource</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ListResource</span><span class="o">&lt;&gt;();</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">queryResult</span><span class="o">.</span><span class="na">getResults</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">queryResult</span><span class="o">.</span><span class="na">getResults</span><span class="o">().</span><span class="na">size</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">QueryResult</span><span class="o">.</span><span class="na">Result</span> <span class="n">result</span> <span class="o">=</span> <span class="n">queryResult</span><span class="o">.</span><span class="na">getResults</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">result</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">result</span><span class="o">.</span><span class="na">getSeries</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">result</span><span class="o">.</span><span class="na">getSeries</span><span class="o">().</span><span class="na">size</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">QueryResult</span><span class="o">.</span><span class="na">Series</span> <span class="n">series</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="na">getSeries</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+                <span class="n">series</span><span class="o">.</span><span class="na">getValues</span><span class="o">().</span><span class="na">forEach</span><span class="o">(</span><span class="n">value</span> <span class="o">-&gt;</span> <span class="o">{</span>
+                    <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">mappedValues</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>
+                    <span class="n">IntStream</span><span class="o">.</span><span class="na">range</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span>  <span class="n">value</span><span class="o">.</span><span class="na">size</span><span class="o">())</span>
+                            <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">index</span> <span class="o">-&gt;</span> <span class="o">{</span>
+                                <span class="n">mappedValues</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">series</span><span class="o">.</span><span class="na">getColumns</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="n">index</span><span class="o">),</span> <span class="n">value</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">index</span><span class="o">));</span>
+                            <span class="o">});</span>
+                    <span class="n">listResource</span><span class="o">.</span><span class="na">getItems</span><span class="o">().</span><span class="na">add</span><span class="o">(</span><span class="n">mappedValues</span><span class="o">);</span>
+                <span class="o">});</span>
             <span class="o">}</span>
         <span class="o">}</span>
-        <span class="k">return </span>listResource;
+        <span class="k">return</span> <span class="n">listResource</span><span class="o">;</span>
     <span class="o">}</span>
 
-    @SneakyThrows
-    private DHT22Sensor toTransferObject<span class="o">(</span>QueryResult queryResult<span class="o">)</span> <span class="o">{</span>
-        DHT22Sensor dht22Sensor <span class="o">=</span> new DHT22Sensor<span class="o">()</span>;
-        QueryResult.Series series <span class="o">=</span> queryResult.getResults<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>.getSeries<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>;
-        dht22Sensor.setTime<span class="o">(</span>ZonedDateTime.parse<span class="o">((</span>String<span class="o">)</span> series.getValues<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>.get<span class="o">(</span>0<span class="o">)))</span>;
-        dht22Sensor.setGatewayId<span class="o">((</span>String<span class="o">)</span> series.getValues<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>.get<span class="o">(</span>1<span class="o">))</span>;
-        dht22Sensor.setHumidity<span class="o">((</span>Double<span class="o">)</span> series.getValues<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>.get<span class="o">(</span>2<span class="o">))</span>;
-        dht22Sensor.setTemperature<span class="o">((</span>Double<span class="o">)</span> series.getValues<span class="o">()</span>.get<span class="o">(</span>0<span class="o">)</span>.get<span class="o">(</span>3<span class="o">))</span>;
-        <span class="k">return </span>dht22Sensor;
+    <span class="nd">@SneakyThrows</span>
+    <span class="kd">private</span> <span class="n">DHT22Sensor</span> <span class="nf">toTransferObject</span><span class="o">(</span><span class="n">QueryResult</span> <span class="n">queryResult</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">DHT22Sensor</span> <span class="n">dht22Sensor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DHT22Sensor</span><span class="o">();</span>
+        <span class="n">QueryResult</span><span class="o">.</span><span class="na">Series</span> <span class="n">series</span> <span class="o">=</span> <span class="n">queryResult</span><span class="o">.</span><span class="na">getResults</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getSeries</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="n">dht22Sensor</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">ZonedDateTime</span><span class="o">.</span><span class="na">parse</span><span class="o">((</span><span class="n">String</span><span class="o">)</span> <span class="n">series</span><span class="o">.</span><span class="na">getValues</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">)));</span>
+        <span class="n">dht22Sensor</span><span class="o">.</span><span class="na">setGatewayId</span><span class="o">((</span><span class="n">String</span><span class="o">)</span> <span class="n">series</span><span class="o">.</span><span class="na">getValues</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">));</span>
+        <span class="n">dht22Sensor</span><span class="o">.</span><span class="na">setHumidity</span><span class="o">((</span><span class="n">Double</span><span class="o">)</span> <span class="n">series</span><span class="o">.</span><span class="na">getValues</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>
+        <span class="n">dht22Sensor</span><span class="o">.</span><span class="na">setTemperature</span><span class="o">((</span><span class="n">Double</span><span class="o">)</span> <span class="n">series</span><span class="o">.</span><span class="na">getValues</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="mi">3</span><span class="o">));</span>
+        <span class="k">return</span> <span class="n">dht22Sensor</span><span class="o">;</span>
     <span class="o">}</span>
 
-    //http://localhost:8084//api/v1/sensor/dht22/fresh/raspberry_1
-    @RequestMapping<span class="o">(</span>value <span class="o">=</span> <span class="s2">"/fresh/{gatewayId}"</span>, method <span class="o">=</span> RequestMethod.GET, produces <span class="o">=</span> MediaType.APPLICATION_JSON_VALUE<span class="o">)</span>
-    @ApiOperation<span class="o">(</span>value <span class="o">=</span> <span class="s2">"Get latest fresh data"</span>, notes <span class="o">=</span> <span class="s2">"Get latest fresh data"</span><span class="o">)</span>
-    public ResponseEntity&lt;DHT22Sensor&gt; getFreshSensorData<span class="o">(</span>@PathVariable<span class="o">(</span><span class="s2">"gatewayId"</span><span class="o">)</span> String gatewayId<span class="o">)</span> <span class="o">{</span>
+    <span class="c1">//http://localhost:8084//api/v1/sensor/dht22/fresh/raspberry_1</span>
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"/fresh/{gatewayId}"</span><span class="o">,</span> <span class="n">method</span> <span class="o">=</span> <span class="n">RequestMethod</span><span class="o">.</span><span class="na">GET</span><span class="o">,</span> <span class="n">produces</span> <span class="o">=</span> <span class="n">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON_VALUE</span><span class="o">)</span>
+    <span class="nd">@ApiOperation</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"Get latest fresh data"</span><span class="o">,</span> <span class="n">notes</span> <span class="o">=</span> <span class="s">"Get latest fresh data"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="n">ResponseEntity</span><span class="o">&lt;</span><span class="n">DHT22Sensor</span><span class="o">&gt;</span> <span class="nf">getFreshSensorData</span><span class="o">(</span><span class="nd">@PathVariable</span><span class="o">(</span><span class="s">"gatewayId"</span><span class="o">)</span> <span class="n">String</span> <span class="n">gatewayId</span><span class="o">)</span> <span class="o">{</span>
 
-        String getLastValueQuery <span class="o">=</span>
-                new SelectBuilder<span class="o">()</span>
-                        .column<span class="o">(</span><span class="s2">"*"</span><span class="o">)</span>
-                        .from<span class="o">(</span><span class="s2">"dht22"</span><span class="o">)</span>
-                        .where<span class="o">(</span><span class="s2">"gatewayId = '"</span> + gatewayId + <span class="s2">"'"</span><span class="o">)</span>
-                        .orderBy<span class="o">(</span><span class="s2">"time"</span>, <span class="nb">false</span><span class="o">)</span>
-                        .toString<span class="o">()</span>;
-        getLastValueQuery <span class="o">=</span> getLastValueQuery.concat<span class="o">(</span><span class="s2">" LIMIT 1"</span><span class="o">)</span>;
+        <span class="n">String</span> <span class="n">getLastValueQuery</span> <span class="o">=</span>
+                <span class="k">new</span> <span class="nf">SelectBuilder</span><span class="o">()</span>
+                        <span class="o">.</span><span class="na">column</span><span class="o">(</span><span class="s">"*"</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="s">"dht22"</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">where</span><span class="o">(</span><span class="s">"gatewayId = '"</span> <span class="o">+</span> <span class="n">gatewayId</span> <span class="o">+</span> <span class="s">"'"</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">orderBy</span><span class="o">(</span><span class="s">"time"</span><span class="o">,</span> <span class="kc">false</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+        <span class="n">getLastValueQuery</span> <span class="o">=</span> <span class="n">getLastValueQuery</span><span class="o">.</span><span class="na">concat</span><span class="o">(</span><span class="s">" LIMIT 1"</span><span class="o">);</span>
 
-        <span class="k">return </span>new ResponseEntity&lt;&gt;<span class="o">(</span>toTransferObject<span class="o">(</span>influxDBService.query<span class="o">(</span>getLastValueQuery<span class="o">))</span>,  HttpStatus.OK<span class="o">)</span>;
+        <span class="k">return</span> <span class="k">new</span> <span class="n">ResponseEntity</span><span class="o">&lt;&gt;(</span><span class="n">toTransferObject</span><span class="o">(</span><span class="n">influxDBService</span><span class="o">.</span><span class="na">query</span><span class="o">(</span><span class="n">getLastValueQuery</span><span class="o">)),</span>  <span class="n">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">);</span>
     <span class="o">}</span>
-    //http://localhost:8084/api/v1/sensor/dht22/continuous/raspberry_1?sample<span class="o">=</span>1h&amp;range<span class="o">=</span>12h
-    @RequestMapping<span class="o">(</span>value <span class="o">=</span> <span class="s2">"/continuous/{gatewayId}"</span>, method <span class="o">=</span> RequestMethod.GET, produces <span class="o">=</span> MediaType.APPLICATION_JSON_VALUE<span class="o">)</span>
-    @ApiOperation<span class="o">(</span>value <span class="o">=</span> <span class="s2">"Get Continuous Data"</span>, notes <span class="o">=</span> <span class="s2">"Get Continuous Data"</span><span class="o">)</span>
-    public ResponseEntity&lt;ListResource&lt;Map&gt;&gt; getContinuousData<span class="o">(</span>@PathVariable<span class="o">(</span><span class="s2">"gatewayId"</span><span class="o">)</span> String gatewayId,
-                                                               @RequestParam<span class="o">(</span>value <span class="o">=</span> <span class="s2">"sample"</span>, required <span class="o">=</span> <span class="nb">true</span><span class="o">)</span> String sample,
-                                                               @RequestParam<span class="o">(</span>value <span class="o">=</span> <span class="s2">"range"</span>, required <span class="o">=</span> <span class="nb">true</span><span class="o">)</span> String range<span class="o">)</span> <span class="o">{</span>
-        String getContinuousQuey <span class="o">=</span>
-            new SelectBuilder<span class="o">()</span>
-                    .column<span class="o">(</span><span class="s2">"*"</span><span class="o">)</span>
-                    .from<span class="o">(</span><span class="s2">"cq_dht22_"</span> + sample<span class="o">)</span>
-                    .where<span class="o">(</span><span class="s2">"gatewayId = '"</span> + gatewayId + <span class="s2">"' AND time &gt;= now() - "</span> + range<span class="o">)</span>
-                    .orderBy<span class="o">(</span><span class="s2">"time"</span>, <span class="nb">false</span><span class="o">)</span>
-                    .toString<span class="o">()</span>;
+    <span class="c1">//http://localhost:8084/api/v1/sensor/dht22/continuous/raspberry_1?sample=1h&amp;range=12h</span>
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"/continuous/{gatewayId}"</span><span class="o">,</span> <span class="n">method</span> <span class="o">=</span> <span class="n">RequestMethod</span><span class="o">.</span><span class="na">GET</span><span class="o">,</span> <span class="n">produces</span> <span class="o">=</span> <span class="n">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON_VALUE</span><span class="o">)</span>
+    <span class="nd">@ApiOperation</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"Get Continuous Data"</span><span class="o">,</span> <span class="n">notes</span> <span class="o">=</span> <span class="s">"Get Continuous Data"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="n">ResponseEntity</span><span class="o">&lt;</span><span class="n">ListResource</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&gt;&gt;</span> <span class="nf">getContinuousData</span><span class="o">(</span><span class="nd">@PathVariable</span><span class="o">(</span><span class="s">"gatewayId"</span><span class="o">)</span> <span class="n">String</span> <span class="n">gatewayId</span><span class="o">,</span>
+                                                               <span class="nd">@RequestParam</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"sample"</span><span class="o">,</span> <span class="n">required</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span> <span class="n">String</span> <span class="n">sample</span><span class="o">,</span>
+                                                               <span class="nd">@RequestParam</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"range"</span><span class="o">,</span> <span class="n">required</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span> <span class="n">String</span> <span class="n">range</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">String</span> <span class="n">getContinuousQuey</span> <span class="o">=</span>
+            <span class="k">new</span> <span class="nf">SelectBuilder</span><span class="o">()</span>
+                    <span class="o">.</span><span class="na">column</span><span class="o">(</span><span class="s">"*"</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="s">"cq_dht22_"</span> <span class="o">+</span> <span class="n">sample</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">where</span><span class="o">(</span><span class="s">"gatewayId = '"</span> <span class="o">+</span> <span class="n">gatewayId</span> <span class="o">+</span> <span class="s">"' AND time &gt;= now() - "</span> <span class="o">+</span> <span class="n">range</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">orderBy</span><span class="o">(</span><span class="s">"time"</span><span class="o">,</span> <span class="kc">false</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">toString</span><span class="o">();</span>
 
-        <span class="k">return </span>new ResponseEntity&lt;&gt;<span class="o">(</span>toListResource<span class="o">(</span>influxDBService.query<span class="o">(</span>getContinuousQuey<span class="o">))</span>, HttpStatus.OK<span class="o">)</span>;
+        <span class="k">return</span> <span class="k">new</span> <span class="n">ResponseEntity</span><span class="o">&lt;&gt;(</span><span class="n">toListResource</span><span class="o">(</span><span class="n">influxDBService</span><span class="o">.</span><span class="na">query</span><span class="o">(</span><span class="n">getContinuousQuey</span><span class="o">)),</span> <span class="n">HttpStatus</span><span class="o">.</span><span class="na">OK</span><span class="o">);</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre>
+</div>
+<h4 id="result-2">Result</h4>
+
+<p><a href="http://localhost:8084/swagger-ui.html">http://localhost:8084/swagger-ui.html</a></p>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/step3-swagger1.png" alt="Swagger Overview" />
+  
+    <figcaption>Swagger Overview
+</figcaption>
+  
+</figure>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/step3-swagger2.png" alt="Get fresh data" />
+  
+    <figcaption>Get fresh data
+</figcaption>
+  
+</figure>
+
+<h3 id="publish-data-to-client-via-websocket">Publish data to client via Websocket</h3>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b step4-publish-to-websocket origin/step4-publish-to-websocket
+</code></pre>
+</div>
+
+<h4 id="maven-dependency">Maven dependency</h4>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.springframework<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-websocket<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>4.3.3.RELEASE<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="configuration-1">Configuration</h4>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<span class="nd">@EnableWebSocketMessageBroker</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">WebSocketConfig</span> <span class="kd">extends</span> <span class="n">AbstractWebSocketMessageBrokerConfigurer</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">configureMessageBroker</span><span class="o">(</span><span class="n">MessageBrokerRegistry</span> <span class="n">config</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">config</span><span class="o">.</span><span class="na">enableSimpleBroker</span><span class="o">(</span><span class="s">"/queue/"</span><span class="o">);</span>
+        <span class="n">config</span><span class="o">.</span><span class="na">setApplicationDestinationPrefixes</span><span class="o">(</span><span class="s">"/app"</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">registerStompEndpoints</span><span class="o">(</span><span class="n">StompEndpointRegistry</span> <span class="n">registry</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">registry</span><span class="o">.</span><span class="na">addEndpoint</span><span class="o">(</span><span class="s">"/stomp"</span><span class="o">).</span><span class="na">setAllowedOrigins</span><span class="o">(</span><span class="s">"*"</span><span class="o">).</span><span class="na">withSockJS</span><span class="o">();</span>
     <span class="o">}</span>
 
 <span class="o">}</span>
 </code></pre>
 </div>
 
-<p>http://YOUR_HOST:YOUR_PORT/swagger-ui.html</p>
+<h4 id="service-1">Service</h4>
 
-<h3 id="step-4-forward-data-to-client-via-websocket">Step 4: Forward data to client via Websocket</h3>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PublishServiceImpl</span> <span class="kd">implements</span> <span class="n">PublishService</span> <span class="o">{</span>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git co step4-publish-to-websocket
+    <span class="nd">@Autowired</span>
+    <span class="n">SimpMessagingTemplate</span> <span class="n">messagingTemplate</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">publish</span><span class="o">(</span><span class="n">String</span> <span class="n">destination</span><span class="o">,</span> <span class="n">Object</span> <span class="n">payload</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">messagingTemplate</span><span class="o">.</span><span class="na">convertAndSend</span><span class="o">(</span><span class="n">destination</span><span class="o">,</span> <span class="n">payload</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
 </code></pre>
 </div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+<h5 id="forward">Forward</h5>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveHandlerImpl</span> <span class="kd">implements</span> <span class="n">ReceiveHandler</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="n">PublishServiceImpl</span> <span class="n">publishService</span><span class="o">;</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="n">InfluxDBService</span> <span class="n">influxDBService</span><span class="o">;</span>
+
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Logger</span> <span class="n">logger</span> <span class="o">=</span> <span class="n">LoggerFactory</span><span class="o">.</span><span class="na">getLogger</span><span class="o">(</span><span class="n">ReceiveHandlerImpl</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+    <span class="nd">@RabbitListener</span><span class="o">(</span><span class="n">bindings</span> <span class="o">=</span> <span class="nd">@QueueBinding</span><span class="o">(</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nd">@Queue</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.queue}"</span><span class="o">,</span> <span class="n">durable</span> <span class="o">=</span> <span class="s">"true"</span><span class="o">),</span>
+            <span class="n">exchange</span> <span class="o">=</span> <span class="nd">@Exchange</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.exchange}"</span><span class="o">,</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ExchangeTypes</span><span class="o">.</span><span class="na">HEADERS</span><span class="o">,</span> <span class="n">durable</span> <span class="o">=</span> <span class="s">"true"</span><span class="o">),</span>
+            <span class="n">arguments</span> <span class="o">=</span> <span class="o">{</span>
+                    <span class="nd">@Argument</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"x-match"</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">"all"</span><span class="o">),</span>
+                    <span class="nd">@Argument</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"gatewayId"</span><span class="o">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s">"${spring.rabbitmq.gatewayId}"</span><span class="o">)</span>
+            <span class="o">})</span>
+    <span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">handleMessage</span><span class="o">(</span><span class="nd">@Payload</span> <span class="n">Message</span> <span class="n">message</span><span class="o">,</span> <span class="nd">@Header</span><span class="o">(</span><span class="s">"gatewayId"</span><span class="o">)</span> <span class="n">String</span> <span class="n">gatewayId</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">logger</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">message</span><span class="o">.</span><span class="na">toString</span><span class="o">()));</span>
+
+        <span class="n">Point</span> <span class="n">point</span> <span class="o">=</span> <span class="n">Point</span><span class="o">.</span><span class="na">measurement</span><span class="o">(</span><span class="s">"dht22"</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">time</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">(),</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">MILLISECONDS</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">tag</span><span class="o">(</span><span class="s">"gatewayId"</span><span class="o">,</span><span class="n">gatewayId</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">addField</span><span class="o">(</span><span class="s">"temperature"</span><span class="o">,</span><span class="n">message</span><span class="o">.</span><span class="na">getData</span><span class="o">().</span><span class="na">getTemperature</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">addField</span><span class="o">(</span><span class="s">"humidity"</span><span class="o">,</span> <span class="n">message</span><span class="o">.</span><span class="na">getData</span><span class="o">().</span><span class="na">getHumidity</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+        <span class="n">influxDBService</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">point</span><span class="o">);</span>
+        <span class="n">publishService</span><span class="o">.</span><span class="na">publish</span><span class="o">(</span><span class="s">"/queue/DHT22"</span><span class="o">,</span><span class="n">message</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<h4 id="result-3">Result</h4>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>2017-05-12 09:11:03.826  INFO 1729 --- [cTaskExecutor-1] com.jls.service.impl.PublishServiceImpl  : [&gt;] Publish: Message(expire=60537000, created=1494573062, data=DHT22Sensor{temperature='23.200000762939453', humidity=52.5}) ;destination: /queue/DHT22
 </code></pre>
 </div>
 
 <h3 id="final-result">Final Result</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker pull jluccisano/reactive-server
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2'</span>
+<span class="s">services</span><span class="pi">:</span>
+  <span class="s">reactive-server</span><span class="pi">:</span>
+    <span class="s">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">jluccisano/reactive-server:latest"</span>
+    <span class="s">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">PORT=8084</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_EXCHANGE=your_exchange_name</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_QUEUE=your_queue_name</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_GATEWAYID=your_gateway_id</span>
+      <span class="pi">-</span> <span class="s">INFLUXDB_URL=http://influxdb:8086</span>
+      <span class="pi">-</span> <span class="s">INFLUXDB_USERNAME=influx_username</span>
+      <span class="pi">-</span> <span class="s">INFLUXDB_PASSWORD=influx_password</span>
+      <span class="pi">-</span> <span class="s">INFLUXDB_DATABASE=influx_db_name</span>
+      <span class="pi">-</span> <span class="s">INFLUXDB_RETENTION_POLICY=influx_rp_name</span>
+    <span class="s">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">8084:8084"</span>
+    <span class="s">links</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">rabbitmq:rabbitmq"</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb:influxdb"</span>
+    <span class="s">depends_on</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">rabbitmq"</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb"</span>
+  <span class="s">rabbitmq</span><span class="pi">:</span>
+    <span class="s">image</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">rabbitmq:3-management"</span>
+    <span class="s">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_USER=rabbit_user</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_PASS=rabbit_password</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_VHOST=myvhost</span>
+    <span class="s">ports</span><span class="pi">:</span>
+     <span class="pi">-</span> <span class="s2">"</span><span class="s">5672:5672"</span>
+     <span class="pi">-</span> <span class="s2">"</span><span class="s">8092:15672"</span>
+  <span class="s">influxdb</span><span class="pi">:</span>
+    <span class="s">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">appcelerator/influxdb"</span>
+    <span class="s">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">./resources/init_script.influxql:/etc/extra-config/influxdb/init_script.influxql:ro'</span>
+    <span class="s">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">8083:8083"</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">8086:8086"</span>
+  <span class="s">grafana</span><span class="pi">:</span>
+    <span class="s">image</span><span class="pi">:</span> <span class="s1">'</span><span class="s">grafana/grafana'</span>
+    <span class="s">links</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb:influxdb"</span>
+    <span class="s">depends_on</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb"</span>
+    <span class="s">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">3600:3000'</span>
+  <span class="s">device-mock</span><span class="pi">:</span>
+    <span class="s">build</span><span class="pi">:</span>
+      <span class="s">context</span><span class="pi">:</span> <span class="s">./resources</span>
+      <span class="s">dockerfile</span><span class="pi">:</span> <span class="s">stub.dockerfile</span>
+    <span class="s">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_EXCHANGE=your_exchange_name</span>
+      <span class="pi">-</span> <span class="s">RABBITMQ_GATEWAYID=your_gateway_id</span>
+      <span class="pi">-</span> <span class="s">PUBLISH_INTERVAL=60</span>
 </code></pre>
 </div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker run --name reactive-server -p 8084:8084 -d jluccisano/reactive-server:latest
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">docker-compose up -d</span>
 </code></pre>
 </div>
+
+<h4 id="go-further">Go Further</h4>
+
+<ul>
+  <li><a href="#https://jluccisano.github.io/computer/consume-data-from-reactive-client">Consume data from a reactive client</a></li>
+</ul>
 
         
       </section>
