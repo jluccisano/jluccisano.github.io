@@ -13,39 +13,39 @@
 
 
 
-<title>Create a Linux service - Practice makes perfect</title>
+<title>Security alarm with Raspberry - Practice makes perfect</title>
 
 
 
 
-<meta name="description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
+<meta name="description" content="In progress">
 
 
 
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Create a Linux service">
+<meta property="og:title" content="Security alarm with Raspberry">
 
 
-  <link rel="canonical" href="https://jluccisano.github.io/linux/create-service/">
-  <meta property="og:url" content="https://jluccisano.github.io/linux/create-service/">
+  <link rel="canonical" href="https://jluccisano.github.io/project/alarming-system/">
+  <meta property="og:url" content="https://jluccisano.github.io/project/alarming-system/">
 
 
 
-  <meta property="og:description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
+  <meta property="og:description" content="In progress">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Create a Linux service">
-  <meta name="twitter:description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
-  <meta name="twitter:url" content="https://jluccisano.github.io/linux/create-service/">
+  <meta name="twitter:title" content="Security alarm with Raspberry">
+  <meta name="twitter:description" content="In progress">
+  <meta name="twitter:url" content="https://jluccisano.github.io/project/alarming-system/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/linux.jpg">
+      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/Raspberry_Pi_3_Model_B.jpg">
     
   
 
@@ -59,12 +59,12 @@
 
 
 
-  <meta property="og:image" content="https://jluccisano.github.io/assets/images/linux.jpg">
+  <meta property="og:image" content="https://jluccisano.github.io/assets/images/Raspberry_Pi_3_Model_B.jpg">
 
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-03-23T00:00:00+00:00">
+  <meta property="article:published_time" content="2017-04-01T00:00:00+00:00">
 
 
 
@@ -146,19 +146,18 @@
 
 
 <div class="page__hero--overlay"
-  style="background-color: #333; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://jluccisano.github.io/assets/images/linux.jpg');"
+  style=" background-image: url('https://jluccisano.github.io/assets/images/Raspberry_Pi_3_Model_B.jpg');"
 >
   
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Create a Linux service
+          Security alarm with Raspberry
 
         
       </h1>
       
-        <p class="page__lead">The objective of this tutorial is to create a system service in order to run a standalone program on background.
-
+        <p class="page__lead">In progress
 </p>
       
       
@@ -193,7 +192,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/linux" itemprop="item"><span itemprop="name">Linux</span></a>
+          <a href="https://jluccisano.github.io/project" itemprop="item"><span itemprop="name">Project</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -201,7 +200,7 @@
     
       
       
-        <li class="current">Create a Linux service</li>
+        <li class="current">Security alarm with Raspberry</li>
       
     
   </ol>
@@ -330,97 +329,16 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Create a Linux service">
-    <meta itemprop="description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
-    <meta itemprop="datePublished" content="March 23, 2017">
+    <meta itemprop="headline" content="Security alarm with Raspberry">
+    <meta itemprop="description" content="In progress">
+    <meta itemprop="datePublished" content="April 01, 2017">
     
 
     <div class="page__inner-wrap">
       
 
       <section class="page__content" itemprop="text">
-        <p>The objective of this tutorial is to create a system service in order to run a standalone program on background.</p>
-
-<ul>
-  <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#create-service">Create service</a></li>
-  <li><a href="#useful-commands">Useful commands</a></li>
-</ul>
-
-<h3 id="prerequisites">Prerequisites</h3>
-
-<ul>
-  <li><a href="https://jluccisano.github.io/raspberry/setup-raspberry">Set up a Raspberry PI 3</a></li>
-</ul>
-
-<h3 id="create-service">Create Service</h3>
-
-<p>a. Create new service</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo vim /lib/systemd/system/myservice.service
-</code></pre>
-</div>
-
-<p>b. Edit parameters</p>
-
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>[Unit]
-Description=MyService
-After=multi-user.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/python /opt/script.py
-Restart=on-abort
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-</code></pre>
-</div>
-
-<p>c. Enable execution permission of your service</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo chmod 644 /lib/systemd/system/myservice.service
-</code></pre>
-</div>
-<p>d. Enable execution permission of your script</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo chmod u+x /opt/script.py 
-</code></pre>
-</div>
-<p>e. Create symbolic link</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo ln -s /opt/script.py /usr/bin/myservice
-</code></pre>
-</div>
-<p>f. Reload daemon</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl daemon-reload
-</code></pre>
-</div>
-<p>g. Enable the service</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl <span class="nb">enable </span>myservice.service
-</code></pre>
-</div>
-<p>h. Start the service</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl start myservice.service
-</code></pre>
-</div>
-<p>i. Check status</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl status myservice.service
-</code></pre>
-</div>
-
-<h3 id="useful-commands">Useful commands</h3>
-
-<ul>
-  <li>Stop the service
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl stop myservice.service
-</code></pre>
-    </div>
-  </li>
-</ul>
-
-<p>See more <a href="http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/">here</a></p>
+        <p>In progress</p>
 
 
         
@@ -442,11 +360,7 @@ WantedBy=multi-user.target
     
       
       
-      <a href="https://jluccisano.github.io/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">Raspberry PI</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://jluccisano.github.io/tags/#unix" class="page__taxonomy-item" rel="tag">Unix</a>
+      <a href="https://jluccisano.github.io/tags/#raspberry" class="page__taxonomy-item" rel="tag">Raspberry</a>
     
     </span>
   </p>
@@ -467,14 +381,14 @@ WantedBy=multi-user.target
     
       
       
-      <a href="https://jluccisano.github.io/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
+      <a href="https://jluccisano.github.io/categories/#project" class="page__taxonomy-item" rel="tag">Project</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-03-23T00:00:00+00:00">March 23, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-04-01T00:00:00+00:00">April 01, 2017</time></p>
         
       </footer>
 
@@ -483,24 +397,24 @@ WantedBy=multi-user.target
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Create a Linux service https://jluccisano.github.io/linux/create-service/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Security alarm with Raspberry https://jluccisano.github.io/project/alarming-system/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/linux/create-service/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/project/alarming-system/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/linux/create-service/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/project/alarming-system/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/linux/create-service/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/project/alarming-system/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/linux/generate-rsa-key/" class="pagination--pager" title="Generating new SSH Key
+      <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" class="pagination--pager" title="Push data to RabbitMQ
 ">Previous</a>
     
     
-      <a href="https://jluccisano.github.io/linux/install-python/" class="pagination--pager" title="Install Python
+      <a href="https://jluccisano.github.io/project/google-maps-route-builder/" class="pagination--pager" title="Google maps route builder
 ">Next</a>
     
   </nav>
@@ -526,21 +440,9 @@ WantedBy=multi-user.target
       
           
       
-          
-      
       
     
       
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
       
           
       
@@ -550,54 +452,16 @@ WantedBy=multi-user.target
       
           
       
+      
+    
+      
+      
+      
           
       
       
     
       
-      
-          
-            
-              <div class="page__related">
-                
-                  <h4 class="page__related-title">You May Also Enjoy</h4>
-                
-                <div class="grid__wrapper">
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
       
           
       
@@ -607,6 +471,16 @@ WantedBy=multi-user.target
       
           
       
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
           
       
       
@@ -614,113 +488,57 @@ WantedBy=multi-user.target
       
       
           
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/caspar-rubin-224229.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" rel="permalink">Consume data from RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
-publishing data to client via websocke...</p>
-  </article>
-</div>
-            
-            
       
     
       
       
           
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/python.png"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/linux/install-python/" rel="permalink">Install Python
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to install Python and run it with virtual environment.
-
-</p>
-  </article>
-</div>
-            
-            
       
     
-      
       
       
           
       
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ssh.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/linux/generate-rsa-key/" rel="permalink">Generating new SSH Key
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your 
-password each time.
-
-</p>
-  </article>
-</div>
-            
-            
       
     
-        </div>
-      </div>
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
     
   
 </div>

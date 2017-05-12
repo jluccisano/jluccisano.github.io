@@ -1,6 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-12T12:02:30+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Nextrun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="Nextrun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-12T18:49:38+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Nextrun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="Nextrun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
 
 &lt;p&gt;Web site: &lt;a href=&quot;www.nextrun.fr&quot;&gt;www.nextrun.fr&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source on &lt;a href=&quot;https://github.com/jluccisano/nextrun/tree/develop&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;architecture-overview&quot;&gt;Architecture Overview&lt;/h3&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/reactive-architecture.png&quot; alt=&quot;Reactive Architecture Overview&quot; /&gt;
+  
+    &lt;figcaption&gt;Reactive Architecture Overview
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;h3 id=&quot;docker-build&quot;&gt;Docker build&lt;/h3&gt;
 
@@ -83,7 +95,7 @@ git config user.email “j.luccisano@evs.com”&lt;/p&gt;
 
 &lt;p&gt;gem install travis&lt;/p&gt;
 
-&lt;p&gt;/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Git" /><summary type="html">Useful commands</summary></entry><entry><title type="html">Google maps route builder</title><link href="https://jluccisano.github.io/project/google-maps-route-builder/" rel="alternate" type="text/html" title="Google maps route builder" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/google-maps-route-builder</id><content type="html" xml:base="https://jluccisano.github.io/project/google-maps-route-builder/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="JavaScript" /><category term="Google Maps API" /><summary type="html"></summary></entry><entry><title type="html">Push data to RabbitMQ</title><link href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="alternate" type="text/html" title="Push data to RabbitMQ" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/push-data-on-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/computer/push-data-on-rabbitmq/">&lt;p&gt;The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.&lt;/p&gt;
+&lt;p&gt;/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Git" /><summary type="html">Useful commands</summary></entry><entry><title type="html">Google maps route builder</title><link href="https://jluccisano.github.io/project/google-maps-route-builder/" rel="alternate" type="text/html" title="Google maps route builder" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/google-maps-route-builder</id><content type="html" xml:base="https://jluccisano.github.io/project/google-maps-route-builder/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="JavaScript" /><category term="Google Maps API" /><summary type="html"></summary></entry><entry><title type="html">Security alarm with Raspberry</title><link href="https://jluccisano.github.io/project/alarming-system/" rel="alternate" type="text/html" title="Security alarm with Raspberry" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/alarming-system</id><content type="html" xml:base="https://jluccisano.github.io/project/alarming-system/">&lt;p&gt;In progress&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry" /><summary type="html">In progress</summary></entry><entry><title type="html">Push data to RabbitMQ</title><link href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="alternate" type="text/html" title="Push data to RabbitMQ" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/push-data-on-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/computer/push-data-on-rabbitmq/">&lt;p&gt;The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
@@ -1539,58 +1551,4 @@ WantedBy=multi-user.target
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See more &lt;a href=&quot;http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><summary type="html">The objective of this tutorial is to create a system service in order to run a standalone program on background.</summary></entry><entry><title type="html">Generating new SSH Key</title><link href="https://jluccisano.github.io/linux/generate-rsa-key/" rel="alternate" type="text/html" title="Generating new SSH Key" /><published>2017-03-22T00:00:00+00:00</published><updated>2017-03-22T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/generate-rsa-key</id><content type="html" xml:base="https://jluccisano.github.io/linux/generate-rsa-key/">&lt;p&gt;The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your 
-password each time.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#generating-new-ssh-key&quot;&gt;Generating new SSH Key&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#useful-commands&quot;&gt;Useful commands&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#sending-ssh-key-to-a-server&quot;&gt;Sending SSH key to a server&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;SSH installed (ex: OpenSSH, OpenBSD Secure Shell server)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;generating-new-ssh-key&quot;&gt;Generating new SSH Key&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Execute this command below, substuting in your email address
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen -t rsa -b 4096 -C &lt;span class=&quot;s2&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Add the ssh key into ssh-agent&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add ~/.ssh/id_rsa
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;You can see more in this &lt;a href=&quot;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot;&gt;tuto&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands:&lt;/h3&gt;
-
-&lt;p&gt;a. Get list of key:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add -L
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;b. Remove a key&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add -D ~/.ssh/id_rsa
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;c. Copy the key into the clipboard&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pbcopy &amp;lt; id_rsa_git_evs.pub
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;If you don’t have pbcopy, you can install it easily. Here an example for
-&lt;a href=&quot;https://gist.github.com/chriscandy/753eb149e9735e852b0b&quot;&gt;ArchLinux&lt;/a&gt; users.&lt;/p&gt;
-
-&lt;h3 id=&quot;sending-ssh-key-to-a-server&quot;&gt;Sending SSH key to a server&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-copy-id -i ~/.ssh/id_rsa.pub -p X username@address
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="SSH" /><category term="Unix" /><summary type="html">The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your password each time.</summary></entry></feed>
+&lt;p&gt;See more &lt;a href=&quot;http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><summary type="html">The objective of this tutorial is to create a system service in order to run a standalone program on background.</summary></entry></feed>
