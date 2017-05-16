@@ -13,7 +13,7 @@
 
 
 
-<title>Create a reactive Weather Station - Practice makes perfect</title>
+<title>Create a reactive weather station - Practice makes perfect</title>
 
 
 
@@ -25,7 +25,7 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Create a reactive Weather Station">
+<meta property="og:title" content="Create a reactive weather station">
 
 
   <link rel="canonical" href="https://jluccisano.github.io/automation/reactive-weather-station/">
@@ -38,7 +38,7 @@
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Create a reactive Weather Station">
+  <meta name="twitter:title" content="Create a reactive weather station">
   <meta name="twitter:description" content="The objective of this tutorial is to design a full reactive architecture interacting with a Raspberry PI 3 asμService producing temperature and humidity data.">
   <meta name="twitter:url" content="https://jluccisano.github.io/automation/reactive-weather-station/">
 
@@ -152,7 +152,7 @@
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Create a reactive Weather Station
+          Create a reactive weather station
 
         
       </h1>
@@ -202,7 +202,7 @@
     
       
       
-        <li class="current">Create a reactive Weather Station</li>
+        <li class="current">Create a reactive weather station</li>
       
     
   </ol>
@@ -331,7 +331,7 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Create a reactive Weather Station">
+    <meta itemprop="headline" content="Create a reactive weather station">
     <meta itemprop="description" content="The objective of this tutorial is to design a full reactive architecture interacting with a Raspberry PI 3 asμService producing temperature and humidity data.">
     <meta itemprop="datePublished" content="February 27, 2017">
     
@@ -346,21 +346,23 @@
 <ul>
   <li><a href="#prerequisites">Prerequisites</a></li>
   <li><a href="#overview">Overview</a></li>
+  <li><a href="#run">Run</a></li>
+  <li><a href="#final-result">Final Result</a></li>
 </ul>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
+<p>You must be aware of these posts to understand the environment.</p>
+
 <ul>
   <li><a href="https://jluccisano.github.io/raspberry/setup-raspberry">Set up a Raspberry PI 3</a></li>
   <li><a href="https://jluccisano.github.io/raspberry/dht22-raspberry">Interacting with DHT22 Sensor</a></li>
-  <li><a href="https://jluccisano.github.io/linux/install-docker">A server or your own computer with Docker</a></li>
-  <li><a href="https://git-scm.com/download/linux">Install Git</a></li>
   <li><a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq">Push data to RabbitMQ</a></li>
   <li><a href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq">Consume data from RabbitMQ</a></li>
-  <li><a href="https://jluccisano.github.io/computer/consume-data-from-reactive-client">Consume data from reactive client</a>
-    <h3 id="overview">Overview</h3>
-  </li>
+  <li><a href="https://jluccisano.github.io/computer/consume-data-from-reactive-client">Consume data from Reactive client</a></li>
 </ul>
+
+<h3 id="overview">Overview</h3>
 
 <figure class="">
   <img src="https://jluccisano.github.io/assets/images/reactive-architecture.png" alt="Reactive Architecture Overview" />
@@ -385,6 +387,11 @@
       <td>The Raspberry PI get data sensor and push them over RabbitMQ</td>
     </tr>
     <tr>
+      <td>Mock device</td>
+      <td style="text-align: center">μService</td>
+      <td>This Raspberry mock device to provide random data</td>
+    </tr>
+    <tr>
       <td>RabbitMQ</td>
       <td style="text-align: center">MOM(message-oriented middleware)</td>
       <td>RabbitMQ is message broker that implements the Advanced Message Queuing Protocol (AMQP)  see more <a href="https://www.rabbitmq.com/features.html">here</a></td>
@@ -400,6 +407,11 @@
       <td>InfluxDB is a time series database.</td>
     </tr>
     <tr>
+      <td>Grafana</td>
+      <td style="text-align: center">Data visualization</td>
+      <td>Create dynamic dashboard from InfluxDB DataSource</td>
+    </tr>
+    <tr>
       <td>Reactive-client</td>
       <td style="text-align: center">GUI</td>
       <td>The GUI consumes data via WebSocket with Reactive-Server</td>
@@ -409,9 +421,7 @@
 
 <h3 id="start-the-full-stack-with-docker-compose">Start the full stack with docker-compose</h3>
 
-<p>a. Stop all running your docker containers</p>
-
-<p>b. Adapt the docker-compose file according your environment</p>
+<h4 id="adapt-the-docker-compose-file-according-your-environment">Adapt the docker-compose file according your environment</h4>
 
 <div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2'</span>
 <span class="s">services</span><span class="pi">:</span>
@@ -468,10 +478,10 @@
        <span class="pi">-</span> <span class="s2">"</span><span class="s">reactive-server"</span>
      <span class="s">ports</span><span class="pi">:</span>
        <span class="pi">-</span> <span class="s2">"</span><span class="s">8089:80"</span>
-  <span class="s">stub</span><span class="pi">:</span>
+  <span class="s">mock-raspberry</span><span class="pi">:</span>
     <span class="s">build</span><span class="pi">:</span>
       <span class="s">context</span><span class="pi">:</span> <span class="s">./resources</span>
-      <span class="s">dockerfile</span><span class="pi">:</span> <span class="s">stub.dockerfile</span>
+      <span class="s">dockerfile</span><span class="pi">:</span> <span class="s">mock-raspberry.dockerfile</span>
     <span class="s">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_EXCHANGE=your_exchange_name</span>
@@ -479,15 +489,24 @@
       <span class="pi">-</span> <span class="s">PUBLISH_INTERVAL=60</span>
 </code></pre>
 </div>
+<p>Note: mock-raspberry is optional if you are a Raspberry PI running.</p>
+
 <p><a href="https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml">See code here</a></p>
 
-<p>c. Run</p>
+<h5 id="run">Run</h5>
+
+<ul>
+  <li><a href="https://git-scm.com/download/linux">Git</a></li>
+  <li><a href="https://jluccisano.github.io/linux/install-docker">Docker</a></li>
+</ul>
+
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker-compose pull
 docker-compose build
 docker-compose up -d
 </code></pre>
 </div>
-<p>d. Go to http://${YOUR_HOST}:8089</p>
+
+<p>Go to http://${YOUR_HOST}:8089</p>
 
 <p><a href="http://hermes.ddns.net:8089">Show online version here</a></p>
 
@@ -626,7 +645,7 @@ docker-compose up -d
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Create a reactive Weather Station https://jluccisano.github.io/automation/reactive-weather-station/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Create a reactive weather station https://jluccisano.github.io/automation/reactive-weather-station/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/automation/reactive-weather-station/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 

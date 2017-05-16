@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-15T11:55:02+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">NextRun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="NextRun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-05-16T07:01:40+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">NextRun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="NextRun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
 
 &lt;p&gt;Web site: &lt;a href=&quot;www.nextrun.fr&quot;&gt;www.nextrun.fr&lt;/a&gt;&lt;/p&gt;
 
@@ -7,7 +7,7 @@
 &lt;h3 id=&quot;architecture-overview&quot;&gt;Architecture Overview&lt;/h3&gt;
 
 &lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;https://jluccisano.github.io/assets/images/nextrun-architecture.png&quot; alt=&quot;Nextrun Architecture Overview&quot; /&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/nextrun-architecture.png&quot; alt=&quot;NextRun Architecture Overview&quot; /&gt;
   
     &lt;figcaption&gt;Nextrun Architecture Overview
 &lt;/figcaption&gt;
@@ -346,6 +346,8 @@ use sensor
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#architecture-overview&quot;&gt;Architecture overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#setup-environment&quot;&gt;Setup environment&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#create-a-simple-reactjs-component&quot;&gt;Create a simple ReactJS component&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#create-a-reactjs-socket-module-via-stomp-and-sockjs&quot;&gt;Create a ReactJS socket module via STOMP and sockJS&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#get-data-from-rest-api&quot;&gt;Get data from Rest API&lt;/a&gt;&lt;/li&gt;
@@ -355,17 +357,19 @@ use sensor
 
 &lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
 
+&lt;p&gt;You must be aware of these posts to understand the environment.&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/linux/install-docker&quot;&gt;A server or your own computer with Docker&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Install Git (optional)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/push-data-on-rabbitmq&quot;&gt;Push data to rabbitMQ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-influxdb&quot;&gt;Install InfluxDB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-influxdb&quot;&gt;Setup InfluxDB&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/consume-data-from-rabbitmq&quot;&gt;Consume data from Reactive-server&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
+&lt;h3 id=&quot;architecture-overview&quot;&gt;Architecture overview&lt;/h3&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;https://jluccisano.github.io/assets/images/consume-data-from-reactive-client.png&quot; alt=&quot;Reactive Client Overview&quot; /&gt;
@@ -375,7 +379,17 @@ use sensor
   
 &lt;/figure&gt;
 
-&lt;h3 id=&quot;clone-the-project&quot;&gt;Clone the project:&lt;/h3&gt;
+&lt;h3 id=&quot;setup-environment&quot;&gt;Setup environment&lt;/h3&gt;
+
+&lt;h5 id=&quot;prerequisites-1&quot;&gt;Prerequisites&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/download/package-manager/&quot;&gt;NodeJs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://compass-style.org/install/&quot;&gt;Compass&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/linux/install-docker&quot;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/jluccisano/reactive-client&quot;&gt;Get source here&lt;/a&gt;&lt;/p&gt;
 
@@ -810,11 +824,13 @@ publishing data to client via websocket.&lt;/p&gt;
 
 &lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
 
+&lt;p&gt;You must be aware of these posts to understand the environment.&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3 &lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/push-data-on-rabbitmq&quot;&gt;Push data to RabbitMQ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-influxdb&quot;&gt;InfluxDB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/install-influxdb&quot;&gt;Setup InfluxDB&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;architecture-overview&quot;&gt;Architecture overview&lt;/h3&gt;
