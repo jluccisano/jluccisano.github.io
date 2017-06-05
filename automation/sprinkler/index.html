@@ -568,6 +568,23 @@
   
 </figure>
 
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th style="text-align: center">Site</th>
+      <th style="text-align: right">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/assets/images/sprinkler/coude_25_FF.jpg" alt="Minion" /></td>
+      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
+      <td style="text-align: right">22.10 EUR</td>
+    </tr>
+  </tbody>
+</table>
+
 <ol>
   <li>Wire des tuyaux, des coudes, des té et Rotors</li>
 </ol>
@@ -581,11 +598,69 @@
 </figure>
 
 <ol>
-  <li>Test manuel et ajustements</li>
   <li>Raccordement électrique</li>
-  <li>Raccordement au relay</li>
-  <li>Branchement du relay avec le Raspberry</li>
-  <li>Test-gpio open vanne</li>
+</ol>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/sprinkler/valves_box_final.jpg" alt="Valves box final" />
+  
+    <figcaption>Valves box final
+</figcaption>
+  
+</figure>
+
+<ol>
+  <li>
+    <p>Raccordement au relay</p>
+  </li>
+  <li>
+    <p>Branchement du relay avec le Raspberry</p>
+  </li>
+  <li>
+    <p>Control valves with Raspberry PI</p>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
+<span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
+
+<span class="n">relayIO</span> <span class="o">=</span> <span class="p">{</span> <span class="s">"1"</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="s">"2"</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="s">"3"</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span> <span class="s">"4"</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s">"5"</span><span class="p">:</span> <span class="mi">19</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">setState</span><span class="p">(</span><span class="n">relay</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">relayIO</span><span class="p">[</span><span class="n">relay</span><span class="p">],</span> <span class="n">state</span><span class="p">)</span>
+
+	<span class="k">if</span> <span class="n">getState</span><span class="p">(</span><span class="n">relay</span><span class="p">)</span> <span class="o">!=</span> <span class="n">state</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="s">"relay: "</span> <span class="o">+</span> <span class="n">relay</span> <span class="o">+</span> <span class="s">"is not set to "</span> <span class="o">+</span> <span class="n">state</span><span class="p">)</span>
+
+	<span class="k">print</span><span class="p">(</span><span class="s">"relay: "</span> <span class="o">+</span> <span class="n">relay</span> <span class="o">+</span> <span class="s">"is set to "</span> <span class="o">+</span> <span class="n">getState</span><span class="p">(</span><span class="n">relay</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">getState</span><span class="p">(</span><span class="n">relay</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">GPIO</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="n">relayIO</span><span class="p">[</span><span class="n">relay</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">()</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--relay'</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s">'Set relay 1/2/3/4/5'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--state'</span><span class="p">,</span><span class="n">help</span><span class="o">=</span><span class="s">'Set state high=1 or low=0'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+    <span class="n">setState</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>Output:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">control_relay</span><span class="o">.</span><span class="n">py</span> <span class="mi">1</span> <span class="mi">1</span>
+</code></pre>
+</div>
+
+<ol>
   <li>Installation de l’écran</li>
   <li>Creation du boitier</li>
   <li>Développement du logiciel en mode manuel kivy</li>
@@ -612,6 +687,13 @@ python sprinkler-control.py
 <h3 id="create-scenario">Create Scenario</h3>
 
 <h3 id="final-result">Final Result</h3>
+
+<h3 id="useful">Useful</h3>
+
+<p>1⁄2” = 15/21
+3⁄4” = 20/27
+1” = 26/34
+11⁄4” = 33/42</p>
 
 
         
