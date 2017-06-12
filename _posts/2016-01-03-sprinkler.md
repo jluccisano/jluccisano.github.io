@@ -210,14 +210,61 @@ Un réducteur de pression est utilisé pour le réseau goutte à goute qui repar
 
 | Photo        | Description           | 
 | ------------- |:-------------:|
-| photo  | Clarinette  | 
-| photo  | Té jonction PVC | 
-| photo  | Bouchon Femelle / male  | 
-| photo  | 5 electrovannes  | 
-| photo  | Raccord compression 25mm  | 
-| photo  | Réducteur de pression  | 
+| ![Clarinette](/assets/images/sprinkler/clarinette.jpg){:height="48px" width="96px"}  | Clarinette  | 
+| ![Electronvanne](/assets/images/sprinkler/té_jonction_pvc_1".jpg){:height="48px" width="96px"}  | Té jonction PVC | 
+| ![Electronvanne](/assets/images/sprinkler/croix_jonction_pvc_1".jpg){:height="48px" width="96px"}  | Té jonction PVC | 
+| ![Electronvanne](/assets/images/sprinkler/bouchon_femelle_pvc_1".jpg){:height="48px" width="96px"}  | Bouchon Femelle / male  | 
+| ![Electronvanne](/assets/images/sprinkler/bouchon_male_pvc_1".jpg){:height="48px" width="96px"}  | Bouchon Femelle / male  |
+| ![Electronvanne](/assets/images/sprinkler/valve.jpg){:height="48px" width="96px"}  | 5 electrovannes  | 
+| ![Raccord compression 25mm ](/assets/images/sprinkler/raccord_compression_25mm.jpg){:height="48px" width="96px"}  | Raccord compression 25mm  | 
+| ![Réduction de pression](/assets/images/sprinkler/reducteur_pression.jpg){:height="48px" width="96px"}  | Réducteur de pression  | 
+| ![Réduction de pression](/assets/images/sprinkler/vanne_1_4_male_femelle.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/mamelon_26x34_20x27_PVC.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/coude_laiton_19x25.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/raccord_laiton_M_19x25.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/té_collecteur_26x34_MF.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/vanne_intégrale_manette_papillon_MM_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/manchon_réduit_FF_26x34_20x27.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/mamelon_réduit_MM_26x34_15x21.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/croix_collecteur_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/teflon.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/bouchon_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/té_compression_16mm_MM.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/té_16mm_MM.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/coude_compression_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/coude_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/jonction_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/coude_compression_16mm_M_15x21.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          
+            
+
+                  
+                  
+                          
 {% include figure image_path="/assets/images/sprinkler/valves.jpg" alt="Valves" caption="Valves" %}
 
 6. Wire des tuyaux, des coudes, des té et Rotors
@@ -225,11 +272,11 @@ Un réducteur de pression est utilisé pour le réseau goutte à goute qui repar
 
 | Component        | Quantity           | Price  |
 | ------------- |:-------------:| -----:|
-| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg){ width: 50} |  | |
-| ![Minion](/assets/images/sprinkler/coude_taraudage_central_25x05.jpg =120x) |  | |
-| ![Minion](/assets/images/sprinkler/te_compression_25.jpg =120x) |  | |
-| ![Minion](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg =120x) |  | |
-| ![Minion](/assets/images/sprinkler/tuyau_25.jpg =120x) |  | |
+| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg){:height="24px" width="48px"} |  | |
+| ![Minion](/assets/images/sprinkler/coude_taraudage_central_25x05.jpg){:height="24px" width="48px"} |  | |
+| ![Minion](/assets/images/sprinkler/te_compression_25.jpg){:height="24px" width="48px"} |  | |
+| ![Minion](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg){:height="24px" width="48px"} |  | |
+| ![Minion](/assets/images/sprinkler/tuyau_25.jpg){:height="24px" width="48px"} |  | |
 
 {% include figure image_path="/assets/images/sprinkler/rotors.JPG" alt="Rotors" caption="Rotors" %}
 
