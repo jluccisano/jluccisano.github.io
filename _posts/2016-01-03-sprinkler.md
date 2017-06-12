@@ -210,40 +210,53 @@ Un réducteur de pression est utilisé pour le réseau goutte à goute qui repar
 
 | Photo        | Description           | 
 | ------------- |:-------------:|
-| ![Clarinette](/assets/images/sprinkler/clarinette.jpg){:height="48px" width="96px"}  | Clarinette  | 
-| ![Electronvanne](/assets/images/sprinkler/té_jonction_pvc_1".jpg){:height="48px" width="96px"}  | Té jonction PVC | 
-| ![Electronvanne](/assets/images/sprinkler/croix_jonction_pvc_1".jpg){:height="48px" width="96px"}  | Té jonction PVC | 
-| ![Electronvanne](/assets/images/sprinkler/bouchon_femelle_pvc_1".jpg){:height="48px" width="96px"}  | Bouchon Femelle / male  | 
-| ![Electronvanne](/assets/images/sprinkler/bouchon_male_pvc_1".jpg){:height="48px" width="96px"}  | Bouchon Femelle / male  |
-| ![Electronvanne](/assets/images/sprinkler/valve.jpg){:height="48px" width="96px"}  | 5 electrovannes  | 
-| ![Raccord compression 25mm ](/assets/images/sprinkler/raccord_compression_25mm.jpg){:height="48px" width="96px"}  | Raccord compression 25mm  | 
+| ![Raccord compression 25mm ](/assets/images/sprinkler/raccord_compression_25mm_F.jpg){:height="48px" width="96px"}  | Raccord compression 25mm  | 
 | ![Réduction de pression](/assets/images/sprinkler/reducteur_pression.jpg){:height="48px" width="96px"}  | Réducteur de pression  | 
 | ![Réduction de pression](/assets/images/sprinkler/vanne_1_4_male_femelle.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/mamelon_26x34_20x27_PVC.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/coude_laiton_19x25.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
 | ![Réduction de pression](/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/raccord_laiton_M_19x25.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/té_collecteur_26x34_MF.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
 | ![Réduction de pression](/assets/images/sprinkler/vanne_intégrale_manette_papillon_MM_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/coude_laiton_19x25.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/raccord_laiton_M_19x25.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/mamelon_26x34_20x27_PVC.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
 | ![Réduction de pression](/assets/images/sprinkler/manchon_réduit_FF_26x34_20x27.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
 | ![Réduction de pression](/assets/images/sprinkler/mamelon_réduit_MM_26x34_15x21.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
-| ![Réduction de pression](/assets/images/sprinkler/croix_collecteur_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
 | ![Réduction de pression](/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/teflon.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
-| ![Réduction de pression](/assets/images/sprinkler/bouchon_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/croix_collecteur_26x34.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/té_collecteur_26x34_MF.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
 | ![Réduction de pression](/assets/images/sprinkler/té_compression_16mm_MM.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
-| ![Réduction de pression](/assets/images/sprinkler/té_16mm_MM.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/coude_compression_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/coude_compression_16mm_M_15x21.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/coude_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
 | ![Réduction de pression](/assets/images/sprinkler/jonction_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
-| ![Réduction de pression](/assets/images/sprinkler/coude_compression_16mm_M_15x21.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/té_16mm_MM.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/bouchon_16mm.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  |
+| ![Réduction de pression](/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/clarinette_DURA_4S_MFFFFF_PVC.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg){:height="48px" width="96px"}  | Vanne 1/4 de tour  | 
+| ![Réduction de pression](/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg){:height="48px" width="96px"}  | Regard Jumbo rectangle Rain Bird VBA 2675 62x46x30,5cm | 
+| ![Réduction de pression](/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1"_MM_NR_24V.jpg){:height="48px" width="96px"}  | Electrovanne RAIN BIRD DV 1" MM NR 24V x5 | 
+| ![Réduction de pression](/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg){:height="48px" width="96px"}  | Manomètre glycérine INOX radial 0 à 6 bars x1 | 
+| ![Réduction de pression](/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2"_F.jpg){:height="48px" width="96px"}  | Turbine escamotable RAIN BIRD 3504 PC (1/2" F) x13 | 
+| ![Réduction de pression](/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2".jpg){:height="48px" width="96px"}  | Coude pour tube de déport SBE-50 16 x 1/2"  x13 | 
+| ![Réduction de pression](/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/borne_auto_levier_2_file_2.5mm.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/borne_auto_levier_3_file_2.5mm.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+
+
+
+
+
+
 
 
 
