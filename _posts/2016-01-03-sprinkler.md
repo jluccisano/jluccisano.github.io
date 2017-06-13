@@ -15,6 +15,11 @@ tags:
 ---
 The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.
 
+
+- [Hydraulic part](#hydraulic-part)
+    - [Zones definition](#zones-definition)
+    
+
 - [Prerequisites](#prerequisites)
 - [Hydraulic](#hydraulic-wiring)
   - [Zones](#hydraulic-wiring)
@@ -37,6 +42,38 @@ The objective of this tutorial is to create and control a sprinkler system with 
   - [Raccordement au tableau](#hydraulic-wiring)
   
 
+### Hydraulic part
+
+#### Zones definition
+
+Split your land in the largest square and rectangle as possible. 
+
+Important: Separate drop by drop irrigation and lawn irrigation.
+
+Note: I used [draw.io](https://www.draw.io) to create the plan below.
+
+{% include figure image_path="/assets/images/sprinkler_plan_masse.png" alt="Final result" caption="Zones" %}
+
+| Zone        | Description           | Diameter (mm) | Surface  | Turbine
+| ------------- |:-------------:| ------| ------| -----:|
+| A | Lawn irrigation  | 25 | ? | 2 |
+| B | Lawn irrigation  | 25 | ? | 4 |
+| C | Lawn irrigation  | 25 | ? | 4 |
+| D | Lawn irrigation  | 25 | ? | 3 |
+| E | Drop by drop irrigation  | 16 | ? | - |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Prerequisites
 
@@ -55,6 +92,16 @@ Electronic components
 | 10 x Cables male/male | [ebay](www.ebay.com)      |    1.00 EUR |
 | Total: |      |    97.99 EUR |
 
+| ![Réduction de pression](/assets/images/sprinkler/raspberry_pi_3.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/power_supply_micro_USB_5V_2500mA.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/multi_conducteur_7_brins_cable_15m.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/cable_MM_MF_FF.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/micro_sd_16go_class_10.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/breadboard_raspberry.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/relay_card_raspberry.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+
+
+
 Hydraulic components
 
 
@@ -72,6 +119,8 @@ Hydraulic components
 | Regard rectangle | [Jardinet](https://www.jardinet.fr) | 38.81 EUR |
 | Clarinette 1" | [Jardinet](https://www.jardinet.fr) | 32.12 EUR |
 | Total: |      |    ? EUR |
+
+
 
 
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
@@ -248,9 +297,11 @@ Un réducteur de pression est utilisé pour le réseau goutte à goute qui repar
 | ![Réduction de pression](/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 | ![Réduction de pression](/assets/images/sprinkler/borne_auto_levier_2_file_2.5mm.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 | ![Réduction de pression](/assets/images/sprinkler/borne_auto_levier_3_file_2.5mm.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/borne_auto_levier_5_file_2.5mm.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 | ![Réduction de pression](/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 | ![Réduction de pression](/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 | ![Réduction de pression](/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
+| ![Réduction de pression](/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 
 
 
