@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-07-01T13:38:22+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">NextRun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="NextRun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-07-16T12:09:55+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Install LCD screen on Raspberry PI 3</title><link href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="alternate" type="text/html" title="Install LCD screen on Raspberry PI 3" /><published>2017-07-16T00:00:00+00:00</published><updated>2017-07-16T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/Install-raspberry-lcd</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">&lt;p&gt;The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;https://www.amazon.fr/gp/product/B01FX7909Q/ref=oh_aui_detailpage_o04_s00?ie=UTF8&amp;amp;psc=1&lt;/p&gt;
+
+&lt;p&gt;```bash
+git clone https://github.com/goodtft/LCD-show.git
+chmod -R 755 LCD-show
+cd LCD-show/
+sudo ./LCD35-show
+``&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.</summary></entry><entry><title type="html">NextRun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="NextRun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
 
 &lt;p&gt;Web site: &lt;a href=&quot;www.nextrun.fr&quot;&gt;www.nextrun.fr&lt;/a&gt;&lt;/p&gt;
 
@@ -1561,58 +1574,4 @@ WantedBy=multi-user.target
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See more &lt;a href=&quot;http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><summary type="html">The objective of this tutorial is to create a system service in order to run a standalone program on background.</summary></entry><entry><title type="html">Generating new SSH Key</title><link href="https://jluccisano.github.io/linux/generate-rsa-key/" rel="alternate" type="text/html" title="Generating new SSH Key" /><published>2017-03-22T00:00:00+00:00</published><updated>2017-03-22T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/generate-rsa-key</id><content type="html" xml:base="https://jluccisano.github.io/linux/generate-rsa-key/">&lt;p&gt;The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your 
-password each time.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#generating-new-ssh-key&quot;&gt;Generating new SSH Key&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#useful-commands&quot;&gt;Useful commands&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#sending-ssh-key-to-a-server&quot;&gt;Sending SSH key to a server&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;SSH installed (ex: OpenSSH, OpenBSD Secure Shell server)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;generating-new-ssh-key&quot;&gt;Generating new SSH Key&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Execute this command below, substuting in your email address
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen -t rsa -b 4096 -C &lt;span class=&quot;s2&quot;&gt;&quot;your_email@example.com&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Add the ssh key into ssh-agent&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add ~/.ssh/id_rsa
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;You can see more in this &lt;a href=&quot;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot;&gt;tuto&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands:&lt;/h3&gt;
-
-&lt;p&gt;a. Get list of key:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add -L
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;b. Remove a key&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-add -D ~/.ssh/id_rsa
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;c. Copy the key into the clipboard&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pbcopy &amp;lt; id_rsa_git_evs.pub
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;If you don’t have pbcopy, you can install it easily. Here an example for
-&lt;a href=&quot;https://gist.github.com/chriscandy/753eb149e9735e852b0b&quot;&gt;ArchLinux&lt;/a&gt; users.&lt;/p&gt;
-
-&lt;h3 id=&quot;sending-ssh-key-to-a-server&quot;&gt;Sending SSH key to a server&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-copy-id -i ~/.ssh/id_rsa.pub -p X username@address
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="SSH" /><category term="Unix" /><summary type="html">The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your password each time.</summary></entry></feed>
+&lt;p&gt;See more &lt;a href=&quot;http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><summary type="html">The objective of this tutorial is to create a system service in order to run a standalone program on background.</summary></entry></feed>
