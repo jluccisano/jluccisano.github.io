@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-07-16T12:09:55+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Install LCD screen on Raspberry PI 3</title><link href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="alternate" type="text/html" title="Install LCD screen on Raspberry PI 3" /><published>2017-07-16T00:00:00+00:00</published><updated>2017-07-16T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/Install-raspberry-lcd</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">&lt;p&gt;The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-07-18T15:16:44+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Install LCD screen on Raspberry PI 3</title><link href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="alternate" type="text/html" title="Install LCD screen on Raspberry PI 3" /><published>2017-07-16T00:00:00+00:00</published><updated>2017-07-16T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/Install-raspberry-lcd</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">&lt;p&gt;The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
@@ -11,7 +11,30 @@ git clone https://github.com/goodtft/LCD-show.git
 chmod -R 755 LCD-show
 cd LCD-show/
 sudo ./LCD35-show
-``&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.</summary></entry><entry><title type="html">NextRun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="NextRun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
+``&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.</summary></entry><entry><title type="html">Go</title><link href="https://jluccisano.github.io/computer/go/" rel="alternate" type="text/html" title="Go" /><published>2017-07-05T00:00:00+00:00</published><updated>2017-07-05T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/go</id><content type="html" xml:base="https://jluccisano.github.io/computer/go/">&lt;p&gt;1294  sudo apt-get install golang&lt;/p&gt;
+
+&lt;p&gt;1304  vim ~/.zshrc&lt;/p&gt;
+
+&lt;p&gt;export GOROOT=/usr/local/go
+export GOPATH=/home/jluccisano/workspace/go
+export PATH=${GOROOT}/bin:${PATH}&lt;/p&gt;
+
+&lt;p&gt;1302  go get github.com/ungerik/go-rest&lt;/p&gt;
+
+&lt;p&gt;1298  go build relay_control_server.go&lt;/p&gt;
+
+&lt;p&gt;1334  ./relay_control_server &amp;amp;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1449  netstat -nlp&lt;/td&gt;
+      &lt;td&gt;grep 8080&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;1447  curl localhost:8080/get?relay=0&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Go" /><summary type="html">1294 sudo apt-get install golang 1304 vim ~/.zshrc</summary></entry><entry><title type="html">NextRun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="NextRun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
 
 &lt;p&gt;Web site: &lt;a href=&quot;www.nextrun.fr&quot;&gt;www.nextrun.fr&lt;/a&gt;&lt;/p&gt;
 
@@ -1493,85 +1516,4 @@ Example:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;See more &lt;a href=&quot;http://docs.python-guide.org/en/latest/dev/virtualenvs/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><category term="Python" /><summary type="html">The objective of this tutorial is to install Python and run it with virtual environment.</summary></entry><entry><title type="html">Create a Linux service</title><link href="https://jluccisano.github.io/linux/create-service/" rel="alternate" type="text/html" title="Create a Linux service" /><published>2017-03-23T00:00:00+00:00</published><updated>2017-03-23T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/create-service</id><content type="html" xml:base="https://jluccisano.github.io/linux/create-service/">&lt;p&gt;The objective of this tutorial is to create a system service in order to run a standalone program on background.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-service&quot;&gt;Create service&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#useful-commands&quot;&gt;Useful commands&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;create-service&quot;&gt;Create Service&lt;/h3&gt;
-
-&lt;p&gt;a. Create new service&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vim /lib/systemd/system/myservice.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;b. Edit parameters&lt;/p&gt;
-
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Unit]
-Description=MyService
-After=multi-user.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/python /opt/script.py
-Restart=on-abort
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;c. Enable execution permission of your service&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod 644 /lib/systemd/system/myservice.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;d. Enable execution permission of your script&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod u+x /opt/script.py 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;e. Create symbolic link&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ln -s /opt/script.py /usr/bin/myservice
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;f. Reload daemon&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl daemon-reload
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;g. Enable the service&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;myservice.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;h. Start the service&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start myservice.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;i. Check status&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl status myservice.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Stop the service
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl stop myservice.service
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See more &lt;a href=&quot;http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><summary type="html">The objective of this tutorial is to create a system service in order to run a standalone program on background.</summary></entry></feed>
+&lt;p&gt;See more &lt;a href=&quot;http://docs.python-guide.org/en/latest/dev/virtualenvs/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Unix" /><category term="Python" /><summary type="html">The objective of this tutorial is to install Python and run it with virtual environment.</summary></entry></feed>
