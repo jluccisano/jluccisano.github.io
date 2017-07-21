@@ -28,8 +28,8 @@
 <meta property="og:title" content="Install Xiaomi Camera">
 
 
-  <link rel="canonical" href="https://jluccisano.github.io/raspberry/install-xiaomi-camera/">
-  <meta property="og:url" content="https://jluccisano.github.io/raspberry/install-xiaomi-camera/">
+  <link rel="canonical" href="https://jluccisano.github.io/computer/install-xiaomi-camera/">
+  <meta property="og:url" content="https://jluccisano.github.io/computer/install-xiaomi-camera/">
 
 
 
@@ -40,7 +40,7 @@
   <meta name="twitter:site" content="@joluccisano">
   <meta name="twitter:title" content="Install Xiaomi Camera">
   <meta name="twitter:description" content="The objective of this tutorial is to set up a Xiaomi Camera">
-  <meta name="twitter:url" content="https://jluccisano.github.io/raspberry/install-xiaomi-camera/">
+  <meta name="twitter:url" content="https://jluccisano.github.io/computer/install-xiaomi-camera/">
 
   
     <meta name="twitter:card" content="summary_large_image">
@@ -190,7 +190,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/raspberry" itemprop="item"><span itemprop="name">Raspberry</span></a>
+          <a href="https://jluccisano.github.io/computer" itemprop="item"><span itemprop="name">Computer</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -340,11 +340,49 @@
 
 <ul>
   <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#hacking">Hacking</a>
+    <ul>
+      <li><a href="#flashing">flashing</a></li>
+      <li><a href="#qr">qr</a></li>
+    </ul>
+  </li>
+  <li><a href="#synology_surveillance">Synology Surveillance</a></li>
 </ul>
 
-<p>http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/</p>
+<h3 id="prerequisites">Prerequisites</h3>
 
-<p>http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323</p>
+<ul>
+  <li>Components &lt; 60 EUR:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th style="text-align: center">Site</th>
+      <th style="text-align: right">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Xiaomi XiaoFang Camera IP</td>
+      <td style="text-align: center"><a href="http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323">Gearbest</a></td>
+      <td style="text-align: right">37.69 EUR</td>
+    </tr>
+    <tr>
+      <td>Micro SD Card (32 Go class 10)</td>
+      <td style="text-align: center"><a href="https://www.amazon.com">Amazon</a></td>
+      <td style="text-align: right">9.99 EUR</td>
+    </tr>
+    <tr>
+      <td>Total:</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right">56.67 EUR</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/</p>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
 
@@ -404,6 +442,52 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
 
 <p>http://192.168.0.18/cgi-bin/hello.cgi</p>
 
+<p>set static ip on specific mac address on your router</p>
+
+<p>not update the firmware otherwise downgrade it</p>
+
+<p>https://ahkhai.com/tag/surveillance-station/</p>
+
+<p>https://miui-france.org/threads/utilisation-de-la-xiaomi-smart-camera-avec-synology.22774/</p>
+
+<p>Known issue https</p>
+
+<p>https://home-assistant.io/components/camera.synology/</p>
+
+<p>sudo vim /volume1/@appstore/SurveillanceStation/device_pack/camera_support/Xiaomi.conf</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="o">[</span>Xiaomi<span class="k">*</span>XiaoFang]
+api <span class="o">=</span> custom
+default_fps_h264_1920×1080 <span class="o">=</span> 10
+default_image-quality <span class="o">=</span> 5
+h264 <span class="o">=</span> rtsp
+mpeg4 <span class="o">=</span> rtsp
+mjpeg <span class="o">=</span> rtsp
+motion <span class="o">=</span> h264,mpeg4,mjpeg
+motion_param <span class="o">=</span> sensitivity,threshold
+rtsp_keepalive <span class="o">=</span> none
+rtsp_protocol <span class="o">=</span> auto,udp,tcp
+resolutions_mjpeg <span class="o">=</span> 1280x720,1920×1080
+resolutions_mpeg4 <span class="o">=</span> 1280x720,1920×1080
+resolutions_h264 <span class="o">=</span> 1280x720,1920×1080
+fps_mjpeg_[1280x720,1920×1080] <span class="o">=</span> 5,10,15,20,25,30
+fps_mpeg4_[1280x720,1920×1080] <span class="o">=</span> 5,10,15,20,25,30
+fps_h264_[1280x720,1920×1080] <span class="o">=</span> 5,10,15,20,25,30
+audio_format <span class="o">=</span> G726,PCM
+default_audio_format <span class="o">=</span> PCM
+</code></pre>
+</div>
+
+<p>http://www.gearbest.com/ip-cameras/pp_487830.html</p>
+
+<p>sudo vim /volume1/document/SSCamExport_export-xiaomi/.ExpCam</p>
+
+<p>refresh before import</p>
+
+<p>path = ‘/unicast’
+live_path = ‘/unicast’
+http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review</p>
+
         
       </section>
 
@@ -424,10 +508,6 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
       
       
       <a href="https://jluccisano.github.io/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://jluccisano.github.io/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">Raspberry PI</a><span class="sep">, </span>
     
       
       
@@ -452,7 +532,7 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
     
       
       
-      <a href="https://jluccisano.github.io/categories/#raspberry" class="page__taxonomy-item" rel="tag">Raspberry</a>
+      <a href="https://jluccisano.github.io/categories/#computer" class="page__taxonomy-item" rel="tag">Computer</a>
     
     </span>
   </p>
@@ -468,13 +548,13 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Install Xiaomi Camera  https://jluccisano.github.io/raspberry/install-xiaomi-camera/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Install Xiaomi Camera  https://jluccisano.github.io/computer/install-xiaomi-camera/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/raspberry/install-xiaomi-camera/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/computer/install-xiaomi-camera/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/raspberry/install-xiaomi-camera/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/computer/install-xiaomi-camera/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/raspberry/install-xiaomi-camera/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/computer/install-xiaomi-camera/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -590,23 +670,9 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
       
           
       
-          
-      
       
     
       
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
       
           
       
@@ -620,11 +686,67 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
       
           
       
+      
+    
+      
+      
+          
+      
           
       
       
     
       
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
       
           
             
@@ -638,19 +760,20 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
       <div class="archive__item-teaser">
         <img src=
           
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
+            "https://jluccisano.github.io/assets/images/ssh.jpg"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
+        <a href="https://jluccisano.github.io/linux/generate-rsa-key/" rel="permalink">Generating new SSH Key
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your 
+password each time.
 
 </p>
   </article>
@@ -665,18 +788,6 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
       
           
       
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
       
     
       
@@ -693,20 +804,21 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
       <div class="archive__item-teaser">
         <img src=
           
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
+            "https://jluccisano.github.io/assets/images/linux.jpg"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" rel="permalink">Consume data from RabbitMQ
+        <a href="https://jluccisano.github.io/raspberry/setup-linux/" rel="permalink">Raspbian basic administration
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
-publishing data to client via websocke...</p>
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up basic configuration of Raspbian distribution.
+
+</p>
   </article>
 </div>
             

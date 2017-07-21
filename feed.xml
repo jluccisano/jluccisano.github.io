@@ -1,18 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-07-18T20:23:53+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Kivy software</title><link href="https://jluccisano.github.io/raspberry/kivy-software/" rel="alternate" type="text/html" title="Kivy software" /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/kivy-software</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/kivy-software/">&lt;p&gt;The objective of this tutorial is&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-07-21T14:50:33+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Kivy software</title><link href="https://jluccisano.github.io/raspberry/kivy-software/" rel="alternate" type="text/html" title="Kivy software" /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/kivy-software</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/kivy-software/">&lt;p&gt;The objective of this tutorial is&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;https://kivy.org/docs/installation/installation-rpi.html&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is</summary></entry><entry><title type="html">Install Xiaomi Camera</title><link href="https://jluccisano.github.io/raspberry/install-xiaomi-camera/" rel="alternate" type="text/html" title="Install Xiaomi Camera " /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/install-xiaomi-camera</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/install-xiaomi-camera/">&lt;p&gt;The objective of this tutorial is to set up a Xiaomi Camera&lt;/p&gt;
+&lt;p&gt;https://kivy.org/docs/installation/installation-rpi.html&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is</summary></entry><entry><title type="html">Install Xiaomi Camera</title><link href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="alternate" type="text/html" title="Install Xiaomi Camera " /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/install-xiaomi-camera</id><content type="html" xml:base="https://jluccisano.github.io/computer/install-xiaomi-camera/">&lt;p&gt;The objective of this tutorial is to set up a Xiaomi Camera&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hacking&quot;&gt;Hacking&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#flashing&quot;&gt;flashing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qr&quot;&gt;qr&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#synology_surveillance&quot;&gt;Synology Surveillance&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Components &amp;lt; 60 EUR:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Site&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Xiaomi XiaoFang Camera IP&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323&quot;&gt;Gearbest&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;37.69 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Micro SD Card (32 Go class 10)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com&quot;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9.99 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;56.67 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/&lt;/p&gt;
-
-&lt;p&gt;http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
 
@@ -70,7 +108,53 @@ Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 256 IP addresses &lt;spa
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;http://192.168.0.18/cgi-bin/hello.cgi&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a Xiaomi Camera</summary></entry><entry><title type="html">Install LCD screen on Raspberry PI 3</title><link href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="alternate" type="text/html" title="Install LCD screen on Raspberry PI 3" /><published>2017-07-16T00:00:00+00:00</published><updated>2017-07-16T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/Install-raspberry-lcd</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">&lt;p&gt;The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.&lt;/p&gt;
+&lt;p&gt;http://192.168.0.18/cgi-bin/hello.cgi&lt;/p&gt;
+
+&lt;p&gt;set static ip on specific mac address on your router&lt;/p&gt;
+
+&lt;p&gt;not update the firmware otherwise downgrade it&lt;/p&gt;
+
+&lt;p&gt;https://ahkhai.com/tag/surveillance-station/&lt;/p&gt;
+
+&lt;p&gt;https://miui-france.org/threads/utilisation-de-la-xiaomi-smart-camera-avec-synology.22774/&lt;/p&gt;
+
+&lt;p&gt;Known issue https&lt;/p&gt;
+
+&lt;p&gt;https://home-assistant.io/components/camera.synology/&lt;/p&gt;
+
+&lt;p&gt;sudo vim /volume1/@appstore/SurveillanceStation/device_pack/camera_support/Xiaomi.conf&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Xiaomi&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;XiaoFang]
+api &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; custom
+default_fps_h264_1920×1080 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 10
+default_image-quality &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5
+h264 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; rtsp
+mpeg4 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; rtsp
+mjpeg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; rtsp
+motion &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; h264,mpeg4,mjpeg
+motion_param &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sensitivity,threshold
+rtsp_keepalive &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; none
+rtsp_protocol &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; auto,udp,tcp
+resolutions_mjpeg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1280x720,1920×1080
+resolutions_mpeg4 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1280x720,1920×1080
+resolutions_h264 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1280x720,1920×1080
+fps_mjpeg_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5,10,15,20,25,30
+fps_mpeg4_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5,10,15,20,25,30
+fps_h264_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5,10,15,20,25,30
+audio_format &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; G726,PCM
+default_audio_format &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; PCM
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;http://www.gearbest.com/ip-cameras/pp_487830.html&lt;/p&gt;
+
+&lt;p&gt;sudo vim /volume1/document/SSCamExport_export-xiaomi/.ExpCam&lt;/p&gt;
+
+&lt;p&gt;refresh before import&lt;/p&gt;
+
+&lt;p&gt;path = ‘/unicast’
+live_path = ‘/unicast’
+http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a Xiaomi Camera</summary></entry><entry><title type="html">Install LCD screen on Raspberry PI 3</title><link href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="alternate" type="text/html" title="Install LCD screen on Raspberry PI 3" /><published>2017-07-16T00:00:00+00:00</published><updated>2017-07-16T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/Install-raspberry-lcd</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">&lt;p&gt;The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
