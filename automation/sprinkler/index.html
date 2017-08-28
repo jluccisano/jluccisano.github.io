@@ -344,10 +344,8 @@
         <p>The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.</p>
 
 <ul>
-  <li><a href="#hydraulic-part">Hydraulic part</a>
-    <ul>
-      <li><a href="#zones-definition">Zones definition</a></li>
-    </ul>
+  <li>
+    <p><a href="https://jluccisano.github.io/automation/sprinkler-hydraulic">Hydraulic part</a></p>
   </li>
   <li><a href="#prerequisites">Prerequisites</a></li>
   <li><a href="#hydraulic-wiring">Hydraulic</a>
@@ -382,73 +380,6 @@
     </ul>
   </li>
 </ul>
-
-<h3 id="hydraulic-part">Hydraulic part</h3>
-
-<h4 id="zones-definition">Zones definition</h4>
-
-<p>Split your land in the largest square and rectangle as possible.</p>
-
-<p>Important: Separate drop by drop irrigation and lawn irrigation.</p>
-
-<p>Note: I used <a href="https://www.draw.io">draw.io</a> to create the plan below.</p>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler_plan_masse.png" alt="Ground plan" />
-  
-    <figcaption>Zones
-</figcaption>
-  
-</figure>
-
-<table>
-  <thead>
-    <tr>
-      <th>Zone</th>
-      <th style="text-align: center">Description</th>
-      <th>Diameter (mm)</th>
-      <th>Surface</th>
-      <th style="text-align: right">Turbine</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>A</td>
-      <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>21.5m2</td>
-      <td style="text-align: right">2</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>76m2</td>
-      <td style="text-align: right">4</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>45m2</td>
-      <td style="text-align: right">4</td>
-    </tr>
-    <tr>
-      <td>D</td>
-      <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>45m2</td>
-      <td style="text-align: right">3</td>
-    </tr>
-    <tr>
-      <td>E</td>
-      <td style="text-align: center">Drop by drop irrigation</td>
-      <td>16</td>
-      <td>?</td>
-      <td style="text-align: right">-</td>
-    </tr>
-  </tbody>
-</table>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -1569,12 +1500,55 @@ python sprinkler-control.py
       
       
           
+      
+          
             
               <div class="page__related">
                 
                   <h4 class="page__related-title">You May Also Enjoy</h4>
                 
                 <div class="grid__wrapper">
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" rel="permalink">Hydraulic part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Hydraulic part
+    
+      Zones definition
+    
+  
+
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
             
             
 
@@ -1721,60 +1695,6 @@ python sprinkler-control.py
     <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
 </p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" rel="permalink">Consume data from RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
-publishing data to client via websocke...</p>
   </article>
 </div>
             
