@@ -1,14 +1,422 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-08-28T05:53:49+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Hydraulic part</title><link href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" rel="alternate" type="text/html" title="Hydraulic part" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-hydraulic</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-hydraulic/">&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#hydraulic-part&quot;&gt;Hydraulic part&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-08-29T06:14:01+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Software part</title><link href="https://jluccisano.github.io/automation/sprinkler-software/" rel="alternate" type="text/html" title="Software part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-software</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-software/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#software-part&quot;&gt;Software part&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;create-web-app-react-redux&quot;&gt;create web-app react redux&lt;/h4&gt;
+
+&lt;h3 id=&quot;create-manual-mode&quot;&gt;Create Manual Mode&lt;/h3&gt;
+
+&lt;h3 id=&quot;create-scenario&quot;&gt;Create Scenario&lt;/h3&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><summary type="html">Software part</summary></entry><entry><title type="html">Electronic part</title><link href="https://jluccisano.github.io/automation/sprinkler-electronic/" rel="alternate" type="text/html" title="Electronic part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-electronic</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-electronic/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#electronic-part&quot;&gt;Electronic part&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/schema_sprinkler.png&quot; alt=&quot;Sprinkler Overview&quot; /&gt;
+  
+    &lt;figcaption&gt;Sprinkler Overview
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Components &amp;lt; ? EUR:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Electronic components&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Site&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Raspberry PI 3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.farnell.com&quot;&gt;Farnell&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;37.69 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Power supply Micro USB 5V 2500mA&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com&quot;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8.99 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Micro SD Card (16 Go class 10)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com&quot;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9.99 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Relay card module AC/DC 5V  4 channels&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.ebay.com&quot;&gt;Ebay&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8.00 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;multi conducteur 7 brins cable 15m&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.technic-achat.fr&quot;&gt;Technic-achat&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;31.32 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10 x Cables male/female&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;www.ebay.com&quot;&gt;ebay&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.00 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10 x Cables male/male&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;www.ebay.com&quot;&gt;ebay&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.00 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;97.99 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/linux/install-python&quot;&gt;Install Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Connect relay with Raspberry PI (Control electronics)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Each relay are supplied in 3.3V via Raspberry PI.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1 Raspberry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Control valves with Raspberry PI&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/electronic_part.jpg&quot; alt=&quot;Electronic part&quot; /&gt;
+  
+    &lt;figcaption&gt;Electronic part
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prerequisites&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Setup raspberry 
+install python
+git&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;RPi.GPIO&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GPIO&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;argparse&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setwarnings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setmode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BOARD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# GPIO/BOARD | Relay IN | Rotors | Zone&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 22/15	     | R2 IN2   | 1      | B&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 18/12	     | R1 IN2   | 2      | A&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 24/18	     | R1 IN3   | 3      | D&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 17/11	     | R1 IN4   | 4      | C&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 27/13	     | R2 IN1   | 5      | E&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RelayControl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argparse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ArgumentParser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+		    &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Set relay state high=1 or low=0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'--relay'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Set relay 1/2/3/4/5 or *'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'--state'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Set state high=1 or low=0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Set relay=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%(0)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s to state=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%(1)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'0'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'1'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;       
+			&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleanup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Set all relay to state=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;
+			&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+			
+	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argparse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ArgumentParser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+		    &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Toggle relay value'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'--relay'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Set relay 1/2/3/4/5'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Toggle relay=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleanup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argparse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ArgumentParser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+		    &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Set relay state high=1 or low=0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'--relay'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Set relay 1/2/3/4/5 or *'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Get relay=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'state='&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleanup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Get all relay state'&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'states='&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;chan_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;state_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;chan_list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chan_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;state_list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleanup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;state_list&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;chan_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;chan_list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chan_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chan_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleanup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		
+		&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relayIO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;5&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+		
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argparse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ArgumentParser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+		    &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Relay control'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		    &lt;span class=&quot;n&quot;&gt;usage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'''relay &amp;lt;command&amp;gt; [&amp;lt;args&amp;gt;]
+		The most commonly used relay commands are:
+		   set     Set relay value high or low
+		   get     Get relay value high or low
+		   toggle  Toggle relay value
+		'''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'command'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Subcommand to run'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;c&quot;&gt;# parse_args defaults to [1:] for args, but you need to&lt;/span&gt;
+		&lt;span class=&quot;c&quot;&gt;# exclude the rest of the args too, or validation will fail&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hasattr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Unrecognized command'&lt;/span&gt;
+		    &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print_help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+		    &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;c&quot;&gt;# use dispatch pattern to invoke method with same name&lt;/span&gt;
+		&lt;span class=&quot;nb&quot;&gt;getattr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)()&lt;/span&gt;
+	
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;RelayControl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Get state of each valve&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Get state of specific valve&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Set state of specific valve&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Set state of each valve&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Toggle state of specific valve&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toggle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Display&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Display&lt;/li&gt;
+  &lt;li&gt;Electrical box&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Set up electrical box&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Replace power outlet by circuit breaker.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;circuit breaker Din rail&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create multi-plateform IHM with Kivy&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;install-kivy&quot;&gt;Install Kivy&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install &lt;span class=&quot;nv&quot;&gt;Cython&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.23
+pip install kivy
+pip install pygame
+python sprinkler-control.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;see more &lt;a href=&quot;https://kivy.org/docs/installation/installation-linux.html#installation-linux&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;https://kivy.org/docs/guide/basic.html&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Electronic" /><category term="Hidraulic" /><summary type="html">Electronic part</summary></entry><entry><title type="html">Electrical part</title><link href="https://jluccisano.github.io/automation/sprinkler-electrical/" rel="alternate" type="text/html" title="Electrical part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-electrical</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-electrical/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#electrical-part&quot;&gt;Electrical part&lt;/a&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#zones-definition&quot;&gt;Zones definition&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#wiring&quot;&gt;Wiring&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;hydraulic-part&quot;&gt;Hydraulic part&lt;/h3&gt;
+&lt;h2 id=&quot;electrical-part&quot;&gt;Electrical part&lt;/h2&gt;
 
-&lt;h4 id=&quot;zones-definition&quot;&gt;Zones definition&lt;/h4&gt;
+&lt;h3 id=&quot;wiring&quot;&gt;Wiring&lt;/h3&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/schema_sprinkler.png&quot; alt=&quot;Sprinkler Overview&quot; /&gt;
+  
+    &lt;figcaption&gt;Sprinkler Overview
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Electrical connection&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Join electrical box to valves boxes with 7 multi-conductor wire&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install one distribution box at the entrance of the valves box.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Electrical screwdriver&lt;/li&gt;
+  &lt;li&gt;Wire cutter&lt;/li&gt;
+  &lt;li&gt;Wire stripper&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Materiel:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Domino bar&lt;/li&gt;
+  &lt;li&gt;Distribution box&lt;/li&gt;
+  &lt;li&gt;Compact Splicing Connectors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/sprinkler_electric_part.png&quot; alt=&quot;Sprinkler electric part&quot; /&gt;
+  
+    &lt;figcaption&gt;Sprinkler electric part
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/valves_box_final.jpg&quot; alt=&quot;Valves box final&quot; /&gt;
+  
+    &lt;figcaption&gt;Valves box final
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Relay connection (Power electronics)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Connect power supply to solenoid valve 24V.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Materiel:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Transformer 220V AC/24V AC&lt;/li&gt;
+  &lt;li&gt;Relay AC 250V 10A ; DC 30V 10A&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Electrical" /><category term="Hidraulic" /><summary type="html">Electrical part Wiring</summary></entry><entry><title type="html">Hydraulic part</title><link href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" rel="alternate" type="text/html" title="Hydraulic part" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-hydraulic</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-hydraulic/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#hydraulic-part&quot;&gt;Hydraulic part&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#components&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#wiring&quot;&gt;Wiring&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#water-inflow-level&quot;&gt;Water inflow level&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#zones-definition&quot;&gt;Zones definition&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#network&quot;&gt;Network&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#dig-trenches&quot;&gt;Dig trenches&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#valves-box&quot;&gt;Valves box&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#water-main-supply&quot;&gt;Water main supply&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#valves&quot;&gt;Valves&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#connections&quot;&gt;Connections&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hydraulic-part&quot;&gt;Hydraulic part&lt;/h2&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;p&gt;1⁄2” = 15/21
+3⁄4” = 20/27
+1” = 26/34
+11⁄4” = 33/42&lt;/p&gt;
+
+&lt;h3 id=&quot;components&quot;&gt;Components&lt;/h3&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/hydro_components.JPG&quot; alt=&quot;Hydro components&quot; /&gt;
+  
+    &lt;figcaption&gt;Hydro components
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;wiring&quot;&gt;Wiring&lt;/h3&gt;
+
+&lt;h4 id=&quot;water-inflow-level&quot;&gt;Water inflow level&lt;/h4&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;h4 id=&quot;zones--definition&quot;&gt;Zones  definition&lt;/h4&gt;
 
 &lt;p&gt;Split your land in the largest square and rectangle as possible.&lt;/p&gt;
 
@@ -71,7 +479,560 @@
       &lt;td style=&quot;text-align: right&quot;&gt;-&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sprinkler" /><category term="Hidraulic" /><summary type="html">Hydraulic part Zones definition</summary></entry><entry><title type="html">Kivy software</title><link href="https://jluccisano.github.io/raspberry/kivy-software/" rel="alternate" type="text/html" title="Kivy software" /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/kivy-software</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/kivy-software/">&lt;p&gt;The objective of this tutorial is&lt;/p&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;network&quot;&gt;Network&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Locate your water mains inlet&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Define valves box location&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This location must be strategic to optimize pipe length and pressure loss.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Place your rotors&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Rotors must be place at first in the corner of each zone.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/rotors_coverage.gif&quot; alt=&quot;Rotors coverage&quot; /&gt;
+  
+    &lt;figcaption&gt;Rotors coverage
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Place your main network (25mm pipe) as closely as possible to rotors.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can follow your house wall in order to facilitate the maintenance.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Place your secondary network (16mm pipe) to join main network and rotors.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can adjust easily the secondary network with flexible pipe (16mm)&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler_plan_masse_hydro_schema.png&quot; alt=&quot;Sprinkler hydraulic plan&quot; /&gt;
+  
+    &lt;figcaption&gt;Sprinkler hydraulic plan
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;dig-trenches&quot;&gt;Dig trenches&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dig trenches:  25cm depth and 20cm wide.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Roll out and cut the pipe. Leave a margin in order to join easily connectors.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pickaxe&lt;/li&gt;
+  &lt;li&gt;Spade&lt;/li&gt;
+  &lt;li&gt;Stanley knife&lt;/li&gt;
+  &lt;li&gt;Tape&lt;/li&gt;
+  &lt;li&gt;Guiding line&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Zone&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau propylène 25mm&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau propylène 16mm raccord flex&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/trenches.jpg&quot; alt=&quot;Trenches&quot; /&gt;
+  
+    &lt;figcaption&gt;Trenches
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;valves-box&quot;&gt;Valves box&lt;/h4&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pickaxe&lt;/li&gt;
+  &lt;li&gt;Spade&lt;/li&gt;
+  &lt;li&gt;Stanley knife&lt;/li&gt;
+  &lt;li&gt;Tape&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dig a large hole in order to easily working.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a bed of pebbles for stability and avoiding mud after water leak.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cut out the plastic entrance for each valves.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Photo&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Un regard 5 electrovannes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/valves_box.jpg&quot; alt=&quot;Valves box&quot; /&gt;
+  
+    &lt;figcaption&gt;Valves box
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;water-main-supply&quot;&gt;Water main supply&lt;/h4&gt;
+
+&lt;p&gt;Now the valves box installed, we can connect to the water supply.&lt;/p&gt;
+
+&lt;p&gt;In my case, I had planned a 25mm pipe under my house to join directly my garden. So I just added
+a brass union to join the water supply with my 1/4 turn gate.&lt;/p&gt;
+
+&lt;p&gt;Tools:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Wrench&lt;/li&gt;
+  &lt;li&gt;Teflon tape&lt;/li&gt;
+  &lt;li&gt;Stanley knife&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+
+&lt;p&gt;I also another 1/4 turn gate in my garage in order to turn off easily in each side. Useful to avoid water pipe
+freezes.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Photo&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Un coude laiton&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Un raccord compression laiton&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Un raccord laiton pour la vanne&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;une vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;photo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;tuyau 25mm&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/water_main_supply.jpg&quot; alt=&quot;Water main supply&quot; /&gt;
+  
+    &lt;figcaption&gt;Water main supply
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;valves&quot;&gt;Valves&lt;/h4&gt;
+
+&lt;p&gt;Each project will be different according to your number of valves, the location, the valves box… 
+So you need to pay attention to design your installation.
+In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 1 manometers.&lt;/p&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Put teflon on each threading which don’t contain any seal.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Every valves are compression connector to join the main network (25mm).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A pressure reducing is used for drop by drop network (16mm).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I added another 1/4 gate for supplying my solar shower.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I added a manometer to control the network pressure.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t forget to keep few space for the electrical part.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Photo&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/raccord_compression_25mm_F.jpg&quot; alt=&quot;Raccord compression 25mm &quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Raccord compression 25mm&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/reducteur_pression.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Réducteur de pression&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/vanne_1_4_male_femelle.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/vanne_intégrale_manette_papillon_MM_26x34.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_laiton_19x25.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/raccord_laiton_M_19x25.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_26x34_20x27_PVC.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/manchon_réduit_FF_26x34_20x27.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_réduit_MM_26x34_15x21.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/teflon.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/croix_collecteur_26x34.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/té_collecteur_26x34_MF.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/té_compression_16mm_MM.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_compression_16mm.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_compression_16mm_M_15x21.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_16mm.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/jonction_16mm.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/té_16mm_MM.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_16mm.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/clarinette_DURA_4S_MFFFFF_PVC.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Vanne 1/4 de tour&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Regard Jumbo rectangle Rain Bird VBA 2675 62x46x30,5cm&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&amp;quot;_MM_NR_24V.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Electrovanne RAIN BIRD DV 1” MM NR 24V x5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Manomètre glycérine INOX radial 0 à 6 bars x1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&amp;quot;_F.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Turbine escamotable RAIN BIRD 3504 PC (1/2” F) x13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2&amp;quot;.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Coude pour tube de déport SBE-50 16 x 1/2”  x13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_2_file_2.5mm.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_3_file_2.5mm.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_5_file_2.5mm.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/raspberry_pi_3.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/power_supply_micro_USB_5V_2500mA.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/multi_conducteur_7_brins_cable_15m.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/cable_MM_MF_FF.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/micro_sd_16go_class_10.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/breadboard_raspberry.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/relay_card_raspberry.jpg&quot; alt=&quot;Réduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Site&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Gate van Rainbird DV 1” 24V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;22.10 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Gate van Rainbird DV 1” 24V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.94 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tuyau 25m goutte à goutte&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;? EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2 x tuyau 30m tube de déport&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;27 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;13 x turbines&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6.97 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;manomètre 0 à 6 bars&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9.65 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Regard rectangle&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;38.81 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Clarinette 1”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;32.12 EUR&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;? EUR&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/valves.jpg&quot; alt=&quot;Valves&quot; /&gt;
+  
+    &lt;figcaption&gt;Valves
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;connections&quot;&gt;Connections&lt;/h4&gt;
+
+&lt;p&gt;Wire pipes, elbows, tees et rotors&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Quantity&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_25_FF.jpg&quot; alt=&quot;Minion&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_taraudage_central_25x05.jpg&quot; alt=&quot;Minion&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/te_compression_25.jpg&quot; alt=&quot;Minion&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg&quot; alt=&quot;Minion&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_25.jpg&quot; alt=&quot;Minion&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/rotors.JPG&quot; alt=&quot;Rotors&quot; /&gt;
+  
+    &lt;figcaption&gt;Rotors
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sprinkler" /><category term="Hidraulic" /><summary type="html">Hydraulic part Prerequisites Components Wiring Water inflow level Zones definition Network Dig trenches Valves box Water main supply Valves Connections Hydraulic part</summary></entry><entry><title type="html">Kivy software</title><link href="https://jluccisano.github.io/raspberry/kivy-software/" rel="alternate" type="text/html" title="Kivy software" /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/kivy-software</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/kivy-software/">&lt;p&gt;The objective of this tutorial is&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
@@ -360,246 +1321,4 @@ git config user.email “j.luccisano@evs.com”&lt;/p&gt;
 
 &lt;p&gt;gem install travis&lt;/p&gt;
 
-&lt;p&gt;/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Git" /><summary type="html">Useful commands</summary></entry><entry><title type="html">Security alarm with Raspberry</title><link href="https://jluccisano.github.io/project/alarming-system/" rel="alternate" type="text/html" title="Security alarm with Raspberry" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/alarming-system</id><content type="html" xml:base="https://jluccisano.github.io/project/alarming-system/">&lt;p&gt;In progress&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry" /><summary type="html">In progress</summary></entry><entry><title type="html">Push data to RabbitMQ</title><link href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="alternate" type="text/html" title="Push data to RabbitMQ" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/push-data-on-rabbitmq</id><content type="html" xml:base="https://jluccisano.github.io/computer/push-data-on-rabbitmq/">&lt;p&gt;The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Run RabbitMQ container&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-a-publisher-on-your-raspberry&quot;&gt;Create a publisher on your Raspberry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-a-consumer-on-your-raspberry&quot;&gt;Create a consumer on your Raspberry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#start-publisher-as-service&quot;&gt;Start publisher as Service&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3 &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/linux/install-docker&quot;&gt;A server or your own computer with Docker&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Install Git&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;run-rabbitmq-container&quot;&gt;Run RabbitMQ container&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run -d --hostname my-rabbit --name my-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;see more &lt;a href=&quot;https://hub.docker.com/_/rabbitmq/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You can see RabbitMQ management interface on port 8080.&lt;/p&gt;
-
-&lt;h3 id=&quot;create-a-publisher-on-your-raspberry&quot;&gt;Create a publisher on your Raspberry&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Clone raspberry-scripts project&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:jluccisano/raspberry-scripts.git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;raspberry-scripts/scripts
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Edit the _config.yml&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Replace by your config&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim _config.yml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rabbitmq:
-    url: amqp://guest:guest@RABBIT_DOCKER_HOST:5672
-    gatewayId: raspberry_1
-    sendFrom: RASPBERRY_IP_ADDRESS
-    exchange: events
-    publish_interval: 60
-    queue: event     
-    logPath: /var/log/dht22
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;Start virtualenv (optional)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virtualenv -p /usr/bin/python2.7 ~/env2.7/
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/env2.7/bin/activate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;see more &lt;a href=&quot;https://jluccisano.github.io/linux/install-python#create-virtualenv&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Install dependencies:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install pika
-pip install adafruit_python_dht
-pip install pyyaml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;see more &lt;a href=&quot;https://pika.readthedocs.io/en/0.10.0/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Start publisher&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python publisher.py &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Show log:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail -f /var/log/dht22/publisher.log
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Note: code based on &lt;a href=&quot;&amp;quot;https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_publisher_example.html&amp;quot;&quot;&gt;Asynchronous publisher example&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;create-a-consumer-on-your-raspberry&quot;&gt;Create a consumer on your Raspberry&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Start publisher&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python consumer.py &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Show log:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail -f /var/log/dht22/consumer.log
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;code based on &lt;a href=&quot;&amp;quot;https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html&amp;quot;&quot;&gt;Asynchronous consumer example&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;start-publisher-as-service&quot;&gt;Start publisher as Service&lt;/h3&gt;
-
-&lt;p&gt;Follow this &lt;a href=&quot;https://jluccisano.github.io/linux/create-service&quot;&gt;tutorial&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Edit publisher.py and change config.yml to /opt/dht22/_config.yml&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Start&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start dht22_publisher.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Check&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl status dht22_publisher.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(env2.7) pi@raspberrypi:/opt/dht22 $ sudo systemctl status dht22.service
-● dht22.service - DHT22
-   Loaded: loaded (/lib/systemd/system/dht22.service; enabled)
-   Active: active (running) since Fri 2017-03-24 13:21:46 UTC; 1s ago
- Main PID: 14457 (python)
-   CGroup: /system.slice/dht22.service
-           └─14457 /usr/bin/python /opt/dht22/publisher.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Show log:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tail -f /var/log/dht22/publisher.log
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Great publisher works fine !!&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2017-03-24 13:21:48,032 Start publishing
-2017-03-24 13:21:48,033 Scheduling next message &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;60.0 seconds
-2017-03-24 13:22:47,668 Received 0 heartbeat frames, sent 0
-2017-03-24 13:22:47,669 Sending heartbeat frame
-2017-03-24 13:22:47,784 Received heartbeat frame
-2017-03-24 13:22:48,701 &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; Published data &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'expire'&lt;/span&gt;: 38231000, &lt;span class=&quot;s1&quot;&gt;'data'&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'humidity'&lt;/span&gt;: 34.20000076293945, &lt;span class=&quot;s1&quot;&gt;'@type'&lt;/span&gt;: &lt;span class=&quot;s1&quot;&gt;'DHT22'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'temperature'&lt;/span&gt;: 24.399999618530273&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'created'&lt;/span&gt;: 1490361768&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 1&lt;/span&gt;
-2017-03-24 13:22:48,701 Scheduling next message &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;60.0 seconds
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="RabbitMQ" /><category term="Docker" /><category term="Python" /><category term="Git" /><category term="μService" /><category term="Internet of Things" /><summary type="html">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.</summary></entry><entry><title type="html">Store data into InfluxDB</title><link href="https://jluccisano.github.io/computer/install-influxdb/" rel="alternate" type="text/html" title="Store data into InfluxDB" /><published>2017-03-24T00:00:00+00:00</published><updated>2017-03-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/install-influxdb</id><content type="html" xml:base="https://jluccisano.github.io/computer/install-influxdb/">&lt;p&gt;The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#run-influxdb-on-docker&quot;&gt;Run influxDB on Docker&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-database&quot;&gt;Create Database&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#connect-to-influxdb&quot;&gt;Connect to influxDB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-retention-policy&quot;&gt;Create retention policy&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-continuous-query&quot;&gt;Create continuous query&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#useful-commands&quot;&gt;Useful commands&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/setup-raspberry&quot;&gt;Set up a Raspberry PI 3 &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/raspberry/dht22-raspberry&quot;&gt;Interacting with DHT22 Sensor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/linux/install-docker&quot;&gt;A server or your own computer with Docker&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/linux&quot;&gt;Install Git (optional)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/computer/push-data-on-rabbitmq&quot;&gt;Push data to rabbitMQ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;run-influxdb-on-docker&quot;&gt;Run influxDB on Docker&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run -d -p 8083:8083 -p 8086:8086 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-      --name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;influxdb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-      -v /usr/lib/influxdb:/var/lib/influxdb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-      influxdb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;see more &lt;a href=&quot;https://hub.docker.com/_/influxdb/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;create-database&quot;&gt;Create Database&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE DATABASE IF NOT EXISTS sensor
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;connect-to-influxdb&quot;&gt;Connect to influxDB&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;influx
-use sensor
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;create-retention-policy&quot;&gt;Create retention policy&lt;/h3&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RETENTION&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;POLICY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one_years_only&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DURATION&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;52&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;REPLICATION&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DEFAULT&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;h3 id=&quot;create-continuous-query&quot;&gt;Create continuous query&lt;/h3&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cq_dht22_1h&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;mean_temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_humidity&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;one_years_only&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;cq_dht22_1h&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dht22&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gatewayId&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cq_dht22_1d&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;mean_temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MEAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_temperature&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MAX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_temperature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MAX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;humidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_humidity&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;one_years_only&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;cq_dht22_1d&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dht22&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gatewayId&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RETENTION&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;POLICIES&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RETENTION&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;POLICY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one_years_only&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SHOW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERIES&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;autogen&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downsampled_dht22&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CONTINUOUS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QUERY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cq_1h&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensor&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="InfluxDB" /><category term="Docker" /><summary type="html">The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.</summary></entry></feed>
+&lt;p&gt;/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Git" /><summary type="html">Useful commands</summary></entry></feed>

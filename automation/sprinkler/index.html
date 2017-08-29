@@ -344,1055 +344,13 @@
         <p>The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.</p>
 
 <ul>
-  <li>
-    <p><a href="https://jluccisano.github.io/automation/sprinkler-hydraulic">Hydraulic part</a></p>
-  </li>
-  <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#hydraulic-wiring">Hydraulic</a>
-    <ul>
-      <li><a href="#hydraulic-wiring">Zones</a></li>
-      <li><a href="#hydraulic-wiring">Network</a></li>
-      <li><a href="#hydraulic-wiring">Dig trenches</a></li>
-      <li><a href="#hydraulic-wiring">Valve box</a></li>
-      <li><a href="#hydraulic-wiring">Water supply</a></li>
-      <li><a href="#hydraulic-wiring">Valves</a></li>
-      <li><a href="#hydraulic-wiring">Rotors</a></li>
-    </ul>
-  </li>
-  <li><a href="#electronic-wiring">Electronic</a>
-    <ul>
-      <li><a href="#hydraulic-wiring">Puissance</a></li>
-      <li><a href="#hydraulic-wiring">Commande</a></li>
-    </ul>
-  </li>
-  <li><a href="#electronic-wiring">Software</a>
-    <ul>
-      <li><a href="#hydraulic-wiring">Simple</a></li>
-      <li><a href="#hydraulic-wiring">Scenario</a></li>
-      <li><a href="#hydraulic-wiring">Packaging</a></li>
-      <li><a href="#hydraulic-wiring">Accès depuis l’extérieur</a></li>
-    </ul>
-  </li>
-  <li><a href="#electronic-wiring">Electrical</a>
-    <ul>
-      <li><a href="#hydraulic-wiring">Installation de l’écran</a></li>
-      <li><a href="#hydraulic-wiring">Raccordement au tableau</a></li>
-    </ul>
-  </li>
+  <li><a href="https://jluccisano.github.io/automation/sprinkler-hydraulic">Hydraulic part</a></li>
+  <li><a href="https://jluccisano.github.io/automation/sprinkler-electrical">Electrical part</a></li>
+  <li><a href="https://jluccisano.github.io/automation/sprinkler-electronic">Electronic part</a></li>
+  <li><a href="https://jluccisano.github.io/automation/sprinkler-software">Software part</a></li>
 </ul>
-
-<h3 id="prerequisites">Prerequisites</h3>
-
-<ul>
-  <li>Components &lt; ? EUR:</li>
-</ul>
-
-<p>Electronic components</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th style="text-align: center">Site</th>
-      <th style="text-align: right">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Raspberry PI 3</td>
-      <td style="text-align: center"><a href="https://www.farnell.com">Farnell</a></td>
-      <td style="text-align: right">37.69 EUR</td>
-    </tr>
-    <tr>
-      <td>Power supply Micro USB 5V 2500mA</td>
-      <td style="text-align: center"><a href="https://www.amazon.com">Amazon</a></td>
-      <td style="text-align: right">8.99 EUR</td>
-    </tr>
-    <tr>
-      <td>Micro SD Card (16 Go class 10)</td>
-      <td style="text-align: center"><a href="https://www.amazon.com">Amazon</a></td>
-      <td style="text-align: right">9.99 EUR</td>
-    </tr>
-    <tr>
-      <td>Relay card module AC/DC 5V  4 channels</td>
-      <td style="text-align: center"><a href="https://www.ebay.com">Ebay</a></td>
-      <td style="text-align: right">8.00 EUR</td>
-    </tr>
-    <tr>
-      <td>multi conducteur 7 brins cable 15m</td>
-      <td style="text-align: center"><a href="https://www.technic-achat.fr">Technic-achat</a></td>
-      <td style="text-align: right">31.32 EUR</td>
-    </tr>
-    <tr>
-      <td>10 x Cables male/female</td>
-      <td style="text-align: center"><a href="www.ebay.com">ebay</a></td>
-      <td style="text-align: right">1.00 EUR</td>
-    </tr>
-    <tr>
-      <td>10 x Cables male/male</td>
-      <td style="text-align: center"><a href="www.ebay.com">ebay</a></td>
-      <td style="text-align: right">1.00 EUR</td>
-    </tr>
-    <tr>
-      <td>Total:</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right">97.99 EUR</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td><img src="/assets/images/sprinkler/raspberry_pi_3.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td>Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/power_supply_micro_USB_5V_2500mA.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td>Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/multi_conducteur_7_brins_cable_15m.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td>Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/cable_MM_MF_FF.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td>Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/micro_sd_16go_class_10.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td>Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/breadboard_raspberry.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td>Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/relay_card_raspberry.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td>Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Hydraulic components</p>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/hydro_components.JPG" alt="Hydro components" />
-  
-    <figcaption>Hydro components
-</figcaption>
-  
-</figure>
-
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th style="text-align: center">Site</th>
-      <th style="text-align: right">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Gate van Rainbird DV 1” 24V</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">22.10 EUR</td>
-    </tr>
-    <tr>
-      <td>Gate van Rainbird DV 1” 24V</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">14.94 EUR</td>
-    </tr>
-    <tr>
-      <td>tuyau 25m goutte à goutte</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">? EUR</td>
-    </tr>
-    <tr>
-      <td>2 x tuyau 30m tube de déport</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">27 EUR</td>
-    </tr>
-    <tr>
-      <td>13 x turbines</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">6.97 EUR</td>
-    </tr>
-    <tr>
-      <td>manomètre 0 à 6 bars</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">9.65 EUR</td>
-    </tr>
-    <tr>
-      <td>Regard rectangle</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">38.81 EUR</td>
-    </tr>
-    <tr>
-      <td>Clarinette 1”</td>
-      <td style="text-align: center"><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td style="text-align: right">32.12 EUR</td>
-    </tr>
-    <tr>
-      <td>Total:</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right">? EUR</td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li><a href="https://jluccisano.github.io/raspberry/setup-raspberry">Set up a Raspberry PI 3</a></li>
-  <li><a href="https://jluccisano.github.io/linux/install-python">Install Python</a></li>
-</ul>
-
-<h3 id="electronic-wiring">Electronic wiring</h3>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/schema_sprinkler.png" alt="Sprinkler Overview" />
-  
-    <figcaption>Sprinkler Overview
-</figcaption>
-  
-</figure>
-
-<h3 id="hydraulic-wiring">Hydraulic wiring</h3>
-
-<ol>
-  <li>Water inflow level</li>
-</ol>
-
-<p>TODO</p>
-
-<ol>
-  <li>Zones</li>
-</ol>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler_plan_masse.png" alt="Final result" />
-  
-    <figcaption>Zones
-</figcaption>
-  
-</figure>
-
-<table>
-  <thead>
-    <tr>
-      <th>Zone</th>
-      <th style="text-align: center">Description</th>
-      <th>Diameter (mm)</th>
-      <th>Surface</th>
-      <th style="text-align: right">Turbine</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>A</td>
-      <td style="text-align: center">Arrosage gazon</td>
-      <td>25</td>
-      <td>?</td>
-      <td style="text-align: right">?</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td style="text-align: center">Arrosage gazon</td>
-      <td>25</td>
-      <td>?</td>
-      <td style="text-align: right">?</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td style="text-align: center">Arrosage gazon</td>
-      <td>25</td>
-      <td>?</td>
-      <td style="text-align: right">?</td>
-    </tr>
-    <tr>
-      <td>D</td>
-      <td style="text-align: center">Arrosage gazon</td>
-      <td>25</td>
-      <td>?</td>
-      <td style="text-align: right">?</td>
-    </tr>
-    <tr>
-      <td>E</td>
-      <td style="text-align: center">Arrosage plantation en goutte à goutte</td>
-      <td>16</td>
-      <td>?</td>
-      <td style="text-align: right">?</td>
-    </tr>
-  </tbody>
-</table>
-
-<ol>
-  <li>Network</li>
-</ol>
-
-<ul>
-  <li>
-    <p>Locate your water mains inlet</p>
-  </li>
-  <li>
-    <p>Define valves box location</p>
-  </li>
-</ul>
-
-<p>This location must be strategic to optimize pipe length and pressure loss.</p>
-
-<ul>
-  <li>Place your rotors</li>
-</ul>
-
-<p>Rotors must be place at first in the corner of each zone.</p>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/rotors_coverage.gif" alt="Rotors coverage" />
-  
-    <figcaption>Rotors coverage
-</figcaption>
-  
-</figure>
-
-<ul>
-  <li>Place your main network (25mm pipe) as closely as possible to rotors.</li>
-</ul>
-
-<p>You can follow your house wall in order to facilitate the maintenance.</p>
-
-<ul>
-  <li>Place your secondary network (16mm pipe) to join main network and rotors.</li>
-</ul>
-
-<p>You can adjust easily the secondary network with flexible pipe (16mm)</p>
-
-<p>Sprinkler hydraulic plan</p>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler_plan_masse_hydro_schema.png" alt="Sprinkler hydraulic plan" />
-  
-    <figcaption>Sprinkler hydraulic plan
-</figcaption>
-  
-</figure>
-
-<ol>
-  <li>Dig trenches</li>
-</ol>
-
-<ul>
-  <li>
-    <p>Dig trenches:  25cm depth and 20cm wide.</p>
-  </li>
-  <li>
-    <p>Roll out and cut the pipe. Leave a margin in order to join easily connectors.</p>
-  </li>
-</ul>
-
-<p>Tools:</p>
-<ul>
-  <li>Pickaxe</li>
-  <li>Spade</li>
-  <li>Stanley knife</li>
-  <li>Tape</li>
-  <li>Guiding line</li>
-</ul>
-
-<p>Materiel</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Zone</th>
-      <th style="text-align: center">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">Tuyau propylène 25mm</td>
-    </tr>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">Tuyau propylène 16mm raccord flex</td>
-    </tr>
-  </tbody>
-</table>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/trenches.jpg" alt="Trenches" />
-  
-    <figcaption>Trenches
-</figcaption>
-  
-</figure>
-
-<ol>
-  <li>Wire valves box</li>
-</ol>
-
-<p>Tools:</p>
-<ul>
-  <li>Pickaxe</li>
-  <li>Spade</li>
-  <li>Stanley knife</li>
-  <li>
-    <p>Tape</p>
-  </li>
-  <li>
-    <p>Dig a large hole in order to easily working.</p>
-  </li>
-  <li>
-    <p>Create a bed of pebbles for stability and avoiding mud after water leak.</p>
-  </li>
-  <li>Cut out the plastic entrance for each valves.</li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th>Photo</th>
-      <th style="text-align: center">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">Un regard 5 electrovannes</td>
-    </tr>
-  </tbody>
-</table>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/valves_box.jpg" alt="Valves box" />
-  
-    <figcaption>Valves box
-</figcaption>
-  
-</figure>
-
-<ol>
-  <li>Water main supply</li>
-</ol>
-
-<p>Now the valves box installed, we can connect to the water supply.</p>
-
-<p>In my case, I had planned a 25mm pipe under my house to join directly my garden. So I just added
-a brass union to join the water supply with my 1/4 turn gate.</p>
-
-<p>Tools:</p>
-<ul>
-  <li>Wrench</li>
-  <li>Teflon tape</li>
-  <li>Stanley knife</li>
-</ul>
-
-<p>Note:</p>
-
-<ul>
-  <li>I also another 1/4 turn gate in my garage in order to turn off easily in each side. Useful to avoid water pipe
-freezes.</li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th>Photo</th>
-      <th style="text-align: center">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">Un coude laiton</td>
-    </tr>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">Un raccord compression laiton</td>
-    </tr>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">Un raccord laiton pour la vanne</td>
-    </tr>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">une vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td>photo</td>
-      <td style="text-align: center">tuyau 25mm</td>
-    </tr>
-  </tbody>
-</table>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/water_main_supply.jpg" alt="Water main supply" />
-  
-    <figcaption>Water main supply
-</figcaption>
-  
-</figure>
-
-<ol>
-  <li>Valves</li>
-</ol>
-
-<p>Each project will be different according to your number of valves, the location, the valves box… 
-So you need to pay attention to design your installation.
-In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 1 manometers.</p>
-
-<p>Note:</p>
-
-<ul>
-  <li>
-    <p>Put teflon on each threading which don’t contain any seal.</p>
-  </li>
-  <li>
-    <p>Every valves are compression connector to join the main network (25mm).</p>
-  </li>
-  <li>
-    <p>A pressure reducing is used for drop by drop network (16mm).</p>
-  </li>
-  <li>
-    <p>I added another 1/4 gate for supplying my solar shower.</p>
-  </li>
-  <li>
-    <p>I added a manometer to control the network pressure.</p>
-  </li>
-  <li>
-    <p>Don’t forget to keep few space for the electrical part.</p>
-  </li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th>Photo</th>
-      <th style="text-align: center">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="/assets/images/sprinkler/raccord_compression_25mm_F.jpg" alt="Raccord compression 25mm " height="48px" width="96px" /></td>
-      <td style="text-align: center">Raccord compression 25mm</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/reducteur_pression.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Réducteur de pression</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/vanne_1_4_male_femelle.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/vanne_intégrale_manette_papillon_MM_26x34.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_laiton_19x25.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/raccord_laiton_M_19x25.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_26x34_20x27_PVC.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/manchon_réduit_FF_26x34_20x27.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_réduit_MM_26x34_15x21.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/teflon.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/croix_collecteur_26x34.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/té_collecteur_26x34_MF.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/té_compression_16mm_MM.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_compression_16mm.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_compression_16mm_M_15x21.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_16mm.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/jonction_16mm.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/té_16mm_MM.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/bouchon_16mm.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/clarinette_DURA_4S_MFFFFF_PVC.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanne 1/4 de tour</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Regard Jumbo rectangle Rain Bird VBA 2675 62x46x30,5cm</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&quot;_MM_NR_24V.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Electrovanne RAIN BIRD DV 1” MM NR 24V x5</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Manomètre glycérine INOX radial 0 à 6 bars x1</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&quot;_F.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Turbine escamotable RAIN BIRD 3504 PC (1/2” F) x13</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2&quot;.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Coude pour tube de déport SBE-50 16 x 1/2”  x13</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/borne_auto_levier_2_file_2.5mm.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/borne_auto_levier_3_file_2.5mm.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/borne_auto_levier_5_file_2.5mm.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg" alt="Réduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-    </tr>
-  </tbody>
-</table>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/valves.jpg" alt="Valves" />
-  
-    <figcaption>Valves
-</figcaption>
-  
-</figure>
-
-<ol>
-  <li>Wire pipes, elbows, tees et rotors</li>
-</ol>
-
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th style="text-align: center">Quantity</th>
-      <th style="text-align: right">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_25_FF.jpg" alt="Minion" height="24px" width="48px" /></td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_taraudage_central_25x05.jpg" alt="Minion" height="24px" width="48px" /></td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/te_compression_25.jpg" alt="Minion" height="24px" width="48px" /></td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg" alt="Minion" height="24px" width="48px" /></td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/tuyau_25.jpg" alt="Minion" height="24px" width="48px" /></td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tbody>
-</table>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/rotors.JPG" alt="Rotors" />
-  
-    <figcaption>Rotors
-</figcaption>
-  
-</figure>
-
-<ol>
-  <li>Electrical connection</li>
-</ol>
-
-<ul>
-  <li>
-    <p>Join electrical box to valves boxes with 7 multi-conductor wire</p>
-  </li>
-  <li>
-    <p>Install one distribution box at the entrance of the valves box.</p>
-  </li>
-</ul>
-
-<p>Tools:</p>
-<ul>
-  <li>Electrical screwdriver</li>
-  <li>Wire cutter</li>
-  <li>Wire stripper</li>
-</ul>
-
-<p>Materiel:</p>
-<ul>
-  <li>Domino bar</li>
-  <li>Distribution box</li>
-  <li>Compact Splicing Connectors</li>
-</ul>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/sprinkler_electric_part.png" alt="Sprinkler electric part" />
-  
-    <figcaption>Sprinkler electric part
-</figcaption>
-  
-</figure>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/valves_box_final.jpg" alt="Valves box final" />
-  
-    <figcaption>Valves box final
-</figcaption>
-  
-</figure>
-
-<ol>
-  <li>Relay connection (Power electronics)</li>
-</ol>
-
-<ul>
-  <li>Connect power supply to solenoid valve 24V.</li>
-</ul>
-
-<p>Materiel:</p>
-<ul>
-  <li>Transformer 220V AC/24V AC</li>
-  <li>Relay AC 250V 10A ; DC 30V 10A</li>
-</ul>
-
-<ol>
-  <li>Connect relay with Raspberry PI (Control electronics)</li>
-</ol>
-
-<ul>
-  <li>Each relay are supplied in 3.3V via Raspberry PI.</li>
-</ul>
-
-<p>Tools:</p>
-<ul>
-  <li>1 Raspberry</li>
-</ul>
-
-<ol>
-  <li>Control valves with Raspberry PI</li>
-</ol>
-
-<figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/electronic_part.jpg" alt="Electronic part" />
-  
-    <figcaption>Electronic part
-</figcaption>
-  
-</figure>
-
-<ul>
-  <li>Prerequisites</li>
-</ul>
-
-<p>Setup raspberry 
-install python
-git</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
-<span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
-<span class="kn">import</span> <span class="nn">argparse</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-
-<span class="n">GPIO</span><span class="o">.</span><span class="n">setwarnings</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
-<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
-
-<span class="c"># GPIO/BOARD | Relay IN | Rotors | Zone</span>
-<span class="c"># 22/15	     | R2 IN2   | 1      | B</span>
-<span class="c"># 18/12	     | R1 IN2   | 2      | A</span>
-<span class="c"># 24/18	     | R1 IN3   | 3      | D</span>
-<span class="c"># 17/11	     | R1 IN4   | 4      | C</span>
-<span class="c"># 27/13	     | R2 IN1   | 5      | E</span>
-
-<span class="k">class</span> <span class="nc">RelayControl</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-
-	<span class="k">def</span> <span class="nf">set</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
-		    <span class="n">description</span><span class="o">=</span><span class="s">'Set relay state high=1 or low=0'</span><span class="p">)</span>
-
-		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--relay'</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s">'Set relay 1/2/3/4/5 or *'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--state'</span><span class="p">,</span><span class="n">help</span><span class="o">=</span><span class="s">'Set state high=1 or low=0'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-
-		<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
-
-		<span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">:</span>
-			<span class="k">print</span> <span class="s">'Set relay=</span><span class="si">%(0)</span><span class="s">s to state=</span><span class="si">%(1)</span><span class="s">s'</span> <span class="o">%</span> <span class="p">{</span> <span class="s">'0'</span> <span class="p">:</span> <span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">,</span> <span class="s">'1'</span> <span class="p">:</span> <span class="n">args</span><span class="o">.</span><span class="n">state</span> <span class="p">}</span>
-			<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">],</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-			<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">],</span> <span class="nb">int</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">state</span><span class="p">))</span>       
-			<span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="k">print</span> <span class="s">'Set all relay to state=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="n">args</span><span class="o">.</span><span class="n">state</span>
-			<span class="bp">self</span><span class="o">.</span><span class="n">setAll</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
-			
-	<span class="k">def</span> <span class="nf">toggle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
-		    <span class="n">description</span><span class="o">=</span><span class="s">'Toggle relay value'</span><span class="p">)</span>
-
-		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--relay'</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s">'Set relay 1/2/3/4/5'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-
-		<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
-		<span class="k">print</span> <span class="s">'Toggle relay=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="n">args</span><span class="o">.</span><span class="n">relay</span>
-
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">],</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">],</span> <span class="ow">not</span> <span class="n">GPIO</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">]))</span>
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
-
-	<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
-		    <span class="n">description</span><span class="o">=</span><span class="s">'Set relay state high=1 or low=0'</span><span class="p">)</span>
-
-		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'--relay'</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s">'Set relay 1/2/3/4/5 or *'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-
-		<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
-
-		<span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">:</span>
-			<span class="k">print</span> <span class="s">'Get relay=</span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="n">args</span><span class="o">.</span><span class="n">relay</span>
-			<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">],</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-			<span class="k">print</span> <span class="s">'state='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">relay</span><span class="p">])))</span>
-			<span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="k">print</span> <span class="s">'Get all relay state'</span>
-			<span class="k">print</span> <span class="s">'states='</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getAll</span><span class="p">())</span>
-
-	<span class="k">def</span> <span class="nf">getAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="n">chan_list</span> <span class="o">=</span> <span class="p">[]</span>
-		<span class="n">state_list</span> <span class="o">=</span> <span class="p">[]</span>
-		<span class="k">for</span> <span class="n">relay</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">:</span>
-			<span class="n">chan_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">relay</span><span class="p">])</span>
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">chan_list</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-		<span class="k">for</span> <span class="n">relay</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">:</span>
-			<span class="n">state_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">relay</span><span class="p">])))</span>
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
-		<span class="k">return</span> <span class="n">state_list</span>
-
-	<span class="k">def</span> <span class="nf">setAll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-		<span class="n">chan_list</span> <span class="o">=</span> <span class="p">[]</span>
-		<span class="k">for</span> <span class="n">relay</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">:</span>
-			<span class="n">chan_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span><span class="p">[</span><span class="n">relay</span><span class="p">])</span>
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">chan_list</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">chan_list</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">state</span><span class="p">))</span>
-		<span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
-
-	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		
-		<span class="bp">self</span><span class="o">.</span><span class="n">relayIO</span> <span class="o">=</span> <span class="p">{</span> <span class="s">"1"</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="s">"2"</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">"3"</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s">"4"</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s">"5"</span><span class="p">:</span> <span class="mi">13</span><span class="p">}</span>
-		
-		<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
-		    <span class="n">description</span><span class="o">=</span><span class="s">'Relay control'</span><span class="p">,</span>
-		    <span class="n">usage</span><span class="o">=</span><span class="s">'''relay &lt;command&gt; [&lt;args&gt;]
-		The most commonly used relay commands are:
-		   set     Set relay value high or low
-		   get     Get relay value high or low
-		   toggle  Toggle relay value
-		'''</span><span class="p">)</span>
-		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s">'command'</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s">'Subcommand to run'</span><span class="p">)</span>
-		<span class="c"># parse_args defaults to [1:] for args, but you need to</span>
-		<span class="c"># exclude the rest of the args too, or validation will fail</span>
-		<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
-		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">command</span><span class="p">):</span>
-		    <span class="k">print</span> <span class="s">'Unrecognized command'</span>
-		    <span class="n">parser</span><span class="o">.</span><span class="n">print_help</span><span class="p">()</span>
-		    <span class="nb">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-		<span class="c"># use dispatch pattern to invoke method with same name</span>
-		<span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">command</span><span class="p">)()</span>
-	
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-    <span class="n">RelayControl</span><span class="p">()</span>
-</code></pre>
-</div>
-
-<p>Get state of each valve</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">get</span>
-</code></pre>
-</div>
-
-<p>Get state of specific valve</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">get</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span>
-</code></pre>
-</div>
-
-<p>Set state of specific valve</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="nb">set</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span> <span class="o">--</span><span class="n">state</span> <span class="mi">1</span>
-</code></pre>
-</div>
-
-<p>Set state of each valve</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="nb">set</span> <span class="o">--</span><span class="n">state</span> <span class="mi">1</span>
-</code></pre>
-</div>
-
-<p>Toggle state of specific valve</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">toggle</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span>
-</code></pre>
-</div>
-
-<ol>
-  <li>Display</li>
-</ol>
-
-<p>Tools:</p>
-<ul>
-  <li>Display</li>
-  <li>Electrical box</li>
-</ul>
-
-<ol>
-  <li>Set up electrical box</li>
-</ol>
-
-<ul>
-  <li>Replace power outlet by circuit breaker.</li>
-</ul>
-
-<p>Tools:</p>
-<ul>
-  <li>circuit breaker Din rail</li>
-</ul>
-
-<ol>
-  <li>Create multi-plateform IHM with Kivy</li>
-</ol>
-
-<h3 id="install-kivy">Install Kivy</h3>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip install <span class="nv">Cython</span><span class="o">==</span>0.23
-pip install kivy
-pip install pygame
-python sprinkler-control.py
-</code></pre>
-</div>
-<p>see more <a href="https://kivy.org/docs/installation/installation-linux.html#installation-linux">here</a></p>
-
-<p>https://kivy.org/docs/guide/basic.html</p>
-
-<h3 id="create-a-package-for-ios">Create a package for IOS</h3>
-
-<h4 id="create-a-python-flask-rest-server-or-go-gpio--server">create a python flask rest server or go-gpio + server</h4>
-
-<h4 id="create-web-app-react-redux">create web-app react redux</h4>
-
-<h3 id="create-manual-mode">Create Manual Mode</h3>
-
-<h3 id="create-scenario">Create Scenario</h3>
 
 <h3 id="final-result">Final Result</h3>
-
-<h3 id="useful">Useful</h3>
-
-<p>1⁄2” = 15/21
-3⁄4” = 20/27
-1” = 26/34
-11⁄4” = 33/42</p>
 
 
         
@@ -1502,12 +460,104 @@ python sprinkler-control.py
           
       
           
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
             
               <div class="page__related">
                 
                   <h4 class="page__related-title">You May Also Enjoy</h4>
                 
                 <div class="grid__wrapper">
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-electronic/" rel="permalink">Electronic part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Electronic part
+
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-electrical/" rel="permalink">Electrical part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Electrical part
+    
+      Wiring
+    
+  
+
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
             
             
 
@@ -1534,12 +584,14 @@ python sprinkler-control.py
     <p class="archive__item-excerpt" itemprop="description">
   Hydraulic part
     
-      Zones definition
-    
-  
-
-
-</p>
+      Prerequisites
+      Components
+      Wiring
+        
+          Water inflow level
+          Zones definition
+          Network
+ ...</p>
   </article>
 </div>
             
@@ -1573,126 +625,6 @@ python sprinkler-control.py
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="permalink">Install LCD screen on Raspberry PI 3
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
 </p>
   </article>

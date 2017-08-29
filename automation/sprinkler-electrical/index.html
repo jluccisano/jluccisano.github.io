@@ -13,38 +13,40 @@
 
 
 
-<title>Install LCD screen on Raspberry PI 3 - Practice makes perfect</title>
+<title>Electrical part - Practice makes perfect</title>
 
 
 
 
-<meta name="description" content="The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.">
+<meta name="description" content="  Electrical part          Wiring      ">
 
 
 
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Install LCD screen on Raspberry PI 3">
+<meta property="og:title" content="Electrical part">
 
 
-  <link rel="canonical" href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">
-  <meta property="og:url" content="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">
+  <link rel="canonical" href="https://jluccisano.github.io/automation/sprinkler-electrical/">
+  <meta property="og:url" content="https://jluccisano.github.io/automation/sprinkler-electrical/">
 
 
 
-  <meta property="og:description" content="The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.">
+  <meta property="og:description" content="  Electrical part          Wiring      ">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Install LCD screen on Raspberry PI 3">
-  <meta name="twitter:description" content="The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.">
-  <meta name="twitter:url" content="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">
+  <meta name="twitter:title" content="Electrical part">
+  <meta name="twitter:description" content="  Electrical part          Wiring      ">
+  <meta name="twitter:url" content="https://jluccisano.github.io/automation/sprinkler-electrical/">
 
   
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/ben-moore-101.jpg">
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg">
+    
   
 
   
@@ -59,12 +61,12 @@
 
 
 
-  <meta property="og:image" content="https://jluccisano.github.io/assets/images/ben-moore-101.jpg">
+  <meta property="og:image" content="https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg">
 
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-07-16T00:00:00+00:00">
+  <meta property="article:published_time" content="2017-08-29T00:00:00+00:00">
 
 
 
@@ -146,18 +148,24 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: url('https://jluccisano.github.io/assets/images/ben-moore-101.jpg');"
+  style=" background-image: url('https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg');"
 >
   
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Install LCD screen on Raspberry PI 3
+          Electrical part
 
         
       </h1>
       
-        <p class="page__lead">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.
+        <p class="page__lead"><ul>
+  <li><a href="#electrical-part">Electrical part</a>
+    <ul>
+      <li><a href="#wiring">Wiring</a></li>
+    </ul>
+  </li>
+</ul>
 
 </p>
       
@@ -165,6 +173,9 @@
       
     </div>
   
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
   
 </div>
 
@@ -190,7 +201,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/raspberry" itemprop="item"><span itemprop="name">Raspberry</span></a>
+          <a href="https://jluccisano.github.io/automation" itemprop="item"><span itemprop="name">Automation</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -198,7 +209,7 @@
     
       
       
-        <li class="current">Install LCD screen on Raspberry PI 3</li>
+        <li class="current">Electrical part</li>
       
     
   </ol>
@@ -327,29 +338,91 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Install LCD screen on Raspberry PI 3">
-    <meta itemprop="description" content="The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.">
-    <meta itemprop="datePublished" content="July 16, 2017">
+    <meta itemprop="headline" content="Electrical part">
+    <meta itemprop="description" content="  Electrical part          Wiring      ">
+    <meta itemprop="datePublished" content="August 29, 2017">
     
 
     <div class="page__inner-wrap">
       
 
       <section class="page__content" itemprop="text">
-        <p>The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.</p>
-
-<ul>
-  <li><a href="#prerequisites">Prerequisites</a></li>
+        <ul>
+  <li><a href="#electrical-part">Electrical part</a>
+    <ul>
+      <li><a href="#wiring">Wiring</a></li>
+    </ul>
+  </li>
 </ul>
 
-<p>https://www.amazon.fr/gp/product/B01FX7909Q/ref=oh_aui_detailpage_o04_s00?ie=UTF8&amp;psc=1</p>
+<h2 id="electrical-part">Electrical part</h2>
 
-<p>```bash
-git clone https://github.com/goodtft/LCD-show.git
-chmod -R 755 LCD-show
-cd LCD-show/
-sudo ./LCD35-show
-``</p>
+<h3 id="wiring">Wiring</h3>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/schema_sprinkler.png" alt="Sprinkler Overview" />
+  
+    <figcaption>Sprinkler Overview
+</figcaption>
+  
+</figure>
+
+<ol>
+  <li>Electrical connection</li>
+</ol>
+
+<ul>
+  <li>
+    <p>Join electrical box to valves boxes with 7 multi-conductor wire</p>
+  </li>
+  <li>
+    <p>Install one distribution box at the entrance of the valves box.</p>
+  </li>
+</ul>
+
+<p>Tools:</p>
+<ul>
+  <li>Electrical screwdriver</li>
+  <li>Wire cutter</li>
+  <li>Wire stripper</li>
+</ul>
+
+<p>Materiel:</p>
+<ul>
+  <li>Domino bar</li>
+  <li>Distribution box</li>
+  <li>Compact Splicing Connectors</li>
+</ul>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/sprinkler/sprinkler_electric_part.png" alt="Sprinkler electric part" />
+  
+    <figcaption>Sprinkler electric part
+</figcaption>
+  
+</figure>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/sprinkler/valves_box_final.jpg" alt="Valves box final" />
+  
+    <figcaption>Valves box final
+</figcaption>
+  
+</figure>
+
+<ol>
+  <li>Relay connection (Power electronics)</li>
+</ol>
+
+<ul>
+  <li>Connect power supply to solenoid valve 24V.</li>
+</ul>
+
+<p>Materiel:</p>
+<ul>
+  <li>Transformer 220V AC/24V AC</li>
+  <li>Relay AC 250V 10A ; DC 30V 10A</li>
+</ul>
 
         
       </section>
@@ -370,15 +443,11 @@ sudo ./LCD35-show
     
       
       
-      <a href="https://jluccisano.github.io/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
+      <a href="https://jluccisano.github.io/tags/#electrical" class="page__taxonomy-item" rel="tag">Electrical</a><span class="sep">, </span>
     
       
       
-      <a href="https://jluccisano.github.io/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">Raspberry PI</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://jluccisano.github.io/tags/#ssh" class="page__taxonomy-item" rel="tag">SSH</a>
+      <a href="https://jluccisano.github.io/tags/#hidraulic" class="page__taxonomy-item" rel="tag">Hidraulic</a>
     
     </span>
   </p>
@@ -399,14 +468,14 @@ sudo ./LCD35-show
     
       
       
-      <a href="https://jluccisano.github.io/categories/#raspberry" class="page__taxonomy-item" rel="tag">Raspberry</a>
+      <a href="https://jluccisano.github.io/categories/#automation" class="page__taxonomy-item" rel="tag">Automation</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-07-16T00:00:00+00:00">July 16, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-08-29T00:00:00+00:00">August 29, 2017</time></p>
         
       </footer>
 
@@ -415,24 +484,24 @@ sudo ./LCD35-show
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Install LCD screen on Raspberry PI 3 https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Electrical part https://jluccisano.github.io/automation/sprinkler-electrical/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/automation/sprinkler-electrical/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/automation/sprinkler-electrical/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/automation/sprinkler-electrical/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/computer/go/" class="pagination--pager" title="Go
+      <a href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" class="pagination--pager" title="Hydraulic part
 ">Previous</a>
     
     
-      <a href="https://jluccisano.github.io/computer/install-xiaomi-camera/" class="pagination--pager" title="Install Xiaomi Camera
+      <a href="https://jluccisano.github.io/automation/sprinkler-electronic/" class="pagination--pager" title="Electronic part
 ">Next</a>
     
   </nav>
@@ -460,41 +529,11 @@ sudo ./LCD35-show
       
           
       
-          
-      
       
     
       
       
           
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
       
           
             
@@ -514,25 +553,233 @@ sudo ./LCD35-show
       <div class="archive__item-teaser">
         <img src=
           
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/raspberry/kivy-software/" rel="permalink">Kivy software
+        <a href="https://jluccisano.github.io/automation/sprinkler-electronic/" rel="permalink">Electronic part
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
+    <p class="archive__item-excerpt" itemprop="description">
+  Electronic part
+
 
 </p>
   </article>
 </div>
             
             
+      
+    
+      
+      
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" rel="permalink">Hydraulic part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Hydraulic part
+    
+      Prerequisites
+      Components
+      Wiring
+        
+          Water inflow level
+          Zones definition
+          Network
+ ...</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
       
     
       
@@ -551,19 +798,19 @@ sudo ./LCD35-show
       <div class="archive__item-teaser">
         <img src=
           
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="permalink">Install Xiaomi Camera
+        <a href="https://jluccisano.github.io/automation/sprinkler/" rel="permalink">Create a sprinkler system
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a Xiaomi Camera
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.
 
 </p>
   </article>
@@ -572,135 +819,6 @@ sudo ./LCD35-show
             
       
     
-      
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" rel="permalink">Consume data from RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
-publishing data to client via websocke...</p>
-  </article>
-</div>
-            
-            
-      
     
         </div>
       </div>
