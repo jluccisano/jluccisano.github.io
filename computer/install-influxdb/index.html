@@ -365,67 +365,55 @@
 
 <h3 id="run-influxdb-on-docker">Run influxDB on Docker</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker run -d -p 8083:8083 -p 8086:8086 <span class="se">\</span>
-      --name<span class="o">=</span>influxdb <span class="se">\</span>
-      -v /usr/lib/influxdb:/var/lib/influxdb <span class="se">\</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="nt">-p</span> 8083:8083 <span class="nt">-p</span> 8086:8086 <span class="se">\</span>
+      <span class="nt">--name</span><span class="o">=</span>influxdb <span class="se">\</span>
+      <span class="nt">-v</span> /usr/lib/influxdb:/var/lib/influxdb <span class="se">\</span>
       influxdb
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>see more <a href="https://hub.docker.com/_/influxdb/">here</a></p>
 
 <h3 id="create-database">Create Database</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>CREATE DATABASE IF NOT EXISTS sensor
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE DATABASE IF NOT EXISTS sensor
+</code></pre></div></div>
 
 <h3 id="connect-to-influxdb">Connect to influxDB</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>influx
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>influx
 use sensor
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="create-retention-policy">Create retention policy</h3>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">CREATE</span> <span class="n">RETENTION</span> <span class="n">POLICY</span> <span class="n">one_years_only</span> <span class="k">ON</span> <span class="n">sensor</span> <span class="n">DURATION</span> <span class="mi">52</span><span class="n">w</span> <span class="n">REPLICATION</span> <span class="mi">1</span> <span class="k">DEFAULT</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="n">RETENTION</span> <span class="n">POLICY</span> <span class="n">one_years_only</span> <span class="k">ON</span> <span class="n">sensor</span> <span class="n">DURATION</span> <span class="mi">52</span><span class="n">w</span> <span class="n">REPLICATION</span> <span class="mi">1</span> <span class="k">DEFAULT</span>
+</code></pre></div></div>
 <h3 id="create-continuous-query">Create continuous query</h3>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">CREATE</span> <span class="n">CONTINUOUS</span> <span class="n">QUERY</span> <span class="n">cq_dht22_1h</span> <span class="k">ON</span> <span class="n">sensor</span> <span class="k">BEGIN</span> <span class="k">SELECT</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">AS</span>  <span class="n">mean_temperature</span><span class="p">,</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">AS</span> <span class="n">mean_humidity</span> <span class="k">INTO</span> <span class="n">sensor</span><span class="p">.</span><span class="nv">"one_years_only"</span><span class="p">.</span><span class="nv">"cq_dht22_1h"</span> <span class="k">FROM</span> <span class="n">dht22</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">time</span><span class="p">(</span><span class="mi">1</span><span class="n">h</span><span class="p">),</span> <span class="n">gatewayId</span> <span class="k">END</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="n">CONTINUOUS</span> <span class="n">QUERY</span> <span class="n">cq_dht22_1h</span> <span class="k">ON</span> <span class="n">sensor</span> <span class="k">BEGIN</span> <span class="k">SELECT</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">AS</span>  <span class="n">mean_temperature</span><span class="p">,</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">AS</span> <span class="n">mean_humidity</span> <span class="k">INTO</span> <span class="n">sensor</span><span class="p">.</span><span class="nv">"one_years_only"</span><span class="p">.</span><span class="nv">"cq_dht22_1h"</span> <span class="k">FROM</span> <span class="n">dht22</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">time</span><span class="p">(</span><span class="mi">1</span><span class="n">h</span><span class="p">),</span> <span class="n">gatewayId</span> <span class="k">END</span>
+</code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">CREATE</span> <span class="n">CONTINUOUS</span> <span class="n">QUERY</span> <span class="n">cq_dht22_1d</span> <span class="k">ON</span> <span class="n">sensor</span> <span class="k">BEGIN</span> <span class="k">SELECT</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">AS</span>  <span class="n">mean_temperature</span><span class="p">,</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">AS</span> <span class="n">mean_humidity</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">as</span> <span class="n">min_temperature</span> <span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">as</span> <span class="n">max_temperature</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">as</span> <span class="n">min_humidity</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">as</span> <span class="n">max_humidity</span> <span class="k">INTO</span> <span class="n">sensor</span><span class="p">.</span><span class="nv">"one_years_only"</span><span class="p">.</span><span class="nv">"cq_dht22_1d"</span> <span class="k">FROM</span> <span class="n">dht22</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">time</span><span class="p">(</span><span class="mi">1</span><span class="n">d</span><span class="p">),</span> <span class="n">gatewayId</span> <span class="k">END</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="n">CONTINUOUS</span> <span class="n">QUERY</span> <span class="n">cq_dht22_1d</span> <span class="k">ON</span> <span class="n">sensor</span> <span class="k">BEGIN</span> <span class="k">SELECT</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">AS</span>  <span class="n">mean_temperature</span><span class="p">,</span> <span class="n">MEAN</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">AS</span> <span class="n">mean_humidity</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">as</span> <span class="n">min_temperature</span> <span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">temperature</span><span class="p">)</span> <span class="k">as</span> <span class="n">max_temperature</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">as</span> <span class="n">min_humidity</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">humidity</span><span class="p">)</span> <span class="k">as</span> <span class="n">max_humidity</span> <span class="k">INTO</span> <span class="n">sensor</span><span class="p">.</span><span class="nv">"one_years_only"</span><span class="p">.</span><span class="nv">"cq_dht22_1d"</span> <span class="k">FROM</span> <span class="n">dht22</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">time</span><span class="p">(</span><span class="mi">1</span><span class="n">d</span><span class="p">),</span> <span class="n">gatewayId</span> <span class="k">END</span>
+</code></pre></div></div>
 
 <h3 id="useful-commands">Useful commands</h3>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">RETENTION</span> <span class="n">POLICIES</span> <span class="k">ON</span> <span class="n">sensor</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">RETENTION</span> <span class="n">POLICIES</span> <span class="k">ON</span> <span class="n">sensor</span>
+</code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">DROP</span> <span class="n">RETENTION</span> <span class="n">POLICY</span> <span class="n">one_years_only</span> <span class="k">ON</span> <span class="n">sensor</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="n">RETENTION</span> <span class="n">POLICY</span> <span class="n">one_years_only</span> <span class="k">ON</span> <span class="n">sensor</span>
+</code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">CONTINUOUS</span> <span class="n">QUERIES</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">CONTINUOUS</span> <span class="n">QUERIES</span>
+</code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">sensor</span><span class="p">.</span><span class="nv">"autogen"</span><span class="p">.</span><span class="n">downsampled_dht22</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">sensor</span><span class="p">.</span><span class="nv">"autogen"</span><span class="p">.</span><span class="n">downsampled_dht22</span>
+</code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">DROP</span> <span class="n">CONTINUOUS</span> <span class="n">QUERY</span> <span class="n">cq_1h</span> <span class="k">ON</span> <span class="n">sensor</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="n">CONTINUOUS</span> <span class="n">QUERY</span> <span class="n">cq_1h</span> <span class="k">ON</span> <span class="n">sensor</span>
+</code></pre></div></div>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">DATABASE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">sensor</span>
-</code></pre>
-</div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">DATABASE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">sensor</span>
+</code></pre></div></div>
 
 
         

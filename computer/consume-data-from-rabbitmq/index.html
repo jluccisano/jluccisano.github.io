@@ -392,15 +392,13 @@ publishing data to client via websocket.</p>
 
 <p><a href="https://github.com/jluccisano/reactive-server">Get source here</a></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:jluccisano/reactive-server.git
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:jluccisano/reactive-server.git
+</code></pre></div></div>
 
 <h5 id="run">Run</h5>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mv application.tpl.yml application.yml
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv application.tpl.yml application.yml
+</code></pre></div></div>
 <ul>
   <li>
     <p>Set your value into application.yml</p>
@@ -410,18 +408,16 @@ publishing data to client via websocket.</p>
   </li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mvn spring-boot:run -Drun.profiles<span class="o">=</span>dev
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn spring-boot:run <span class="nt">-Drun</span>.profiles<span class="o">=</span>dev
+</code></pre></div></div>
 
 <h3 id="consume-data-from-rabbitmq">Consume data from Rabbitmq</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b step1-consumeDataFromRabbitMQ origin/step1-consumeDataFromRabbitMQ
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> step1-consumeDataFromRabbitMQ origin/step1-consumeDataFromRabbitMQ
+</code></pre></div></div>
 <h4 id="configuration-properties">Configuration properties</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Data</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Data</span>
 <span class="nd">@ConfigurationProperties</span><span class="o">(</span><span class="s">"spring.rabbitmq"</span><span class="o">)</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">RabbitMQProperties</span> <span class="o">{</span>
 
@@ -434,11 +430,10 @@ publishing data to client via websocket.</p>
     <span class="nd">@NotEmpty</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">gatewayId</span><span class="o">;</span>
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <h4 id="setup-configuration">Setup configuration</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Configuration</span>
 <span class="nd">@EnableRabbit</span>
 <span class="nd">@EnableConfigurationProperties</span><span class="o">(</span><span class="n">RabbitMQProperties</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">RabbitMQConfig</span> <span class="o">{</span>
@@ -474,11 +469,10 @@ publishing data to client via websocket.</p>
     <span class="o">}</span>
 
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <h4 id="create-consumer">Create consumer</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Service</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveHandlerImpl</span> <span class="kd">implements</span> <span class="n">ReceiveHandler</span> <span class="o">{</span>
 
     <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Logger</span> <span class="n">logger</span> <span class="o">=</span> <span class="n">LoggerFactory</span><span class="o">.</span><span class="na">getLogger</span><span class="o">(</span><span class="n">ReceiveHandlerImpl</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
@@ -496,24 +490,21 @@ publishing data to client via websocket.</p>
     <span class="o">}</span>
     
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="result">Result</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>2017-05-11 13:48:51.283  INFO 16434 --- <span class="o">[</span>cTaskExecutor-1] com.jls.service.impl.ReceiveHandlerImpl  : Message<span class="o">(</span><span class="nv">expire</span><span class="o">=</span>43869000, <span class="nv">created</span><span class="o">=</span>1494503330, <span class="nv">data</span><span class="o">=</span>DHT22Sensor<span class="o">{</span><span class="nv">temperature</span><span class="o">=</span><span class="s1">'23.799999237060547'</span>, <span class="nv">humidity</span><span class="o">=</span>47.29999923706055<span class="o">})</span>
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2017-05-11 13:48:51.283  INFO 16434 <span class="nt">---</span> <span class="o">[</span>cTaskExecutor-1] com.jls.service.impl.ReceiveHandlerImpl  : Message<span class="o">(</span><span class="nv">expire</span><span class="o">=</span>43869000, <span class="nv">created</span><span class="o">=</span>1494503330, <span class="nv">data</span><span class="o">=</span>DHT22Sensor<span class="o">{</span><span class="nv">temperature</span><span class="o">=</span><span class="s1">'23.799999237060547'</span>, <span class="nv">humidity</span><span class="o">=</span>47.29999923706055<span class="o">})</span>
+</code></pre></div></div>
 
 <h3 id="store-data-into-influxdb">Store data into InfluxDB</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b step2-store-data-into-influxDB origin/step2-store-data-into-influxDB
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> step2-store-data-into-influxDB origin/step2-store-data-into-influxDB
+</code></pre></div></div>
 
 <h4 id="maven-dependencies">Maven dependencies</h4>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>com.github.miwurster<span class="nt">&lt;/groupId&gt;</span>
     <span class="nt">&lt;artifactId&gt;</span>spring-data-influxdb<span class="nt">&lt;/artifactId&gt;</span>
     <span class="nt">&lt;version&gt;</span>1.5<span class="nt">&lt;/version&gt;</span>
@@ -523,11 +514,10 @@ publishing data to client via websocket.</p>
     <span class="nt">&lt;artifactId&gt;</span>influxdb-java<span class="nt">&lt;/artifactId&gt;</span>
     <span class="nt">&lt;version&gt;</span>2.5<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <h4 id="configuration">Configuration</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Configuration</span>
 <span class="nd">@EnableConfigurationProperties</span><span class="o">(</span><span class="n">InfluxDBProperties</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">InfluxDBConfig</span> <span class="o">{</span>
 
@@ -541,12 +531,11 @@ publishing data to client via websocket.</p>
         <span class="k">return</span> <span class="k">new</span> <span class="n">InfluxDBTemplate</span><span class="o">&lt;&gt;(</span><span class="n">connectionFactory</span><span class="o">,</span> <span class="k">new</span> <span class="n">PointConverter</span><span class="o">());</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="service">Service</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Service</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">InfluxDBServiceImpl</span> <span class="kd">implements</span> <span class="n">InfluxDBService</span><span class="o">,</span> <span class="n">InitializingBean</span> <span class="o">{</span>
 
     <span class="nd">@Autowired</span>
@@ -567,12 +556,11 @@ publishing data to client via websocket.</p>
         <span class="n">influxDBTemplate</span><span class="o">.</span><span class="na">createDatabase</span><span class="o">();</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="store">Store</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Service</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveHandlerImpl</span> <span class="kd">implements</span> <span class="n">ReceiveHandler</span> <span class="o">{</span>
 
     <span class="nd">@Autowired</span>
@@ -604,30 +592,27 @@ publishing data to client via websocket.</p>
 
 
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="result-1">Result</h4>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>bash-4.3# influx
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash-4.3# influx
 Connected to http://localhost:8086 version 1.2.0
 InfluxDB shell version: 1.2.0
 &gt; use influx_db_name
 Using database influx_db_name
 &gt; SELECT * FROM dht22
 1494503402044000000 your_gateway_id 47.20000076293945    23.899999618530273
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="create-rest-api-with-swagger">Create Rest API with Swagger</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b origin/step3-create-rest-api-with-swagger step3-create-rest-api-with-swagger
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> origin/step3-create-rest-api-with-swagger step3-create-rest-api-with-swagger
+</code></pre></div></div>
 
 <h4 id="maven-dependencies-1">Maven dependencies</h4>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>io.springfox<span class="nt">&lt;/groupId&gt;</span>
     <span class="nt">&lt;artifactId&gt;</span>springfox-swagger2<span class="nt">&lt;/artifactId&gt;</span>
     <span class="nt">&lt;version&gt;</span>${springfox.version}<span class="nt">&lt;/version&gt;</span>
@@ -637,12 +622,11 @@ Using database influx_db_name
     <span class="nt">&lt;artifactId&gt;</span>springfox-swagger-ui<span class="nt">&lt;/artifactId&gt;</span>
     <span class="nt">&lt;version&gt;</span>${springfox.version}<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="swagger-config">Swagger Config</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Configuration</span>
 <span class="nd">@EnableSwagger2</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SwaggerConfig</span> <span class="o">{</span>
 
@@ -656,10 +640,9 @@ Using database influx_db_name
     <span class="o">}</span>
 <span class="o">}</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span>
 <span class="nd">@Import</span><span class="o">({</span><span class="n">WebConfig</span><span class="o">.</span><span class="na">class</span><span class="o">,</span>
 		<span class="n">JacksonConfig</span><span class="o">.</span><span class="na">class</span><span class="o">,</span>
 		<span class="n">InfluxDBConfig</span><span class="o">.</span><span class="na">class</span><span class="o">,</span>
@@ -677,12 +660,11 @@ Using database influx_db_name
 		<span class="n">registry</span><span class="o">.</span><span class="na">addResourceHandler</span><span class="o">(</span><span class="s">"/webjars/**"</span><span class="o">).</span><span class="na">addResourceLocations</span><span class="o">(</span><span class="s">"classpath:/META-INF/resources/webjars/"</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="controller">Controller</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@RestController</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@RestController</span>
 <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/api/v1/sensor/dht22"</span><span class="o">)</span>
 <span class="nd">@Api</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"dht22"</span><span class="o">,</span> <span class="n">description</span> <span class="o">=</span> <span class="s">"DHT22 Sensor data"</span><span class="o">)</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">DHT22Controller</span> <span class="o">{</span>
@@ -754,8 +736,7 @@ Using database influx_db_name
     <span class="o">}</span>
 
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <h4 id="result-2">Result</h4>
 
 <p><a href="http://localhost:8084/swagger-ui.html">http://localhost:8084/swagger-ui.html</a></p>
@@ -778,23 +759,21 @@ Using database influx_db_name
 
 <h3 id="publish-data-to-client-via-websocket">Publish data to client via Websocket</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout -b step4-publish-to-websocket origin/step4-publish-to-websocket
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> step4-publish-to-websocket origin/step4-publish-to-websocket
+</code></pre></div></div>
 
 <h4 id="maven-dependency">Maven dependency</h4>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
     <span class="nt">&lt;groupId&gt;</span>org.springframework<span class="nt">&lt;/groupId&gt;</span>
     <span class="nt">&lt;artifactId&gt;</span>spring-websocket<span class="nt">&lt;/artifactId&gt;</span>
     <span class="nt">&lt;version&gt;</span>4.3.3.RELEASE<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="configuration-1">Configuration</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Configuration</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Configuration</span>
 <span class="nd">@EnableWebSocketMessageBroker</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">WebSocketConfig</span> <span class="kd">extends</span> <span class="n">AbstractWebSocketMessageBrokerConfigurer</span> <span class="o">{</span>
 
@@ -810,12 +789,11 @@ Using database influx_db_name
     <span class="o">}</span>
 
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="service-1">Service</h4>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Service</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">PublishServiceImpl</span> <span class="kd">implements</span> <span class="n">PublishService</span> <span class="o">{</span>
 
     <span class="nd">@Autowired</span>
@@ -826,12 +804,11 @@ Using database influx_db_name
     <span class="o">}</span>
 
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h5 id="forward">Forward</h5>
 
-<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Service</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Service</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveHandlerImpl</span> <span class="kd">implements</span> <span class="n">ReceiveHandler</span> <span class="o">{</span>
 
     <span class="nd">@Autowired</span>
@@ -865,22 +842,20 @@ Using database influx_db_name
         <span class="n">publishService</span><span class="o">.</span><span class="na">publish</span><span class="o">(</span><span class="s">"/queue/DHT22"</span><span class="o">,</span><span class="n">message</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="result-3">Result</h4>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>2017-05-12 09:11:03.826  INFO 1729 --- [cTaskExecutor-1] com.jls.service.impl.PublishServiceImpl  : [&gt;] Publish: Message(expire=60537000, created=1494573062, data=DHT22Sensor{temperature='23.200000762939453', humidity=52.5}) ;destination: /queue/DHT22
-</code></pre>
-</div>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2017-05-12 09:11:03.826  INFO 1729 --- [cTaskExecutor-1] com.jls.service.impl.PublishServiceImpl  : [&gt;] Publish: Message(expire=60537000, created=1494573062, data=DHT22Sensor{temperature='23.200000762939453', humidity=52.5}) ;destination: /queue/DHT22
+</code></pre></div></div>
 
 <h3 id="final-result">Final Result</h3>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2'</span>
-<span class="s">services</span><span class="pi">:</span>
-  <span class="s">reactive-server</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">jluccisano/reactive-server:latest"</span>
-    <span class="s">environment</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2'</span>
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">reactive-server</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">jluccisano/reactive-server:latest"</span>
+    <span class="na">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">PORT=8084</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_EXCHANGE=your_exchange_name</span>
@@ -891,53 +866,51 @@ Using database influx_db_name
       <span class="pi">-</span> <span class="s">INFLUXDB_PASSWORD=influx_password</span>
       <span class="pi">-</span> <span class="s">INFLUXDB_DATABASE=influx_db_name</span>
       <span class="pi">-</span> <span class="s">INFLUXDB_RETENTION_POLICY=influx_rp_name</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">8084:8084"</span>
-    <span class="s">links</span><span class="pi">:</span>
+    <span class="na">links</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">rabbitmq:rabbitmq"</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb:influxdb"</span>
-    <span class="s">depends_on</span><span class="pi">:</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">rabbitmq"</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb"</span>
-  <span class="s">rabbitmq</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">rabbitmq:3-management"</span>
-    <span class="s">environment</span><span class="pi">:</span>
+  <span class="na">rabbitmq</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">rabbitmq:3-management"</span>
+    <span class="na">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_USER=rabbit_user</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_PASS=rabbit_password</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_VHOST=myvhost</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
      <span class="pi">-</span> <span class="s2">"</span><span class="s">5672:5672"</span>
      <span class="pi">-</span> <span class="s2">"</span><span class="s">8092:15672"</span>
-  <span class="s">influxdb</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">appcelerator/influxdb"</span>
-    <span class="s">volumes</span><span class="pi">:</span>
+  <span class="na">influxdb</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">appcelerator/influxdb"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s1">'</span><span class="s">./resources/init_script.influxql:/etc/extra-config/influxdb/init_script.influxql:ro'</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">8083:8083"</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">8086:8086"</span>
-  <span class="s">grafana</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s1">'</span><span class="s">grafana/grafana'</span>
-    <span class="s">links</span><span class="pi">:</span>
+  <span class="na">grafana</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s1">'</span><span class="s">grafana/grafana'</span>
+    <span class="na">links</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb:influxdb"</span>
-    <span class="s">depends_on</span><span class="pi">:</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb"</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s1">'</span><span class="s">3600:3000'</span>
-  <span class="s">device-mock</span><span class="pi">:</span>
-    <span class="s">build</span><span class="pi">:</span>
-      <span class="s">context</span><span class="pi">:</span> <span class="s">./resources</span>
-      <span class="s">dockerfile</span><span class="pi">:</span> <span class="s">stub.dockerfile</span>
-    <span class="s">environment</span><span class="pi">:</span>
+  <span class="na">device-mock</span><span class="pi">:</span>
+    <span class="na">build</span><span class="pi">:</span>
+      <span class="na">context</span><span class="pi">:</span> <span class="s">./resources</span>
+      <span class="na">dockerfile</span><span class="pi">:</span> <span class="s">stub.dockerfile</span>
+    <span class="na">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_EXCHANGE=your_exchange_name</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_GATEWAYID=your_gateway_id</span>
       <span class="pi">-</span> <span class="s">PUBLISH_INTERVAL=60</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">docker-compose up -d</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">docker-compose up -d</span>
+</code></pre></div></div>
 
 <h4 id="go-further">Go Further</h4>
 

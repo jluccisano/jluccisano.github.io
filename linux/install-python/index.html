@@ -359,26 +359,22 @@
 
 <p>Check install:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>python --version
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
+</code></pre></div></div>
 <p>Otherwise you can install it</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>apt-get update
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update
 apt-get install build-essential python-dev
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="install-pip">Install PIP</h3>
 
 <p>PIP is a package management system used to install and manage some packages written in Python.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>wget https://bootstrap.pypa.io/get-pip.py
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://bootstrap.pypa.io/get-pip.py
+</code></pre></div></div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>python get-pip.py
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python get-pip.py
+</code></pre></div></div>
 
 <p>See more <a href="https://pip.pypa.io/en/latest/installing">here</a></p>
 
@@ -390,28 +386,23 @@ apt-get install build-essential python-dev
 
 <h4 id="installation-1">Installation</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo pip install virtualenv
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pip install virtualenv
+</code></pre></div></div>
 <h5 id="create-a-workspace-directory-for-the-python-version">Create a workspace directory for the Python version.</h5>
 <p>Example:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mkdir -p ~/workspace/venv2.7
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir <span class="nt">-p</span> ~/workspace/venv2.7
+</code></pre></div></div>
 <h4 id="create-virtualenv-links-with-python-interpreter-of-your-choice">Create virtualenv links with Python interpreter of your choice.</h4>
 <p>Example:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv <span class="nt">-p</span> /usr/bin/python2.7 ~/workspace/venv2.7/
+</code></pre></div></div>
 <h4 id="start-the-virtual-environment">Start the virtual environment.</h4>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">source</span> ~/workspace/venv2.7/bin/activate
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/workspace/venv2.7/bin/activate
+</code></pre></div></div>
 <p>You can now install all packages you need into your isolated environment.
 Example:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip install requests
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install requests
+</code></pre></div></div>
 
 <p>See more <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">here</a></p>
 

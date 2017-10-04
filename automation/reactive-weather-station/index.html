@@ -423,11 +423,11 @@
 
 <h4 id="adapt-the-docker-compose-file-according-your-environment">Adapt the docker-compose file according your environment</h4>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2'</span>
-<span class="s">services</span><span class="pi">:</span>
-  <span class="s">reactive-server</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">jluccisano/reactive-server:latest"</span>
-    <span class="s">environment</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2'</span>
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">reactive-server</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">jluccisano/reactive-server:latest"</span>
+    <span class="na">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">PORT=8084</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_EXCHANGE=your_exchange_name</span>
@@ -438,57 +438,56 @@
       <span class="pi">-</span> <span class="s">INFLUXDB_PASSWORD=influx_password</span>
       <span class="pi">-</span> <span class="s">INFLUXDB_DATABASE=influx_db_name</span>
       <span class="pi">-</span> <span class="s">INFLUXDB_RETENTION_POLICY=influx_rp_name</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">8084:8084"</span>
-    <span class="s">links</span><span class="pi">:</span>
+    <span class="na">links</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">rabbitmq:rabbitmq"</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb:influxdb"</span>
-    <span class="s">depends_on</span><span class="pi">:</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">rabbitmq"</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb"</span>
-  <span class="s">rabbitmq</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">rabbitmq:3-management"</span>
-    <span class="s">environment</span><span class="pi">:</span>
+  <span class="na">rabbitmq</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">rabbitmq:3-management"</span>
+    <span class="na">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_USER=rabbit_user</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_PASS=rabbit_password</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_DEFAULT_VHOST=myvhost</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
      <span class="pi">-</span> <span class="s2">"</span><span class="s">5672:5672"</span>
      <span class="pi">-</span> <span class="s2">"</span><span class="s">8092:15672"</span>
-  <span class="s">influxdb</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">appcelerator/influxdb"</span>
-    <span class="s">volumes</span><span class="pi">:</span>
+  <span class="na">influxdb</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s2">"</span><span class="s">appcelerator/influxdb"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s1">'</span><span class="s">./resources/init_script.influxql:/etc/extra-config/influxdb/init_script.influxql:ro'</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">8083:8083"</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">8086:8086"</span>
-  <span class="s">grafana</span><span class="pi">:</span>
-    <span class="s">image</span><span class="pi">:</span> <span class="s1">'</span><span class="s">grafana/grafana'</span>
-    <span class="s">links</span><span class="pi">:</span>
+  <span class="na">grafana</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s1">'</span><span class="s">grafana/grafana'</span>
+    <span class="na">links</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb:influxdb"</span>
-    <span class="s">depends_on</span><span class="pi">:</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">influxdb"</span>
-    <span class="s">ports</span><span class="pi">:</span>
+    <span class="na">ports</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s1">'</span><span class="s">3600:3000'</span>
-  <span class="s">reactive-client</span><span class="pi">:</span>
-     <span class="s">image</span><span class="pi">:</span> <span class="s1">'</span><span class="s">jluccisano/reactive-client:1.0'</span>
-     <span class="s">links</span><span class="pi">:</span>
+  <span class="na">reactive-client</span><span class="pi">:</span>
+     <span class="na">image</span><span class="pi">:</span> <span class="s1">'</span><span class="s">jluccisano/reactive-client:1.0'</span>
+     <span class="na">links</span><span class="pi">:</span>
        <span class="pi">-</span> <span class="s2">"</span><span class="s">reactive-server:reactive-server"</span>
-     <span class="s">depends_on</span><span class="pi">:</span>
+     <span class="na">depends_on</span><span class="pi">:</span>
        <span class="pi">-</span> <span class="s2">"</span><span class="s">reactive-server"</span>
-     <span class="s">ports</span><span class="pi">:</span>
+     <span class="na">ports</span><span class="pi">:</span>
        <span class="pi">-</span> <span class="s2">"</span><span class="s">8089:80"</span>
-  <span class="s">mock-raspberry</span><span class="pi">:</span>
-    <span class="s">build</span><span class="pi">:</span>
-      <span class="s">context</span><span class="pi">:</span> <span class="s">./resources</span>
-      <span class="s">dockerfile</span><span class="pi">:</span> <span class="s">mock-raspberry.dockerfile</span>
-    <span class="s">environment</span><span class="pi">:</span>
+  <span class="na">mock-raspberry</span><span class="pi">:</span>
+    <span class="na">build</span><span class="pi">:</span>
+      <span class="na">context</span><span class="pi">:</span> <span class="s">./resources</span>
+      <span class="na">dockerfile</span><span class="pi">:</span> <span class="s">mock-raspberry.dockerfile</span>
+    <span class="na">environment</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_EXCHANGE=your_exchange_name</span>
       <span class="pi">-</span> <span class="s">RABBITMQ_GATEWAYID=your_gateway_id</span>
       <span class="pi">-</span> <span class="s">PUBLISH_INTERVAL=60</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>Note: mock-raspberry is optional if you are a Raspberry PI running.</p>
 
 <p><a href="https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml">See code here</a></p>
@@ -500,11 +499,10 @@
   <li><a href="https://jluccisano.github.io/linux/install-docker">Docker</a></li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker-compose pull
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose pull
 docker-compose build
-docker-compose up -d
-</code></pre>
-</div>
+docker-compose up <span class="nt">-d</span>
+</code></pre></div></div>
 
 <p>Go to http://${YOUR_HOST}:8089</p>
 

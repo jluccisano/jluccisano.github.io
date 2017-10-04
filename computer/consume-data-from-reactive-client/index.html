@@ -394,21 +394,19 @@
 
 <p><a href="https://github.com/jluccisano/reactive-client">Get source here</a></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:jluccisano/reactive-client.git
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:jluccisano/reactive-client.git
+</code></pre></div></div>
 
 <h3 id="create-a-simple-reactjs-component">Create a simple ReactJS component</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step1-create-react-component
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout step1-create-react-component
+</code></pre></div></div>
 
 <h5 id="simple">Simple</h5>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
 
-<span class="kr">class</span> <span class="nx">ReactiveWeatherStation</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+<span class="kd">class</span> <span class="nx">ReactiveWeatherStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">(</span>
       <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
@@ -418,24 +416,23 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
-</code></pre>
-</div>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
+</code></pre></div></div>
 
 <h5 id="with-jsx">With JSX</h5>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
 
-<span class="kr">class</span> <span class="nx">ReactiveWeatherStation</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+<span class="kd">class</span> <span class="nx">ReactiveWeatherStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
       <span class="na">title</span><span class="p">:</span> <span class="s2">"Hello World!"</span>
     <span class="p">};</span>
   <span class="p">}</span>
 
   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">title</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">title</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">title</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">title</span><span class="p">;</span>
     <span class="k">return</span> <span class="p">(</span>
       <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
         <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">title</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
@@ -444,15 +441,13 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
-</code></pre>
-</div>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
+</code></pre></div></div>
 
 <h5 id="run">Run</h5>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>gulp serve
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gulp serve
+</code></pre></div></div>
 
 <h5 id="result">Result</h5>
 
@@ -466,18 +461,17 @@
 
 <h3 id="create-a-reactjs-socket-module-via-stomp-and-sockjs">Create a ReactJS socket module via STOMP and sockJS</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step2-create-websocket-client
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout step2-create-websocket-client
+</code></pre></div></div>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">'react'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">SockJS</span> <span class="nx">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Stomp</span> <span class="nx">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Config</span> <span class="nx">from</span> <span class="s1">'Config'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="s1">'Config'</span><span class="p">;</span>
 
-<span class="kr">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+<span class="kd">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
 
     <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
       <span class="na">dht22</span><span class="p">:</span> <span class="p">{</span><span class="na">temperature</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="na">humidity</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
@@ -487,7 +481,7 @@
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span> <span class="o">=</span> <span class="nx">Stomp</span><span class="p">.</span><span class="nx">over</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">socket</span><span class="p">);</span>
 
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">connect</span><span class="p">({},</span> <span class="nx">frame</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">connected</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="nx">frame</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`connected, </span><span class="p">${</span><span class="nx">frame</span><span class="p">}</span><span class="s2">!`</span><span class="p">);</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'/queue/DHT22'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">));</span>
         <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">)});</span>
@@ -496,7 +490,7 @@
   <span class="p">}</span>
 
   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">dht22</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dht22</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">dht22</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dht22</span><span class="p">;</span>
 
     <span class="k">return</span> <span class="p">(</span>
       <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
@@ -507,14 +501,12 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
-</code></pre>
-</div>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
+</code></pre></div></div>
 <h5 id="run-1">Run</h5>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>gulp serve
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gulp serve
+</code></pre></div></div>
 
 <h5 id="result-1">Result</h5>
 
@@ -528,20 +520,19 @@
 
 <h3 id="get-data-from-rest-api">Get data from Rest API</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step3-get-data-from-rest-api
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout step3-get-data-from-rest-api
+</code></pre></div></div>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">'react'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">SockJS</span> <span class="nx">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Stomp</span> <span class="nx">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Config</span> <span class="nx">from</span> <span class="s1">'Config'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-bootstrap'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Moment</span> <span class="nx">from</span> <span class="s1">'react-moment'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="s1">'Config'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'react-bootstrap'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Moment</span> <span class="k">from</span> <span class="s1">'react-moment'</span><span class="p">;</span>
 
-<span class="kr">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+<span class="kd">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
 
     <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
       <span class="na">dht22</span><span class="p">:</span> <span class="p">{</span><span class="na">temperature</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="na">humidity</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
@@ -553,7 +544,7 @@
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span> <span class="o">=</span> <span class="nx">Stomp</span><span class="p">.</span><span class="nx">over</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">socket</span><span class="p">);</span>
 
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">connect</span><span class="p">({},</span> <span class="nx">frame</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">connected</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="nx">frame</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`connected, </span><span class="p">${</span><span class="nx">frame</span><span class="p">}</span><span class="s2">!`</span><span class="p">);</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'/queue/DHT22'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">));</span>
         <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">)});</span>
@@ -562,19 +553,19 @@
   <span class="p">}</span>
 
   <span class="nx">componentDidMount</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fetch</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="sr">/api/</span><span class="nx">v1</span><span class="o">/</span><span class="nx">sensor</span><span class="o">/</span><span class="nx">dht22</span><span class="o">/</span><span class="nx">fresh</span><span class="o">/</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="err">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="s2">/api/v1/sensor/dht22/fresh/</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="s2">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">json</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">json</span><span class="p">});</span>
     <span class="p">});</span>
 
-    <span class="nx">fetch</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="sr">/api/</span><span class="nx">v1</span><span class="o">/</span><span class="nx">sensor</span><span class="o">/</span><span class="nx">dht22</span><span class="o">/</span><span class="nx">continuous</span><span class="o">/</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}?</span><span class="nx">sample</span><span class="o">=</span><span class="mi">1</span><span class="nx">h</span><span class="o">&amp;</span><span class="nx">range</span><span class="o">=</span><span class="mi">12</span><span class="nx">h</span><span class="err">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="s2">/api/v1/sensor/dht22/continuous/</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="s2">?sample=1h&amp;range=12h`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">json</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dataProvider</span><span class="p">:</span> <span class="nx">json</span><span class="p">.</span><span class="nx">items</span><span class="p">});</span>
     <span class="p">});</span>
 
-    <span class="nx">fetch</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="sr">/api/</span><span class="nx">v1</span><span class="o">/</span><span class="nx">sensor</span><span class="o">/</span><span class="nx">dht22</span><span class="o">/</span><span class="nx">continuous</span><span class="o">/</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}?</span><span class="nx">sample</span><span class="o">=</span><span class="mi">1</span><span class="nx">d</span><span class="o">&amp;</span><span class="nx">range</span><span class="o">=</span><span class="mi">7</span><span class="nx">d</span><span class="err">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="s2">/api/v1/sensor/dht22/continuous/</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="s2">?sample=1d&amp;range=7d`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">json</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">lastWeekData</span><span class="p">:</span> <span class="nx">json</span><span class="p">.</span><span class="nx">items</span><span class="p">});</span>
@@ -582,12 +573,12 @@
   <span class="p">}</span>
 
   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">dht22</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dht22</span><span class="p">;</span>
-    <span class="kr">const</span> <span class="nx">lastWeekData</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">lastWeekData</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">dht22</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dht22</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">lastWeekData</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">lastWeekData</span><span class="p">;</span>
 
     <span class="kd">function</span> <span class="nx">LastWeekDataTable</span><span class="p">(</span><span class="nx">lastWeekData</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">if</span> <span class="p">(</span><span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kr">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">row</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">row</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
           <span class="k">return</span> <span class="p">(</span>
             <span class="o">&lt;</span><span class="nx">tr</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span><span class="o">&gt;</span>
               <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="nx">Moment</span> <span class="nx">format</span><span class="o">=</span><span class="s2">"MMMM Do YYYY"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">time</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Moment&gt;&lt;/</span><span class="nx">td</span><span class="o">&gt;</span>
@@ -625,15 +616,13 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
-</code></pre>
-</div>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
+</code></pre></div></div>
 
 <h5 id="run-2">Run</h5>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>gulp serve
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gulp serve
+</code></pre></div></div>
 
 <h5 id="result-2">Result</h5>
 
@@ -647,22 +636,21 @@
 
 <h3 id="create-widget-with-d3js">Create widget with D3JS</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git checkout step4-show-consume-data-with-d3js
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout step4-show-consume-data-with-d3js
+</code></pre></div></div>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">'react'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">SockJS</span> <span class="nx">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Stomp</span> <span class="nx">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Config</span> <span class="nx">from</span> <span class="s1">'Config'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span><span class="nx">LineChart</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-d3-basic'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">d3</span> <span class="nx">from</span> <span class="s1">'d3'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="nx">Moment</span> <span class="nx">from</span> <span class="s1">'react-moment'</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-bootstrap'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="s1">'Config'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">LineChart</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'react-d3-basic'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">d3</span> <span class="k">from</span> <span class="s1">'d3'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Moment</span> <span class="k">from</span> <span class="s1">'react-moment'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'react-bootstrap'</span><span class="p">;</span>
 
-<span class="kr">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kr">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+<span class="kd">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
 
     <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
       <span class="na">dht22</span><span class="p">:</span> <span class="p">{</span><span class="na">temperature</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="na">humidity</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
@@ -674,7 +662,7 @@
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span> <span class="o">=</span> <span class="nx">Stomp</span><span class="p">.</span><span class="nx">over</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">socket</span><span class="p">);</span>
 
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">connect</span><span class="p">({},</span> <span class="nx">frame</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">connected</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="nx">frame</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`connected, </span><span class="p">${</span><span class="nx">frame</span><span class="p">}</span><span class="s2">!`</span><span class="p">);</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'/queue/DHT22'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">));</span>
         <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">)});</span>
@@ -683,19 +671,19 @@
   <span class="p">}</span>
 
   <span class="nx">componentDidMount</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">fetch</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="sr">/api/</span><span class="nx">v1</span><span class="o">/</span><span class="nx">sensor</span><span class="o">/</span><span class="nx">dht22</span><span class="o">/</span><span class="nx">fresh</span><span class="o">/</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="err">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="s2">/api/v1/sensor/dht22/fresh/</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="s2">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">json</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">json</span><span class="p">});</span>
     <span class="p">});</span>
 
-    <span class="nx">fetch</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="sr">/api/</span><span class="nx">v1</span><span class="o">/</span><span class="nx">sensor</span><span class="o">/</span><span class="nx">dht22</span><span class="o">/</span><span class="nx">continuous</span><span class="o">/</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}?</span><span class="nx">sample</span><span class="o">=</span><span class="mi">1</span><span class="nx">h</span><span class="o">&amp;</span><span class="nx">range</span><span class="o">=</span><span class="mi">12</span><span class="nx">h</span><span class="err">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="s2">/api/v1/sensor/dht22/continuous/</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="s2">?sample=1h&amp;range=12h`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">json</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dataProvider</span><span class="p">:</span> <span class="nx">json</span><span class="p">.</span><span class="nx">items</span><span class="p">});</span>
     <span class="p">});</span>
 
-    <span class="nx">fetch</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="sr">/api/</span><span class="nx">v1</span><span class="o">/</span><span class="nx">sensor</span><span class="o">/</span><span class="nx">dht22</span><span class="o">/</span><span class="nx">continuous</span><span class="o">/</span><span class="nx">$</span><span class="p">{</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}?</span><span class="nx">sample</span><span class="o">=</span><span class="mi">1</span><span class="nx">d</span><span class="o">&amp;</span><span class="nx">range</span><span class="o">=</span><span class="mi">7</span><span class="nx">d</span><span class="err">`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">serverURL</span><span class="p">}</span><span class="s2">/api/v1/sensor/dht22/continuous/</span><span class="p">${</span><span class="nx">Config</span><span class="p">.</span><span class="nx">gatewayId</span><span class="p">}</span><span class="s2">?sample=1d&amp;range=7d`</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
     <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">json</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">lastWeekData</span><span class="p">:</span> <span class="nx">json</span><span class="p">.</span><span class="nx">items</span><span class="p">});</span>
@@ -703,11 +691,11 @@
   <span class="p">}</span>
 
   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">dht22</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dht22</span><span class="p">;</span>
-    <span class="kr">const</span> <span class="nx">dataProvider</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dataProvider</span><span class="p">;</span>
-    <span class="kr">const</span> <span class="nx">lastWeekData</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">lastWeekData</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">dht22</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dht22</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">dataProvider</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">dataProvider</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">lastWeekData</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">lastWeekData</span><span class="p">;</span>
 
-    <span class="kr">const</span> <span class="nx">chartSeries</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="kd">const</span> <span class="nx">chartSeries</span> <span class="o">=</span> <span class="p">[</span>
       <span class="p">{</span>
         <span class="na">field</span><span class="p">:</span> <span class="s1">'mean_temperature'</span><span class="p">,</span>
         <span class="na">name</span><span class="p">:</span> <span class="s1">'Temperature'</span><span class="p">,</span>
@@ -732,7 +720,7 @@
 
     <span class="kd">function</span> <span class="nx">LastWeekDataTable</span><span class="p">(</span><span class="nx">lastWeekData</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">if</span> <span class="p">(</span><span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kr">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">row</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">row</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
           <span class="k">return</span> <span class="p">(</span>
             <span class="o">&lt;</span><span class="nx">tr</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span><span class="o">&gt;</span>
               <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="nx">Moment</span> <span class="nx">format</span><span class="o">=</span><span class="s2">"MMMM Do YYYY"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">time</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Moment&gt;&lt;/</span><span class="nx">td</span><span class="o">&gt;</span>
@@ -761,9 +749,9 @@
       <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kr">const</span> <span class="nx">parseISODate</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">time</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">'%Y-%m-%dT%H:%M:%SZ'</span><span class="p">).</span><span class="nx">parse</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">parseISODate</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">time</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">'%Y-%m-%dT%H:%M:%SZ'</span><span class="p">).</span><span class="nx">parse</span><span class="p">;</span>
 
-    <span class="kr">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">parseISODate</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">time</span><span class="p">);</span>
     <span class="p">};</span>
     <span class="k">return</span> <span class="p">(</span>
@@ -777,15 +765,13 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
-</code></pre>
-</div>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ReactiveMeteoStation</span><span class="p">;</span>
+</code></pre></div></div>
 
 <h5 id="run-3">Run</h5>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>gulp serve
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gulp serve
+</code></pre></div></div>
 
 <h5 id="result-3">Result</h5>
 

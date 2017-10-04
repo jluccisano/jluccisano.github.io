@@ -453,8 +453,8 @@
 install python
 git</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
-<span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
+<span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="k">as</span> <span class="n">GPIO</span>
 <span class="kn">import</span> <span class="nn">argparse</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 
@@ -562,38 +562,32 @@ git</p>
 	
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
     <span class="n">RelayControl</span><span class="p">()</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Get state of each valve</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">get</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">get</span>
+</code></pre></div></div>
 
 <p>Get state of specific valve</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">get</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">get</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span>
+</code></pre></div></div>
 
 <p>Set state of specific valve</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="nb">set</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span> <span class="o">--</span><span class="n">state</span> <span class="mi">1</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="nb">set</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span> <span class="o">--</span><span class="n">state</span> <span class="mi">1</span>
+</code></pre></div></div>
 
 <p>Set state of each valve</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="nb">set</span> <span class="o">--</span><span class="n">state</span> <span class="mi">1</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="nb">set</span> <span class="o">--</span><span class="n">state</span> <span class="mi">1</span>
+</code></pre></div></div>
 
 <p>Toggle state of specific valve</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">toggle</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span>
-</code></pre>
-</div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">relay_control</span><span class="o">.</span><span class="n">py</span> <span class="n">toggle</span> <span class="o">--</span><span class="n">relay</span> <span class="mi">1</span>
+</code></pre></div></div>
 
 <ol>
   <li>Display</li>
@@ -624,12 +618,11 @@ git</p>
 
 <h3 id="install-kivy">Install Kivy</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip install <span class="nv">Cython</span><span class="o">==</span>0.23
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install <span class="nv">Cython</span><span class="o">==</span>0.23
 pip install kivy
 pip install pygame
 python sprinkler-control.py
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>see more <a href="https://kivy.org/docs/installation/installation-linux.html#installation-linux">here</a></p>
 
 <p>https://kivy.org/docs/guide/basic.html</p>

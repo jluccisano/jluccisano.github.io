@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-09-06T05:17:45+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Software part</title><link href="https://jluccisano.github.io/automation/sprinkler-software/" rel="alternate" type="text/html" title="Software part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-software</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-software/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2017-10-04T06:56:53+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Software part</title><link href="https://jluccisano.github.io/automation/sprinkler-software/" rel="alternate" type="text/html" title="Software part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-software</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-software/">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#software-part&quot;&gt;Software part&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -116,8 +116,8 @@
 install python
 git&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;RPi.GPIO&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;GPIO&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;RPi.GPIO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;argparse&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
 
@@ -225,38 +225,32 @@ git&lt;/p&gt;
 	
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;RelayControl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Get state of each valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Get state of specific valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Set state of specific valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Set state of each valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Toggle state of specific valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toggle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toggle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Display&lt;/li&gt;
@@ -287,12 +281,11 @@ git&lt;/p&gt;
 
 &lt;h3 id=&quot;install-kivy&quot;&gt;Install Kivy&lt;/h3&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install &lt;span class=&quot;nv&quot;&gt;Cython&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.23
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install &lt;span class=&quot;nv&quot;&gt;Cython&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.23
 pip install kivy
 pip install pygame
 python sprinkler-control.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;see more &lt;a href=&quot;https://kivy.org/docs/installation/installation-linux.html#installation-linux&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;https://kivy.org/docs/guide/basic.html&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Electronic" /><category term="Hidraulic" /><summary type="html">Electronic part</summary></entry><entry><title type="html">Electrical part</title><link href="https://jluccisano.github.io/automation/sprinkler-electrical/" rel="alternate" type="text/html" title="Electrical part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-electrical</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-electrical/">&lt;ul&gt;
@@ -1227,7 +1220,7 @@ In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 
 
 &lt;p&gt;http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
 
 Started erase on disk1
 Unmounting disk
@@ -1246,9 +1239,8 @@ diskutil unmountDisk /dev/disk1
 Unmount of all volumes on disk1 was successful
 
 
-sudo dd &lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1m &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Users/Lucci/Downloads/fanghacks_v0.2.0.img  &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/disk1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dd &lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1m &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Users/Lucci/Downloads/fanghacks_v0.2.0.img  &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/disk1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;CTRL-T&lt;/p&gt;
 
@@ -1262,26 +1254,24 @@ sudo dd &lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&q
 
 &lt;p&gt;Put sd card wait clanking&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nmap -sn 192.168.0.0/24
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nmap &lt;span class=&quot;nt&quot;&gt;-sn&lt;/span&gt; 192.168.0.0/24
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Starting Nmap 7.12 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; https://nmap.org &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; at 2017-07-18 22:08 CEST
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Starting Nmap 7.12 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; https://nmap.org &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; at 2017-07-18 22:08 CEST
 Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.10
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0099s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.
+Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0099s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.12
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.012s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.
+Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.012s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.14
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0041s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.
+Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0041s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.15
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.00029s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.
+Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.00029s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.18
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0023s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.
+Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0023s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.254
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0025s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.
+Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0025s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 256 IP addresses &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;6 hosts up&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; scanned &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;2.69 seconds
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;http://192.168.0.18/cgi-bin/hello.cgi&lt;/p&gt;
 
@@ -1299,7 +1289,7 @@ Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 256 IP addresses &lt;spa
 
 &lt;p&gt;sudo vim /volume1/@appstore/SurveillanceStation/device_pack/camera_support/Xiaomi.conf&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Xiaomi&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;XiaoFang]
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Xiaomi&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;XiaoFang]
 api &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; custom
 default_fps_h264_1920×1080 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 10
 default_image-quality &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5
@@ -1318,8 +1308,7 @@ fps_mpeg4_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5
 fps_h264_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5,10,15,20,25,30
 audio_format &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; G726,PCM
 default_audio_format &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; PCM
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;http://www.gearbest.com/ip-cameras/pp_487830.html&lt;/p&gt;
 
@@ -1383,9 +1372,8 @@ export PATH=${GOROOT}/bin:${PATH}&lt;/p&gt;
 
 &lt;h3 id=&quot;docker-build&quot;&gt;Docker build&lt;/h3&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker run --name mongo-nextrun -v /home/desktop/data/db:/data/db -d mongo:tag -p 27017:27017
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="NodeJs" /><category term="AngularJS" /><category term="MongoDB" /><category term="SASS" /><category term="CSS" /><category term="HTML5" /><category term="JavaScript" /><category term="Google Maps API" /><summary type="html">Create and plan your sport workout.</summary></entry><entry><title type="html">Install GIT</title><link href="https://jluccisano.github.io/linux/install-git/" rel="alternate" type="text/html" title="Install GIT" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/install-git</id><content type="html" xml:base="https://jluccisano.github.io/linux/install-git/">&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; mongo-nextrun &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/desktop/data/db:/data/db &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; mongo:tag &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 27017:27017
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="NodeJs" /><category term="AngularJS" /><category term="MongoDB" /><category term="SASS" /><category term="CSS" /><category term="HTML5" /><category term="JavaScript" /><category term="Google Maps API" /><summary type="html">Create and plan your sport workout.</summary></entry><entry><title type="html">Install GIT</title><link href="https://jluccisano.github.io/linux/install-git/" rel="alternate" type="text/html" title="Install GIT" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/linux/install-git</id><content type="html" xml:base="https://jluccisano.github.io/linux/install-git/">&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
 
 &lt;p&gt;https://orga.cat/posts/most-useful-git-commands&lt;/p&gt;
 
@@ -1393,23 +1381,19 @@ export PATH=${GOROOT}/bin:${PATH}&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Rename last commit
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit --amend
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;--amend&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;or&lt;/p&gt;
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase -i HEAD~1
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; HEAD~1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Squash 2 commits in one
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase -i HEAD~2
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; HEAD~2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Set core editor
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global core.editor &lt;span class=&quot;s2&quot;&gt;&quot;vim&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; core.editor &lt;span class=&quot;s2&quot;&gt;&quot;vim&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 

@@ -359,13 +359,12 @@
 
 <p>a. Create new service</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo vim /lib/systemd/system/myservice.service
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vim /lib/systemd/system/myservice.service
+</code></pre></div></div>
 
 <p>b. Edit parameters</p>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>[Unit]
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
 Description=MyService
 After=multi-user.target
 
@@ -378,47 +377,38 @@ RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>c. Enable execution permission of your service</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo chmod 644 /lib/systemd/system/myservice.service
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>chmod 644 /lib/systemd/system/myservice.service
+</code></pre></div></div>
 <p>d. Enable execution permission of your script</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo chmod u+x /opt/script.py 
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>chmod u+x /opt/script.py 
+</code></pre></div></div>
 <p>e. Create symbolic link</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo ln -s /opt/script.py /usr/bin/myservice
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ln <span class="nt">-s</span> /opt/script.py /usr/bin/myservice
+</code></pre></div></div>
 <p>f. Reload daemon</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl daemon-reload
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl daemon-reload
+</code></pre></div></div>
 <p>g. Enable the service</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl <span class="nb">enable </span>myservice.service
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>myservice.service
+</code></pre></div></div>
 <p>h. Start the service</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl start myservice.service
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start myservice.service
+</code></pre></div></div>
 <p>i. Check status</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl status myservice.service
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl status myservice.service
+</code></pre></div></div>
 
 <h3 id="useful-commands">Useful commands</h3>
 
 <ul>
   <li>Stop the service
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl stop myservice.service
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl stop myservice.service
+</code></pre></div>    </div>
   </li>
 </ul>
 

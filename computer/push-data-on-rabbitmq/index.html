@@ -362,9 +362,8 @@
 
 <h3 id="run-rabbitmq-container">Run RabbitMQ container</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker run -d --hostname my-rabbit --name my-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="nt">--hostname</span> my-rabbit <span class="nt">--name</span> my-rabbit <span class="nt">-p</span> 5672:5672 <span class="nt">-p</span> 8080:15672 rabbitmq:3-management
+</code></pre></div></div>
 <p>see more <a href="https://hub.docker.com/_/rabbitmq/">here</a></p>
 
 <p>You can see RabbitMQ management interface on port 8080.</p>
@@ -375,25 +374,22 @@
   <li>Clone raspberry-scripts project</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone git@github.com:jluccisano/raspberry-scripts.git
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:jluccisano/raspberry-scripts.git
+</code></pre></div></div>
 
 <ol>
   <li>Go to
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd </span>raspberry-scripts/scripts
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>raspberry-scripts/scripts
+</code></pre></div>    </div>
   </li>
   <li>Edit the _config.yml</li>
 </ol>
 
 <p>Replace by your config</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vim _config.yml
-</code></pre>
-</div>
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>rabbitmq:
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim _config.yml
+</code></pre></div></div>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rabbitmq:
     url: amqp://guest:guest@RABBIT_DOCKER_HOST:5672
     gatewayId: raspberry_1
     sendFrom: RASPBERRY_IP_ADDRESS
@@ -401,37 +397,32 @@
     publish_interval: 60
     queue: event     
     logPath: /var/log/dht22
-</code></pre>
-</div>
+</code></pre></div></div>
 <ol>
   <li>Start virtualenv (optional)</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>virtualenv -p /usr/bin/python2.7 ~/env2.7/
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv <span class="nt">-p</span> /usr/bin/python2.7 ~/env2.7/
 <span class="nb">source</span> ~/env2.7/bin/activate
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>see more <a href="https://jluccisano.github.io/linux/install-python#create-virtualenv">here</a></p>
 
 <p>Install dependencies:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>pip install pika
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install pika
 pip install adafruit_python_dht
 pip install pyyaml
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>see more <a href="https://pika.readthedocs.io/en/0.10.0/">here</a></p>
 
 <ol>
   <li>Start publisher</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>python publisher.py &amp;
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python publisher.py &amp;
+</code></pre></div></div>
 <p>Show log:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>tail -f /var/log/dht22/publisher.log
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail <span class="nt">-f</span> /var/log/dht22/publisher.log
+</code></pre></div></div>
 
 <p>Note: code based on <a href="&quot;https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_publisher_example.html&quot;">Asynchronous publisher example</a></p>
 
@@ -441,14 +432,12 @@ pip install pyyaml
   <li>Start publisher</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>python consumer.py &amp;
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python consumer.py &amp;
+</code></pre></div></div>
 
 <p>Show log:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>tail -f /var/log/dht22/consumer.log
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail <span class="nt">-f</span> /var/log/dht22/consumer.log
+</code></pre></div></div>
 
 <p>code based on <a href="&quot;https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html&quot;">Asynchronous consumer example</a></p>
 
@@ -462,44 +451,39 @@ pip install pyyaml
   <li>Start</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl start dht22_publisher.service
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start dht22_publisher.service
+</code></pre></div></div>
 
 <ol>
   <li>Check</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl status dht22_publisher.service
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl status dht22_publisher.service
+</code></pre></div></div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(env2.7) pi@raspberrypi:/opt/dht22 $ sudo systemctl status dht22.service
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(env2.7) pi@raspberrypi:/opt/dht22 $ sudo systemctl status dht22.service
 ● dht22.service - DHT22
    Loaded: loaded (/lib/systemd/system/dht22.service; enabled)
    Active: active (running) since Fri 2017-03-24 13:21:46 UTC; 1s ago
  Main PID: 14457 (python)
    CGroup: /system.slice/dht22.service
            └─14457 /usr/bin/python /opt/dht22/publisher.py
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Show log:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>tail -f /var/log/dht22/publisher.log
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tail <span class="nt">-f</span> /var/log/dht22/publisher.log
+</code></pre></div></div>
 
 <p>Great publisher works fine !!</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>2017-03-24 13:21:48,032 Start publishing
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2017-03-24 13:21:48,032 Start publishing
 2017-03-24 13:21:48,033 Scheduling next message <span class="k">for </span>60.0 seconds
 2017-03-24 13:22:47,668 Received 0 heartbeat frames, sent 0
 2017-03-24 13:22:47,669 Sending heartbeat frame
 2017-03-24 13:22:47,784 Received heartbeat frame
 2017-03-24 13:22:48,701 <span class="o">[]</span> Published data <span class="o">{</span><span class="s1">'expire'</span>: 38231000, <span class="s1">'data'</span>: <span class="o">{</span><span class="s1">'humidity'</span>: 34.20000076293945, <span class="s1">'@type'</span>: <span class="s1">'DHT22'</span>, <span class="s1">'temperature'</span>: 24.399999618530273<span class="o">}</span>, <span class="s1">'created'</span>: 1490361768<span class="o">}</span> <span class="c"># 1</span>
 2017-03-24 13:22:48,701 Scheduling next message <span class="k">for </span>60.0 seconds
-</code></pre>
-</div>
+</code></pre></div></div>
 
         
       </section>

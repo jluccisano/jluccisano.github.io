@@ -401,108 +401,95 @@ and maybe with better prices.</p>
 
 <p>a. Retrieve the SD card mount point</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>    diskutil list
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    diskutil list
+</code></pre></div></div>
 
 <p>Output:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>/dev/disk0 <span class="o">(</span>internal, physical<span class="o">)</span>:
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/dev/disk0 <span class="o">(</span>internal, physical<span class="o">)</span>:
    <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
    0:      GUID_partition_scheme                        <span class="k">*</span>500.1 GB   disk0
    1:                        EFI EFI                     209.7 MB   disk0s1
    2:                  Apple_HFS Macintosh HD            499.2 GB   disk0s2
    3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
 
-/dev/disk1 <span class="o">(</span>external, physical<span class="o">)</span>:
+/dev/disk2 <span class="o">(</span>external, physical<span class="o">)</span>:
    <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
-   0:     FDisk_partition_scheme                        <span class="k">*</span>15.9 GB    disk1
-   1:             Windows_FAT_32 NO NAME                 15.9 GB    disk1s1 
-</code></pre>
-</div>
+   0:     FDisk_partition_scheme                        <span class="k">*</span>15.9 GB    disk2
+   1:             Windows_FAT_32 NO NAME                 15.9 GB    disk2s1 
+</code></pre></div></div>
 
-<p>Note: We can see the SD Card is mounted on “dev/disk1 (external, physical)”</p>
+<p>Note: We can see the SD Card is mounted on “dev/disk2 (external, physical)”</p>
 
 <p>b. Format the SD Card</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code> sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk1
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk2
+</code></pre></div></div>
 
 <p>Template:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>diskutil eraseDisk <span class="o">{</span>filesystem<span class="o">}</span> <span class="o">{</span>Name<span class="o">}</span> MBRFormat /dev/<span class="o">{</span>disk identifier<span class="o">}</span>
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>diskutil eraseDisk <span class="o">{</span>filesystem<span class="o">}</span> <span class="o">{</span>Name<span class="o">}</span> MBRFormat /dev/<span class="o">{</span>disk identifier<span class="o">}</span>
+</code></pre></div></div>
 <p>Output:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>Password:
-Started erase on disk1
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Password:
+Started erase on disk2
 Unmounting disk
 Creating the partition map
 Waiting <span class="k">for </span>partitions to activate
-Formatting disk1s1 as MS-DOS <span class="o">(</span>FAT32<span class="o">)</span> with name RASPBIAN
+Formatting disk2s1 as MS-DOS <span class="o">(</span>FAT32<span class="o">)</span> with name RASPBIAN
 512 bytes per physical sector
-/dev/rdisk1s1: 31085888 sectors <span class="k">in </span>1942868 FAT32 clusters <span class="o">(</span>8192 bytes/cluster<span class="o">)</span>
+/dev/rdisk2s1: 31085888 sectors <span class="k">in </span>1942868 FAT32 clusters <span class="o">(</span>8192 bytes/cluster<span class="o">)</span>
 <span class="nv">bps</span><span class="o">=</span>512 <span class="nv">spc</span><span class="o">=</span>16 <span class="nv">res</span><span class="o">=</span>32 <span class="nv">nft</span><span class="o">=</span>2 <span class="nv">mid</span><span class="o">=</span>0xf8 <span class="nv">spt</span><span class="o">=</span>32 <span class="nv">hds</span><span class="o">=</span>255 <span class="nv">hid</span><span class="o">=</span>2 <span class="nv">drv</span><span class="o">=</span>0x80 <span class="nv">bsec</span><span class="o">=</span>31116286 <span class="nv">bspf</span><span class="o">=</span>15179 <span class="nv">rdcl</span><span class="o">=</span>2 <span class="nv">infs</span><span class="o">=</span>1 <span class="nv">bkbs</span><span class="o">=</span>6
 Mounting disk
-Finished erase on disk1
-</code></pre>
-</div>
+Finished erase on disk2
+</code></pre></div></div>
 
 <p>c. Unmount the SD Card</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code> diskutil unmountDisk /dev/disk1
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> diskutil unmountDisk /dev/disk2
+</code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>Unmount of all volumes on disk1 was successful
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Unmount of all volumes on disk2 was successful
+</code></pre></div></div>
 
 <p>d. Write image into the SD Card</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  <span class="nv">of</span><span class="o">=</span>/dev/disk1
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  <span class="nv">of</span><span class="o">=</span>/dev/disk2
+</code></pre></div></div>
 
 <p>template:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">={</span>raspbian image path<span class="o">}</span> <span class="nv">of</span><span class="o">=</span>/dev/<span class="o">{</span>disk identifier<span class="o">}</span>
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">={</span>raspbian image path<span class="o">}</span> <span class="nv">of</span><span class="o">=</span>/dev/<span class="o">{</span>disk identifier<span class="o">}</span>
+</code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>4190+0 records <span class="k">in
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4190+0 records <span class="k">in
 </span>4190+0 records out
 4393533440 bytes transferred <span class="k">in </span>437.696112 secs <span class="o">(</span>10037863 bytes/sec<span class="o">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>e. Enable SSH</p>
 
 <p>In order to enable SSH, all you need to do is to put a file called ssh in the /boot/ directory.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> /Volumes/boot
-</code></pre>
-</div>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>touch ssh
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /Volumes/boot
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch ssh
+</code></pre></div></div>
 
 <p>See more <a href="https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/">here</a></p>
 
 <p>f. Eject the SD Card</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>diskutil eject /dev/disk1
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ..
+diskutil eject /dev/disk2
+</code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>Disk /dev/disk1 ejected
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Disk /dev/disk2 ejected
+</code></pre></div></div>
 <p>Now, the SD Card is ready to use.</p>
 
 <p>g. Plug an ethernet cable and swicth on the power supply.</p>
@@ -522,105 +509,93 @@ Finished erase on disk1
 
 <p>Follow this <a href="https://www.raspberrypi.org/documentation/remote-access/ip-address.md">tutorial</a>
 Example:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>nmap -sn 192.168.0.0/24
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="nt">-sn</span> 192.168.0.0/24
+</code></pre></div></div>
 
 <p>Output</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>tarting Nmap 7.12 <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2017-04-07 13:24 CEST
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tarting Nmap 7.12 <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2017-04-07 13:24 CEST
 Nmap scan report <span class="k">for </span>192.168.0.10
-Host is up <span class="o">(</span>0.016s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.016s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.12
-Host is up <span class="o">(</span>0.019s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.019s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.14
-Host is up <span class="o">(</span>0.0040s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0040s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.18
-Host is up <span class="o">(</span>0.0017s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0017s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.20
-Host is up <span class="o">(</span>0.077s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.077s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.254
-Host is up <span class="o">(</span>0.0075s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0075s latency<span class="o">)</span><span class="nb">.</span>
 Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>7 hosts up<span class="o">)</span> scanned <span class="k">in </span>3.04 seconds
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>2) plug the ethernet cable et re-run the nmap command
 Example:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>nmap -sn 192.168.0.0/24
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="nt">-sn</span> 192.168.0.0/24
+</code></pre></div></div>
 
 <p>Output</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>tarting Nmap 7.12 <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2017-04-07 13:24 CEST
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tarting Nmap 7.12 <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2017-04-07 13:24 CEST
 Nmap scan report <span class="k">for </span>192.168.0.10
-Host is up <span class="o">(</span>0.016s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.016s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.12
-Host is up <span class="o">(</span>0.019s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.019s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.14
-Host is up <span class="o">(</span>0.0040s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0040s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.18
-Host is up <span class="o">(</span>0.0025s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0025s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.19
-Host is up <span class="o">(</span>0.0017s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0017s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.20
-Host is up <span class="o">(</span>0.077s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.077s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.254
-Host is up <span class="o">(</span>0.0075s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0075s latency<span class="o">)</span><span class="nb">.</span>
 Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>7 hosts up<span class="o">)</span> scanned <span class="k">in </span>3.04 seconds
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>As we can see, a new IP address 192.168.0.19 was scanned. It’s your Raspberry PI.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>Host is up <span class="o">(</span>0.0025s latency<span class="o">)</span>.
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host is up <span class="o">(</span>0.0025s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.19
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="connect-via-ssh">Connect via SSH</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ssh pi@192.168.0.19
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh pi@192.168.0.19
+</code></pre></div></div>
 <p>if you want to use X11</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ssh -Y pi@192.168.0.119
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-Y</span> pi@192.168.0.119
+</code></pre></div></div>
 
 <p>Note:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>Default username: pi
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Default username: pi
 Default password: raspberry
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note: first of all change your password with command</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>passwd
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>passwd
+</code></pre></div></div>
 <p>output</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>Changing password <span class="k">for </span>pi.
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Changing password <span class="k">for </span>pi.
 <span class="o">(</span>current<span class="o">)</span> UNIX password:
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>See this post in order to perform Raspbian basic administration <a href="https://jluccisano.github.io/raspberry/setup-linux">here</a></p>
 
 <h3 id="update-the-rasbpian">Update the Rasbpian</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get update <span class="o">&amp;&amp;</span> sudo  apt-get upgrade
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="nb">sudo  </span>apt-get upgrade
+</code></pre></div></div>
 
 <h3 id="set-a-static-ip-address">Set a static IP Address</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install vim
-sudo vim /etc/network/interfaces
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get install vim
+<span class="nb">sudo </span>vim /etc/network/interfaces
+</code></pre></div></div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>systemctl <span class="o">(</span>start|stop<span class="o">)</span> vncserver-x11-serviced.service
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="o">(</span>start|stop<span class="o">)</span> vncserver-x11-serviced.service
 
 <span class="c"># interfaces(5) file used by ifup(8) and ifdown(8)</span>
 
@@ -628,37 +603,35 @@ sudo vim /etc/network/interfaces
 <span class="c"># For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'</span>
 
 <span class="c"># Include files from /etc/network/interfaces.d:</span>
-<span class="nb">source</span>-directory /etc/network/interfaces.d
+source-directory /etc/network/interfaces.d
 
 auto lo
 iface lo inet loopback
 
-iface eth0 inet manual
-
-allow-hotplug wlan0
-iface wlan0 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-</code></pre>
-</div>
-
-<p>Adapt with your own configuration</p>
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>iface eth0 inet static
-    address 192.168.0.18
+auto eth0
+iface eth0 inet static
+    address 192.168.0.13
     netmask 255.255.255.0
     gateway 192.168.0.254
-</code></pre>
-</div>
+</code></pre></div></div>
+
+<p>or Set Permanent DHCP IP on your router</p>
+
+<figure class="">
+  <img src="https://jluccisano.github.io/assets/images/setup-permanent-dhcp.png" alt="Set up permanent IP" />
+  
+    <figcaption>Set up permanent IP
+</figcaption>
+  
+</figure>
+
+<p>For me it’s a best practise.</p>
 
 <h3 id="enable-wifi">Enable WIFI</h3>
 
 <p>a. Edit</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre></div></div>
 
 <p>b. Adapt according to your security protocol</p>
 
@@ -666,118 +639,100 @@ iface wlan1 inet manual
 
 <p>Generate key</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo wpa_passphrase <span class="s2">"testing"</span> <span class="s2">"testingPassword"</span> &gt;&gt; /etc/wpa_supplicant/wpa_supplicant.conf
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>wpa_passphrase <span class="s2">"testing"</span> <span class="s2">"testingPassword"</span> <span class="o">&gt;&gt;</span> /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre></div></div>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>   country=FR
+<p>Note don’t forget to remove the comment with your clear password</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   country=FR
    network={
            ssid="freebox_lucci1"
            psk=22889c61e999b046d86190ca2dc9a9a82c80027f8f28a6372d760a8320a91858
-           scan_ssid=1
    }
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>c. Edit</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo vim /etc/network/interfaces
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vim /etc/network/interfaces
+</code></pre></div></div>
 
-<p>d. Adapt according to your own configuration</p>
-
-<p>Set wlan0 as primary interface to lookup.</p>
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>auto wlan0
-</code></pre>
-</div>
 <p>e. Set static IP and wpa-conf to wlan0</p>
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>allow-hotplug wlan0
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auto wlan0
 iface wlan0 inet static
-    address 192.168.0.18
+    address 192.168.0.13
     netmask 255.255.255.0
     gateway 192.168.0.254
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Final config</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c"># interfaces(5) file used by ifup(8) and ifdown(8)</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># interfaces(5) file used by ifup(8) and ifdown(8)</span>
 
 <span class="c"># Please note that this file is written to be used with dhcpcd</span>
 <span class="c"># For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'</span>
 
 <span class="c"># Include files from /etc/network/interfaces.d:</span>
-<span class="nb">source</span>-directory /etc/network/interfaces.d
+source-directory /etc/network/interfaces.d
 
-auto wlan0
-iface lo inet loopback
+<span class="c"># The loopback network interface</span>
+ auto lo
+ iface lo inet loopback
 
+<span class="c"># The primary network interface</span>
+allow-hotplug eth0
 iface eth0 inet static
-    address 192.168.0.18
-    netmask 255.255.255.0
-    gateway 192.168.0.254
+        address 192.168.0.11
+        netmask 255.255.255.0
+        gateway 192.168.0.254
 
-allow-hotplug wlan0
+<span class="c"># Wi-Fi</span>
+auto wlan0
 iface wlan0 inet static
-    address 192.168.0.18
-    netmask 255.255.255.0
-    gateway 192.168.0.254
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-</code></pre>
-</div>
+        address 192.168.0.13
+        netmask 255.255.255.0
+        gateway 192.168.0.254
+        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf 
+</code></pre></div></div>
 
 <p>f. Check config</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>iw dev
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iw dev
+</code></pre></div></div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>phy#0
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phy#0
 	Interface wlan0
 		ifindex 3
 		wdev 0x1
 		addr b8:27:eb:62:22:ca
 		ssid YOUR_NETWORK_SSID
 		<span class="nb">type </span>managed
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>g. Connection</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ip link show wlan0
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ip link show wlan0
+</code></pre></div></div>
 <p>As we can see wlan0 is currently DOWN</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>3: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state DOWN mode DORMANT group default qlen 1000
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state DOWN mode DORMANT group default qlen 1000
      link/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>Start UP the interface</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo ip link <span class="nb">set </span>wlan0 up
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ip link <span class="nb">set </span>wlan0 up
+</code></pre></div></div>
 <p>Check</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ip link show wlan0
-</code></pre>
-</div>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code> 3: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP mode DORMANT group default qlen 1000
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ip link show wlan0
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 3: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP mode DORMANT group default qlen 1000
       link/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>h. Wait for network</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo rasp-config
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>raspi-config
+</code></pre></div></div>
 
 <figure class="">
-  <img src="https://jluccisano.github.io/assets/images/rasp-config-1.png" alt="Set wait for network" />
+  <img src="https://jluccisano.github.io/assets/images/raspconfig-1.png" alt="Set wait for network" />
   
     <figcaption>Set wait for network
 </figcaption>
@@ -785,7 +740,7 @@ iface wlan1 inet manual
 </figure>
 
 <figure class="">
-  <img src="https://jluccisano.github.io/assets/images/rasp-config-1.png" alt="Set wait for network" />
+  <img src="https://jluccisano.github.io/assets/images/raspconfig-1.png" alt="Set wait for network" />
   
     <figcaption>Set wait for network
 </figcaption>
@@ -795,9 +750,8 @@ iface wlan1 inet manual
 <p>h. Reboot</p>
 
 <p>You can now unplug your ethernet wire and reboot</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo reboot
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>reboot
+</code></pre></div></div>
 
 <p>Great !! now you can access to your Raspberry PI anywhere on your LAN with static IP address over Wifi or Ethernet.</p>
 

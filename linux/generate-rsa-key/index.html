@@ -359,41 +359,35 @@ password each time.</p>
 
 <ol>
   <li>Execute this command below, substuting in your email address
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>ssh-keygen -t rsa -b 4096 -C <span class="s2">"your_email@example.com"</span>
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+</code></pre></div>    </div>
   </li>
   <li>Add the ssh key into ssh-agent</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ssh-add ~/.ssh/id_rsa
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add ~/.ssh/id_rsa
+</code></pre></div></div>
 <p>You can see more in this <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">tuto</a></p>
 
 <h3 id="useful-commands">Useful commands:</h3>
 
 <p>a. Get list of key:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ssh-add -L
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add <span class="nt">-L</span>
+</code></pre></div></div>
 <p>b. Remove a key</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ssh-add -D ~/.ssh/id_rsa
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add <span class="nt">-D</span> ~/.ssh/id_rsa
+</code></pre></div></div>
 <p>c. Copy the key into the clipboard</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pbcopy &lt; id_rsa_git_evs.pub
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pbcopy &lt; id_rsa_git_evs.pub
+</code></pre></div></div>
 <p>If you don’t have pbcopy, you can install it easily. Here an example for
 <a href="https://gist.github.com/chriscandy/753eb149e9735e852b0b">ArchLinux</a> users.</p>
 
 <h3 id="sending-ssh-key-to-a-server">Sending SSH key to a server</h3>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ssh-copy-id -i ~/.ssh/id_rsa.pub -p X username@address
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-copy-id <span class="nt">-i</span> ~/.ssh/id_rsa.pub <span class="nt">-p</span> X username@address
+</code></pre></div></div>
 
         
       </section>

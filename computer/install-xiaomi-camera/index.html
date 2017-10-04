@@ -384,7 +384,7 @@
 
 <p>http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
 
 Started erase on disk1
 Unmounting disk
@@ -403,9 +403,8 @@ diskutil unmountDisk /dev/disk1
 Unmount of all volumes on disk1 was successful
 
 
-sudo dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/fanghacks_v0.2.0.img  <span class="nv">of</span><span class="o">=</span>/dev/disk1
-</code></pre>
-</div>
+<span class="nb">sudo </span>dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/fanghacks_v0.2.0.img  <span class="nv">of</span><span class="o">=</span>/dev/disk1
+</code></pre></div></div>
 
 <p>CTRL-T</p>
 
@@ -419,26 +418,24 @@ sudo dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if<
 
 <p>Put sd card wait clanking</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>nmap -sn 192.168.0.0/24
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="nt">-sn</span> 192.168.0.0/24
+</code></pre></div></div>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>Starting Nmap 7.12 <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2017-07-18 22:08 CEST
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Starting Nmap 7.12 <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2017-07-18 22:08 CEST
 Nmap scan report <span class="k">for </span>192.168.0.10
-Host is up <span class="o">(</span>0.0099s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0099s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.12
-Host is up <span class="o">(</span>0.012s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.012s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.14
-Host is up <span class="o">(</span>0.0041s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0041s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.15
-Host is up <span class="o">(</span>0.00029s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.00029s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.18
-Host is up <span class="o">(</span>0.0023s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0023s latency<span class="o">)</span><span class="nb">.</span>
 Nmap scan report <span class="k">for </span>192.168.0.254
-Host is up <span class="o">(</span>0.0025s latency<span class="o">)</span>.
+Host is up <span class="o">(</span>0.0025s latency<span class="o">)</span><span class="nb">.</span>
 Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hosts up<span class="o">)</span> scanned <span class="k">in </span>2.69 seconds
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>http://192.168.0.18/cgi-bin/hello.cgi</p>
 
@@ -456,7 +453,7 @@ Nmap <span class="k">done</span>: 256 IP addresses <span class="o">(</span>6 hos
 
 <p>sudo vim /volume1/@appstore/SurveillanceStation/device_pack/camera_support/Xiaomi.conf</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="o">[</span>Xiaomi<span class="k">*</span>XiaoFang]
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Xiaomi<span class="k">*</span>XiaoFang]
 api <span class="o">=</span> custom
 default_fps_h264_1920×1080 <span class="o">=</span> 10
 default_image-quality <span class="o">=</span> 5
@@ -475,8 +472,7 @@ fps_mpeg4_[1280x720,1920×1080] <span class="o">=</span> 5,10,15,20,25,30
 fps_h264_[1280x720,1920×1080] <span class="o">=</span> 5,10,15,20,25,30
 audio_format <span class="o">=</span> G726,PCM
 default_audio_format <span class="o">=</span> PCM
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>http://www.gearbest.com/ip-cameras/pp_487830.html</p>
 

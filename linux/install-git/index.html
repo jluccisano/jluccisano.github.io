@@ -349,23 +349,19 @@
 
 <ul>
   <li>Rename last commit
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>git commit --amend
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span>
+</code></pre></div>    </div>
     <p>or</p>
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>git rebase -i HEAD~1
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~1
+</code></pre></div>    </div>
   </li>
   <li>Squash 2 commits in one
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>git rebase -i HEAD~2
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~2
+</code></pre></div>    </div>
   </li>
   <li>Set core editor
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>git config --global core.editor <span class="s2">"vim"</span>
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> core.editor <span class="s2">"vim"</span>
+</code></pre></div>    </div>
   </li>
 </ul>
 

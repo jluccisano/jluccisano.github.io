@@ -363,9 +363,8 @@
 
 <p>Manage docker with GUI</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="nt">-p</span> 9000:9000 <span class="nt">--name</span> portainer <span class="nt">-v</span> /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+</code></pre></div></div>
 
 <p>See more about <a href="http://portainer.io/install.html">portainer.io</a></p>
 
@@ -374,11 +373,10 @@
 <p>Compose is a tool for defining and running multi-container Docker applications…
 See more <a href="https://docs.docker.com/compose/overview/">here</a></p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>curl -L <span class="s2">"https://github.com/docker/compose/releases/download/1.10.0/docker-compose-</span><span class="k">$(</span>uname -s<span class="k">)</span><span class="s2">-</span><span class="k">$(</span>uname -m<span class="k">)</span><span class="s2">"</span> -o /usr/local/bin/docker-compose
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> <span class="s2">"https://github.com/docker/compose/releases/download/1.10.0/docker-compose-</span><span class="k">$(</span>uname <span class="nt">-s</span><span class="k">)</span><span class="s2">-</span><span class="k">$(</span>uname <span class="nt">-m</span><span class="k">)</span><span class="s2">"</span> <span class="nt">-o</span> /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
-docker-compose --version
-</code></pre>
-</div>
+docker-compose <span class="nt">--version</span>
+</code></pre></div></div>
 
 <p>See more <a href="https://docs.docker.com/compose/install/">here</a></p>
 
@@ -386,69 +384,59 @@ docker-compose --version
 
 <ul>
   <li>Get list of running containers
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo docker ps -a 
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker ps <span class="nt">-a</span> 
+</code></pre></div>    </div>
   </li>
   <li>kill a container
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo docker <span class="nb">kill </span>YOUT_CONTAINER_ID
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker <span class="nb">kill </span>YOUT_CONTAINER_ID
+</code></pre></div>    </div>
   </li>
   <li>Remove container
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker rm CONTAINER_ID
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker rm CONTAINER_ID
+</code></pre></div>    </div>
   </li>
   <li>Get list of images
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo docker images
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker images
+</code></pre></div>    </div>
   </li>
   <li>Remove image
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker rmi IMAGE_ID
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker rmi IMAGE_ID
+</code></pre></div>    </div>
   </li>
   <li>Interacting with the container
-    <div class="language-bash highlighter-rouge"><pre class="highlight"><code>docker <span class="nb">exec</span> -i -t CONTAINER_ID /bin/bash
-</code></pre>
-    </div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker <span class="nb">exec</span> <span class="nt">-i</span> <span class="nt">-t</span> CONTAINER_ID /bin/bash
+</code></pre></div>    </div>
   </li>
   <li>Restart docker service</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo systemctl restart docker
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl restart docker
+</code></pre></div></div>
 
 <ul>
   <li>Avoid using sudo</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>groupadd docker
-usermod -aG docker YOUR_USER
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>groupadd docker
+usermod <span class="nt">-aG</span> docker YOUR_USER
+</code></pre></div></div>
 
 <ul>
   <li>Bind your docker repository in external file system</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo service docker stop
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>service docker stop
 mv /var/lib/docker /docker
-sudo ln -s /docker /var/lib/docker
-sudo service docker start
-</code></pre>
-</div>
+<span class="nb">sudo </span>ln <span class="nt">-s</span> /docker /var/lib/docker
+<span class="nb">sudo </span>service docker start
+</code></pre></div></div>
 
 <ul>
   <li>Set DOCKER_OPTS</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo vim /etc/default/docker &gt;&gt; <span class="nv">DOCKER_OPTS</span><span class="o">=</span><span class="s2">"-g </span><span class="k">$(</span>readlink -f /var/lib/docker<span class="k">)</span><span class="s2">"</span>
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vim /etc/default/docker <span class="o">&gt;&gt;</span> <span class="nv">DOCKER_OPTS</span><span class="o">=</span><span class="s2">"-g </span><span class="k">$(</span>readlink <span class="nt">-f</span> /var/lib/docker<span class="k">)</span><span class="s2">"</span>
+</code></pre></div></div>
 
 
         
