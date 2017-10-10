@@ -644,7 +644,9 @@ iface eth0 inet static
 
 <p>Note don’t forget to remove the comment with your clear password</p>
 
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   country=FR
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+   update_config=1 
+   country=FR
    network={
            ssid="freebox_lucci1"
            psk=22889c61e999b046d86190ca2dc9a9a82c80027f8f28a6372d760a8320a91858
@@ -675,18 +677,14 @@ iface wlan0 inet static
 source-directory /etc/network/interfaces.d
 
 <span class="c"># The loopback network interface</span>
- auto lo
- iface lo inet loopback
+auto lo
+iface lo inet loopback
 
-<span class="c"># The primary network interface</span>
-allow-hotplug eth0
-iface eth0 inet static
-        address 192.168.0.11
-        netmask 255.255.255.0
-        gateway 192.168.0.254
+<span class="c"># Ethernet</span>
+iface eth0 inet dhcp
 
 <span class="c"># Wi-Fi</span>
-auto wlan0
+allow-hotplug wlan0
 iface wlan0 inet static
         address 192.168.0.13
         netmask 255.255.255.0

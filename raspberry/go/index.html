@@ -13,34 +13,34 @@
 
 
 
-<title>Go - Practice makes perfect</title>
+<title>Install Go on Raspberry - Practice makes perfect</title>
 
 
 
 
-<meta name="description" content="1294  sudo apt-get install golang1304  vim ~/.zshrc">
+<meta name="description" content="Download ARM Version">
 
 
 
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Go">
+<meta property="og:title" content="Install Go on Raspberry">
 
 
-  <link rel="canonical" href="https://jluccisano.github.io/computer/go/">
-  <meta property="og:url" content="https://jluccisano.github.io/computer/go/">
+  <link rel="canonical" href="https://jluccisano.github.io/raspberry/go/">
+  <meta property="og:url" content="https://jluccisano.github.io/raspberry/go/">
 
 
 
-  <meta property="og:description" content="1294  sudo apt-get install golang1304  vim ~/.zshrc">
+  <meta property="og:description" content="Download ARM Version">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Go">
-  <meta name="twitter:description" content="1294  sudo apt-get install golang1304  vim ~/.zshrc">
-  <meta name="twitter:url" content="https://jluccisano.github.io/computer/go/">
+  <meta name="twitter:title" content="Install Go on Raspberry">
+  <meta name="twitter:description" content="Download ARM Version">
+  <meta name="twitter:url" content="https://jluccisano.github.io/raspberry/go/">
 
   
     <meta name="twitter:card" content="summary">
@@ -154,14 +154,12 @@
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Go
+          Install Go on Raspberry
 
         
       </h1>
       
-        <p class="page__lead">1294  sudo apt-get install golang
-
-1304  vim ~/.zshrc
+        <p class="page__lead"><h3 id="download-arm-version">Download ARM Version</h3>
 
 </p>
       
@@ -197,7 +195,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/computer" itemprop="item"><span itemprop="name">Computer</span></a>
+          <a href="https://jluccisano.github.io/raspberry" itemprop="item"><span itemprop="name">Raspberry</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -205,7 +203,7 @@
     
       
       
-        <li class="current">Go</li>
+        <li class="current">Install Go on Raspberry</li>
       
     
   </ol>
@@ -334,8 +332,8 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Go">
-    <meta itemprop="description" content="1294  sudo apt-get install golang1304  vim ~/.zshrc">
+    <meta itemprop="headline" content="Install Go on Raspberry">
+    <meta itemprop="description" content="Download ARM Version">
     <meta itemprop="datePublished" content="July 05, 2017">
     
 
@@ -343,30 +341,54 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>1294  sudo apt-get install golang</p>
+        <h3 id="download-arm-version">Download ARM Version</h3>
 
-<p>1304  vim ~/.zshrc</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://storage.googleapis.com/golang/go1.9.1.linux-armv6l.tar.gz
+</code></pre></div></div>
+<h3 id="extract">Extract</h3>
 
-<p>export GOROOT=/usr/local/go
-export GOPATH=/home/jluccisano/workspace/go
-export PATH=${GOROOT}/bin:${PATH}</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo tar</span> <span class="nt">-C</span> /usr/local <span class="nt">-xzf</span> go1.9.1.linux-armv6l.tar.gz
+</code></pre></div></div>
 
-<p>1302  go get github.com/ungerik/go-rest</p>
+<h3 id="create-gopath-directory">Create GOPATH directory</h3>
 
-<p>1298  go build relay_control_server.go</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir <span class="nt">-p</span> /home/pi/workspace/go
+</code></pre></div></div>
 
-<p>1334  ./relay_control_server &amp;</p>
+<h3 id="export-env-variables">Export Env Variables</h3>
 
-<table>
-  <tbody>
-    <tr>
-      <td>1449  netstat -nlp</td>
-      <td>grep 8080</td>
-    </tr>
-  </tbody>
-</table>
+<p>Edit your bashrc:</p>
 
-<p>1447  curl localhost:8080/get?relay=0</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vim ~/.bashrc
+</code></pre></div></div>
+
+<p>Add vars:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span>/home/pi/workspace/go
+<span class="nb">export </span><span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOPATH</span>/bin:<span class="nv">$GOROOT</span>/bin
+</code></pre></div></div>
+
+<p>Reload bash</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">.</span> ~/.bashrc
+</code></pre></div></div>
+
+<h3 id="test">Test</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> go version
+</code></pre></div></div>
+
+<p>Output:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> go version go1.9.1 linux/arm
+</code></pre></div></div>
+
+<h3 id="clean-up">Clean up</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> rm go1.9.1.linux-armv6l.tar.gz 
+</code></pre></div></div>
+
 
         
       </section>
@@ -387,7 +409,11 @@ export PATH=${GOROOT}/bin:${PATH}</p>
     
       
       
-      <a href="https://jluccisano.github.io/tags/#go" class="page__taxonomy-item" rel="tag">Go</a>
+      <a href="https://jluccisano.github.io/tags/#go" class="page__taxonomy-item" rel="tag">Go</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://jluccisano.github.io/tags/#raspberry" class="page__taxonomy-item" rel="tag">Raspberry</a>
     
     </span>
   </p>
@@ -408,7 +434,7 @@ export PATH=${GOROOT}/bin:${PATH}</p>
     
       
       
-      <a href="https://jluccisano.github.io/categories/#computer" class="page__taxonomy-item" rel="tag">Computer</a>
+      <a href="https://jluccisano.github.io/categories/#raspberry" class="page__taxonomy-item" rel="tag">Raspberry</a>
     
     </span>
   </p>
@@ -424,13 +450,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Go https://jluccisano.github.io/computer/go/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Install Go on Raspberry https://jluccisano.github.io/raspberry/go/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/computer/go/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/raspberry/go/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/computer/go/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/raspberry/go/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/computer/go/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/raspberry/go/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -467,9 +493,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -479,9 +509,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -491,9 +525,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -503,10 +541,14 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
       
+      
+          
       
           
       
@@ -516,9 +558,55 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
+      
+          
+            
+              <div class="page__related">
+                
+                  <h4 class="page__related-title">You May Also Enjoy</h4>
+                
+                <div class="grid__wrapper">
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/alarming.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/project/alarming-system/" rel="permalink">Security alarm with Raspberry
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">In progress
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
       
           
       
@@ -528,9 +616,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -540,9 +632,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -552,9 +648,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -564,9 +664,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -576,9 +680,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -588,9 +696,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
+          
+      
       
     
       
+      
+          
       
           
       
@@ -600,14 +712,13 @@ export PATH=${GOROOT}/bin:${PATH}</p>
       
           
       
-      
-    
-      
-      
           
       
       
     
+    
+        </div>
+      </div>
     
   
 </div>
