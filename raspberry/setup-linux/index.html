@@ -351,15 +351,22 @@
 
 <h3 id="create-user">Create user</h3>
 
+<p>Change password root</p>
+
+<p>Why use “adduser” instead of “useradd” ?</p>
+
 <p>a. Add user</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>useradd new_user
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adduser new_user
 </code></pre></div></div>
 <p>b. Set password</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>passwd new_user
 </code></pre></div></div>
+<p>install sudo</p>
+
+<p>apt-get install sudo</p>
+
 <p>c. Add new user as sudoers</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo echo</span> <span class="s1">'new_user ALL=(ALL) ALL'</span> <span class="o">&gt;&gt;</span> /etc/sudoers
-</code></pre></div></div>
+
 <p>d. Add new user in groups root,adm,sudo</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usermod <span class="nt">-a</span> <span class="nt">-G</span> root,adm,sudo new_user
 </code></pre></div></div>
@@ -367,14 +374,14 @@
 <h3 id="configure-ssh">Configure SSH</h3>
 
 <p>a. Create group</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>groupadd sshusers
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>addgroup sshusers
 </code></pre></div></div>
 <p>b. Add new_user into the group</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usermod <span class="nt">-a</span> <span class="nt">-G</span> sshusers new_user
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>addgroup new_user sshusers
 </code></pre></div></div>
 
 <p>a. Edit ssh config</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vim /etc/ssh/sshd_config
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/ssh/sshd_config
 </code></pre></div></div>
 <p>b. Change default parameters</p>
 
@@ -382,29 +389,59 @@
   <li>Change ssh default port
     <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Port X
 </code></pre></div>    </div>
-    <p>example:</p>
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh new_user@address <span class="nt">-p</span> X
-</code></pre></div>    </div>
   </li>
-  <li>No permit root login
-    <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PermitRootLogin no
-</code></pre></div>    </div>
-    <p>see more <a href="https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user">here</a></p>
-  </li>
+</ul>
+
+<p>see more <a href="https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user">here</a></p>
+
+<ul>
   <li>Allow a specific group and user is a good practices
     <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AllowGroups sshusers
-AllowUsers new_user
 </code></pre></div>    </div>
   </li>
 </ul>
 
 <p>c. Restart service</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> /etc/init.d/ssh restart
-</code></pre></div></div>
-<p>or</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart ssh.service
 </code></pre></div></div>
+
+<p>exit</p>
+
+<p>example:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh new_user@server-address <span class="nt">-p</span> X
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vim /etc/ssh/sshd_config
+</code></pre></div></div>
+
+<ul>
+  <li>No permit root login
+    <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PermitRootLogin no
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl restart ssh.service
+</code></pre></div></div>
+<p>Create a key</p>
+
+<p>PubkeyAuthentication yes</p>
+
+<p>See create an ssh rsa key</p>
+
+<p>Host nextrun2
+ Hostname hostname
+ User jluccisano
+ Port 22
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa</p>
+
+<p>ssh-copy-id -i ~/.ssh/id_rsa.pub -p 85 user@hostname</p>
+
+<p>ssh nextrun2</p>
+
 <ul>
   <li>Get list of services
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl list-units <span class="nt">--type</span><span class="o">=</span>service 
@@ -412,11 +449,47 @@ AllowUsers new_user
   </li>
 </ul>
 
+<p>image configure_rsync_backup.png</p>
+
+<h4 id="rsync">Rsync</h4>
+
+<p>sudo apt-get install rsync</p>
+
+<p>sudo vi /etc/default/rsync
+et modifier la ligne RSYNC à true</p>
+
+<p>RSYNC_ENABLE=true</p>
+
+<p>sudo adduser rsync_user</p>
+
+<p>sudo vi /etc/rsyncd.conf</p>
+
+<pre><code class="language-txt">uid = rsync_user
+gid = rsync_user
+max connections = 4
+[nas_rsync]
+path = /home/rsync_user
+comment = Synchro des fichiers avec mon NAS
+read only = false
+</code></pre>
+
+<p>sudo chown -R rsync_user:rsync /home/rsync_user</p>
+
+<p>sudo chmod -R 775  /home/rsync_user</p>
+
+<p>sudo systemctl status rsync.service</p>
+
+<p>sudo systemctl enable rsync.service</p>
+
+<p>addgroup sshusers rsync_user</p>
+
+<p>sudo systemctl restart ssh.service</p>
+
 <h3 id="install-zsh-and-oh-my-zsh-optional">Install zsh and oh-my-zsh (optional)</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update
-apt-get install curl
-apt-get install zsh
+apt-get <span class="nb">install </span>curl
+apt-get <span class="nb">install </span>zsh
 sh <span class="nt">-c</span> <span class="s2">"</span><span class="k">$(</span>curl <span class="nt">-fsSL</span> https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span class="k">)</span><span class="s2">"</span>
 </code></pre></div></div>
 <p>see more <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH">here</a></p>
@@ -525,42 +598,136 @@ sh <span class="nt">-c</span> <span class="s2">"</span><span class="k">$(</span>
           
       
           
-      
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
             
               <div class="page__related">
                 
                   <h4 class="page__related-title">You May Also Enjoy</h4>
                 
                 <div class="grid__wrapper">
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/computer/travis/" rel="permalink">Useful linux commands
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">travis encrypt DOCKER_USER=username –add
+travis encrypt DOCKER_PASS=password –add
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-software/" rel="permalink">Software part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
+In the previous tutorial, I explain how to control spri...</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-elec/" rel="permalink">Electrical part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
+We have able to control the sprinkler system from...</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
             
             
 
@@ -585,145 +752,6 @@ sh <span class="nt">-c</span> <span class="s2">"</span><span class="k">$(</span>
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="permalink">Install Xiaomi Camera
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a Xiaomi Camera
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="permalink">Install LCD screen on Raspberry PI 3
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
 </p>
   </article>
@@ -762,7 +790,7 @@ sh <span class="nt">-c</span> <span class="s2">"</span><span class="k">$(</span>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2017 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

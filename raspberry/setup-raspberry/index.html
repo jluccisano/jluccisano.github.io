@@ -455,11 +455,11 @@ Finished erase on disk2
 
 <p>d. Write image into the SD Card</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  <span class="nv">of</span><span class="o">=</span>/dev/disk2
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo dd </span><span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  <span class="nv">of</span><span class="o">=</span>/dev/disk2
 </code></pre></div></div>
 
 <p>template:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">={</span>raspbian image path<span class="o">}</span> <span class="nv">of</span><span class="o">=</span>/dev/<span class="o">{</span>disk identifier<span class="o">}</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo dd </span><span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">={</span>raspbian image path<span class="o">}</span> <span class="nv">of</span><span class="o">=</span>/dev/<span class="o">{</span>disk identifier<span class="o">}</span>
 </code></pre></div></div>
 
 <p>Output:</p>
@@ -475,7 +475,7 @@ Finished erase on disk2
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /Volumes/boot
 </code></pre></div></div>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch ssh
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch </span>ssh
 </code></pre></div></div>
 
 <p>See more <a href="https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/">here</a></p>
@@ -591,7 +591,7 @@ passwd: password updated successfully
 
 <h3 id="set-a-static-ip-address">Set a static IP Address</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get install vim
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>vim
 <span class="nb">sudo </span>vim /etc/network/interfaces
 </code></pre></div></div>
 
@@ -708,20 +708,20 @@ iface wlan0 inet static
 
 <p>g. Connection</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ip link show wlan0
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ip <span class="nb">link </span>show wlan0
 </code></pre></div></div>
 <p>As we can see wlan0 is currently DOWN</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state DOWN mode DORMANT group default qlen 1000
-     link/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
+     <span class="nb">link</span>/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
 </code></pre></div></div>
 <p>Start UP the interface</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ip link <span class="nb">set </span>wlan0 up
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ip <span class="nb">link set </span>wlan0 up
 </code></pre></div></div>
 <p>Check</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ip link show wlan0
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ip <span class="nb">link </span>show wlan0
 </code></pre></div></div>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 3: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP mode DORMANT group default qlen 1000
-      link/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
+      <span class="nb">link</span>/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
 </code></pre></div></div>
 
 <p>h. Wait for network</p>
@@ -872,50 +872,140 @@ forward port on your router.</p>
           
       
           
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
             
               <div class="page__related">
                 
                   <h4 class="page__related-title">You May Also Enjoy</h4>
                 
                 <div class="grid__wrapper">
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/computer/travis/" rel="permalink">Useful linux commands
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">travis encrypt DOCKER_USER=username –add
+travis encrypt DOCKER_PASS=password –add
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-software/" rel="permalink">Software part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
+In the previous tutorial, I explain how to control spri...</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-elec/" rel="permalink">Electrical part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
+We have able to control the sprinkler system from...</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
             
             
 
@@ -940,153 +1030,6 @@ forward port on your router.</p>
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="permalink">Install Xiaomi Camera
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a Xiaomi Camera
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="permalink">Install LCD screen on Raspberry PI 3
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
 </p>
   </article>
@@ -1125,7 +1068,7 @@ forward port on your router.</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2017 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

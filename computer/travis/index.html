@@ -13,39 +13,39 @@
 
 
 
-<title>Install Python - Practice makes perfect</title>
+<title>Useful linux commands - Practice makes perfect</title>
 
 
 
 
-<meta name="description" content="The objective of this tutorial is to install Python and run it with virtual environment.">
+<meta name="description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
 
 
 
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Install Python">
+<meta property="og:title" content="Useful linux commands">
 
 
-  <link rel="canonical" href="https://jluccisano.github.io/linux/install-python/">
-  <meta property="og:url" content="https://jluccisano.github.io/linux/install-python/">
+  <link rel="canonical" href="https://jluccisano.github.io/computer/travis/">
+  <meta property="og:url" content="https://jluccisano.github.io/computer/travis/">
 
 
 
-  <meta property="og:description" content="The objective of this tutorial is to install Python and run it with virtual environment.">
+  <meta property="og:description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Install Python">
-  <meta name="twitter:description" content="The objective of this tutorial is to install Python and run it with virtual environment.">
-  <meta name="twitter:url" content="https://jluccisano.github.io/linux/install-python/">
+  <meta name="twitter:title" content="Useful linux commands">
+  <meta name="twitter:description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
+  <meta name="twitter:url" content="https://jluccisano.github.io/computer/travis/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/python.png">
+      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg">
     
   
 
@@ -61,12 +61,12 @@
 
 
 
-  <meta property="og:image" content="https://jluccisano.github.io/assets/images/python.png">
+  <meta property="og:image" content="https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg">
 
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-03-23T00:00:00+00:00">
+  <meta property="article:published_time" content="2017-10-15T00:00:00+00:00">
 
 
 
@@ -148,18 +148,19 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: url('https://jluccisano.github.io/assets/images/python.png');"
+  style=" background-image: url('https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg');"
 >
   
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Install Python
+          Useful linux commands
 
         
       </h1>
       
-        <p class="page__lead">The objective of this tutorial is to install Python and run it with virtual environment.
+        <p class="page__lead">travis encrypt DOCKER_USER=username –add
+travis encrypt DOCKER_PASS=password –add
 
 </p>
       
@@ -167,6 +168,9 @@
       
     </div>
   
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
   
 </div>
 
@@ -192,7 +196,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/linux" itemprop="item"><span itemprop="name">Linux</span></a>
+          <a href="https://jluccisano.github.io/computer" itemprop="item"><span itemprop="name">Computer</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -200,7 +204,7 @@
     
       
       
-        <li class="current">Install Python</li>
+        <li class="current">Useful linux commands</li>
       
     
   </ol>
@@ -329,83 +333,35 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Install Python">
-    <meta itemprop="description" content="The objective of this tutorial is to install Python and run it with virtual environment.">
-    <meta itemprop="datePublished" content="March 23, 2017">
+    <meta itemprop="headline" content="Useful linux commands">
+    <meta itemprop="description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
+    <meta itemprop="datePublished" content="October 15, 2017">
     
 
     <div class="page__inner-wrap">
       
 
       <section class="page__content" itemprop="text">
-        <p>The objective of this tutorial is to install Python and run it with virtual environment.</p>
+        <p>travis encrypt DOCKER_USER=username –add
+travis encrypt DOCKER_PASS=password –add</p>
 
-<ul>
-  <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#installation">Installation</a></li>
-  <li><a href="#install-pip">Install PIP</a></li>
-  <li><a href="#create-virtualenv">Create VirtualEnv (optional)</a></li>
-</ul>
+<p>cat jwtRS256.key
+cat jwtRS256.key.pub</p>
 
-<h3 id="prerequisites">Prerequisites</h3>
+<h1 id="rs256">RS256</h1>
+<h1 id="private-key">private key</h1>
+<p>openssl genrsa -out rs256-4096-private.rsa 4096</p>
+<h1 id="public-key">public key</h1>
+<p>openssl rsa -in rs256-4096-private.rsa -pubout &gt; rs256-4096-public.pem</p>
 
-<ul>
-  <li><a href="https://jluccisano.github.io/raspberry/setup-raspberry">Set up a Raspberry PI 3</a></li>
-</ul>
+<p>privKeyPath = “keys/app.rsa”     // openssl genrsa -out app.rsa keysize
+pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app.rsa.pub</p>
 
-<h3 id="installation">Installation</h3>
+<p>ssh-keygen -t rsa -b 4096 -C “email@domain.com”</p>
 
-<p>Usually Python is already installed with the Raspbian image.</p>
+<p>gem install travis</p>
 
-<p>Check install:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
-</code></pre></div></div>
-<p>Otherwise you can install it</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update
-apt-get <span class="nb">install </span>build-essential python-dev
-</code></pre></div></div>
-
-<h3 id="install-pip">Install PIP</h3>
-
-<p>PIP is a package management system used to install and manage some packages written in Python.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://bootstrap.pypa.io/get-pip.py
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python get-pip.py
-</code></pre></div></div>
-
-<p>See more <a href="https://pip.pypa.io/en/latest/installing">here</a></p>
-
-<h3 id="create-virtualenv-optional">Create VirtualEnv (optional)</h3>
-
-<p>A Virtual Environment is useful to keep the dependencies required by different projects.</p>
-
-<p>Note: virtualenv includes PIP</p>
-
-<h4 id="installation-1">Installation</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pip <span class="nb">install </span>virtualenv
-</code></pre></div></div>
-<h5 id="create-a-workspace-directory-for-the-python-version">Create a workspace directory for the Python version.</h5>
-<p>Example:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/workspace/venv2.7
-</code></pre></div></div>
-<h4 id="create-virtualenv-links-with-python-interpreter-of-your-choice">Create virtualenv links with Python interpreter of your choice.</h4>
-<p>Example:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv <span class="nt">-p</span> /usr/bin/python2.7 ~/workspace/venv2.7/
-</code></pre></div></div>
-<h4 id="start-the-virtual-environment">Start the virtual environment.</h4>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/workspace/venv2.7/bin/activate
-</code></pre></div></div>
-<p>You can now install all packages you need into your isolated environment.
-Example:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>requests
-</code></pre></div></div>
-
-<p>See more <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">here</a></p>
-
+<p>/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add</p>
 
         
       </section>
@@ -426,15 +382,7 @@ Example:</p>
     
       
       
-      <a href="https://jluccisano.github.io/tags/#python" class="page__taxonomy-item" rel="tag">Python</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://jluccisano.github.io/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">Raspberry PI</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://jluccisano.github.io/tags/#unix" class="page__taxonomy-item" rel="tag">Unix</a>
+      <a href="https://jluccisano.github.io/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
     
     </span>
   </p>
@@ -455,14 +403,14 @@ Example:</p>
     
       
       
-      <a href="https://jluccisano.github.io/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
+      <a href="https://jluccisano.github.io/categories/#computer" class="page__taxonomy-item" rel="tag">Computer</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-03-23T00:00:00+00:00">March 23, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-10-15T00:00:00+00:00">October 15, 2017</time></p>
         
       </footer>
 
@@ -471,25 +419,24 @@ Example:</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Install Python https://jluccisano.github.io/linux/install-python/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Useful linux commands https://jluccisano.github.io/computer/travis/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/linux/install-python/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/computer/travis/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/linux/install-python/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/computer/travis/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/linux/install-python/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/computer/travis/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/linux/create-service/" class="pagination--pager" title="Create a Linux service
+      <a href="https://jluccisano.github.io/computer/useful-linux-commands/" class="pagination--pager" title="Useful linux commands
 ">Previous</a>
     
     
-      <a href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" class="pagination--pager" title="Consume data from RabbitMQ
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -512,29 +459,12 @@ Example:</p>
     
       
       
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
       
           
       
       
     
       
-      
-          
-      
-          
       
           
             
@@ -577,10 +507,6 @@ In the previous tutorial, I explain how to control spri...</p>
       
       
           
-      
-          
-      
-          
             
             
 
@@ -613,10 +539,6 @@ We have able to control the sprinkler system from...</p>
       
     
       
-      
-          
-      
-          
       
           
       
@@ -660,16 +582,6 @@ We have able to control the sprinkler system from...</p>
       
       
           
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
             
             
 
@@ -688,12 +600,12 @@ We have able to control the sprinkler system from...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="permalink">Install LCD screen on Raspberry PI 3
+        <a href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="permalink">Install Xiaomi Camera
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a Xiaomi Camera
 
 </p>
   </article>

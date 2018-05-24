@@ -343,79 +343,142 @@
       <section class="page__content" itemprop="text">
         <h3 id="useful-commands">Useful commands</h3>
 
-<p>https://orga.cat/posts/most-useful-git-commands</p>
+<p><a href="https://orga.cat/posts/most-useful-git-commands">Most useful git commands</a></p>
 
-<p>gitg</p>
+<h4 id="my-useful-commands">My useful commands</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gitg
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git graph <span class="nt">-a</span>
+</code></pre></div></div>
 
 <ul>
-  <li>Rename last commit
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span>
-</code></pre></div>    </div>
-    <p>or</p>
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~1
-</code></pre></div>    </div>
-  </li>
-  <li>Squash 2 commits in one
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~2
-</code></pre></div>    </div>
-  </li>
-  <li>Set core editor
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> core.editor <span class="s2">"vim"</span>
-</code></pre></div>    </div>
-  </li>
+  <li>Rename last commit</li>
 </ul>
 
-<p>git stash
-git stash apply</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span>
+</code></pre></div></div>
+<p>or</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~1
+</code></pre></div></div>
 
-<p>git graph -a</p>
-
-<p>git log</p>
-
-<p>rename branch</p>
-
-<p>git branch -m old new</p>
 <ul>
-  <li>M</li>
+  <li>Squash 2 commits in one</li>
 </ul>
 
-<p>create branch</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~2
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">--interactive</span> <span class="nt">--root</span>
+</code></pre></div></div>
+
 <ul>
-  <li>git co -b</li>
+  <li>Set core editor</li>
 </ul>
 
-<p>git reset HEAD~1 –hard</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> core.editor <span class="s2">"vim"</span>
+</code></pre></div></div>
 
-<p>cherry-pick</p>
+<ul>
+  <li>Stash</li>
+</ul>
 
-<p>git rebase develop</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git stash
+</code></pre></div></div>
 
-<p>git config remote.origin.url git@github.com:your_username/your_project.git</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git stash apply
+</code></pre></div></div>
 
-<p>https://gist.github.com/jexchan/2351996
-git config user.name “jls”
-git config user.email “j.luccisano@evs.com”</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log 
+</code></pre></div></div>
 
-<p>git fetch</p>
+<ul>
+  <li>Rename branch</li>
+</ul>
 
-<p>git branch -a</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-m</span> old new
+</code></pre></div></div>
 
-<p>git push –force</p>
+<ul>
+  <li>Create branch</li>
+</ul>
 
-<p>git push –set-upstream origin feature/jls-INGFUN-1219-StoryboardLoggingBadVolumeId</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- git checkout <span class="nt">-b</span>
+</code></pre></div></div>
+<ul>
+  <li>Revert last commit</li>
+</ul>
 
-<p>git rebase –interactive –root</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git reset HEAD~1 <span class="nt">--hard</span>
+</code></pre></div></div>
 
-<p>git commit –amend –date=”Sun Feb 12 17:22 2017 +0100”</p>
+<ul>
+  <li>Rebase commit history</li>
+</ul>
 
-<h4 id="travis">Travis</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase develop
+</code></pre></div></div>
 
-<p>ssh-keygen -t rsa -b 4096 -C “joseph.luccisano@gmail.com”</p>
+<ul>
+  <li>Config</li>
+</ul>
 
-<p>gem install travis</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config remote.origin.url git@github.com:your_username/your_project.git
+git config user.name <span class="s2">"foo"</span>
+git config user.email <span class="s2">"foo@bar.com"</span>
+</code></pre></div></div>
 
-<p>/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add</p>
+<p><a href="https://gist.github.com/jexchan/2351996">Most useful git config commands</a></p>
 
+<ul>
+  <li>List all branch</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-a</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Force overwrite origin</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">--force</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Push and track local branch to origin</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">--set-upstream</span> origin feature/jls-INGFUN-1219-StoryboardLoggingBadVolumeId
+</code></pre></div></div>
+
+<ul>
+  <li>Rewrite commit information</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span> <span class="nt">--date</span><span class="o">=</span><span class="s2">"Sun Feb 12 17:22 2017 +0100"</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git filter-branch <span class="nt">-f</span> <span class="nt">--env-filter</span> <span class="s2">"GIT_AUTHOR_NAME='username' GIT_AUTHOR_EMAIL='foo@bar.com'; GIT_COMMITTER_NAME='username'; GIT_COMMITTER_EMAIL='foo@bar.com'"</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git filter-branch <span class="nt">-f</span> <span class="nt">--env-filter</span> <span class="s1">'export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"'</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git filter-branch <span class="nt">-f</span> <span class="nt">--env-filter</span> <span class="s2">"GIT_AUTHOR_NAME='username' GIT_AUTHOR_EMAIL='foo@bar.com'; GIT_COMMITTER_NAME='username'; GIT_COMMITTER_EMAIL='foo@bar.com';GIT_COMMITTER_DATE='Sun Feb 12 17:22 2017 +0100';GIT_AUTHOR_DATE='Sun Feb 12 17:22 2017 +0100'"</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Checkout a remote branch</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> develop origin/develop
+</code></pre></div></div>
+
+<ul>
+  <li>Show full log information</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--format</span><span class="o">=</span>fuller
+</code></pre></div></div>
 
         
       </section>
@@ -527,61 +590,95 @@ git config user.email “j.luccisano@evs.com”</p>
       
       
           
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-      
-          
-      
-      
-    
-      
-      
-          
             
               <div class="page__related">
                 
                   <h4 class="page__related-title">You May Also Enjoy</h4>
                 
                 <div class="grid__wrapper">
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-software/" rel="permalink">Software part
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
+In the previous tutorial, I explain how to control spri...</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+      
+          
+      
+      
+    
+      
+      
+          
             
             
 
@@ -688,82 +785,6 @@ publishing data to client via websocke...</p>
             
       
     
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/jordan-ladikos-62738.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/automation/reactive-weather-station/" rel="permalink">Create a reactive weather station
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to design a full reactive architecture interacting with a Raspberry PI 3 as
-μService producing temperature and humidity dat...</p>
-  </article>
-</div>
-            
-            
-      
-    
         </div>
       </div>
     
@@ -794,7 +815,7 @@ publishing data to client via websocke...</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2017 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

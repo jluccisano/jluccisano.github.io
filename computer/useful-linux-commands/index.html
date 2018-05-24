@@ -13,39 +13,39 @@
 
 
 
-<title>Create a Linux service - Practice makes perfect</title>
+<title>Useful linux commands - Practice makes perfect</title>
 
 
 
 
-<meta name="description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
+<meta name="description" content="Useful commands">
 
 
 
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Create a Linux service">
+<meta property="og:title" content="Useful linux commands">
 
 
-  <link rel="canonical" href="https://jluccisano.github.io/linux/create-service/">
-  <meta property="og:url" content="https://jluccisano.github.io/linux/create-service/">
+  <link rel="canonical" href="https://jluccisano.github.io/computer/useful-linux-commands/">
+  <meta property="og:url" content="https://jluccisano.github.io/computer/useful-linux-commands/">
 
 
 
-  <meta property="og:description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
+  <meta property="og:description" content="Useful commands">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Create a Linux service">
-  <meta name="twitter:description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
-  <meta name="twitter:url" content="https://jluccisano.github.io/linux/create-service/">
+  <meta name="twitter:title" content="Useful linux commands">
+  <meta name="twitter:description" content="Useful commands">
+  <meta name="twitter:url" content="https://jluccisano.github.io/computer/useful-linux-commands/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/linux.jpg">
+      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg">
     
   
 
@@ -61,12 +61,12 @@
 
 
 
-  <meta property="og:image" content="https://jluccisano.github.io/assets/images/linux.jpg">
+  <meta property="og:image" content="https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg">
 
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-03-23T00:00:00+00:00">
+  <meta property="article:published_time" content="2017-10-10T00:00:00+00:00">
 
 
 
@@ -148,18 +148,18 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: url('https://jluccisano.github.io/assets/images/linux.jpg');"
+  style=" background-image: url('https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg');"
 >
   
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Create a Linux service
+          Useful linux commands
 
         
       </h1>
       
-        <p class="page__lead">The objective of this tutorial is to create a system service in order to run a standalone program on background.
+        <p class="page__lead"><h3 id="useful-commands">Useful commands</h3>
 
 </p>
       
@@ -195,7 +195,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/linux" itemprop="item"><span itemprop="name">Linux</span></a>
+          <a href="https://jluccisano.github.io/computer" itemprop="item"><span itemprop="name">Computer</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -203,7 +203,7 @@
     
       
       
-        <li class="current">Create a Linux service</li>
+        <li class="current">Useful linux commands</li>
       
     
   </ol>
@@ -332,88 +332,62 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Create a Linux service">
-    <meta itemprop="description" content="The objective of this tutorial is to create a system service in order to run a standalone program on background.">
-    <meta itemprop="datePublished" content="March 23, 2017">
+    <meta itemprop="headline" content="Useful linux commands">
+    <meta itemprop="description" content="Useful commands">
+    <meta itemprop="datePublished" content="October 10, 2017">
     
 
     <div class="page__inner-wrap">
       
 
       <section class="page__content" itemprop="text">
-        <p>The objective of this tutorial is to create a system service in order to run a standalone program on background.</p>
+        <h3 id="useful-commands">Useful commands</h3>
 
 <ul>
-  <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#create-service">Create service</a></li>
-  <li><a href="#useful-commands">Useful commands</a></li>
+  <li>Get procces id by port</li>
 </ul>
 
-<h3 id="prerequisites">Prerequisites</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsof <span class="nt">-i</span> tcp:3690
+</code></pre></div></div>
+<p>or</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>netstat <span class="nt">-nlp</span> | <span class="nb">grep </span>8080
+</code></pre></div></div>
 
 <ul>
-  <li><a href="https://jluccisano.github.io/raspberry/setup-raspberry">Set up a Raspberry PI 3</a></li>
+  <li>Find the largest 10 files (linux/bash)</li>
 </ul>
 
-<h3 id="create-service">Create Service</h3>
-
-<p>a. Create new service</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vim /lib/systemd/system/myservice.service
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-print0</span> | xargs <span class="nt">-0</span> <span class="nb">du</span> | <span class="nb">sort</span> <span class="nt">-n</span> | <span class="nb">tail</span> <span class="nt">-10</span> | <span class="nb">cut</span> <span class="nt">-f2</span> | xargs <span class="nt">-I</span><span class="o">{}</span> <span class="nb">du</span> <span class="nt">-sh</span> <span class="o">{}</span>
 </code></pre></div></div>
-
-<p>b. Edit parameters</p>
-
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
-Description=MyService
-After=multi-user.target
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/python /opt/script.py
-Restart=on-abort
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-</code></pre></div></div>
-
-<p>c. Enable execution permission of your service</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod </span>644 /lib/systemd/system/myservice.service
-</code></pre></div></div>
-<p>d. Enable execution permission of your script</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod </span>u+x /opt/script.py 
-</code></pre></div></div>
-<p>e. Create symbolic link</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo ln</span> <span class="nt">-s</span> /opt/script.py /usr/bin/myservice
-</code></pre></div></div>
-<p>f. Reload daemon</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl daemon-reload
-</code></pre></div></div>
-<p>g. Enable the service</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>myservice.service
-</code></pre></div></div>
-<p>h. Start the service</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start myservice.service
-</code></pre></div></div>
-<p>i. Check status</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl status myservice.service
-</code></pre></div></div>
-
-<h3 id="useful-commands">Useful commands</h3>
 
 <ul>
-  <li>Stop the service
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl stop myservice.service
-</code></pre></div>    </div>
-  </li>
+  <li>Find the largest 10 directories</li>
 </ul>
 
-<p>See more <a href="http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/">here</a></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> <span class="nt">-type</span> d <span class="nt">-print</span> 0 | xargs <span class="nt">-0</span> <span class="nb">du</span> | <span class="nb">sort</span> <span class="nt">-n</span> | <span class="nb">tail</span> <span class="nt">-10</span> | <span class="nb">cut</span> <span class="nt">-f2</span> | xargs <span class="nt">-I</span><span class="o">{}</span> <span class="nb">du</span> <span class="nt">-sh</span> <span class="o">{}</span>
+</code></pre></div></div>
+<ul>
+  <li>Accept port</li>
+</ul>
 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>iptables <span class="nt">-I</span> INPUT <span class="nt">-p</span> tcp <span class="nt">--dport</span> 5672 <span class="nt">-j</span> ACCEPT
+</code></pre></div></div>
+
+<ul>
+  <li>Get processor type</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">uname</span> <span class="nt">-m</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Delete all file avant la date défini</li>
+</ul>
+
+<p>```bash
+find . ! -newermt 2017-09-06 -exec rm -rf {} \;
+``</p>
 
         
       </section>
@@ -434,11 +408,7 @@ WantedBy=multi-user.target
     
       
       
-      <a href="https://jluccisano.github.io/tags/#raspberry-pi" class="page__taxonomy-item" rel="tag">Raspberry PI</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://jluccisano.github.io/tags/#unix" class="page__taxonomy-item" rel="tag">Unix</a>
+      <a href="https://jluccisano.github.io/tags/#linux" class="page__taxonomy-item" rel="tag">linux</a>
     
     </span>
   </p>
@@ -459,14 +429,14 @@ WantedBy=multi-user.target
     
       
       
-      <a href="https://jluccisano.github.io/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
+      <a href="https://jluccisano.github.io/categories/#computer" class="page__taxonomy-item" rel="tag">Computer</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-03-23T00:00:00+00:00">March 23, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-10-10T00:00:00+00:00">October 10, 2017</time></p>
         
       </footer>
 
@@ -475,24 +445,24 @@ WantedBy=multi-user.target
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Create a Linux service https://jluccisano.github.io/linux/create-service/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Useful linux commands https://jluccisano.github.io/computer/useful-linux-commands/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/linux/create-service/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/computer/useful-linux-commands/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/linux/create-service/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/computer/useful-linux-commands/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/linux/create-service/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/computer/useful-linux-commands/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/linux/generate-rsa-key/" class="pagination--pager" title="Generating new SSH Key
+      <a href="https://jluccisano.github.io/automation/sprinkler-software/" class="pagination--pager" title="Software part
 ">Previous</a>
     
     
-      <a href="https://jluccisano.github.io/linux/install-python/" class="pagination--pager" title="Install Python
+      <a href="https://jluccisano.github.io/computer/travis/" class="pagination--pager" title="Useful linux commands
 ">Next</a>
     
   </nav>
@@ -518,21 +488,10 @@ WantedBy=multi-user.target
       
           
       
-          
-      
       
     
       
       
-          
-      
-          
-      
-      
-    
-      
-      
-          
       
           
       
@@ -542,105 +501,9 @@ WantedBy=multi-user.target
       
           
       
-          
-      
       
     
       
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-              <div class="page__related">
-                
-                  <h4 class="page__related-title">You May Also Enjoy</h4>
-                
-                <div class="grid__wrapper">
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/kivy-software/" rel="permalink">Kivy software
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="permalink">Install LCD screen on Raspberry PI 3
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
       
           
       
@@ -650,64 +513,9 @@ WantedBy=multi-user.target
       
           
       
-          
-      
       
     
       
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
       
           
       
@@ -717,6 +525,16 @@ WantedBy=multi-user.target
       
           
       
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
           
       
       
@@ -724,39 +542,99 @@ WantedBy=multi-user.target
       
       
           
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+      
     
-      <div class="archive__item-teaser">
-        <img src=
+      
+      
           
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
+      
+      
+    
+      
+      
           
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/consume-data-from-rabbitmq/" rel="permalink">Consume data from RabbitMQ
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
-publishing data to client via websocke...</p>
-  </article>
-</div>
-            
-            
       
     
-        </div>
-      </div>
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
     
   
 </div>
