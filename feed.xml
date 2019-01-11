@@ -1,23 +1,290 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2018-05-24T18:31:38+00:00</updated><id>https://jluccisano.github.io/</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Useful linux commands</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Useful linux commands" /><published>2017-10-15T00:00:00+00:00</published><updated>2017-10-15T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;travis encrypt DOCKER_USER=username –add
-travis encrypt DOCKER_PASS=password –add&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-01-11T13:33:20+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
 
-&lt;p&gt;cat jwtRS256.key
-cat jwtRS256.key.pub&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#deploy-github-release-via-personal-oauth-token&quot;&gt;Deploy Github release via personal OAuth Token&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#deploy-docker-image-to-docker-hub&quot;&gt;Deploy Docker image to docker hub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h1 id=&quot;rs256&quot;&gt;RS256&lt;/h1&gt;
-&lt;h1 id=&quot;private-key&quot;&gt;private key&lt;/h1&gt;
-&lt;p&gt;openssl genrsa -out rs256-4096-private.rsa 4096&lt;/p&gt;
-&lt;h1 id=&quot;public-key&quot;&gt;public key&lt;/h1&gt;
-&lt;p&gt;openssl rsa -in rs256-4096-private.rsa -pubout &amp;gt; rs256-4096-public.pem&lt;/p&gt;
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
 
-&lt;p&gt;privKeyPath = “keys/app.rsa”     // openssl genrsa -out app.rsa keysize
-pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &amp;gt; app.rsa.pub&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Travis CI account&lt;/li&gt;
+  &lt;li&gt;DockerHub account&lt;/li&gt;
+  &lt;li&gt;Github account&lt;/li&gt;
+  &lt;li&gt;Install Ruby &lt;a href=&quot;https://guides.rubygems.org/rubygems-basics/&quot;&gt;https://guides.rubygems.org/rubygems-basics/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;ssh-keygen -t rsa -b 4096 -C “email@domain.com”&lt;/p&gt;
+&lt;h3 id=&quot;deploy-github-release-via-personal-oauth-token&quot;&gt;Deploy Github release via personal OAuth Token&lt;/h3&gt;
 
-&lt;p&gt;gem install travis&lt;/p&gt;
+&lt;h4 id=&quot;create-an-oauth-token&quot;&gt;Create an OAuth Token&lt;/h4&gt;
 
-&lt;p&gt;/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Linux" /><summary type="html">travis encrypt DOCKER_USER=username –add travis encrypt DOCKER_PASS=password –add</summary></entry><entry><title type="html">Useful linux commands</title><link href="https://jluccisano.github.io/computer/useful-linux-commands/" rel="alternate" type="text/html" title="Useful linux commands" /><published>2017-10-10T00:00:00+00:00</published><updated>2017-10-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/useful-linux-commands</id><content type="html" xml:base="https://jluccisano.github.io/computer/useful-linux-commands/">&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
+&lt;p&gt;Go &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;here&lt;/a&gt; and create new one.&lt;/p&gt;
+
+&lt;p&gt;Make sure you have at least those permissions below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/token_scope.png&quot; alt=&quot;token-scope&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;encrypt-the-github&quot;&gt;Encrypt the Github&lt;/h4&gt;
+
+&lt;p&gt;Go where your .travis.yaml is located.&lt;/p&gt;
+
+&lt;p&gt;Install travis tools&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;travis
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Copy your token generated previously and substitute $YOUR_TOKEN with it.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;travis encrypt &lt;span class=&quot;nv&quot;&gt;GITHUB_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$YOUR_TOKEN&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command above encrypt your token and add the encrypted key into your .travis.yaml;&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;secure&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;sOQ51G...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next you can use the variable $GITHUB_TOKEN in the .travis.yaml to set the api_key.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;releases&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;api_key&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$GITHUB_TOKEN&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dist/*&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;skip_cleanup&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then create a tag an push it:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git tag &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; v0.0.1 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Release version v0.0.1&quot;&lt;/span&gt;
+git push &lt;span class=&quot;nt&quot;&gt;--tags&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Travis will automatically trigger a new build and deploy it.&lt;/p&gt;
+
+&lt;p&gt;Finally go to https://github.com/$GITHUB_USERNAME/$GIT_REPO/releases. You can see you package released !&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/github-release.png&quot; alt=&quot;github-release&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;deploy-docker-image-to-docker-hub&quot;&gt;Deploy Docker image to docker hub&lt;/h3&gt;
+
+&lt;h4 id=&quot;create-encrypted-variables-docker_user-and-docker_password&quot;&gt;Create encrypted variables $DOCKER_USER and DOCKER_PASSWORD&lt;/h4&gt;
+
+&lt;p&gt;Go where your .travis.yaml is located.&lt;/p&gt;
+
+&lt;p&gt;Install travis tools&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;travis
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;substitute username and password by your docker hub credentials.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;travis encrypt &lt;span class=&quot;nv&quot;&gt;DOCKER_USER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;username &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt;
+travis encrypt &lt;span class=&quot;nv&quot;&gt;DOCKER_PASS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;password &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This command above encrypt your token and add the encrypted key into your .travis.yaml;&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;secure&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;sOQ51G...&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;secure&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;qiQR2A...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next you can use the variable $DOCKER_USER and DOCKER_PASSWORD in the .travis.yaml.&lt;/p&gt;
+
+&lt;h4 id=&quot;setup-travisyaml&quot;&gt;Setup .travis.yaml&lt;/h4&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docker&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;export TAG=`if [ &quot;$TRAVIS_BRANCH&quot; == &quot;master&quot; ]; then echo &quot;latest&quot;; else echo $TRAVIS_BRANCH;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;fi`&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docker build -t $REPO:$TAG .&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;after_success&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docker login -u $DOCKER_USER -p $DOCKER_PASSWORD&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docker tag $REPO:$COMMIT $REPO:$TAG&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docker tag $REPO:$COMMIT $REPO:$TRAVIS_BUILD_NUMBER&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docker push $REPO&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;secure&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;B8Z5pvFYnGMQR...&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;secure&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;hmVbuNH4Z....&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;COMMIT=${TRAVIS_COMMIT::8}&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;REPO=$DOCKER_USER/chrono&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Linux" /><category term="Travis" /><summary type="html">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub</summary></entry><entry><title type="html">Organize photo library</title><link href="https://jluccisano.github.io/computer/organize-photo-library/" rel="alternate" type="text/html" title="Organize photo library" /><published>2018-10-14T00:00:00+00:00</published><updated>2018-10-14T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/organize-photo-library</id><content type="html" xml:base="https://jluccisano.github.io/computer/organize-photo-library/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#environment&quot;&gt;Environment&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#upload&quot;&gt;Upload&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#consolidate&quot;&gt;Consolidate&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#backups&quot;&gt;Backups&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#show&quot;&gt;Show&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;environment&quot;&gt;Environment&lt;/h3&gt;
+
+&lt;p&gt;@startuml
+[SonyA6000]
+[Iphone1]
+[Iphone2]
+[Camera XTrem]&lt;/p&gt;
+
+&lt;p&gt;[Imac]&lt;/p&gt;
+
+&lt;p&gt;[SynologyNAS]
+[DLinkDNS320]
+[OVHServer]&lt;/p&gt;
+
+&lt;p&gt;[SonyA6000]–&amp;gt;[Imac]
+[Camera XTrem]–&amp;gt;[Imac]&lt;/p&gt;
+
+&lt;p&gt;[Iphone1]—&amp;gt;[SynologyNAS]: DS Photo sync to “Last import”
+[Iphone2]—&amp;gt;[SynologyNAS]: DS Photo sync to “Last import”&lt;/p&gt;
+
+&lt;p&gt;[Imac]—&amp;gt;[SynologyNAS]: Upload to “Last import”&lt;/p&gt;
+
+&lt;p&gt;[SynologyNAS]–&amp;gt; [DLinkDNS320]: Rsync
+[SynologyNAS] –&amp;gt; [OVHServer]: Rsync
+@enduml&lt;/p&gt;
+
+&lt;h3 id=&quot;upload&quot;&gt;Upload&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Upload SD Card into Apple Photo in order to show all photos.
+Select&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;2 ways
+Use synoloy uploader in order to upload photo into Dernière importation folder&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;consolidate&quot;&gt;Consolidate&lt;/h3&gt;
+
+&lt;p&gt;LAST-IMPORT
+YEAR
+   YEAR-MONTH-DAY
+        YEAR-MONTH-DAY-HOURMINUTESECOND_INCR.EXTENSION&lt;/p&gt;
+
+&lt;p&gt;ex:&lt;/p&gt;
+
+&lt;p&gt;Dernière importation
+Iphone 1
+Iphone 2
+2018
+    …
+    2018-10-09
+        2018-10-09-056734_1.JPG
+        2018-10-09-056734_2.JPG
+        2018-10-09-076734_1.JPG
+        …
+…&lt;/p&gt;
+
+&lt;p&gt;Execute scripts:&lt;/p&gt;
+
+&lt;p&gt;Consolidate Dernière Importation to library.
+Automatically move all photo into the right directory.
+If a as the same timestamp so an incrementation is made.&lt;/p&gt;
+
+&lt;p&gt;```code
+./clean.sh -s false Dernière\ importation /volume1/photo&lt;/p&gt;
+
+&lt;p&gt;./clean.sh -s false iphone\ Lili/ /volume1/photo&lt;/p&gt;
+
+&lt;p&gt;./clean.sh -s false iphone\ Jo/ /volume1/photo
+``&lt;/p&gt;
+
+&lt;h3 id=&quot;backups&quot;&gt;Backups&lt;/h3&gt;
+
+&lt;p&gt;One local backup in the DLinkDNS320
+One distant backup in the OVH Server&lt;/p&gt;
+
+&lt;p&gt;Google photos backups&lt;/p&gt;
+
+&lt;h3 id=&quot;show&quot;&gt;Show&lt;/h3&gt;
+
+&lt;p&gt;Access to DS Photo anywhere from anydevice`&lt;/p&gt;
+
+&lt;p&gt;You manage your library as you want. we aren’t coupled with any applicaton
+unlike using Apple photo, Microsoft or others.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Linux" /><summary type="html">Environment Upload Consolidate Backups Show</summary></entry><entry><title type="html">Tunelling itunes server</title><link href="https://jluccisano.github.io/computer/tuneling-itunes-server/" rel="alternate" type="text/html" title="Tunelling itunes server" /><published>2017-10-10T00:00:00+00:00</published><updated>2017-10-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/tuneling-itunes-server</id><content type="html" xml:base="https://jluccisano.github.io/computer/tuneling-itunes-server/">&lt;p&gt;Tunneling Itunes server over SSH&lt;/p&gt;
+
+&lt;p&gt;Itunes server&lt;/p&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+
+&lt;h4 id=&quot;ssh-config&quot;&gt;SSH Config&lt;/h4&gt;
+
+&lt;p&gt;Check your SSH server config:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim /etc/sshd_config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You need to have these params&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AllowTcpForwarding yes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;router-config&quot;&gt;Router config&lt;/h4&gt;
+
+&lt;p&gt;Don’t forget forwarding port&lt;/p&gt;
+
+&lt;h4 id=&quot;restart-the-ssh-daemon&quot;&gt;Restart the SSH daemon&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;synoservicectl &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; sshd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;manual&quot;&gt;Manual&lt;/h3&gt;
+
+&lt;h3 id=&quot;scripting&quot;&gt;Scripting&lt;/h3&gt;
+
+&lt;h4 id=&quot;create-an-rsa-key&quot;&gt;Create an RSA key&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;synoservicectl &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; sshd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;read + write
+chmod 600 Authorized_keys 
+RSAAuthentication yes&lt;/p&gt;
+
+&lt;p&gt;sudo synoservicectl –restart sshd
+sudo chmod -R 755 /volume1/homes/YOUR_USER&lt;/p&gt;
+
+&lt;p&gt;http://www.uponmyshoulder.com/blog/2010/tunneling-itunes-through-ssh/&lt;/p&gt;
+
+&lt;p&gt;ssh -p 87 -N jluccisano@81.56.136.120  -L 3690:localhost:3689 -f
+ssh -A -L 3690:localhost:3689 -N -f jluccisano@81.56.136.120
+ssh -p 87 -N -L 3690:localhost:3689 jluccisano@81.56.136.120
+ssh -p 87 -C -N -L  3692:localhost:3689 jluccisano@81.56.136.120&lt;/p&gt;
+
+&lt;p&gt;dns-sd -P jluccisano _daap._tcp local 3690 localhost 127.0.0.1 &amp;amp;
+dns-sd -P name type domain port host IP [key=value …]
+dns-sd -P jluccisano _daap._tcp local. 3690 localhost. 127.0.0.1
+dns-sd -P jluccisano _daap._tcp local 3692 localhost.local 127.0.0.1 “ffid=12345”&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;lsof -i -n&lt;/td&gt;
+      &lt;td&gt;egrep ‘&amp;lt;ssh&amp;gt;’&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;lsof -i tcp&lt;/td&gt;
+      &lt;td&gt;grep ^ssh&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The following just searches for iTunes Home Sharing instances&lt;/p&gt;
+
+&lt;p&gt;dns-sd -B
+dns-sd -B _home-sharing._tcp
+dns-sd -B _daap._tcp&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="ssh" /><summary type="html">Tunneling Itunes server over SSH</summary></entry><entry><title type="html">Useful linux commands</title><link href="https://jluccisano.github.io/computer/useful-linux-commands/" rel="alternate" type="text/html" title="Useful linux commands" /><published>2017-10-10T00:00:00+00:00</published><updated>2017-10-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/useful-linux-commands</id><content type="html" xml:base="https://jluccisano.github.io/computer/useful-linux-commands/">&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Get procces id by port&lt;/li&gt;
@@ -61,72 +328,24 @@ pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &amp;gt;
   &lt;li&gt;Delete all file avant la date défini&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;```bash
-find . ! -newermt 2017-09-06 -exec rm -rf {} \;
-``&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="linux" /><summary type="html">Useful commands</summary></entry><entry><title type="html">Software part</title><link href="https://jluccisano.github.io/automation/sprinkler-software/" rel="alternate" type="text/html" title="Software part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-software</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-software/">&lt;p&gt;The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
-In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon service
-on the Raspberry. In order to be able to access of the raspberry from internet we need to expose an API
-via an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-http-server&quot;&gt;Create HTTP server&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#call-api-from-smartphone&quot;&gt;Call API from Smartphone&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;create-http-server&quot;&gt;Create HTTP server&lt;/h3&gt;
-
-&lt;p&gt;It’s easy to create a simple HTTP Server in Python with Flask. I used a basic authentification, it’s the minimal
-to implement if you want to expose this API everywhere. In addition, all ZoneControl implement all functions
-we need to expose from the server http controller. So we can continue to use the daemon and the http server in
-parallel. You need to&lt;/p&gt;
-
-&lt;p&gt;git clone&lt;/p&gt;
-
-&lt;p&gt;start the server&lt;/p&gt;
-
-&lt;p&gt;See more into the readme&lt;/p&gt;
-
-&lt;h3 id=&quot;call-api-from-smartphone&quot;&gt;Call API from smartphone&lt;/h3&gt;
-
-&lt;p&gt;We can now control the sprinkler with simple HTTP Request. At first, I was wondering if I have to code an mobile
-application (iphone, android… ), and after thinking about it, I said to myself: is there a simple application we can send 
-request like curl or postman but on mobile. So I found the perfect application on Iphone &lt;a href=&quot;https://itunes.apple.com/fr/app/curler-une-interface-pour-vos-api-http/id1210896283?mt=8&quot;&gt;here&lt;/a&gt;
-It exists a couple of equivalent application on Iphone, Android…&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you want to access to your HTTP server outside your LAN, don’t forget to forward port into your 
-router.&lt;/p&gt;
-
-&lt;p&gt;So I’ve just set all request into this application !&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/curler_sprinkler.jpg&quot; alt=&quot;Curler sprinkler&quot; /&gt;
-  
-    &lt;figcaption&gt;Curler sprinkler
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;h3 id=&quot;schedule-scenario&quot;&gt;Schedule scenario&lt;/h3&gt;
-
-&lt;p&gt;With an http request application we can only execute scenario on demand. So once again, I said to myself: is there
-a simple application with implement CRON pattern and execute HTTP request&lt;/p&gt;
-
-&lt;p&gt;cron.&lt;/p&gt;
-
-&lt;h3 id=&quot;futher-more-control-via-raspberry-display&quot;&gt;Futher more control via raspberry display.&lt;/h3&gt;
-
-&lt;p&gt;Create multi-plateform IHM with Kivy&lt;/p&gt;
-
-&lt;h3 id=&quot;install-kivy&quot;&gt;Install Kivy&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Cython&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.23
-pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;kivy
-pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pygame
-python sprinkler-control.py
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-newermt&lt;/span&gt; 2017-09-06 &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;see more &lt;a href=&quot;https://kivy.org/docs/installation/installation-linux.html#installation-linux&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;https://kivy.org/docs/guide/basic.html&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><summary type="html">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection. In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon service on the Raspberry. In order to be able to access of the raspberry from internet we need to expose an API via an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.</summary></entry><entry><title type="html">Electrical part</title><link href="https://jluccisano.github.io/automation/sprinkler-elec/" rel="alternate" type="text/html" title="Electrical part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-elec</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-elec/">&lt;p&gt;The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
+&lt;p&gt;Find list of extension in a tree&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;find . -type f&lt;/td&gt;
+      &lt;td&gt;perl -ne ‘print $1 if m/.([^.\/]+)$/’&lt;/td&gt;
+      &lt;td&gt;sort -u&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Find by extension&lt;/p&gt;
+
+&lt;p&gt;find . -type f  -name “&lt;em&gt;.mp&lt;/em&gt;”&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="linux" /><summary type="html">Useful commands</summary></entry><entry><title type="html">Electrical part</title><link href="https://jluccisano.github.io/automation/sprinkler-elec/" rel="alternate" type="text/html" title="Electrical part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-elec</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-elec/">&lt;p&gt;The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
 We have able to control the sprinkler system from a Raspberry PI.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -160,6 +379,10 @@ We have able to control the sprinkler system from a Raspberry PI.&lt;/p&gt;
 
 &lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jluccisano.github.io/automation/sprinkler-hydraulic&quot;&gt;Sprinkler hydraulic part&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -176,69 +399,76 @@ box final
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Component&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Quantity&lt;/th&gt;
-      &lt;th&gt;Site&lt;/th&gt;
-      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Quantity&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Unit price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_2_file_2.5mm.jpg&quot; alt=&quot;borne_auto_levier_2&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Quantity&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_2_file_2.5mm.jpg&quot; alt=&quot;borne_auto_levier_2&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Wago electrical lever connectors 2-way&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.59&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5.9&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_3_file_2.5mm.jpg&quot; alt=&quot;borne_auto_levier_3&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Quantity&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_3_file_2.5mm.jpg&quot; alt=&quot;borne_auto_levier_3&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Wago electrical lever connectors 3-way&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.78&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.90&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_5_file_2.5mm.jpg&quot; alt=&quot;borne_auto_levier_5&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Quantity&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/borne_auto_levier_5_file_2.5mm.jpg&quot; alt=&quot;borne_auto_levier_5&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Wago electrical lever connectors 5-way&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.04&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.04&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg&quot; alt=&quot;boite_étanche_IP54_80x80x45&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Distribution box&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Quantity&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg&quot; alt=&quot;boite_étanche_IP54_80x80x45&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Water proof distribution box IP54 80x80x45&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg&quot; alt=&quot;boite_étanche_IP54_D70xP40&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Distribution box Compact Splicing Connectors&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Quantity&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg&quot; alt=&quot;boite_étanche_IP54_D70xP40&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Water proof distribution box IP54 70x40&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.40&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.20&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg&quot; alt=&quot;barrette_12_dominos_2.5mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Domino bar&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Quantity&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg&quot; alt=&quot;barrette_12_dominos_2.5mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Domino bar x12&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.9&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/multi_conducteur_7_brins_cable_15m.jpg&quot; alt=&quot;multi_conducteur_7_brins&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;multi conducteur 7 brins cable 15m&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.technic-achat.fr&quot;&gt;Technic-achat&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;31.32 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/multi_conducteur_7_brins_cable_15m.jpg&quot; alt=&quot;multi_conducteur_7_brins&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7 core Multi conductor cable wire 15m 1mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;31.32&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;31.32&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/transformer_220_24.jpg&quot; alt=&quot;transformer&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Transformer 220V AC/24V AC&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Quantity&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/transformer_220_24.jpg&quot; alt=&quot;transformer&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Transformer 220VAC/24VAC&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;31.19&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;31.19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;80.65€&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -250,7 +480,7 @@ box final
 &lt;ul&gt;
   &lt;li&gt;Join electrical box to valves boxes with 7 multi-conductor wire&lt;/li&gt;
   &lt;li&gt;Install one distribution box at the entrance of the valves box.&lt;/li&gt;
-  &lt;li&gt;Connect power supply to solenoid valve 24V.&lt;/li&gt;
+  &lt;li&gt;Connect power supply to solenoid valve 24V with a transformer.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Tools&lt;/strong&gt;: Electrical screwdriver, wire cutter, wire stripper.&lt;/p&gt;
@@ -265,9 +495,9 @@ box final
 
 &lt;h4 id=&quot;relay-connection-power-electronics&quot;&gt;Relay connection (Power electronics)&lt;/h4&gt;
 
-&lt;p&gt;Display&lt;/p&gt;
+&lt;p&gt;TODO.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;: Display, electrical box.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;: electrical box.&lt;/p&gt;
 
 &lt;h4 id=&quot;set-up-electrical-box&quot;&gt;Set up electrical box&lt;/h4&gt;
 
@@ -301,55 +531,62 @@ box final
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Component&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Quantity&lt;/th&gt;
-      &lt;th&gt;Site&lt;/th&gt;
-      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Quantity&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Site&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Price&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/relay_card_raspberry.jpg&quot; alt=&quot;relay_card_raspberry&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/relay_card_raspberry.jpg&quot; alt=&quot;relay_card_raspberry&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Relay AC 250V 10A ; DC 30V 10A Relay card module AC/DC 5V  4 channels&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.ebay.com&quot;&gt;Ebay&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;8.00 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.ebay.com&quot;&gt;Ebay&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8.00 €&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/cable_MM_MF_FF.jpg&quot; alt=&quot;cable_MM_MF_FF&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/cable_MM_MF_FF.jpg&quot; alt=&quot;cable_MM_MF_FF&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;10 x Cables male/female female/female male/male&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;30&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;www.ebay.com&quot;&gt;ebay&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;1.00 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;30&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;www.ebay.com&quot;&gt;ebay&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.00 €&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/raspberry_pi_3.jpg&quot; alt=&quot;raspberry_pi_3&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/raspberry_pi_3.jpg&quot; alt=&quot;raspberry_pi_3&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Raspberry PI 3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.farnell.com&quot;&gt;Farnell&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;37.69 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.farnell.com&quot;&gt;Farnell&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;37.69 €&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/power_supply_micro_USB_5V_2500mA.jpg&quot; alt=&quot;power_supply_micro_USB_5V_2500mA&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/power_supply_micro_USB_5V_2500mA.jpg&quot; alt=&quot;power_supply_micro_USB_5V_2500mA&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Power supply Micro USB 5V 2500mA&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.amazon.com&quot;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;8.99 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com&quot;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8.99 €&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/micro_sd_16go_class_10.jpg&quot; alt=&quot;micro_sd_16go_class_10&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/micro_sd_16go_class_10.jpg&quot; alt=&quot;micro_sd_16go_class_10&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Micro SD Card 16go class 10&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;www.amazon.com&quot;&gt;amazon&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;www.amazon.com&quot;&gt;amazon&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9.90€&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/breadboard_raspberry.jpg&quot; alt=&quot;breadboard_raspberry&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/breadboard_raspberry.jpg&quot; alt=&quot;breadboard_raspberry&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Bread board&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;www.ebay.com&quot;&gt;ebay&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;0 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;www.ebay.com&quot;&gt;ebay&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.50€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;69.08 €&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -376,50 +613,136 @@ Each relay are supplied in 3.3V via Raspberry PI.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://support.suso.com/supki/SSH_Tutorial_for_Linux&quot;&gt;ssh&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;overview-2&quot;&gt;Overview&lt;/h3&gt;
-
-&lt;p&gt;TODO plantuml&lt;/p&gt;
-
 &lt;h3 id=&quot;program&quot;&gt;Program&lt;/h3&gt;
 
-&lt;p&gt;Get clone from github&lt;/p&gt;
+&lt;p&gt;Get clone from github or this project.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/jluccisano/raspberry-scripts.git
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/jluccisano/rpi-sprinkler-control.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Follow install step describe in the README.md.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;https://github.com/jluccisano/rpi-sprinkler-control/archive/v0.0.2.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip show rpi-sprinkler-control
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Name: rpi-sprinkler-control
+Version: 0.0.1
+Summary: Control your sprinkler system via a Raspberry PI
+Home-page: https://github.com/jluccisano/rpi-sprinkler-control
+Author: Joseph Luccisano
+Author-email: joseph.luccisano@gmail.com
+License: UNKNOWN
+Location: /home/pi/.local/lib/python2.7/site-packages
+Requires:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Unit]
+&lt;span class=&quot;nv&quot;&gt;Description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Home Automation Server
+&lt;span class=&quot;nv&quot;&gt;After&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;multi-user.target
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Service]
+&lt;span class=&quot;nv&quot;&gt;ExecStart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/bin/python /opt/home-automation/server.py
+&lt;span class=&quot;nv&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;simple
+&lt;span class=&quot;nv&quot;&gt;Restart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;on-abort
+&lt;span class=&quot;nv&quot;&gt;Restart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;always
+&lt;span class=&quot;nv&quot;&gt;RestartSec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Install]
+&lt;span class=&quot;nv&quot;&gt;WantedBy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;multi-user.target
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;install-release-package&quot;&gt;Install release package&lt;/h3&gt;
+
+&lt;p&gt;TODO.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Connect to Rpi via SSH&lt;/li&gt;
+  &lt;li&gt;Install package&lt;/li&gt;
+  &lt;li&gt;Create Service&lt;/li&gt;
+  &lt;li&gt;Run&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;test&quot;&gt;Test&lt;/h3&gt;
 
 &lt;p&gt;Get state of each valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Get state of specific valve&lt;/p&gt;
+&lt;p&gt;Get state of specific zone&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Set state of specific valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Set state of each valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Toggle state of specific valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relay_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toggle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relay&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toggle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now we are able to control sprinkler system from a Raspberry PI. That’s already a good point but we need to 
-connect to ssh… The next tutorial describe how to control the sprinkler from his smartphone or raspberry
-display directly.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Electrical" /><category term="Electronic" /><category term="Linux" /><category term="Raspberry" /><category term="Python" /><category term="Software" /><summary type="html">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial, We have able to control the sprinkler system from a Raspberry PI.</summary></entry><entry><title type="html">Create a Sprinkler: Hydraulic part</title><link href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" rel="alternate" type="text/html" title="Create a Sprinkler: Hydraulic part" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-hydraulic</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-hydraulic/">&lt;p&gt;The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. At
-the end of this tutorial, we have able to use the sprinkler manually.&lt;/p&gt;
+control directly from his smartphone… Go to the next tutorial.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Electrical" /><category term="Electronic" /><category term="Linux" /><category term="Raspberry" /><category term="Python" /><category term="Software" /><summary type="html">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial, We have able to control the sprinkler system from a Raspberry PI.</summary></entry><entry><title type="html">Software part</title><link href="https://jluccisano.github.io/automation/sprinkler-software/" rel="alternate" type="text/html" title="Software part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-software</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-software/">&lt;p&gt;The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.&lt;/p&gt;
+
+&lt;p&gt;In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon service
+on the Raspberry. In order to be able to access of the raspberry from internet we need to expose an API
+via an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-http-server&quot;&gt;Create HTTP server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#call-api-from-smartphone&quot;&gt;Call API from Smartphone&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;create-http-server&quot;&gt;Create HTTP server&lt;/h3&gt;
+
+&lt;p&gt;It’s easy to create a simple HTTP Server in Python with Flask. I used a basic authentification, it’s the minimal
+to implement if you want to expose this API everywhere. In addition, all ZoneControl implement all functions
+we need to expose from the server http controller. So we can continue to use the daemon and the http server in
+parallel. You need to&lt;/p&gt;
+
+&lt;p&gt;TODO create Flask and Swagger&lt;/p&gt;
+
+&lt;p&gt;git clone&lt;/p&gt;
+
+&lt;p&gt;start the server&lt;/p&gt;
+
+&lt;p&gt;See more into the readme&lt;/p&gt;
+
+&lt;h3 id=&quot;call-api-from-smartphone&quot;&gt;Call API from smartphone&lt;/h3&gt;
+
+&lt;p&gt;We can now control the sprinkler with simple HTTP Request. At first, I was wondering if I have to code an mobile
+application (IOS, android… ), and after thinking about it, I said to myself: is there a simple application we can
+send request like curl or postman but on mobile. So I found the perfect application on Iphone &lt;a href=&quot;https://itunes.apple.com/fr/app/curler-une-interface-pour-vos-api-http/id1210896283?mt=8&quot;&gt;here&lt;/a&gt;
+It exists a couple of equivalent application on Iphone, Android…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you want to access to your HTTP server outside your LAN, don’t forget to forward port into your 
+router.&lt;/p&gt;
+
+&lt;p&gt;So I’ve just set all request into this application !&lt;/p&gt;
+
+&lt;p&gt;TODO screenshot samples.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/curler_sprinkler.jpg&quot; alt=&quot;Curler sprinkler&quot; /&gt;
+  
+    &lt;figcaption&gt;Curler sprinkler
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><summary type="html">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.</summary></entry><entry><title type="html">Create a Sprinkler: Hydraulic part</title><link href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" rel="alternate" type="text/html" title="Create a Sprinkler: Hydraulic part" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-hydraulic</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-hydraulic/">&lt;p&gt;The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.&lt;/p&gt;
+
+&lt;p&gt;Use this tutorial as the guideline in order to design yours, all components (brand, size, quantity, capacity…)
+described below is my own design as example but each projects are differents. At the end of this tutorial, you will be
+able to use the sprinkler manually.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#water-inflow-level&quot;&gt;Water inflow level&lt;/a&gt;&lt;/li&gt;
@@ -434,10 +757,11 @@ the end of this tutorial, we have able to use the sprinkler manually.&lt;/p&gt;
       &lt;li&gt;&lt;a href=&quot;#connections&quot;&gt;Connections&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#test&quot;&gt;Testing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#drop-by-drop&quot;&gt;Drop by Drop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#result-test&quot;&gt;Result test&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Useful conversion&lt;/strong&gt;:
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Useful conversion Inch/Metric&lt;/strong&gt;:
 1⁄2” = 15/21
 3⁄4” = 20/27
 1” = 26/34
@@ -456,21 +780,35 @@ the end of this tutorial, we have able to use the sprinkler manually.&lt;/p&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg&quot; alt=&quot;manometer&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;Here my results as example:&lt;/p&gt;
+
 &lt;ul class=&quot;notice--success&quot;&gt;
-  &lt;li&gt;Static pressure: 5.5 Bars&lt;/li&gt;
+  &lt;li&gt;Static pressure: 3.5 Bars 50 PSI&lt;/li&gt;
   &lt;li&gt;Water meter: 1”&lt;/li&gt;
   &lt;li&gt;Service line: 1”&lt;/li&gt;
-  &lt;li&gt;Design capacity: 76 l/min&lt;/li&gt;
-  &lt;li&gt;Working pressure:  3.8 Bars&lt;/li&gt;
+  &lt;li&gt;Design capacity: 53 l/min 14GPM -&amp;gt; 3,18 m3/h&lt;/li&gt;
+  &lt;li&gt;Working pressure: 2 Bars 29 PSI&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;According to the rotor Rainbird 3500 specification:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Nozzle standard 2; 8.2m radius; 0.47m3/h&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So according to my design capacity 3.18 m3/h =&amp;gt; 3.18/0.47 = 6.76 so I can use 6 rotors maximum by zone.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;Note: The pressure decrease of 0.25 Bar every 10m for a 25mm pipe. So you have to get it in consideration
+to calculate the capacity for distanly zones from your manometer.&lt;/p&gt;
+
+&lt;p&gt;My biggest zone is a square of 76 m2 = with 4 rotors with 8.2m radius, I will cover the zone with at least pressure.&lt;/p&gt;
 
 &lt;h2 id=&quot;zones-definition&quot;&gt;Zones definition&lt;/h2&gt;
 
 &lt;p&gt;Split your land in the largest square and rectangle as possible. But drop by drop irrigation and lawn irrigation
 must be separate.&lt;/p&gt;
 
-&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: According to your rotors choice, you need to choice rotors able to
-cover these zones. Example for my surface, I opt to Rain bird 3500 which cover all my requirements.
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: According to your rotors selection, you need to choose rotors able to
+cover these zones. Example for my surface, I opt to Rainbird 3500 which cover all my requirements.
 See more &lt;a href=&quot;https://rainbird.com/sites/default/files/media/documents/2018-02/ts_3500.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -484,65 +822,68 @@ See more &lt;a href=&quot;https://rainbird.com/sites/default/files/media/documen
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Zone&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Zone&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th&gt;Diameter (mm)&lt;/th&gt;
-      &lt;th&gt;Surface&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Rotors&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Diameter (mm)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Surface&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Rotors&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;A&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Lawn irrigation&lt;/td&gt;
-      &lt;td&gt;25&lt;/td&gt;
-      &lt;td&gt;21.5m2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;21.5m2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;B&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;B&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Lawn irrigation&lt;/td&gt;
-      &lt;td&gt;25&lt;/td&gt;
-      &lt;td&gt;76m2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;76m2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;C&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;C&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Lawn irrigation&lt;/td&gt;
-      &lt;td&gt;25&lt;/td&gt;
-      &lt;td&gt;45m2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;45m2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;D&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;D&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Lawn irrigation&lt;/td&gt;
-      &lt;td&gt;25&lt;/td&gt;
-      &lt;td&gt;45m2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;45m2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;E&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;E&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Drop by drop irrigation&lt;/td&gt;
-      &lt;td&gt;16&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h2 id=&quot;network-definition&quot;&gt;Network definition&lt;/h2&gt;
 
-&lt;h3 id=&quot;locate-your-water-main-supply&quot;&gt;Locate your water main supply&lt;/h3&gt;
+&lt;p&gt;1) Locate your water main supply&lt;/p&gt;
 
-&lt;p&gt;TODO add gate and pressure reductor&lt;/p&gt;
+&lt;p&gt;First check your main supply pressure. For my part, I had 8 Bars ! Yes My water tower is 50m above my house (1 Bar
+every 10m and the water tower 30m height). So I set up a pressure reductor in order to limitate the
+pressure to 3.5Bars. It’s a good option in order to not damage your house equipments (plumbing, washing machine… and
+your future sprinkler system).&lt;/p&gt;
 
-&lt;h3 id=&quot;define-valve-boxes-location&quot;&gt;Define valve boxes location&lt;/h3&gt;
+&lt;p&gt;2) Define valve boxes location&lt;/p&gt;
 
-&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: This location must be strategic to optimize pipe length and pressure loss.&lt;/p&gt;
+&lt;p&gt;This location must be strategic to optimize pipe length and pressure loss.&lt;/p&gt;
 
-&lt;h3 id=&quot;place-rotors-for-each-zones&quot;&gt;Place rotors for each zones&lt;/h3&gt;
+&lt;p&gt;3) Place rotors for each zones&lt;/p&gt;
 
-&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: Rotors must be place at first in the corner of each zone. See below the best practices to place rotors.&lt;/p&gt;
+&lt;p&gt;Rotors must be place at first in the corner of each zone. See below the best practices to place rotors.&lt;/p&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/rotors_coverage.gif&quot; alt=&quot;rotors coverage&quot; height=&quot;256px&quot; width=&quot;256px&quot; /&gt;&lt;/p&gt;
 
@@ -586,13 +927,13 @@ See more &lt;a href=&quot;https://rainbird.com/sites/default/files/media/documen
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Component&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg&quot; alt=&quot;Polyethylene pipe&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg&quot; alt=&quot;Polyethylene pipe&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Polyethylene pipe 25mm 25m HD 6Bars&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -623,14 +964,16 @@ See more &lt;a href=&quot;https://rainbird.com/sites/default/files/media/documen
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Component&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Unit price&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg&quot; alt=&quot;Valve boxes&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg&quot; alt=&quot;Valve boxes&quot; height=&quot;48px&amp;quot;width=&amp;quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Valve boxes Rain Bird 62x46x30,5cm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;38.81&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -659,167 +1002,132 @@ freezes.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Zone&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Zone&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th&gt;Quantity&lt;/th&gt;
-      &lt;th&gt;Site&lt;/th&gt;
-      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Quantity&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Unit price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_laiton_19x25.jpg&quot; alt=&quot;coude_laiton&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Coude Brass 19x25&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/raccord_laiton_M_19x25.jpg&quot; alt=&quot;raccord_laiton&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Raccord Brass Male 19x25&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg&quot; alt=&quot;vanne_integrale_manette_papillon&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;{:height=”48px” width=”96px”}&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Gate 1/4 turn&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg&quot; alt=&quot;mamelon_F_20x27_M_26x34&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Nipple Female 20/27 -&amp;gt; Male 26/34&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Photo&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th&gt;Quantity&lt;/th&gt;
-      &lt;th&gt;Site&lt;/th&gt;
-      &lt;th&gt;Price&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg&quot; alt=&quot;Regard&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Regard Jumbo rectangle Rain Bird VBA 2675 62x46x30,5cm&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;38.81 EUR&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg&quot; alt=&quot;Manometre&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Manomètre glycérine INOX radial 0 à 6 bars x1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;9.65 EUR&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg&quot; alt=&quot;Mamelon_reduit&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Manchon réduit 26/34 Male -&amp;gt; 20/27 Male&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg&quot; alt=&quot;Manchon_reduit&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Manchon réduit 20/27 Male -&amp;gt; 12/17 Male&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg&quot; alt=&quot;Mamelon&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Nipple 8/13 Female-&amp;gt; 12/17 Male&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/clarinette_DURA_4S_MFFFFF_PVC.jpg&quot; alt=&quot;Clarinet&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Clarinette 1”&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;32.12 EUR&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg&quot; alt=&quot;Bouchon_Male&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Bouchon PVC male&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg&quot; alt=&quot;Bouchon_Femelle&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Bouchon PVC female&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg&quot; alt=&quot;Coude_collecteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Coude collecteur MF&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/croix_collecteur_26x34.jpg&quot; alt=&quot;Croix_collecteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Croix collecteur&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/té_collecteur_26x34_MF.jpg&quot; alt=&quot;Te_collecteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Té collecteur x2&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&amp;quot;_MM_NR_24V.jpg&quot; alt=&quot;Rotor&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Electrovanne RAIN BIRD DV 1” MM NR 24V x5&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;14.94 EUR&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/raccord_compression_25mm_F.jpg&quot; alt=&quot;Raccord compression 25mm &quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Raccord compression 25mm x4&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/reducteur_pression.jpg&quot; alt=&quot;Reduction de pression&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;reduction&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;de pression&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg&quot; alt=&quot;coude_laiton&quot; height=&quot;48px&amp;quot;width=&amp;quot;48px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Gate FF 26x34&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;Site&lt;/td&gt;
-      &lt;td&gt;Price&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10.75&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10.75&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_laiton_19x25.jpg&quot; alt=&quot;coude_laiton&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Brass elbow 19x25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;7.5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/raccord_laiton_M_19x25.jpg&quot; alt=&quot;raccord_laiton&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Brass adapter male 19x25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg&quot; alt=&quot;mamelon_F_20x27_M_26x34&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Brass nipple Female 20/27 -&amp;gt; Male 26/34&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.08&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.08&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg&quot; alt=&quot;Manometre&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Water Pressure Gauge INOX radial 0 à 6 bars x1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9.65&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; 9.65&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg&quot; alt=&quot;Mamelon_reduit&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Brass adapter 26/34 Male -&amp;gt; 20/27 Male&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8.4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg&quot; alt=&quot;Manchon_reduit&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Brass adapter 20/27 Male -&amp;gt; 12/17 Male&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.375&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5.75&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg&quot; alt=&quot;Mamelon&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Brass nipple 8/13 Female-&amp;gt; 12/17 Male&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.425&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.85&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/clarinette_DURA_4S_MFFFFF_PVC.jpg&quot; alt=&quot;Clarinet&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Clarinet 1”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16.06&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16.06&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg&quot; alt=&quot;Bouchon_Male&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;End plug PVC male 1”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.55&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg&quot; alt=&quot;Bouchon_Femelle&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;End plug PVC female 1”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.95&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg&quot; alt=&quot;Coude_collecteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Elbow collector MF 1”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5.05&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5.05&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/croix_collecteur_26x34.jpg&quot; alt=&quot;Croix_collecteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Cross collector 1”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8.95&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8.95&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/té_collecteur_26x34_MF.jpg&quot; alt=&quot;Te_collecteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tee collector 26x34 MF 1”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&amp;quot;_MM_NR_24V.jpg&quot; alt=&quot;Rotor&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Irrigation valve RAIN BIRD DV 1” MM NR 24V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14.94&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;59.76&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/raccord_compression_25mm_F.jpg&quot; alt=&quot;Raccord compression 25mm &quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Adapter compression 25mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; 10.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; 164.25&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -862,83 +1170,83 @@ In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Component&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Quantity&lt;/th&gt;
-      &lt;th&gt;Site&lt;/th&gt;
-      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Quantity&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Unit price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_25_FF.jpg&quot; alt=&quot;Coude_25&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;TODO&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_25_FF.jpg&quot; alt=&quot;Coude_25&quot; height=&quot;96px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Compression elbow connector&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.05&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;42.7&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_taraudage_central_25x05.jpg&quot; alt=&quot;Coude_taraudage_centra&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;TODO&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_taraudage_central_25x05.jpg&quot; alt=&quot;Coude_taraudage_centra&quot; height=&quot;96px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Fitting compression elbow connector&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.05&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;12.20&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/te_compression_25.jpg&quot; alt=&quot;Te_compression_25&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;TODO&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/te_compression_25.jpg&quot; alt=&quot;Te_compression_25&quot; height=&quot;96px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Compression tee&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.05&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16.2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg&quot; alt=&quot;Coude_compression_25&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;TODO&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg&quot; alt=&quot;Coude_compression_25&quot; height=&quot;96px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Compression fitting female tee&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4.65&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;41.85&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_25.jpg&quot; alt=&quot;Tuyau_25&quot; height=&quot;24px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;TODO&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg&quot; alt=&quot;Tube_deport&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;swing pipe 30m SPX-FLEX 30m&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;27.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;54.0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg&quot; alt=&quot;Tube_deport&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;tuyau 30m tube de déport&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;27 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg&quot; alt=&quot;Tuyau_polyethylene&quot; height=&quot;48px&amp;quot;width=&amp;quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;polyethylene irrigation pipe 25mm 50m HD 6Bars&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;30.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;92.7&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg&quot; alt=&quot;Tuyau_polyethylene&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&amp;quot;_F.jpg&quot; alt=&quot;Turbine_escamotable&quot; height=&quot;48px&amp;quot;width=&amp;quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Rotor RAIN BIRD 3504 PC (1/2” F)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;13&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6.97&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;90.61&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&amp;quot;_F.jpg&quot; alt=&quot;Turbine_escamotable&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Turbine escamotable RAIN BIRD 3504 PC (1/2” F)&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;13&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;6.97 EUR&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2&amp;quot;.jpg&quot; alt=&quot;Coude_tube_déport&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Swing Pipe - 1/2” MNPT Elbow&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;13&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.24&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.12&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2&amp;quot;.jpg&quot; alt=&quot;Coude_tube_déport&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Coude pour tube de déport SBE-50 16 x 1/2”&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;13&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg&quot; alt=&quot;Coude_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Swing Pipe - 3/4” MNPT Elbow&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;13&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.24&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.12&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg&quot; alt=&quot;Coude_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;gate 1/4 de turn&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://www.jardinet.fr&quot;&gt;Jardinet&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;EUROS&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;356.3&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -951,7 +1259,7 @@ In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 
   
 &lt;/figure&gt;
 
-&lt;h4 id=&quot;drop-by-drop&quot;&gt;Drop By Drop&lt;/h4&gt;
+&lt;h2 id=&quot;drop-by-drop&quot;&gt;Drop By Drop&lt;/h2&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/drop_by_drop_schema.png&quot; alt=&quot;Drop By Drop&quot; /&gt;
@@ -964,153 +1272,114 @@ Drop
 
 &lt;p&gt;&lt;strong&gt;Advices&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Pour le goutte à goutte, il faut ajouter un reduction de pression 1.2bars (1 à 1.5bars)&lt;/li&gt;
-  &lt;li&gt;Mettre des petites vanettes pour contrôler différentes zones&lt;/li&gt;
+  &lt;li&gt;Regarding the drop by drop, we have to add a pressure reductor 1.2bars 17PSI (1 14.5 PSI à 1.5bars 21.75PSI)&lt;/li&gt;
+  &lt;li&gt;Add mini threading valve in order to control different zones (see components below).&lt;/li&gt;
+  &lt;li&gt;I set 1 dripper by bush, 3 drippers by palm tree, 2 drippers by conifer, 2 drippers by olive tree&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Components:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Nombre d’arbres à couvrir:&lt;/li&gt;
-  &lt;li&gt;Haies: 50&lt;/li&gt;
-  &lt;li&gt;Olivier: 1&lt;/li&gt;
-  &lt;li&gt;Palmier: 1&lt;/li&gt;
-  &lt;li&gt;Arbustes: 3 voir 5&lt;/li&gt;
-  &lt;li&gt;Lila: 1&lt;/li&gt;
-  &lt;li&gt;Magnolia: 1&lt;/li&gt;
-  &lt;li&gt;Azalée japonais: 1&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Vegelia: 1&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;1 seul goutteur par arbuste&lt;/li&gt;
-  &lt;li&gt;3 goutteurs pour le palmier&lt;/li&gt;
-  &lt;li&gt;2 goutteurs pour le conifère&lt;/li&gt;
-  &lt;li&gt;2 goutteurs pour l’olivier&lt;/li&gt;
-  &lt;li&gt;Distance tuyau:&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Component&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Quantity&lt;/th&gt;
-      &lt;th&gt;Site&lt;/th&gt;
-      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Quantity&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Unit price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Total&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&amp;quot;_MM_NR_24V.jpg&quot; alt=&quot;electrovanne_RAIN_BIRD_DV_1&amp;quot;&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Electrovanne RAIN BIRD DV 1” MM NR 24V&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;14.94&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&amp;quot;_MM_NR_24V.jpg&quot; alt=&quot;Rotor&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Irrigation valve RAIN BIRD DV 1” MM NR 24V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14.94&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14.94&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/machon-reduit-femelle-femelle.jpg&quot; alt=&quot;machon-reduit-femelle-femelle&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Manchon reduction female/female 1” -&amp;gt; 3/4”&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/machon-reduit-femelle-femelle.jpg&quot; alt=&quot;machon-reduit-femelle-femelle&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Reducing Coupling Female Thread female/female 1” -&amp;gt; 3/4”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.05&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.05&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon-34-polyp-noir.jpg&quot; alt=&quot;mamelon-34-polyp-noir&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Nipple male/male 3/4”&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/mamelon-34-polyp-noir.jpg&quot; alt=&quot;mamelon-34-polyp-noir&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Nipple PVC male/male 3/4”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.09&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.09&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/reducteur_34_femelle_male.jpg&quot; alt=&quot;reducteur_34_femelle_male&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;reduction de pression female/male 3/4”&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/reducteur_34_femelle_male.jpg&quot; alt=&quot;reducteur_34_femelle_male&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Pressure Regulator 3/4” Hose Thread 25PSI female/male 3/4”&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; 5.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5.99&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/adaptateur-de-montage.jpg&quot; alt=&quot;adaptateur-de-montage&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Adaptator male/male 3/4” -&amp;gt; 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/adaptateur-de-montage.jpg&quot; alt=&quot;adaptateur-de-montage&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Thread adaptator male 3/4” -&amp;gt; 16mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.42&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.42&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg&quot; alt=&quot;tuyau_polyethylene_16mm_25m&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Tuyau polyethylène 16mm 25m&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;6.90&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg&quot; alt=&quot;tuyau_polyethylene_16mm_25m&quot; height=&quot;48px&amp;quot;width=&amp;quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;polyethylene irrigation pipe 16mm 25m&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6.90&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;34.5&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_16mm.jpg&quot; alt=&quot;coude_16mm.&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Coude 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;2.15 les 4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_16mm.jpg&quot; alt=&quot;coude_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Elbow 16mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.50&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/jonction_16mm.jpg&quot; alt=&quot;jonction_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Raccord 16mm  1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;TODO&lt;/td&gt;
-      &lt;td&gt;1.50 les 4&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/jonction_16mm.jpg&quot; alt=&quot;jonction_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Adapter 16mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.50&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/té_16mm_MM.jpg&quot; alt=&quot;te_16mm_MM&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Té 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;2.15 les 4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/té_16mm_MM.jpg&quot; alt=&quot;te_16mm_MM&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Tee 16mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.54&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.16&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_16mm.jpg&quot; alt=&quot;bouchon_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Bouchon 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;1.65 les 4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/bouchon_16mm.jpg&quot; alt=&quot;bouchon_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;End plug connector 16mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.65&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;13.2&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/goutteur.jpg&quot; alt=&quot;goutteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Goutteur&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/goutteur.jpg&quot; alt=&quot;goutteur&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Dripper&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.23&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;23.0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/vanette_16mm_16mm.jpg&quot; alt=&quot;vanette_16mm_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Vanette 1/4 de turn male/male 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;2.45 les 2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/vanette_16mm_16mm.jpg&quot; alt=&quot;vanette_16mm_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Mini Threading valve 1/4 de turn male/male 16mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.45&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14.7&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/raccord_jonction_16mm.jpg&quot; alt=&quot;raccord_jonction_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Raccord jonction compression 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;1.50&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/té_compression_16mm_MM.jpg&quot; alt=&quot;te_compression_16mm_MM&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Té compression 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;1.65 les 4&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_compression_16mm.jpg&quot; alt=&quot;coude_compression_16mm&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Coude compression 16mm&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td&gt;TODO&lt;/td&gt;
-      &lt;td&gt;1.5O&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/coude_compression_16mm_M_15x21.jpg&quot; alt=&quot;coude_compression_16mm_M&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Coude compression male 1/2” -&amp;gt; 16mm   1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;TODO&lt;/td&gt;
-      &lt;td&gt;1.50&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;115.05&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1120,20 +1389,16 @@ Drop
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Component&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Quantity&lt;/th&gt;
-      &lt;th&gt;Site&lt;/th&gt;
-      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Price&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/assets/images/sprinkler/poinçon.jpg&quot; alt=&quot;awl&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Awl&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/poinçon.jpg&quot; alt=&quot;awl&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Irrigation hole punch&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3.40&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1145,6 +1410,7 @@ Drop
   &lt;li&gt;Check the pressure and joins are well set&lt;/li&gt;
   &lt;li&gt;Open gate manually with 1/4 turn.&lt;/li&gt;
   &lt;li&gt;With a screwdriver adjust your rotor covering.&lt;/li&gt;
+  &lt;li&gt;Total cost for my project: 677.81€&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p class=&quot;notice--primary&quot;&gt;&lt;strong&gt;Tool&lt;/strong&gt;s: screwdriver.&lt;/p&gt;
@@ -1158,13 +1424,7 @@ part to automatize the system.&lt;/p&gt;
     &lt;figcaption&gt;Sprinkler final result
 &lt;/figcaption&gt;
   
-&lt;/figure&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sprinkler" /><category term="Hidraulic" /><summary type="html">The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. At the end of this tutorial, we have able to use the sprinkler manually.</summary></entry><entry><title type="html">Kivy software</title><link href="https://jluccisano.github.io/raspberry/kivy-software/" rel="alternate" type="text/html" title="Kivy software" /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/kivy-software</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/kivy-software/">&lt;p&gt;The objective of this tutorial is&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;https://kivy.org/docs/installation/installation-rpi.html&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is</summary></entry><entry><title type="html">Install Xiaomi Camera</title><link href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="alternate" type="text/html" title="Install Xiaomi Camera " /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/install-xiaomi-camera</id><content type="html" xml:base="https://jluccisano.github.io/computer/install-xiaomi-camera/">&lt;p&gt;The objective of this tutorial is to set up a Xiaomi Camera&lt;/p&gt;
+&lt;/figure&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sprinkler" /><category term="Hidraulic" /><summary type="html">The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.</summary></entry><entry><title type="html">Install Xiaomi Camera</title><link href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="alternate" type="text/html" title="Install Xiaomi Camera " /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/install-xiaomi-camera</id><content type="html" xml:base="https://jluccisano.github.io/computer/install-xiaomi-camera/">&lt;p&gt;The objective of this tutorial is to set up a Xiaomi Camera&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
@@ -1210,9 +1470,13 @@ part to automatize the system.&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
+&lt;p&gt;diskutil partitionDisk /dev/disk2 GPT FAT32 PART1 100M ExFAT PART2 R&lt;/p&gt;
+
+&lt;p&gt;wget https://github.com/samtap/fang-hacks/releases/download/0.2.0/fanghacks_v0.2.0.zip&lt;/p&gt;
+
 &lt;p&gt;http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk2
 
 Started erase on disk1
 Unmounting disk
@@ -1226,12 +1490,12 @@ Mounting disk
 Finished erase on disk1
 
 
-diskutil unmountDisk /dev/disk1
+diskutil unmountDisk /dev/disk2
 
 Unmount of all volumes on disk1 was successful
 
 
-&lt;span class=&quot;nb&quot;&gt;sudo dd &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1m &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Users/Lucci/Downloads/fanghacks_v0.2.0.img  &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/disk1
+&lt;span class=&quot;nb&quot;&gt;sudo dd &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1m &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Users/Lucci/Downloads/fanghacks_v0.2.0.img  &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/disk2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;CTRL-T&lt;/p&gt;
@@ -1312,82 +1576,12 @@ default_audio_format &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; PCM
 live_path = ‘/unicast’
 http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review&lt;/p&gt;
 
-&lt;p&gt;see more &lt;a href=&quot;https://github.com/samtap/fang-hacks&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a Xiaomi Camera</summary></entry><entry><title type="html">Install LCD screen on Raspberry PI 3</title><link href="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/" rel="alternate" type="text/html" title="Install LCD screen on Raspberry PI 3" /><published>2017-07-16T00:00:00+00:00</published><updated>2017-07-16T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/Install-raspberry-lcd</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/Install-raspberry-lcd/">&lt;p&gt;The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.&lt;/p&gt;
+&lt;p&gt;see more &lt;a href=&quot;https://github.com/samtap/fang-hacks&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a Xiaomi Camera</summary></entry><entry><title type="html">Kivy software</title><link href="https://jluccisano.github.io/raspberry/kivy-software/" rel="alternate" type="text/html" title="Kivy software" /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/kivy-software</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/kivy-software/">&lt;p&gt;The objective of this tutorial is&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;https://www.amazon.fr/gp/product/B01FX7909Q/ref=oh_aui_detailpage_o04_s00?ie=UTF8&amp;amp;psc=1&lt;/p&gt;
-
-&lt;p&gt;```bash
-git clone https://github.com/goodtft/LCD-show.git
-chmod -R 755 LCD-show
-cd LCD-show/
-sudo ./LCD35-show
-``&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.</summary></entry><entry><title type="html">Install Go on Raspberry</title><link href="https://jluccisano.github.io/raspberry/go/" rel="alternate" type="text/html" title="Install Go on Raspberry" /><published>2017-07-05T00:00:00+00:00</published><updated>2017-07-05T00:00:00+00:00</updated><id>https://jluccisano.github.io/raspberry/go</id><content type="html" xml:base="https://jluccisano.github.io/raspberry/go/">&lt;h3 id=&quot;download-arm-version&quot;&gt;Download ARM Version&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://storage.googleapis.com/golang/go1.9.1.linux-armv6l.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;extract&quot;&gt;Extract&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; /usr/local &lt;span class=&quot;nt&quot;&gt;-xzf&lt;/span&gt; go1.9.1.linux-armv6l.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;create-gopath-directory&quot;&gt;Create GOPATH directory&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /home/pi/workspace/go
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;export-env-variables&quot;&gt;Export Env Variables&lt;/h3&gt;
-
-&lt;p&gt;Edit your bashrc:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vim ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Add vars:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/pi/workspace/go
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOROOT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/local/go
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;:&lt;span class=&quot;nv&quot;&gt;$GOPATH&lt;/span&gt;/bin:&lt;span class=&quot;nv&quot;&gt;$GOROOT&lt;/span&gt;/bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Reload bash&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;test&quot;&gt;Test&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; go version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Output:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; go version go1.9.1 linux/arm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;clean-up&quot;&gt;Clean up&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;rm &lt;/span&gt;go1.9.1.linux-armv6l.tar.gz 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Go" /><category term="Raspberry" /><summary type="html">Download ARM Version</summary></entry><entry><title type="html">NextRun</title><link href="https://jluccisano.github.io/project/nextrun/" rel="alternate" type="text/html" title="NextRun" /><published>2017-04-01T00:00:00+00:00</published><updated>2017-04-01T00:00:00+00:00</updated><id>https://jluccisano.github.io/project/nextrun</id><content type="html" xml:base="https://jluccisano.github.io/project/nextrun/">&lt;p&gt;Create and plan your sport workout.&lt;/p&gt;
-
-&lt;p&gt;Web site: &lt;a href=&quot;www.nextrun.fr&quot;&gt;www.nextrun.fr&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Source on &lt;a href=&quot;https://github.com/jluccisano/nextrun/tree/develop&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;architecture-overview&quot;&gt;Architecture Overview&lt;/h3&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;https://jluccisano.github.io/assets/images/nextrun-architecture.png&quot; alt=&quot;NextRun Architecture Overview&quot; /&gt;
-  
-    &lt;figcaption&gt;Nextrun Architecture Overview
-&lt;/figcaption&gt;
-  
-&lt;/figure&gt;
-
-&lt;h3 id=&quot;docker-build&quot;&gt;Docker build&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; mongo-nextrun &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /home/desktop/data/db:/data/db &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; mongo:tag &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 27017:27017
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="NodeJs" /><category term="AngularJS" /><category term="MongoDB" /><category term="SASS" /><category term="CSS" /><category term="HTML5" /><category term="JavaScript" /><category term="Google Maps API" /><summary type="html">Create and plan your sport workout.</summary></entry></feed>
+&lt;p&gt;https://kivy.org/docs/installation/installation-rpi.html&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Raspberry PI" /><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is</summary></entry></feed>

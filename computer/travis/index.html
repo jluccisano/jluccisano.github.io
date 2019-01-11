@@ -13,19 +13,19 @@
 
 
 
-<title>Useful linux commands - Practice makes perfect</title>
+<title>Deploy release with Travis CI - Practice makes perfect</title>
 
 
 
 
-<meta name="description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
+<meta name="description" content="The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub">
 
 
 
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Useful linux commands">
+<meta property="og:title" content="Deploy release with Travis CI">
 
 
   <link rel="canonical" href="https://jluccisano.github.io/computer/travis/">
@@ -33,13 +33,13 @@
 
 
 
-  <meta property="og:description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
+  <meta property="og:description" content="The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Useful linux commands">
-  <meta name="twitter:description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
+  <meta name="twitter:title" content="Deploy release with Travis CI">
+  <meta name="twitter:description" content="The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub">
   <meta name="twitter:url" content="https://jluccisano.github.io/computer/travis/">
 
   
@@ -66,7 +66,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-10-15T00:00:00+00:00">
+  <meta property="article:published_time" content="2018-11-10T00:00:00+00:00">
 
 
 
@@ -154,13 +154,12 @@
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Useful linux commands
+          Deploy release with Travis CI
 
         
       </h1>
       
-        <p class="page__lead">travis encrypt DOCKER_USER=username –add
-travis encrypt DOCKER_PASS=password –add
+        <p class="page__lead">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub
 
 </p>
       
@@ -204,7 +203,7 @@ travis encrypt DOCKER_PASS=password –add
     
       
       
-        <li class="current">Useful linux commands</li>
+        <li class="current">Deploy release with Travis CI</li>
       
     
   </ol>
@@ -333,35 +332,136 @@ travis encrypt DOCKER_PASS=password –add
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Useful linux commands">
-    <meta itemprop="description" content="travis encrypt DOCKER_USER=username –addtravis encrypt DOCKER_PASS=password –add">
-    <meta itemprop="datePublished" content="October 15, 2017">
+    <meta itemprop="headline" content="Deploy release with Travis CI">
+    <meta itemprop="description" content="The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub">
+    <meta itemprop="datePublished" content="November 10, 2018">
     
 
     <div class="page__inner-wrap">
       
 
       <section class="page__content" itemprop="text">
-        <p>travis encrypt DOCKER_USER=username –add
-travis encrypt DOCKER_PASS=password –add</p>
+        <p>The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub</p>
 
-<p>cat jwtRS256.key
-cat jwtRS256.key.pub</p>
+<ul>
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#deploy-github-release-via-personal-oauth-token">Deploy Github release via personal OAuth Token</a></li>
+  <li><a href="#deploy-docker-image-to-docker-hub">Deploy Docker image to docker hub</a></li>
+</ul>
 
-<h1 id="rs256">RS256</h1>
-<h1 id="private-key">private key</h1>
-<p>openssl genrsa -out rs256-4096-private.rsa 4096</p>
-<h1 id="public-key">public key</h1>
-<p>openssl rsa -in rs256-4096-private.rsa -pubout &gt; rs256-4096-public.pem</p>
+<h3 id="prerequisites">Prerequisites</h3>
 
-<p>privKeyPath = “keys/app.rsa”     // openssl genrsa -out app.rsa keysize
-pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app.rsa.pub</p>
+<ul>
+  <li>Travis CI account</li>
+  <li>DockerHub account</li>
+  <li>Github account</li>
+  <li>Install Ruby <a href="https://guides.rubygems.org/rubygems-basics/">https://guides.rubygems.org/rubygems-basics/</a></li>
+</ul>
 
-<p>ssh-keygen -t rsa -b 4096 -C “email@domain.com”</p>
+<h3 id="deploy-github-release-via-personal-oauth-token">Deploy Github release via personal OAuth Token</h3>
 
-<p>gem install travis</p>
+<h4 id="create-an-oauth-token">Create an OAuth Token</h4>
 
-<p>/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key –add</p>
+<p>Go <a href="https://github.com/settings/tokens">here</a> and create new one.</p>
+
+<p>Make sure you have at least those permissions below:</p>
+
+<p><img src="/assets/images/token_scope.png" alt="token-scope" /></p>
+
+<h4 id="encrypt-the-github">Encrypt the Github</h4>
+
+<p>Go where your .travis.yaml is located.</p>
+
+<p>Install travis tools</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>travis
+</code></pre></div></div>
+
+<p>Copy your token generated previously and substitute $YOUR_TOKEN with it.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>travis encrypt <span class="nv">GITHUB_TOKEN</span><span class="o">=</span><span class="nv">$YOUR_TOKEN</span> <span class="nt">--add</span>
+</code></pre></div></div>
+
+<p>This command above encrypt your token and add the encrypted key into your .travis.yaml;</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">env</span><span class="pi">:</span>
+  <span class="na">global</span><span class="pi">:</span>
+    <span class="na">secure</span><span class="pi">:</span> <span class="s">sOQ51G...</span>
+</code></pre></div></div>
+
+<p>Next you can use the variable $GITHUB_TOKEN in the .travis.yaml to set the api_key.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">deploy</span><span class="pi">:</span>
+  <span class="na">provider</span><span class="pi">:</span> <span class="s">releases</span>
+  <span class="na">api_key</span><span class="pi">:</span> <span class="s">$GITHUB_TOKEN</span>
+  <span class="na">file</span><span class="pi">:</span> <span class="s">dist/*</span>
+  <span class="na">skip_cleanup</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">on</span><span class="pi">:</span>
+    <span class="na">tags</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>Then create a tag an push it:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag <span class="nt">-a</span> v0.0.1 <span class="nt">-m</span> <span class="s2">"Release version v0.0.1"</span>
+git push <span class="nt">--tags</span>
+</code></pre></div></div>
+
+<p>Travis will automatically trigger a new build and deploy it.</p>
+
+<p>Finally go to https://github.com/$GITHUB_USERNAME/$GIT_REPO/releases. You can see you package released !</p>
+
+<p><img src="/assets/images/github-release.png" alt="github-release" /></p>
+
+<h3 id="deploy-docker-image-to-docker-hub">Deploy Docker image to docker hub</h3>
+
+<h4 id="create-encrypted-variables-docker_user-and-docker_password">Create encrypted variables $DOCKER_USER and DOCKER_PASSWORD</h4>
+
+<p>Go where your .travis.yaml is located.</p>
+
+<p>Install travis tools</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>travis
+</code></pre></div></div>
+
+<p>substitute username and password by your docker hub credentials.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>travis encrypt <span class="nv">DOCKER_USER</span><span class="o">=</span>username <span class="nt">--add</span>
+travis encrypt <span class="nv">DOCKER_PASS</span><span class="o">=</span>password <span class="nt">--add</span>
+</code></pre></div></div>
+<p>This command above encrypt your token and add the encrypted key into your .travis.yaml;</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">env</span><span class="pi">:</span>
+  <span class="na">global</span><span class="pi">:</span>
+    <span class="na">secure</span><span class="pi">:</span> <span class="s">sOQ51G...</span>
+    <span class="na">secure</span><span class="pi">:</span> <span class="s">qiQR2A...</span>
+</code></pre></div></div>
+
+<p>Next you can use the variable $DOCKER_USER and DOCKER_PASSWORD in the .travis.yaml.</p>
+
+<h4 id="setup-travisyaml">Setup .travis.yaml</h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">services</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">docker</span>
+</code></pre></div></div>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">script</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH;</span>
+  <span class="s">fi`</span>
+<span class="pi">-</span> <span class="s">docker build -t $REPO:$TAG .</span>
+<span class="na">after_success</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">docker login -u $DOCKER_USER -p $DOCKER_PASSWORD</span>
+<span class="pi">-</span> <span class="s">docker tag $REPO:$COMMIT $REPO:$TAG</span>
+<span class="pi">-</span> <span class="s">docker tag $REPO:$COMMIT $REPO:$TRAVIS_BUILD_NUMBER</span>
+<span class="pi">-</span> <span class="s">docker push $REPO</span>
+</code></pre></div></div>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">env</span><span class="pi">:</span>
+  <span class="na">global</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">B8Z5pvFYnGMQR...</span>
+  <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">hmVbuNH4Z....</span>
+  <span class="pi">-</span> <span class="s">COMMIT=${TRAVIS_COMMIT::8}</span>
+  <span class="pi">-</span> <span class="s">REPO=$DOCKER_USER/chrono</span>
+</code></pre></div></div>
 
         
       </section>
@@ -382,7 +482,11 @@ pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app
     
       
       
-      <a href="https://jluccisano.github.io/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
+      <a href="https://jluccisano.github.io/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://jluccisano.github.io/tags/#travis" class="page__taxonomy-item" rel="tag">Travis</a>
     
     </span>
   </p>
@@ -410,7 +514,7 @@ pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-10-15T00:00:00+00:00">October 15, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-10T00:00:00+00:00">November 10, 2018</time></p>
         
       </footer>
 
@@ -419,7 +523,7 @@ pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Useful linux commands https://jluccisano.github.io/computer/travis/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Deploy release with Travis CI https://jluccisano.github.io/computer/travis/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/computer/travis/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -432,11 +536,12 @@ pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/computer/useful-linux-commands/" class="pagination--pager" title="Useful linux commands
+      <a href="https://jluccisano.github.io/computer/organize-photo-library/" class="pagination--pager" title="Organize photo library
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="https://jluccisano.github.io/automation/sprinkler-netatmo/" class="pagination--pager" title="Use Netatmo rain sensor to regulate your sprinkler
+">Next</a>
     
   </nav>
 
@@ -456,13 +561,6 @@ pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app
   
   
     
-    
-      
-      
-      
-          
-      
-      
     
       
       
@@ -491,13 +589,106 @@ pubKeyPath  = “keys/app.rsa.pub” // openssl rsa -in app.rsa -pubout &gt; app
     
     <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="permalink">Use Netatmo rain sensor to regulate your sprinkler
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/computer/organize-photo-library/" rel="permalink">Organize photo library
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Environment
+  Upload
+  Consolidate
+  Backups
+  Show
+
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
         <a href="https://jluccisano.github.io/automation/sprinkler-software/" rel="permalink">Software part
 </a>
       
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
-In the previous tutorial, I explain how to control spri...</p>
+
+</p>
   </article>
 </div>
             
@@ -538,82 +729,6 @@ We have able to control the sprinkler system from...</p>
             
       
     
-      
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/kivy-software/" rel="permalink">Kivy software
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="permalink">Install Xiaomi Camera
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a Xiaomi Camera
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
         </div>
       </div>
     
@@ -644,7 +759,7 @@ We have able to control the sprinkler system from...</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

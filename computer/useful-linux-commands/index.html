@@ -385,9 +385,24 @@
   <li>Delete all file avant la date défini</li>
 </ul>
 
-<p>```bash
-find . ! -newermt 2017-09-06 -exec rm -rf {} \;
-``</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> <span class="o">!</span> <span class="nt">-newermt</span> 2017-09-06 <span class="nt">-exec</span> <span class="nb">rm</span> <span class="nt">-rf</span> <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div></div>
+
+<p>Find list of extension in a tree</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>find . -type f</td>
+      <td>perl -ne ‘print $1 if m/.([^.\/]+)$/’</td>
+      <td>sort -u</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Find by extension</p>
+
+<p>find . -type f  -name “<em>.mp</em>”</p>
 
         
       </section>
@@ -458,11 +473,11 @@ find . ! -newermt 2017-09-06 -exec rm -rf {} \;
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/automation/sprinkler-software/" class="pagination--pager" title="Software part
+      <a href="https://jluccisano.github.io/computer/tuneling-itunes-server/" class="pagination--pager" title="Tunelling itunes server
 ">Previous</a>
     
     
-      <a href="https://jluccisano.github.io/computer/travis/" class="pagination--pager" title="Useful linux commands
+      <a href="https://jluccisano.github.io/computer/organize-photo-library/" class="pagination--pager" title="Organize photo library
 ">Next</a>
     
   </nav>
@@ -491,6 +506,24 @@ find . ! -newermt 2017-09-06 -exec rm -rf {} \;
       
     
       
+      
+          
+      
+      
+    
+      
+      
+          
+      
+      
+    
+      
+      
+      
+          
+      
+      
+    
       
       
           
@@ -663,7 +696,7 @@ find . ! -newermt 2017-09-06 -exec rm -rf {} \;
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

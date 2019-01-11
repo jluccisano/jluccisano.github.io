@@ -18,7 +18,7 @@
 
 
 
-<meta name="description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon serviceon the Raspberry. In order to be able to access of the raspberry from internet we need to expose an APIvia an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.">
+<meta name="description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.">
 
 
 
@@ -33,13 +33,13 @@
 
 
 
-  <meta property="og:description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon serviceon the Raspberry. In order to be able to access of the raspberry from internet we need to expose an APIvia an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.">
+  <meta property="og:description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
   <meta name="twitter:title" content="Software part">
-  <meta name="twitter:description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon serviceon the Raspberry. In order to be able to access of the raspberry from internet we need to expose an APIvia an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.">
+  <meta name="twitter:description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.">
   <meta name="twitter:url" content="https://jluccisano.github.io/automation/sprinkler-software/">
 
   
@@ -160,9 +160,6 @@
       </h1>
       
         <p class="page__lead">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
-In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon service
-on the Raspberry. In order to be able to access of the raspberry from internet we need to expose an API
-via an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.
 
 </p>
       
@@ -336,7 +333,7 @@ via an HTTP Server. Finally, we will be able to control sprinkler with simple HT
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Software part">
-    <meta itemprop="description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon serviceon the Raspberry. In order to be able to access of the raspberry from internet we need to expose an APIvia an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.">
+    <meta itemprop="description" content="The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.">
     <meta itemprop="datePublished" content="August 29, 2017">
     
 
@@ -344,8 +341,9 @@ via an HTTP Server. Finally, we will be able to control sprinkler with simple HT
       
 
       <section class="page__content" itemprop="text">
-        <p>The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
-In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon service
+        <p>The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.</p>
+
+<p>In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon service
 on the Raspberry. In order to be able to access of the raspberry from internet we need to expose an API
 via an HTTP Server. Finally, we will be able to control sprinkler with simple HTTP request routing from anywhere.</p>
 
@@ -361,6 +359,8 @@ to implement if you want to expose this API everywhere. In addition, all ZoneCon
 we need to expose from the server http controller. So we can continue to use the daemon and the http server in
 parallel. You need to</p>
 
+<p>TODO create Flask and Swagger</p>
+
 <p>git clone</p>
 
 <p>start the server</p>
@@ -370,14 +370,16 @@ parallel. You need to</p>
 <h3 id="call-api-from-smartphone">Call API from smartphone</h3>
 
 <p>We can now control the sprinkler with simple HTTP Request. At first, I was wondering if I have to code an mobile
-application (iphone, android… ), and after thinking about it, I said to myself: is there a simple application we can send 
-request like curl or postman but on mobile. So I found the perfect application on Iphone <a href="https://itunes.apple.com/fr/app/curler-une-interface-pour-vos-api-http/id1210896283?mt=8">here</a>
+application (IOS, android… ), and after thinking about it, I said to myself: is there a simple application we can
+send request like curl or postman but on mobile. So I found the perfect application on Iphone <a href="https://itunes.apple.com/fr/app/curler-une-interface-pour-vos-api-http/id1210896283?mt=8">here</a>
 It exists a couple of equivalent application on Iphone, Android…</p>
 
 <p><strong>Note</strong>: If you want to access to your HTTP server outside your LAN, don’t forget to forward port into your 
 router.</p>
 
 <p>So I’ve just set all request into this application !</p>
+
+<p>TODO screenshot samples.</p>
 
 <figure class="">
   <img src="https://jluccisano.github.io/assets/images/sprinkler/curler_sprinkler.jpg" alt="Curler sprinkler" />
@@ -387,27 +389,6 @@ router.</p>
   
 </figure>
 
-<h3 id="schedule-scenario">Schedule scenario</h3>
-
-<p>With an http request application we can only execute scenario on demand. So once again, I said to myself: is there
-a simple application with implement CRON pattern and execute HTTP request</p>
-
-<p>cron.</p>
-
-<h3 id="futher-more-control-via-raspberry-display">Futher more control via raspberry display.</h3>
-
-<p>Create multi-plateform IHM with Kivy</p>
-
-<h3 id="install-kivy">Install Kivy</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span><span class="nv">Cython</span><span class="o">==</span>0.23
-pip <span class="nb">install </span>kivy
-pip <span class="nb">install </span>pygame
-python sprinkler-control.py
-</code></pre></div></div>
-<p>see more <a href="https://kivy.org/docs/installation/installation-linux.html#installation-linux">here</a></p>
-
-<p>https://kivy.org/docs/guide/basic.html</p>
 
         
       </section>
@@ -494,7 +475,7 @@ python sprinkler-control.py
 ">Previous</a>
     
     
-      <a href="https://jluccisano.github.io/computer/useful-linux-commands/" class="pagination--pager" title="Useful linux commands
+      <a href="https://jluccisano.github.io/computer/tuneling-itunes-server/" class="pagination--pager" title="Tunelling itunes server
 ">Next</a>
     
   </nav>
@@ -519,18 +500,52 @@ python sprinkler-control.py
       
       
           
-      
-          
-      
-          
-      
-          
             
               <div class="page__related">
                 
                   <h4 class="page__related-title">You May Also Enjoy</h4>
                 
                 <div class="grid__wrapper">
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="permalink">Use Netatmo rain sensor to regulate your sprinkler
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+          
+      
+          
             
             
 
@@ -549,19 +564,77 @@ python sprinkler-control.py
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/travis/" rel="permalink">Useful linux commands
+        <a href="https://jluccisano.github.io/computer/travis/" rel="permalink">Deploy release with Travis CI
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">travis encrypt DOCKER_USER=username –add
-travis encrypt DOCKER_PASS=password –add
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub
 
 </p>
   </article>
 </div>
             
             
+      
+    
+      
+      
+          
+      
+          
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/computer/organize-photo-library/" rel="permalink">Organize photo library
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Environment
+  Upload
+  Consolidate
+  Backups
+  Show
+
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
+          
+      
+          
+      
       
     
       
@@ -611,100 +684,6 @@ We have able to control the sprinkler system from...</p>
             
       
     
-      
-      
-          
-      
-          
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/kivy-software/" rel="permalink">Kivy software
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-          
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="permalink">Install Xiaomi Camera
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up a Xiaomi Camera
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
         </div>
       </div>
     
@@ -735,7 +714,7 @@ We have able to control the sprinkler system from...</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

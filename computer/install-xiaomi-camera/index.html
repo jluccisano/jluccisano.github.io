@@ -382,9 +382,13 @@
   </tbody>
 </table>
 
+<p>diskutil partitionDisk /dev/disk2 GPT FAT32 PART1 100M ExFAT PART2 R</p>
+
+<p>wget https://github.com/samtap/fang-hacks/releases/download/0.2.0/fanghacks_v0.2.0.zip</p>
+
 <p>http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk2
 
 Started erase on disk1
 Unmounting disk
@@ -398,12 +402,12 @@ Mounting disk
 Finished erase on disk1
 
 
-diskutil unmountDisk /dev/disk1
+diskutil unmountDisk /dev/disk2
 
 Unmount of all volumes on disk1 was successful
 
 
-<span class="nb">sudo dd </span><span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/fanghacks_v0.2.0.img  <span class="nv">of</span><span class="o">=</span>/dev/disk1
+<span class="nb">sudo dd </span><span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>/Users/Lucci/Downloads/fanghacks_v0.2.0.img  <span class="nv">of</span><span class="o">=</span>/dev/disk2
 </code></pre></div></div>
 
 <p>CTRL-T</p>
@@ -485,6 +489,8 @@ live_path = ‘/unicast’
 http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review</p>
 
 <p>see more <a href="https://github.com/samtap/fang-hacks">here</a></p>
+
+<p>https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks</p>
 
         
       </section>
@@ -605,6 +611,40 @@ http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review</p>
       <div class="archive__item-teaser">
         <img src=
           
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="permalink">Use Netatmo rain sensor to regulate your sprinkler
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
             "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
           
           alt="">
@@ -612,19 +652,67 @@ http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/travis/" rel="permalink">Useful linux commands
+        <a href="https://jluccisano.github.io/computer/travis/" rel="permalink">Deploy release with Travis CI
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">travis encrypt DOCKER_USER=username –add
-travis encrypt DOCKER_PASS=password –add
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub
 
 </p>
   </article>
 </div>
             
             
+      
+    
+      
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/computer/organize-photo-library/" rel="permalink">Organize photo library
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Environment
+  Upload
+  Consolidate
+  Backups
+  Show
+
+
+</p>
+  </article>
+</div>
+            
+            
+      
+    
+      
+      
+          
+      
+          
+      
       
     
       
@@ -662,82 +750,6 @@ travis encrypt DOCKER_PASS=password –add
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.
-In the previous tutorial, I explain how to control spri...</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/automation/sprinkler-elec/" rel="permalink">Electrical part
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
-We have able to control the sprinkler system from...</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/ben-moore-101.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/raspberry/kivy-software/" rel="permalink">Kivy software
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is
 
 </p>
   </article>
@@ -776,7 +788,7 @@ We have able to control the sprinkler system from...</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

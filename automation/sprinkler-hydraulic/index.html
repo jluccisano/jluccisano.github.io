@@ -18,7 +18,7 @@
 
 
 
-<meta name="description" content="The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. Atthe end of this tutorial, we have able to use the sprinkler manually.">
+<meta name="description" content="The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.">
 
 
 
@@ -33,13 +33,13 @@
 
 
 
-  <meta property="og:description" content="The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. Atthe end of this tutorial, we have able to use the sprinkler manually.">
+  <meta property="og:description" content="The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
   <meta name="twitter:title" content="Create a Sprinkler: Hydraulic part">
-  <meta name="twitter:description" content="The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. Atthe end of this tutorial, we have able to use the sprinkler manually.">
+  <meta name="twitter:description" content="The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.">
   <meta name="twitter:url" content="https://jluccisano.github.io/automation/sprinkler-hydraulic/">
 
   
@@ -159,8 +159,7 @@
         
       </h1>
       
-        <p class="page__lead">The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. At
-the end of this tutorial, we have able to use the sprinkler manually.
+        <p class="page__lead">The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.
 
 </p>
       
@@ -331,7 +330,7 @@ the end of this tutorial, we have able to use the sprinkler manually.
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Create a Sprinkler: Hydraulic part">
-    <meta itemprop="description" content="The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. Atthe end of this tutorial, we have able to use the sprinkler manually.">
+    <meta itemprop="description" content="The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.">
     <meta itemprop="datePublished" content="August 28, 2017">
     
 
@@ -339,8 +338,11 @@ the end of this tutorial, we have able to use the sprinkler manually.
       
 
       <section class="page__content" itemprop="text">
-        <p>The objective of this tutorial is to describe step by step the hydraulic part of sprinkler. At
-the end of this tutorial, we have able to use the sprinkler manually.</p>
+        <p>The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.</p>
+
+<p>Use this tutorial as the guideline in order to design yours, all components (brand, size, quantity, capacity…)
+described below is my own design as example but each projects are differents. At the end of this tutorial, you will be
+able to use the sprinkler manually.</p>
 
 <ul>
   <li><a href="#water-inflow-level">Water inflow level</a></li>
@@ -355,10 +357,11 @@ the end of this tutorial, we have able to use the sprinkler manually.</p>
       <li><a href="#connections">Connections</a></li>
     </ul>
   </li>
-  <li><a href="#test">Testing</a></li>
+  <li><a href="#drop-by-drop">Drop by Drop</a></li>
+  <li><a href="#result-test">Result test</a></li>
 </ul>
 
-<p class="notice--info"><strong>Useful conversion</strong>:
+<p class="notice--info"><strong>Useful conversion Inch/Metric</strong>:
 1⁄2” = 15/21
 3⁄4” = 20/27
 1” = 26/34
@@ -377,21 +380,35 @@ the end of this tutorial, we have able to use the sprinkler manually.</p>
 
 <p class="text-center"><img src="/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg" alt="manometer" height="48px" width="96px" /></p>
 
+<p>Here my results as example:</p>
+
 <ul class="notice--success">
-  <li>Static pressure: 5.5 Bars</li>
+  <li>Static pressure: 3.5 Bars 50 PSI</li>
   <li>Water meter: 1”</li>
   <li>Service line: 1”</li>
-  <li>Design capacity: 76 l/min</li>
-  <li>Working pressure:  3.8 Bars</li>
+  <li>Design capacity: 53 l/min 14GPM -&gt; 3,18 m3/h</li>
+  <li>Working pressure: 2 Bars 29 PSI</li>
 </ul>
+
+<p>According to the rotor Rainbird 3500 specification:</p>
+<ul>
+  <li>Nozzle standard 2; 8.2m radius; 0.47m3/h</li>
+</ul>
+
+<p>So according to my design capacity 3.18 m3/h =&gt; 3.18/0.47 = 6.76 so I can use 6 rotors maximum by zone.</p>
+
+<p class="notice--info">Note: The pressure decrease of 0.25 Bar every 10m for a 25mm pipe. So you have to get it in consideration
+to calculate the capacity for distanly zones from your manometer.</p>
+
+<p>My biggest zone is a square of 76 m2 = with 4 rotors with 8.2m radius, I will cover the zone with at least pressure.</p>
 
 <h2 id="zones-definition">Zones definition</h2>
 
 <p>Split your land in the largest square and rectangle as possible. But drop by drop irrigation and lawn irrigation
 must be separate.</p>
 
-<p class="notice--info"><strong>Note</strong>: According to your rotors choice, you need to choice rotors able to
-cover these zones. Example for my surface, I opt to Rain bird 3500 which cover all my requirements.
+<p class="notice--info"><strong>Note</strong>: According to your rotors selection, you need to choose rotors able to
+cover these zones. Example for my surface, I opt to Rainbird 3500 which cover all my requirements.
 See more <a href="https://rainbird.com/sites/default/files/media/documents/2018-02/ts_3500.pdf">here</a>.</p>
 
 <figure class="">
@@ -405,65 +422,68 @@ See more <a href="https://rainbird.com/sites/default/files/media/documents/2018-
 <table>
   <thead>
     <tr>
-      <th>Zone</th>
+      <th style="text-align: center">Zone</th>
       <th style="text-align: center">Description</th>
-      <th>Diameter (mm)</th>
-      <th>Surface</th>
-      <th style="text-align: right">Rotors</th>
+      <th style="text-align: center">Diameter (mm)</th>
+      <th style="text-align: center">Surface</th>
+      <th style="text-align: center">Rotors</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>A</td>
+      <td style="text-align: center">A</td>
       <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>21.5m2</td>
-      <td style="text-align: right">2</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">21.5m2</td>
+      <td style="text-align: center">2</td>
     </tr>
     <tr>
-      <td>B</td>
+      <td style="text-align: center">B</td>
       <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>76m2</td>
-      <td style="text-align: right">4</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">76m2</td>
+      <td style="text-align: center">4</td>
     </tr>
     <tr>
-      <td>C</td>
+      <td style="text-align: center">C</td>
       <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>45m2</td>
-      <td style="text-align: right">4</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">45m2</td>
+      <td style="text-align: center">4</td>
     </tr>
     <tr>
-      <td>D</td>
+      <td style="text-align: center">D</td>
       <td style="text-align: center">Lawn irrigation</td>
-      <td>25</td>
-      <td>45m2</td>
-      <td style="text-align: right">3</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">45m2</td>
+      <td style="text-align: center">3</td>
     </tr>
     <tr>
-      <td>E</td>
+      <td style="text-align: center">E</td>
       <td style="text-align: center">Drop by drop irrigation</td>
-      <td>16</td>
-      <td>-</td>
-      <td style="text-align: right">-</td>
+      <td style="text-align: center">16</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="network-definition">Network definition</h2>
 
-<h3 id="locate-your-water-main-supply">Locate your water main supply</h3>
+<p>1) Locate your water main supply</p>
 
-<p>TODO add gate and pressure reductor</p>
+<p>First check your main supply pressure. For my part, I had 8 Bars ! Yes My water tower is 50m above my house (1 Bar
+every 10m and the water tower 30m height). So I set up a pressure reductor in order to limitate the
+pressure to 3.5Bars. It’s a good option in order to not damage your house equipments (plumbing, washing machine… and
+your future sprinkler system).</p>
 
-<h3 id="define-valve-boxes-location">Define valve boxes location</h3>
+<p>2) Define valve boxes location</p>
 
-<p class="notice--info"><strong>Note</strong>: This location must be strategic to optimize pipe length and pressure loss.</p>
+<p>This location must be strategic to optimize pipe length and pressure loss.</p>
 
-<h3 id="place-rotors-for-each-zones">Place rotors for each zones</h3>
+<p>3) Place rotors for each zones</p>
 
-<p class="notice--info"><strong>Note</strong>: Rotors must be place at first in the corner of each zone. See below the best practices to place rotors.</p>
+<p>Rotors must be place at first in the corner of each zone. See below the best practices to place rotors.</p>
 
 <p class="text-center"><img src="/assets/images/sprinkler/rotors_coverage.gif" alt="rotors coverage" height="256px" width="256px" /></p>
 
@@ -507,13 +527,13 @@ See more <a href="https://rainbird.com/sites/default/files/media/documents/2018-
 <table>
   <thead>
     <tr>
-      <th>Component</th>
+      <th style="text-align: center">Component</th>
       <th style="text-align: center">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg" alt="Polyethylene pipe" height="48px" width="96px" /></td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg" alt="Polyethylene pipe" height="48px" width="96px" /></td>
       <td style="text-align: center">Polyethylene pipe 25mm 25m HD 6Bars</td>
     </tr>
   </tbody>
@@ -544,14 +564,16 @@ See more <a href="https://rainbird.com/sites/default/files/media/documents/2018-
 <table>
   <thead>
     <tr>
-      <th>Component</th>
+      <th style="text-align: center">Component</th>
       <th style="text-align: center">Description</th>
+      <th style="text-align: center">Unit price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg" alt="Valve boxes" height="48px" width="96px" /></td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg" alt="Valve boxes" height="48px&quot;width=&quot;96px" /></td>
       <td style="text-align: center">Valve boxes Rain Bird 62x46x30,5cm</td>
+      <td style="text-align: center">38.81</td>
     </tr>
   </tbody>
 </table>
@@ -580,167 +602,132 @@ freezes.</p>
 <table>
   <thead>
     <tr>
-      <th>Zone</th>
+      <th style="text-align: center">Zone</th>
       <th style="text-align: center">Description</th>
-      <th>Quantity</th>
-      <th>Site</th>
-      <th>Price</th>
+      <th style="text-align: center">Quantity</th>
+      <th style="text-align: center">Unit price</th>
+      <th style="text-align: center">Total</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/assets/images/sprinkler/coude_laiton_19x25.jpg" alt="coude_laiton" height="48px" width="96px" /></td>
-      <td style="text-align: center">Coude Brass 19x25</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/raccord_laiton_M_19x25.jpg" alt="raccord_laiton" height="48px" width="96px" /></td>
-      <td style="text-align: center">Raccord Brass Male 19x25</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg" alt="vanne_integrale_manette_papillon" /></td>
-      <td style="text-align: center"> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>{:height=”48px” width=”96px”}</td>
-      <td style="text-align: center">Gate 1/4 turn</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg" alt="mamelon_F_20x27_M_26x34" height="48px" width="96px" /></td>
-      <td style="text-align: center">Nipple Female 20/27 -&gt; Male 26/34</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>Photo</th>
-      <th style="text-align: center">Description</th>
-      <th>Quantity</th>
-      <th>Site</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="/assets/images/sprinkler/regard_jumbo_rectangle_Rain_Bird_VBA_62x46x30.jpg" alt="Regard" height="48px" width="96px" /></td>
-      <td style="text-align: center">Regard Jumbo rectangle Rain Bird VBA 2675 62x46x30,5cm</td>
-      <td>1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>38.81 EUR</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg" alt="Manometre" height="48px" width="96px" /></td>
-      <td style="text-align: center">Manomètre glycérine INOX radial 0 à 6 bars x1</td>
-      <td>1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>9.65 EUR</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg" alt="Mamelon_reduit" height="48px" width="96px" /></td>
-      <td style="text-align: center">Manchon réduit 26/34 Male -&gt; 20/27 Male</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg" alt="Manchon_reduit" height="48px" width="96px" /></td>
-      <td style="text-align: center">Manchon réduit 20/27 Male -&gt; 12/17 Male</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg" alt="Mamelon" height="48px" width="96px" /></td>
-      <td style="text-align: center">Nipple 8/13 Female-&gt; 12/17 Male</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/clarinette_DURA_4S_MFFFFF_PVC.jpg" alt="Clarinet" height="48px" width="96px" /></td>
-      <td style="text-align: center">Clarinette 1”</td>
-      <td>1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>32.12 EUR</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg" alt="Bouchon_Male" height="48px" width="96px" /></td>
-      <td style="text-align: center">Bouchon PVC male</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg" alt="Bouchon_Femelle" height="48px" width="96px" /></td>
-      <td style="text-align: center">Bouchon PVC female</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg" alt="Coude_collecteur" height="48px" width="96px" /></td>
-      <td style="text-align: center">Coude collecteur MF</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/croix_collecteur_26x34.jpg" alt="Croix_collecteur" height="48px" width="96px" /></td>
-      <td style="text-align: center">Croix collecteur</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/té_collecteur_26x34_MF.jpg" alt="Te_collecteur" height="48px" width="96px" /></td>
-      <td style="text-align: center">Té collecteur x2</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&quot;_MM_NR_24V.jpg" alt="Rotor" height="48px" width="96px" /></td>
-      <td style="text-align: center">Electrovanne RAIN BIRD DV 1” MM NR 24V x5</td>
-      <td>1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>14.94 EUR</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/raccord_compression_25mm_F.jpg" alt="Raccord compression 25mm " height="48px" width="96px" /></td>
-      <td style="text-align: center">Raccord compression 25mm x4</td>
-      <td>1</td>
-      <td>Site</td>
-      <td>Price</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/reducteur_pression.jpg" alt="Reduction de pression" height="48px" width="96px" /></td>
-      <td style="text-align: center">reduction</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>de pression</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg" alt="coude_laiton" height="48px&quot;width=&quot;48px" /></td>
+      <td style="text-align: center">Gate FF 26x34</td>
       <td style="text-align: center">1</td>
-      <td>Site</td>
-      <td>Price</td>
-      <td> </td>
+      <td style="text-align: center">10.75</td>
+      <td style="text-align: center">10.75</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_laiton_19x25.jpg" alt="coude_laiton" height="48px" width="96px" /></td>
+      <td style="text-align: center">Brass elbow 19x25</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">7.5</td>
+      <td style="text-align: center">7.5</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/raccord_laiton_M_19x25.jpg" alt="raccord_laiton" height="48px" width="96px" /></td>
+      <td style="text-align: center">Brass adapter male 19x25</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">4.25</td>
+      <td style="text-align: center">4.25</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg" alt="mamelon_F_20x27_M_26x34" height="48px" width="96px" /></td>
+      <td style="text-align: center">Brass nipple Female 20/27 -&gt; Male 26/34</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">4.08</td>
+      <td style="text-align: center">4.08</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/manomètre_glycérine_INOX_radial_0_à_6_bars.jpg" alt="Manometre" height="48px" width="96px" /></td>
+      <td style="text-align: center">Water Pressure Gauge INOX radial 0 à 6 bars x1</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">9.65</td>
+      <td style="text-align: center"> 9.65</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/mamelon_réduit_MM_26x34_20x27.jpg" alt="Mamelon_reduit" height="48px" width="96px" /></td>
+      <td style="text-align: center">Brass adapter 26/34 Male -&gt; 20/27 Male</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">4.2</td>
+      <td style="text-align: center">8.4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/manchon_réduit_FF_20x27_12x17.jpg" alt="Manchon_reduit" height="48px" width="96px" /></td>
+      <td style="text-align: center">Brass adapter 20/27 Male -&gt; 12/17 Male</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">2.375</td>
+      <td style="text-align: center">5.75</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/mamelon_F_8x13_M_12x17.jpg" alt="Mamelon" height="48px" width="96px" /></td>
+      <td style="text-align: center">Brass nipple 8/13 Female-&gt; 12/17 Male</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">1.425</td>
+      <td style="text-align: center">2.85</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/clarinette_DURA_4S_MFFFFF_PVC.jpg" alt="Clarinet" height="48px" width="96px" /></td>
+      <td style="text-align: center">Clarinet 1”</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">16.06</td>
+      <td style="text-align: center">16.06</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/bouchon_PVC_M_26x34.jpg" alt="Bouchon_Male" height="48px" width="96px" /></td>
+      <td style="text-align: center">End plug PVC male 1”</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">1.55</td>
+      <td style="text-align: center">3.10</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/bouchon_PVC_F_26x34.jpg" alt="Bouchon_Femelle" height="48px" width="96px" /></td>
+      <td style="text-align: center">End plug PVC female 1”</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">1.95</td>
+      <td style="text-align: center">3.9</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_collecteur_26x34_MF.jpg" alt="Coude_collecteur" height="48px" width="96px" /></td>
+      <td style="text-align: center">Elbow collector MF 1”</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">5.05</td>
+      <td style="text-align: center">5.05</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/croix_collecteur_26x34.jpg" alt="Croix_collecteur" height="48px" width="96px" /></td>
+      <td style="text-align: center">Cross collector 1”</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">8.95</td>
+      <td style="text-align: center">8.95</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/té_collecteur_26x34_MF.jpg" alt="Te_collecteur" height="48px" width="96px" /></td>
+      <td style="text-align: center">Tee collector 26x34 MF 1”</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">4.2</td>
+      <td style="text-align: center">4.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&quot;_MM_NR_24V.jpg" alt="Rotor" height="48px" width="96px" /></td>
+      <td style="text-align: center">Irrigation valve RAIN BIRD DV 1” MM NR 24V</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">14.94</td>
+      <td style="text-align: center">59.76</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/raccord_compression_25mm_F.jpg" alt="Raccord compression 25mm " height="48px" width="96px" /></td>
+      <td style="text-align: center">Adapter compression 25mm</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">2.5</td>
+      <td style="text-align: center"> 10.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"> 164.25</td>
     </tr>
   </tbody>
 </table>
@@ -783,83 +770,83 @@ In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 
 <table>
   <thead>
     <tr>
-      <th>Component</th>
+      <th style="text-align: center">Component</th>
       <th style="text-align: center">Description</th>
-      <th style="text-align: right">Quantity</th>
-      <th>Site</th>
-      <th>Price</th>
+      <th style="text-align: center">Quantity</th>
+      <th style="text-align: center">Unit price</th>
+      <th style="text-align: center">Total</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/assets/images/sprinkler/coude_25_FF.jpg" alt="Coude_25" height="24px" width="48px" /></td>
-      <td style="text-align: center">TODO</td>
-      <td style="text-align: right">1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_25_FF.jpg" alt="Coude_25" height="96px" width="96px" /></td>
+      <td style="text-align: center">Compression elbow connector</td>
+      <td style="text-align: center">14</td>
+      <td style="text-align: center">3.05</td>
+      <td style="text-align: center">42.7</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/coude_taraudage_central_25x05.jpg" alt="Coude_taraudage_centra" height="24px" width="48px" /></td>
-      <td style="text-align: center">TODO</td>
-      <td style="text-align: right">1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_taraudage_central_25x05.jpg" alt="Coude_taraudage_centra" height="96px" width="96px" /></td>
+      <td style="text-align: center">Fitting compression elbow connector</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">3.05</td>
+      <td style="text-align: center">12.20</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/te_compression_25.jpg" alt="Te_compression_25" height="24px" width="48px" /></td>
-      <td style="text-align: center">TODO</td>
-      <td style="text-align: right">1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/te_compression_25.jpg" alt="Te_compression_25" height="96px" width="96px" /></td>
+      <td style="text-align: center">Compression tee</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">4.05</td>
+      <td style="text-align: center">16.2</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg" alt="Coude_compression_25" height="24px" width="48px" /></td>
-      <td style="text-align: center">TODO</td>
-      <td style="text-align: right">1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg" alt="Coude_compression_25" height="96px" width="96px" /></td>
+      <td style="text-align: center">Compression fitting female tee</td>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">4.65</td>
+      <td style="text-align: center">41.85</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/tuyau_25.jpg" alt="Tuyau_25" height="24px" width="48px" /></td>
-      <td style="text-align: center">TODO</td>
-      <td style="text-align: right">1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg" alt="Tube_deport" height="48px" width="96px" /></td>
+      <td style="text-align: center">swing pipe 30m SPX-FLEX 30m</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">27.0</td>
+      <td style="text-align: center">54.0</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg" alt="Tube_deport" height="48px" width="96px" /></td>
-      <td style="text-align: center">tuyau 30m tube de déport</td>
-      <td style="text-align: right">2</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>27 EUR</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg" alt="Tuyau_polyethylene" height="48px&quot;width=&quot;96px" /></td>
+      <td style="text-align: center">polyethylene irrigation pipe 25mm 50m HD 6Bars</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">30.9</td>
+      <td style="text-align: center">92.7</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg" alt="Tuyau_polyethylene" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars</td>
-      <td style="text-align: right">1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&quot;_F.jpg" alt="Turbine_escamotable" height="48px&quot;width=&quot;96px" /></td>
+      <td style="text-align: center">Rotor RAIN BIRD 3504 PC (1/2” F)</td>
+      <td style="text-align: center">13</td>
+      <td style="text-align: center">6.97</td>
+      <td style="text-align: center">90.61</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&quot;_F.jpg" alt="Turbine_escamotable" height="48px" width="96px" /></td>
-      <td style="text-align: center">Turbine escamotable RAIN BIRD 3504 PC (1/2” F)</td>
-      <td style="text-align: right">13</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>6.97 EUR</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2&quot;.jpg" alt="Coude_tube_déport" height="48px" width="96px" /></td>
+      <td style="text-align: center">Swing Pipe - 1/2” MNPT Elbow</td>
+      <td style="text-align: center">13</td>
+      <td style="text-align: center">0.24</td>
+      <td style="text-align: center">3.12</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2&quot;.jpg" alt="Coude_tube_déport" height="48px" width="96px" /></td>
-      <td style="text-align: center">Coude pour tube de déport SBE-50 16 x 1/2”</td>
-      <td style="text-align: right">13</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg" alt="Coude_16mm" height="48px" width="96px" /></td>
+      <td style="text-align: center">Swing Pipe - 3/4” MNPT Elbow</td>
+      <td style="text-align: center">13</td>
+      <td style="text-align: center">0.24</td>
+      <td style="text-align: center">3.12</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg" alt="Coude_16mm" height="48px" width="96px" /></td>
-      <td style="text-align: center">gate 1/4 de turn</td>
-      <td style="text-align: right">1</td>
-      <td><a href="https://www.jardinet.fr">Jardinet</a></td>
-      <td>EUROS</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">356.3</td>
     </tr>
   </tbody>
 </table>
@@ -872,7 +859,7 @@ In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 
   
 </figure>
 
-<h4 id="drop-by-drop">Drop By Drop</h4>
+<h2 id="drop-by-drop">Drop By Drop</h2>
 
 <figure class="">
   <img src="https://jluccisano.github.io/assets/images/sprinkler/drop_by_drop_schema.png" alt="Drop By Drop" />
@@ -885,153 +872,114 @@ Drop
 
 <p><strong>Advices</strong>:</p>
 <ul>
-  <li>Pour le goutte à goutte, il faut ajouter un reduction de pression 1.2bars (1 à 1.5bars)</li>
-  <li>Mettre des petites vanettes pour contrôler différentes zones</li>
+  <li>Regarding the drop by drop, we have to add a pressure reductor 1.2bars 17PSI (1 14.5 PSI à 1.5bars 21.75PSI)</li>
+  <li>Add mini threading valve in order to control different zones (see components below).</li>
+  <li>I set 1 dripper by bush, 3 drippers by palm tree, 2 drippers by conifer, 2 drippers by olive tree</li>
 </ul>
 
 <p>Components:</p>
 
-<ul>
-  <li>Nombre d’arbres à couvrir:</li>
-  <li>Haies: 50</li>
-  <li>Olivier: 1</li>
-  <li>Palmier: 1</li>
-  <li>Arbustes: 3 voir 5</li>
-  <li>Lila: 1</li>
-  <li>Magnolia: 1</li>
-  <li>Azalée japonais: 1</li>
-  <li>
-    <p>Vegelia: 1</p>
-  </li>
-  <li>1 seul goutteur par arbuste</li>
-  <li>3 goutteurs pour le palmier</li>
-  <li>2 goutteurs pour le conifère</li>
-  <li>2 goutteurs pour l’olivier</li>
-  <li>Distance tuyau:</li>
-</ul>
-
 <table>
   <thead>
     <tr>
-      <th>Component</th>
+      <th style="text-align: center">Component</th>
       <th style="text-align: center">Description</th>
-      <th style="text-align: right">Quantity</th>
-      <th>Site</th>
-      <th>Price</th>
+      <th style="text-align: center">Quantity</th>
+      <th style="text-align: center">Unit price</th>
+      <th style="text-align: center">Total</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&quot;_MM_NR_24V.jpg" alt="electrovanne_RAIN_BIRD_DV_1&quot;" height="48px" width="96px" /></td>
-      <td style="text-align: center">Electrovanne RAIN BIRD DV 1” MM NR 24V</td>
-      <td style="text-align: right">5</td>
-      <td>TODO</td>
-      <td>14.94</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/electrovanne_RAIN_BIRD_DV_1&quot;_MM_NR_24V.jpg" alt="Rotor" height="48px" width="96px" /></td>
+      <td style="text-align: center">Irrigation valve RAIN BIRD DV 1” MM NR 24V</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">14.94</td>
+      <td style="text-align: center">14.94</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/machon-reduit-femelle-femelle.jpg" alt="machon-reduit-femelle-femelle" height="48px" width="96px" /></td>
-      <td style="text-align: center">Manchon reduction female/female 1” -&gt; 3/4”</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>TODO</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/machon-reduit-femelle-femelle.jpg" alt="machon-reduit-femelle-femelle" height="48px" width="96px" /></td>
+      <td style="text-align: center">Reducing Coupling Female Thread female/female 1” -&gt; 3/4”</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">2.05</td>
+      <td style="text-align: center">2.05</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/mamelon-34-polyp-noir.jpg" alt="mamelon-34-polyp-noir" height="48px" width="96px" /></td>
-      <td style="text-align: center">Nipple male/male 3/4”</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>TODO</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/mamelon-34-polyp-noir.jpg" alt="mamelon-34-polyp-noir" height="48px" width="96px" /></td>
+      <td style="text-align: center">Nipple PVC male/male 3/4”</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">1.09</td>
+      <td style="text-align: center">1.09</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/reducteur_34_femelle_male.jpg" alt="reducteur_34_femelle_male" height="48px" width="96px" /></td>
-      <td style="text-align: center">reduction de pression female/male 3/4”</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>TODO</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/reducteur_34_femelle_male.jpg" alt="reducteur_34_femelle_male" height="48px" width="96px" /></td>
+      <td style="text-align: center">Pressure Regulator 3/4” Hose Thread 25PSI female/male 3/4”</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center"> 5.99</td>
+      <td style="text-align: center">5.99</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/adaptateur-de-montage.jpg" alt="adaptateur-de-montage" height="48px" width="96px" /></td>
-      <td style="text-align: center">Adaptator male/male 3/4” -&gt; 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>TODO</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/adaptateur-de-montage.jpg" alt="adaptateur-de-montage" height="48px" width="96px" /></td>
+      <td style="text-align: center">Thread adaptator male 3/4” -&gt; 16mm</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">0.42</td>
+      <td style="text-align: center">0.42</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg" alt="tuyau_polyethylene_16mm_25m" height="48px" width="96px" /></td>
-      <td style="text-align: center">Tuyau polyethylène 16mm 25m</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>6.90</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg" alt="tuyau_polyethylene_16mm_25m" height="48px&quot;width=&quot;96px" /></td>
+      <td style="text-align: center">polyethylene irrigation pipe 16mm 25m</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">6.90</td>
+      <td style="text-align: center">34.5</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/coude_16mm.jpg" alt="coude_16mm." height="48px" width="96px" /></td>
-      <td style="text-align: center">Coude 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>2.15 les 4</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/coude_16mm.jpg" alt="coude_16mm" height="48px" width="96px" /></td>
+      <td style="text-align: center">Elbow 16mm</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">0.25</td>
+      <td style="text-align: center">1.50</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/jonction_16mm.jpg" alt="jonction_16mm" height="48px" width="96px" /></td>
-      <td style="text-align: center">Raccord 16mm  1</td>
-      <td style="text-align: right">TODO</td>
-      <td>1.50 les 4</td>
-      <td> </td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/jonction_16mm.jpg" alt="jonction_16mm" height="48px" width="96px" /></td>
+      <td style="text-align: center">Adapter 16mm</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">0.25</td>
+      <td style="text-align: center">1.50</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/té_16mm_MM.jpg" alt="te_16mm_MM" height="48px" width="96px" /></td>
-      <td style="text-align: center">Té 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>2.15 les 4</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/té_16mm_MM.jpg" alt="te_16mm_MM" height="48px" width="96px" /></td>
+      <td style="text-align: center">Tee 16mm</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">0.54</td>
+      <td style="text-align: center">2.16</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/bouchon_16mm.jpg" alt="bouchon_16mm" height="48px" width="96px" /></td>
-      <td style="text-align: center">Bouchon 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>1.65 les 4</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/bouchon_16mm.jpg" alt="bouchon_16mm" height="48px" width="96px" /></td>
+      <td style="text-align: center">End plug connector 16mm</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">1.65</td>
+      <td style="text-align: center">13.2</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/goutteur.jpg" alt="goutteur" height="48px" width="96px" /></td>
-      <td style="text-align: center">Goutteur</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>TODO</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/goutteur.jpg" alt="goutteur" height="48px" width="96px" /></td>
+      <td style="text-align: center">Dripper</td>
+      <td style="text-align: center">100</td>
+      <td style="text-align: center">0.23</td>
+      <td style="text-align: center">23.0</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/vanette_16mm_16mm.jpg" alt="vanette_16mm_16mm" height="48px" width="96px" /></td>
-      <td style="text-align: center">Vanette 1/4 de turn male/male 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>2.45 les 2</td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/vanette_16mm_16mm.jpg" alt="vanette_16mm_16mm" height="48px" width="96px" /></td>
+      <td style="text-align: center">Mini Threading valve 1/4 de turn male/male 16mm</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">2.45</td>
+      <td style="text-align: center">14.7</td>
     </tr>
     <tr>
-      <td><img src="/assets/images/sprinkler/raccord_jonction_16mm.jpg" alt="raccord_jonction_16mm" height="48px" width="96px" /></td>
-      <td style="text-align: center">Raccord jonction compression 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>1.50</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/té_compression_16mm_MM.jpg" alt="te_compression_16mm_MM" height="48px" width="96px" /></td>
-      <td style="text-align: center">Té compression 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>1.65 les 4</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_compression_16mm.jpg" alt="coude_compression_16mm" height="48px" width="96px" /></td>
-      <td style="text-align: center">Coude compression 16mm</td>
-      <td style="text-align: right">1</td>
-      <td>TODO</td>
-      <td>1.5O</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/images/sprinkler/coude_compression_16mm_M_15x21.jpg" alt="coude_compression_16mm_M" height="48px" width="96px" /></td>
-      <td style="text-align: center">Coude compression male 1/2” -&gt; 16mm   1</td>
-      <td style="text-align: right">TODO</td>
-      <td>1.50</td>
-      <td> </td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">115.05</td>
     </tr>
   </tbody>
 </table>
@@ -1041,20 +989,16 @@ Drop
 <table>
   <thead>
     <tr>
-      <th>Component</th>
+      <th style="text-align: center">Component</th>
       <th style="text-align: center">Description</th>
-      <th style="text-align: right">Quantity</th>
-      <th>Site</th>
-      <th>Price</th>
+      <th style="text-align: center">Price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/assets/images/sprinkler/poinçon.jpg" alt="awl" height="48px" width="96px" /></td>
-      <td style="text-align: center">Awl</td>
-      <td style="text-align: right"> </td>
-      <td> </td>
-      <td> </td>
+      <td style="text-align: center"><img src="/assets/images/sprinkler/poinçon.jpg" alt="awl" height="48px" width="96px" /></td>
+      <td style="text-align: center">Irrigation hole punch</td>
+      <td style="text-align: center">3.40</td>
     </tr>
   </tbody>
 </table>
@@ -1066,6 +1010,7 @@ Drop
   <li>Check the pressure and joins are well set</li>
   <li>Open gate manually with 1/4 turn.</li>
   <li>With a screwdriver adjust your rotor covering.</li>
+  <li>Total cost for my project: 677.81€</li>
 </ul>
 
 <p class="notice--primary"><strong>Tool</strong>s: screwdriver.</p>
@@ -1180,6 +1125,30 @@ part to automatize the system.</p>
   
   
     
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
+    
+      
+      
+          
+      
+          
+      
+      
     
       
       
@@ -1410,7 +1379,7 @@ part to automatize the system.</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

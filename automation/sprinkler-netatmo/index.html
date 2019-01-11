@@ -13,39 +13,39 @@
 
 
 
-<title>Install GIT - Practice makes perfect</title>
+<title>Use Netatmo rain sensor to regulate your sprinkler - Practice makes perfect</title>
 
 
 
 
-<meta name="description" content="Useful commands">
+<meta name="description" content="">
 
 
 
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Practice makes perfect">
-<meta property="og:title" content="Install GIT">
+<meta property="og:title" content="Use Netatmo rain sensor to regulate your sprinkler">
 
 
-  <link rel="canonical" href="https://jluccisano.github.io/linux/install-git/">
-  <meta property="og:url" content="https://jluccisano.github.io/linux/install-git/">
+  <link rel="canonical" href="https://jluccisano.github.io/automation/sprinkler-netatmo/">
+  <meta property="og:url" content="https://jluccisano.github.io/automation/sprinkler-netatmo/">
 
 
 
-  <meta property="og:description" content="Useful commands">
+  <meta property="og:description" content="">
 
 
 
   <meta name="twitter:site" content="@joluccisano">
-  <meta name="twitter:title" content="Install GIT">
-  <meta name="twitter:description" content="Useful commands">
-  <meta name="twitter:url" content="https://jluccisano.github.io/linux/install-git/">
+  <meta name="twitter:title" content="Use Netatmo rain sensor to regulate your sprinkler">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:url" content="https://jluccisano.github.io/automation/sprinkler-netatmo/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/6-30-12_Git.jpg">
+      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg">
     
   
 
@@ -61,12 +61,12 @@
 
 
 
-  <meta property="og:image" content="https://jluccisano.github.io/assets/images/6-30-12_Git.jpg">
+  <meta property="og:image" content="https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg">
 
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2017-04-01T00:00:00+00:00">
+  <meta property="article:published_time" content="2018-12-06T00:00:00+00:00">
 
 
 
@@ -148,19 +148,18 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: url('https://jluccisano.github.io/assets/images/6-30-12_Git.jpg');"
+  style=" background-image: url('https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg');"
 >
   
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Install GIT
+          Use Netatmo rain sensor to regulate your sprinkler
 
         
       </h1>
       
-        <p class="page__lead"><h3 id="useful-commands">Useful commands</h3>
-
+        <p class="page__lead">
 </p>
       
       
@@ -195,7 +194,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/linux" itemprop="item"><span itemprop="name">Linux</span></a>
+          <a href="https://jluccisano.github.io/automation" itemprop="item"><span itemprop="name">Automation</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -203,7 +202,7 @@
     
       
       
-        <li class="current">Install GIT</li>
+        <li class="current">Use Netatmo rain sensor to regulate your sprinkler</li>
       
     
   </ol>
@@ -332,161 +331,16 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Install GIT">
-    <meta itemprop="description" content="Useful commands">
-    <meta itemprop="datePublished" content="April 01, 2017">
+    <meta itemprop="headline" content="Use Netatmo rain sensor to regulate your sprinkler">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="December 06, 2018">
     
 
     <div class="page__inner-wrap">
       
 
       <section class="page__content" itemprop="text">
-        <h3 id="useful-commands">Useful commands</h3>
-
-<p><a href="https://orga.cat/posts/most-useful-git-commands">Most useful git commands</a></p>
-
-<h4 id="my-useful-commands">My useful commands</h4>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gitg
-</code></pre></div></div>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git graph <span class="nt">-a</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Rename last commit</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span>
-</code></pre></div></div>
-<p>or</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~1
-</code></pre></div></div>
-
-<ul>
-  <li>Squash 2 commits in one</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">-i</span> HEAD~2
-</code></pre></div></div>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase <span class="nt">--interactive</span> <span class="nt">--root</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Set core editor</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> core.editor <span class="s2">"vim"</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Stash</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git stash
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git stash apply
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log 
-</code></pre></div></div>
-
-<ul>
-  <li>Rename branch</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-m</span> old new
-</code></pre></div></div>
-
-<ul>
-  <li>Create branch</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- git checkout <span class="nt">-b</span>
-</code></pre></div></div>
-<ul>
-  <li>Revert last commit</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git reset HEAD~1 <span class="nt">--hard</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Rebase commit history</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase develop
-</code></pre></div></div>
-
-<ul>
-  <li>Config</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config remote.origin.url git@github.com:your_username/your_project.git
-git config user.name <span class="s2">"foo"</span>
-git config user.email <span class="s2">"foo@bar.com"</span>
-</code></pre></div></div>
-
-<p><a href="https://gist.github.com/jexchan/2351996">Most useful git config commands</a></p>
-
-<ul>
-  <li>List all branch</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-a</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Force overwrite origin</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">--force</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Push and track local branch to origin</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">--set-upstream</span> origin feature/jls-INGFUN-1219-StoryboardLoggingBadVolumeId
-</code></pre></div></div>
-
-<ul>
-  <li>Rewrite commit information</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span> <span class="nt">--date</span><span class="o">=</span><span class="s2">"Sun Feb 12 17:22 2017 +0100"</span>
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git filter-branch <span class="nt">-f</span> <span class="nt">--env-filter</span> <span class="s2">"GIT_AUTHOR_NAME='username' GIT_AUTHOR_EMAIL='foo@bar.com'; GIT_COMMITTER_NAME='username'; GIT_COMMITTER_EMAIL='foo@bar.com'"</span>
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git filter-branch <span class="nt">-f</span> <span class="nt">--env-filter</span> <span class="s1">'export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"'</span>
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git filter-branch <span class="nt">-f</span> <span class="nt">--env-filter</span> <span class="s2">"GIT_AUTHOR_NAME='username' GIT_AUTHOR_EMAIL='foo@bar.com'; GIT_COMMITTER_NAME='username'; GIT_COMMITTER_EMAIL='foo@bar.com';GIT_COMMITTER_DATE='Sun Feb 12 17:22 2017 +0100';GIT_AUTHOR_DATE='Sun Feb 12 17:22 2017 +0100'"</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Checkout a remote branch</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> develop origin/develop
-</code></pre></div></div>
-
-<ul>
-  <li>Show full log information</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--format</span><span class="o">=</span>fuller
-</code></pre></div></div>
-
-<ul>
-  <li>Create tags</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag <span class="nt">-a</span> 1.3 <span class="nt">-m</span> <span class="s2">"v1.3"</span>
-git push <span class="nt">--tags</span>
-</code></pre></div></div>
+        
 
         
       </section>
@@ -507,7 +361,27 @@ git push <span class="nt">--tags</span>
     
       
       
-      <a href="https://jluccisano.github.io/tags/#git" class="page__taxonomy-item" rel="tag">Git</a>
+      <a href="https://jluccisano.github.io/tags/#git" class="page__taxonomy-item" rel="tag">Git</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://jluccisano.github.io/tags/#iot" class="page__taxonomy-item" rel="tag">IoT</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://jluccisano.github.io/tags/#linux" class="page__taxonomy-item" rel="tag">Linux</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://jluccisano.github.io/tags/#netatmo" class="page__taxonomy-item" rel="tag">Netatmo</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://jluccisano.github.io/tags/#python" class="page__taxonomy-item" rel="tag">Python</a><span class="sep">, </span>
+    
+      
+      
+      <a href="https://jluccisano.github.io/tags/#software" class="page__taxonomy-item" rel="tag">Software</a>
     
     </span>
   </p>
@@ -528,14 +402,14 @@ git push <span class="nt">--tags</span>
     
       
       
-      <a href="https://jluccisano.github.io/categories/#linux" class="page__taxonomy-item" rel="tag">Linux</a>
+      <a href="https://jluccisano.github.io/categories/#automation" class="page__taxonomy-item" rel="tag">Automation</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-04-01T00:00:00+00:00">April 01, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-12-06T00:00:00+00:00">December 06, 2018</time></p>
         
       </footer>
 
@@ -544,25 +418,24 @@ git push <span class="nt">--tags</span>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Install GIT https://jluccisano.github.io/linux/install-git/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Use Netatmo rain sensor to regulate your sprinkler https://jluccisano.github.io/automation/sprinkler-netatmo/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/linux/install-git/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/automation/sprinkler-netatmo/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/linux/install-git/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/automation/sprinkler-netatmo/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/linux/install-git/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/automation/sprinkler-netatmo/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/project/alarming-system/" class="pagination--pager" title="Security alarm with Raspberry
+      <a href="https://jluccisano.github.io/computer/travis/" class="pagination--pager" title="Deploy release with Travis CI
 ">Previous</a>
     
     
-      <a href="https://jluccisano.github.io/project/nextrun/" class="pagination--pager" title="NextRun
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -585,6 +458,13 @@ git push <span class="nt">--tags</span>
     
       
       
+      
+          
+      
+          
+      
+          
+      
           
             
               <div class="page__related">
@@ -603,19 +483,20 @@ git push <span class="nt">--tags</span>
       <div class="archive__item-teaser">
         <img src=
           
-            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
+            "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="permalink">Use Netatmo rain sensor to regulate your sprinkler
+        <a href="https://jluccisano.github.io/computer/travis/" rel="permalink">Deploy release with Travis CI
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub
+
 </p>
   </article>
 </div>
@@ -627,9 +508,60 @@ git push <span class="nt">--tags</span>
       
           
       
+          
+      
+          
+      
+          
+            
+            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://jluccisano.github.io/assets/images/maico-amorim-57141.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://jluccisano.github.io/computer/organize-photo-library/" rel="permalink">Organize photo library
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Environment
+  Upload
+  Consolidate
+  Backups
+  Show
+
+
+</p>
+  </article>
+</div>
+            
+            
       
     
       
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
       
           
       
@@ -639,9 +571,13 @@ git push <span class="nt">--tags</span>
       
           
       
+          
       
-    
+          
       
+          
+      
+          
       
           
       
@@ -685,55 +621,6 @@ git push <span class="nt">--tags</span>
       
       
           
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-      
-          
-      
-      
-    
-      
-      
-          
             
             
 
@@ -745,61 +632,20 @@ git push <span class="nt">--tags</span>
       <div class="archive__item-teaser">
         <img src=
           
-            "https://jluccisano.github.io/assets/images/ray-hennessy-118035.jpg"
+            "https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"
           
           alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/computer/push-data-on-rabbitmq/" rel="permalink">Push data to RabbitMQ
+        <a href="https://jluccisano.github.io/automation/sprinkler-elec/" rel="permalink">Electrical part
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
-
-</p>
-  </article>
-</div>
-            
-            
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-            
-            
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://jluccisano.github.io/assets/images/markus-spiske-109588.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://jluccisano.github.io/computer/consume-data-from-reactive-client/" rel="permalink">Consume data from reactive client
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to develop a reactive client which consuming temperature and 
- humidity via websocket and showing a dashboard of continuous...</p>
+    <p class="archive__item-excerpt" itemprop="description">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
+We have able to control the sprinkler system from...</p>
   </article>
 </div>
             
