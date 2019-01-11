@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-01-11T13:33:20+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-01-11T19:37:31+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
@@ -1011,7 +1011,7 @@ freezes.&lt;/p&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg&quot; alt=&quot;coude_laiton&quot; height=&quot;48px&amp;quot;width=&amp;quot;48px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg&quot; alt=&quot;coude_laiton&quot; height=&quot;48px&quot; width=&quot;48px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Gate FF 26x34&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;10.75&lt;/td&gt;
@@ -1214,14 +1214,14 @@ In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 
       &lt;td style=&quot;text-align: center&quot;&gt;54.0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg&quot; alt=&quot;Tuyau_polyethylene&quot; height=&quot;48px&amp;quot;width=&amp;quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg&quot; alt=&quot;Tuyau_polyethylene&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;polyethylene irrigation pipe 25mm 50m HD 6Bars&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;30.9&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;92.7&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&amp;quot;_F.jpg&quot; alt=&quot;Turbine_escamotable&quot; height=&quot;48px&amp;quot;width=&amp;quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2&amp;quot;_F.jpg&quot; alt=&quot;Turbine_escamotable&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Rotor RAIN BIRD 3504 PC (1/2” F)&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;13&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;6.97&lt;/td&gt;
@@ -1326,7 +1326,7 @@ Drop
       &lt;td style=&quot;text-align: center&quot;&gt;0.42&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg&quot; alt=&quot;tuyau_polyethylene_16mm_25m&quot; height=&quot;48px&amp;quot;width=&amp;quot;96px&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg&quot; alt=&quot;tuyau_polyethylene_16mm_25m&quot; height=&quot;48px&quot; width=&quot;96px&quot; /&gt;&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;polyethylene irrigation pipe 16mm 25m&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;6.90&lt;/td&gt;
