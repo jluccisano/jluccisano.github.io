@@ -346,30 +346,9 @@ We have able to control the sprinkler system from a Raspberry PI.
 We have able to control the sprinkler system from a Raspberry PI.</p>
 
 <ul>
-  <li><a href="#electrical-part">Electrical part</a>
-    <ul>
-      <li><a href="#rerequisites">Prerequisites</a></li>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#components">Components</a></li>
-      <li><a href="#wiring">Wiring</a></li>
-    </ul>
-  </li>
-  <li><a href="#electronic-part">Electronic part</a>
-    <ul>
-      <li><a href="#rerequisites">Prerequisites</a></li>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#components">Components</a></li>
-      <li><a href="#wiring">Wiring</a></li>
-    </ul>
-  </li>
-  <li><a href="#software-part">Software part</a>
-    <ul>
-      <li><a href="#rerequisites">Prerequisites</a></li>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#test">Test</a></li>
-    </ul>
-  </li>
+  <li><a href="#electrical-part">Electrical part</a></li>
+  <li><a href="#electronic-part">Electronic part</a></li>
+  <li><a href="#software-part">Software part</a></li>
 </ul>
 
 <h2 id="electrical-part">Electrical part</h2>
@@ -475,7 +454,7 @@ box final
 <h4 id="electrical-connection">Electrical connection</h4>
 
 <ul>
-  <li>Join electrical box to valves boxes with 7 multi-conductor wire</li>
+  <li>Join electrical box to valves boxes with 7 multi-conductors wire</li>
   <li>Install one distribution box at the entrance of the valves box.</li>
   <li>Connect power supply to solenoid valve 24V with a transformer.</li>
 </ul>
@@ -490,20 +469,6 @@ box final
   
 </figure>
 
-<h4 id="relay-connection-power-electronics">Relay connection (Power electronics)</h4>
-
-<p>TODO.</p>
-
-<p><strong>Tools</strong>: electrical box.</p>
-
-<h4 id="set-up-electrical-box">Set up electrical box</h4>
-
-<ul>
-  <li>Replace power outlet by circuit breaker.</li>
-</ul>
-
-<p><strong>Tools</strong>: circuit breaker Din rail</p>
-
 <h2 id="electronic-part">Electronic part</h2>
 
 <h3 id="prerequisites-1">Prerequisites</h3>
@@ -516,9 +481,10 @@ box final
 <h3 id="overview-1">Overview</h3>
 
 <figure class="">
-  <img src="https://jluccisano.github.io/assets/images/sprinkler/electronic_part.jpg" alt="Electronic part" />
+  <img src="https://jluccisano.github.io/assets/images/sprinkler/electrical_part.jpg" alt="Electronic part" />
   
-    <figcaption>Electronic part
+    <figcaption>Electronic 
+part
 </figcaption>
   
 </figure>
@@ -617,6 +583,11 @@ Each relay are supplied in 3.3V via Raspberry PI.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/jluccisano/rpi-sprinkler-control.git
 </code></pre></div></div>
 
+<p>See more details:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/jluccisano/raspberry-scripts/tree/master/scripts/home-automation
+</code></pre></div></div>
+
 <p>Follow install step describe in the README.md.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>https://github.com/jluccisano/rpi-sprinkler-control/archive/v0.0.2.tar.gz
@@ -636,6 +607,10 @@ Location: /home/pi/.local/lib/python2.7/site-packages
 Requires:
 </code></pre></div></div>
 
+<h3 id="create-a-service">Create a service</h3>
+
+<p><a href="https://jluccisano.github.io/linux/create-service">See more</a></p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Unit]
 <span class="nv">Description</span><span class="o">=</span>Home Automation Server
 <span class="nv">After</span><span class="o">=</span>multi-user.target
@@ -653,7 +628,6 @@ Requires:
 
 <h3 id="install-release-package">Install release package</h3>
 
-<p>TODO.</p>
 <ul>
   <li>Connect to Rpi via SSH</li>
   <li>Install package</li>
@@ -689,7 +663,7 @@ Requires:
 </code></pre></div></div>
 
 <p>Now we are able to control sprinkler system from a Raspberry PI. That’s already a good point but we need to 
-control directly from his smartphone… Go to the next tutorial.</p>
+control directly from his smartphone and from anywhere… Go to the next tutorial.</p>
 
         
       </section>

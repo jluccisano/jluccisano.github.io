@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-01-11T19:43:32+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-01-13T16:04:30+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
@@ -349,30 +349,9 @@ dns-sd -B _daap._tcp&lt;/p&gt;</content><author><name>Joseph Luccisano</name><ur
 We have able to control the sprinkler system from a Raspberry PI.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#electrical-part&quot;&gt;Electrical part&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#rerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#components&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#wiring&quot;&gt;Wiring&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#electronic-part&quot;&gt;Electronic part&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#rerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#components&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#wiring&quot;&gt;Wiring&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#software-part&quot;&gt;Software part&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#rerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#program&quot;&gt;Program&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#test&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#electrical-part&quot;&gt;Electrical part&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#electronic-part&quot;&gt;Electronic part&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#software-part&quot;&gt;Software part&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;electrical-part&quot;&gt;Electrical part&lt;/h2&gt;
@@ -478,7 +457,7 @@ box final
 &lt;h4 id=&quot;electrical-connection&quot;&gt;Electrical connection&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Join electrical box to valves boxes with 7 multi-conductor wire&lt;/li&gt;
+  &lt;li&gt;Join electrical box to valves boxes with 7 multi-conductors wire&lt;/li&gt;
   &lt;li&gt;Install one distribution box at the entrance of the valves box.&lt;/li&gt;
   &lt;li&gt;Connect power supply to solenoid valve 24V with a transformer.&lt;/li&gt;
 &lt;/ul&gt;
@@ -493,20 +472,6 @@ box final
   
 &lt;/figure&gt;
 
-&lt;h4 id=&quot;relay-connection-power-electronics&quot;&gt;Relay connection (Power electronics)&lt;/h4&gt;
-
-&lt;p&gt;TODO.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;: electrical box.&lt;/p&gt;
-
-&lt;h4 id=&quot;set-up-electrical-box&quot;&gt;Set up electrical box&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Replace power outlet by circuit breaker.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;: circuit breaker Din rail&lt;/p&gt;
-
 &lt;h2 id=&quot;electronic-part&quot;&gt;Electronic part&lt;/h2&gt;
 
 &lt;h3 id=&quot;prerequisites-1&quot;&gt;Prerequisites&lt;/h3&gt;
@@ -519,9 +484,10 @@ box final
 &lt;h3 id=&quot;overview-1&quot;&gt;Overview&lt;/h3&gt;
 
 &lt;figure class=&quot;&quot;&gt;
-  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/electronic_part.jpg&quot; alt=&quot;Electronic part&quot; /&gt;
+  &lt;img src=&quot;https://jluccisano.github.io/assets/images/sprinkler/electrical_part.jpg&quot; alt=&quot;Electronic part&quot; /&gt;
   
-    &lt;figcaption&gt;Electronic part
+    &lt;figcaption&gt;Electronic 
+part
 &lt;/figcaption&gt;
   
 &lt;/figure&gt;
@@ -620,6 +586,11 @@ Each relay are supplied in 3.3V via Raspberry PI.&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/jluccisano/rpi-sprinkler-control.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;See more details:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/jluccisano/raspberry-scripts/tree/master/scripts/home-automation
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;Follow install step describe in the README.md.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;https://github.com/jluccisano/rpi-sprinkler-control/archive/v0.0.2.tar.gz
@@ -639,6 +610,10 @@ Location: /home/pi/.local/lib/python2.7/site-packages
 Requires:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h3 id=&quot;create-a-service&quot;&gt;Create a service&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jluccisano.github.io/linux/create-service&quot;&gt;See more&lt;/a&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Unit]
 &lt;span class=&quot;nv&quot;&gt;Description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Home Automation Server
 &lt;span class=&quot;nv&quot;&gt;After&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;multi-user.target
@@ -656,7 +631,6 @@ Requires:
 
 &lt;h3 id=&quot;install-release-package&quot;&gt;Install release package&lt;/h3&gt;
 
-&lt;p&gt;TODO.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Connect to Rpi via SSH&lt;/li&gt;
   &lt;li&gt;Install package&lt;/li&gt;
@@ -692,7 +666,7 @@ Requires:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now we are able to control sprinkler system from a Raspberry PI. That’s already a good point but we need to 
-control directly from his smartphone… Go to the next tutorial.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Electrical" /><category term="Electronic" /><category term="Linux" /><category term="Raspberry" /><category term="Python" /><category term="Software" /><summary type="html">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial, We have able to control the sprinkler system from a Raspberry PI.</summary></entry><entry><title type="html">Software part</title><link href="https://jluccisano.github.io/automation/sprinkler-software/" rel="alternate" type="text/html" title="Software part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-software</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-software/">&lt;p&gt;The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.&lt;/p&gt;
+control directly from his smartphone and from anywhere… Go to the next tutorial.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Electrical" /><category term="Electronic" /><category term="Linux" /><category term="Raspberry" /><category term="Python" /><category term="Software" /><summary type="html">The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial, We have able to control the sprinkler system from a Raspberry PI.</summary></entry><entry><title type="html">Software part</title><link href="https://jluccisano.github.io/automation/sprinkler-software/" rel="alternate" type="text/html" title="Software part" /><published>2017-08-29T00:00:00+00:00</published><updated>2017-08-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-software</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-software/">&lt;p&gt;The aim of this tutorial is to control sprinkler from his smartphone anywhere without SSH connection.&lt;/p&gt;
 
 &lt;p&gt;In the previous tutorial, I explain how to control sprinkler from command line directly by a daemon service
 on the Raspberry. In order to be able to access of the raspberry from internet we need to expose an API
