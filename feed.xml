@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-06T14:03:08+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-06T14:11:58+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;#caracteristiques&quot;&gt;Caractéristiques&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -48,7 +48,7 @@
 Je veux réaliser une roue aérodynamique et rigide pour rouler sur le plat (ou peu vallonnée)
 Ex: Triathlon, CLM&lt;/p&gt;
 
-&lt;p&gt;Je suis passionné de sport et de part mon métier d’ingénieur, je suis toujours à soif
+&lt;p class=&quot;text-justify&quot;&gt;Je suis passionné de sport et de part mon métier d’ingénieur, je suis toujours à soif
 de connaissance et d’apprendre de nouvelles choses. Quand j’ai débuté le vélo je me suis très
 vite intéressé au roue de vélo, et très vite compris l’intérêt qu’elles pouvaient apporter
 pour la qualité, la performance et le confort. Je me suis fait monter par un professionnel
@@ -66,9 +66,8 @@ j’ai fait pas mal de recherche sur internet, lu des tas d’articles et puis j
 sur 2 livres Roger Musson et Jobst ?. Que je vous conseille de lire. Ce sont de très beaux
 ouvrages qui permettent de comprendre comment fonctionne une roue et tous les éléments. Et explique
 comment les monter. Le but de cet article n’est pas d’expliquer tout ça, l’idée c’est d’expliquer
-mes choix pour arriver à finaliser ma roue.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Et surtout un bon petit jeu de mots “ne pas réinventé la roue”&lt;/p&gt;
+mes choix pour arriver à finaliser ma roue.
+Et surtout un bon petit jeu de mots “ne pas réinventé la roue”&lt;/p&gt;
 
 &lt;h1 id=&quot;caractéristiques&quot;&gt;Caractéristiques&lt;/h1&gt;
 
@@ -128,6 +127,8 @@ Peut pas avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de 
 
 &lt;h1 id=&quot;composants&quot;&gt;Composants&lt;/h1&gt;
 &lt;h2 id=&quot;jante&quot;&gt;Jante&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/jante1.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Caractéristiques:&lt;/p&gt;
 &lt;ul&gt;
@@ -308,7 +309,7 @@ La longueur de valve est importante pour savoir quelle taille de prolongateur de
 
 &lt;h2 id=&quot;longueur-des-rayons&quot;&gt;Longueur des rayons&lt;/h2&gt;
 
-&lt;p&gt;Le choix de la bonne longueur des rayons est sans doute la partie la plus importante et la
+&lt;p class=&quot;text-justify&quot;&gt;Le choix de la bonne longueur des rayons est sans doute la partie la plus importante et la
 plus délicate. En effet, se tromper de 1mm trop court ou trop long peu empêcher le montage de la roue 
 au moment de la mise sous tension. La longueur des rayons va dépendre du moyeu, de la jante,
 du nombre de rayons et la manière dont on veut lacer les rayons. En gros tout ce qui a été choisi
@@ -338,7 +339,7 @@ le rayon pour atteindre la jante. En vert, j’ai représenté l’écrou est su
 tendu. En dessous, j’ai simplifié les 2 schemas en 2 triangles HLR et LSF avec pour l’instant que des inconnues mais
 que l’on va pouvoir substituer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpeg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Triangle HLR&lt;/p&gt;
 &lt;ul class=&quot;notice--primary&quot;&gt;
@@ -846,8 +847,8 @@ les rayons au moment du laçage, on le verra à l’étape suivante. La techniqu
 du logo du moyeu et compté 3 trous vers la gauche on le verra ensuite pourquoi 3. Mais simplement lors du laçage
 avec un croisements par 2, ça va tomber pile poil en face la valve.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/lacage_step10.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;
-&lt;img src=&quot;/assets/images/wheel-building/lacage_step11.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/lacage_step10.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt;
+&lt;img src=&quot;/assets/images/wheel-building/lacage_step11.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;h3 id=&quot;etape-2&quot;&gt;Etape 2:&lt;/h3&gt;
@@ -911,16 +912,76 @@ roue complètement lacé de chaque côté.&lt;/p&gt;
 
 &lt;h2 id=&quot;mise-sous-tension-et-dévoilage&quot;&gt;Mise sous tension et dévoilage&lt;/h2&gt;
 
-&lt;p&gt;La roue est prête pour être mise sous tension, je vais la posée sur le centreur de&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;La roue est prête pour être dévoilé et être mise sous tension. J’installe la roue sur le centreur de 
+roue et c’est partie. Pour cette partie, il faut encore une fois prendre son temps car je n’ai aucune expérience
+dans ce domaine contrairement à un professionnel qui peu faire ça très vite. Il s’agit d’un coup de main à prendre
+à force de le faire. J’ai du recommencer plusieurs fois avant d’arriver au résultat final, mais on apprend de ses
+erreurs comme on dit. Donc j’ai mis plusieurs heures pour y arriver mais ça en valait le coup.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/lacage_step17.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;1) j’ai commencé par mettre les écrous au même niveau
-2) Ensuite j’ai appliqué petit à petit un serrage&lt;/p&gt;
+&lt;h3 id=&quot;etape-1-1&quot;&gt;Etape 1&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;J’ai tout d’abord serrer tous les rayons au même niveau, j’ai pris comme repère le filetage du rayons. Donc j’ai 
+visser chaque rayon jusqu’à que le filetage ne soit plus visible.&lt;/p&gt;
+
+&lt;h3 id=&quot;etape-2-1&quot;&gt;Etape 2&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;A l’aide de la jauge de centrage je vérifie l’état de mon alignement. Pour l’instant il est complètement faux ce qui
+normal. Mais on constate bien qu’il va ramener le moyeu au centre de la jante. Pour cela il va falloir plus visser
+les rayons d’un côté. Donc pour faire simple, si je visse les rayons côté cassette cela va ramener la jante vers la 
+droite (Quand on sert les rayons il faut bien comprendre que c’est la jante qui bouge et pas le moyeu) et inversement
+si je sers ce de gauche. Donc selon l’état de l’alignement il faut jouer sur les rayons de gauche et droite. Donc
+je sers de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir
+que plus on va avancer dans la mise sous tension plus il faudra limiter le nombre de tour jusqu’à faire des quarts 
+de tour pour les derniers adjustements. Si on ne fait pas progressivement, il sera impossible de dévoiler la roue
+dans les étapes suivantes.&lt;/p&gt;
+
+&lt;h3 id=&quot;etape-3-1&quot;&gt;Etape 3&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;J’ai serré mes rayons des 2 côtés de manière équilibré afin d’arriver à un alignement un peu près correct, j’ai 2mm
+d’erreur ce qui est normal à cette étape. Mais il est pas la peine de continuer si l’erreur est plus grande car plus
+les rayons seront sous tension plus il sera difficile de corriger une erreur d’alignement. J’ai donc vérifié 
+l’alignement fréquememnt tout au long de la mise sous tension. On constate bien l’alignement à obtenir dans le schema
+ci-dessous.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/alignement1.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Voici quelques liens intéressants:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Vnkqy2nnsrY&quot;&gt;Jauge d’alignement&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;etape-4-1&quot;&gt;Etape 4&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;La roue à maintenant un alignement correct, je vais pouvoir continuer la mise sous tension. Je vais dans cette étape
+dévoilé la roue. Donc avec le centreur c’est assez simple mais il faut prendre son temps. J’ai utilisé du ruban 
+adéhsif pour mettre des repères sur les rayons qui posent problèmes. Ensuite, comme je l’ai dit précédement si je veux
+ramener ma jante à droite, je serre les rayons qui sont rattachés à la partie droite du moyeu et inversement pour 
+l’autre côté. Ce qui veut dire aussi qu’il est possible à cette étape de devoir déserrer un peu certain rayon. 
+J’effectue des quarts de tour et je regarde le résultat et j’itère jusqu’à obtenir une roue non voilée. On peu sentir
+si des rayons sont moins tendus que d’autres il faut essayer d’arriver à avoir une tension uniforme, on peut le faire
+facilement au touché, juste pressant sur les rayons entres eux.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=gJgH63gQmrE&quot;&gt;Dévoilé une roue&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;etape-5-1&quot;&gt;Etape 5&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;La roue est dévoilée et alignée, il faut maintenant finalisé la mise sous tension. Je fais des quarts de tours sur tous
+les rayons tout en vérifiant de garder l’alignement et de ne pas voilée la roue. Je sens que ma roue commence à être
+bien, rien qu’au touché on sent qu’ils sont bons. Il est normal que les rayons côté droit soit plus tendu que ce de
+gauche de part la géométrie du moyeu. Il est surtout important que la tension côté cassette soit bonnes sur tous
+les rayons car c’est de ce côté que les forces vont être le plus sollicitées. J’utilise enfin un tensionmètre 
+pour vérifier que j’ai une tension équivalent pour tous les rayons de chaque côté. Pour le niveau de tension il 
+y a plusieurs école, les gens qui utilisent juste le touché ou le son quand on pince les rayons et d’autres à la valeur
+de la tension. J’avoue que la méthode au touché suffit car il faut savoir que des rayons trop tendu n’apporteront pas
+plus de rigidité et au contraire fatigué le rayon plus rapidement. Evidement un rayon pas assez tendu aura aussi des 
+conséquences sur la longétivité des rayons et de résistance au poids du bonhomme et aux contraintes  de la route. Donc
+il faut trouver le bon compromis, moi j’ai fait au touché puis vérifier au tensionmètre pour voir ce que ça valait.
+Mais je n’ai pas mis exactement la tension indiqué pour mon poids.&lt;/p&gt;
 
 &lt;h2 id=&quot;assemblage&quot;&gt;Assemblage&lt;/h2&gt;
 
-&lt;p&gt;La roue nue est prête, il faut maintenant possible d’assembler les éléments pour qu’elle puisse
+&lt;p class=&quot;text-justify&quot;&gt;La roue nue est prête, il faut maintenant possible d’assembler les éléments pour qu’elle puisse
 intérargir avec la route et l’attacher au cadre du vélo. Je ne vais pas détailler ce que j’ai fait
 car ce serait réinventer la “roue”, voici des videos Youtube qui correspondent à ce que j’ai fait.&lt;/p&gt;
 
@@ -928,9 +989,9 @@ car ce serait réinventer la “roue”, voici des videos Youtube qui correspond
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=EbA5ZBZa5IQ&quot;&gt;Prolongateur de valve&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/prolongateur_valve_miche.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;240px&quot; /&gt; 
-&lt;img src=&quot;/assets/images/wheel-building/prolongateur1.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;
-&lt;img src=&quot;/assets/images/wheel-building/prolongateur2.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/prolongateur_valve_miche.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt; 
+&lt;img src=&quot;/assets/images/wheel-building/prolongateur1.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt;
+&lt;img src=&quot;/assets/images/wheel-building/prolongateur2.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt;&lt;/p&gt;
 
 &lt;ul class=&quot;notice--primary&quot;&gt;
   &lt;li&gt;Une petite clé est souvent livré avec les prolongateurs de valve afin d’enleve l’obu facilement&lt;/li&gt;
@@ -954,7 +1015,7 @@ afin que la colle adhère plus facilement.&lt;/li&gt;
 
 &lt;h3 id=&quot;cassette-1&quot;&gt;Cassette&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=9KAaP7pbFV0&quot;&gt;Installation d’un cassette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=9KAaP7pbFV0&quot;&gt;Installation d’une cassette&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/cassette1.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
@@ -964,22 +1025,53 @@ afin que la colle adhère plus facilement.&lt;/li&gt;
 
 &lt;h2 id=&quot;mise-sous-pression&quot;&gt;Mise sous pression&lt;/h2&gt;
 
-&lt;p&gt;Pourquoi ? La pression et si importante pour l’adhérence au sol….&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Il est temps de confler le boyau, je mets 9-10Bars en général. Tout dépend de la limite indiqué par le revendeur
+et ce qui est recommender par la jante. Mais plus on pourra mettre de pression, plus le boyau aura moins d’adhérence
+avec le sol donc moins de frottement et donc plus de vitesse pour le même effort fourni. Le seul compromis c’est que
+plus on a de pression plus on perd on confort car le moindre choc est plus répercuté jusqu’au cycliste. Avec moins de
+pression les chocs sont plus absorbés par le boyau. Encore une fois un compromis à faire.&lt;/p&gt;
 
 &lt;h2 id=&quot;attache-rapide-1&quot;&gt;Attache rapide&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Pour les attaches rapide, j’en ai pas acheté de nouveaux, j’utilise les meême pour toutes mes roues c’est pas 
+contraignant à interchanger. Il est tout de même important d’avoir une bonne paire d’attache rapide surtout en terme
+de légèreté car il est facile d’alourdir la roue en prenant du bas de gamme, ce serait dommage de perdre les 
+grammes gagnés sur le moyeu et la jante…&lt;/p&gt;
+
 &lt;h2 id=&quot;patin-de-freins-1&quot;&gt;Patin de freins&lt;/h2&gt;
 
-&lt;p&gt;Special pour jante carbone sur boyau&lt;/p&gt;
-
-&lt;p&gt;Alors depuis que je roule en boyau effectivement on a un peu moins de freinage&lt;/p&gt;
+&lt;p&gt;Etant donné que sur une jante à boyau le freinage va se faire directement sur le boyau contraiement sur des jantes
+à pneu où un cercle en alu est rajouté. Il faut donc des pâtins de freins spéciaux, moi j’utilise des SwissStop Flash
+Pro qui fonctionne sur tout type de jante ce qui est pratique quand je mets mes roues à pneu.&lt;/p&gt;
 
 &lt;h2 id=&quot;premier-test-et-ajustements&quot;&gt;Premier test et ajustements&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Etant donné que j’ai opté pour une roue de largeur 25mm, il faut que j’écarte un peu mon étrier de frein afin que ma
+roue puisse passer. Mon étrier est compatible avec des jantes jusqu’à 28mm donc pas de souci mais ça se vérifie avant
+d’acheter. C’est assez facile avec une clé allen, c’est vite régler. J’installe la roue sans problème et voilà le
+résultat en image ci-dessous.&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/k5iI5SE_gyE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Le vélo est prêt pour le test sur route, c’est parti ! la preuve en images !&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/rDqBviw5A_M&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
 
 &lt;h1 id=&quot;récaptitulatif-des-coûts&quot;&gt;Récaptitulatif des coûts&lt;/h1&gt;
 
 &lt;p&gt;Une roue arrière coûte plus cher, plus de rayons, moyeu plus cher, plus de rayons et une cassette.&lt;/p&gt;
 
-&lt;p&gt;Roue nue&lt;/p&gt;
+&lt;h3 id=&quot;roue-nue&quot;&gt;Roue nue&lt;/h3&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -1036,49 +1128,67 @@ afin que la colle adhère plus facilement.&lt;/li&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Accessoires:&lt;/p&gt;
+&lt;h3 id=&quot;accessoires&quot;&gt;Accessoires&lt;/h3&gt;
 
 &lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Poids&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Quantité&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Prix unit.&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Prix Total&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Poids Total&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;Boyau Vittoria CX 25c 320TPI&lt;/td&gt;
-      &lt;td&gt;250g&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;34.99&lt;/td&gt;
-      &lt;td&gt;34.99&lt;/td&gt;
-      &lt;td&gt;250g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Boyau Vittoria CX 25c 320TPI&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;250g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;34.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;34.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;250g&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Prolongateur Miche 70mm rouge (vendu par 2)&lt;/td&gt;
-      &lt;td&gt;10g&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;16.99&lt;/td&gt;
-      &lt;td&gt;16.99&lt;/td&gt;
-      &lt;td&gt;10g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Prolongateur Miche 70mm rouge (vendu par 2)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;16.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10g&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Attache rapide Mavic Arrière Axe 9mm 130mm&lt;/td&gt;
-      &lt;td&gt;50g&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;25.00&lt;/td&gt;
-      &lt;td&gt;25.00&lt;/td&gt;
-      &lt;td&gt;50g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Attache rapide Mavic Arrière Axe 9mm 130mm&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;50g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;50g&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Cassette 11s Shimano&lt;/td&gt;
-      &lt;td&gt;228g&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;59.99&lt;/td&gt;
-      &lt;td&gt;59.99&lt;/td&gt;
-      &lt;td&gt;228g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Cassette 11s Shimano&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;228g&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;59.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;59.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;228g&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Total&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;136.97&lt;/td&gt;
-      &lt;td&gt;538g `&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Patins de freins Swiss Stop flash Pro&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Total&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;151.96&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;538g&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1089,16 +1199,21 @@ afin que la colle adhère plus facilement.&lt;/li&gt;
 l’expérience. Pour ma part, je suis très fier du résultat et je projette de me faire d’autres
 montage (Moyeu straight pull) et pourquoi pas monter son vélo soi-même.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/result1.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/result2.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/result3.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/result4.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+
 &lt;h1 id=&quot;références&quot;&gt;Références&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.wheelpro.co.uk/wheelbuilding/book.php&quot;&gt;Professionnal Guide to Wheel Building&lt;/a&gt; - Roger Musson
-&lt;a href=&quot;http://caravan.hobby.ru/materiel/Bicycle_Wheel_-_Jobst_Brandt.pdf&quot;&gt;Bicycle Wheel&lt;/a&gt; - Jobst Brandt
-&lt;a href=&quot;http://mgagnon.net/velo/roue_montage.fr.php&quot;&gt;Le montage de roues&lt;/a&gt; - Sheldon Brown et John Allen&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/compas_a_pointe.jpeg&quot; alt=&quot;moyeu&quot; height=&quot;120px&quot; width=&quot;120px&quot; /&gt; 
-&lt;img src=&quot;/assets/images/wheel-building/compas_a_pointe.jpeg&quot; alt=&quot;moyeu&quot; height=&quot;120px&quot; width=&quot;120px&quot; /&gt; 
-&lt;img src=&quot;/assets/images/wheel-building/equerre.jpeg&quot; alt=&quot;moyeu&quot; height=&quot;120px&quot; width=&quot;120px&quot; /&gt; 
-&lt;img src=&quot;/assets/images/wheel-building/galliper.jpeg&quot; alt=&quot;moyeu&quot; height=&quot;120px&quot; width=&quot;120px&quot; /&gt;&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><summary type="html">Caractéristiques</summary></entry><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.wheelpro.co.uk/wheelbuilding/book.php&quot;&gt;Professionnal Guide to Wheel Building&lt;/a&gt; - Roger Musson&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://caravan.hobby.ru/materiel/Bicycle_Wheel_-_Jobst_Brandt.pdf&quot;&gt;Bicycle Wheel&lt;/a&gt; - Jobst Brandt&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mgagnon.net/velo/roue_montage.fr.php&quot;&gt;Le montage de roues&lt;/a&gt; - Sheldon Brown et John Allen&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><category term="Mécanique" /><category term="Cyclisme" /><summary type="html">Caractéristiques</summary></entry><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;

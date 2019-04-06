@@ -146,6 +146,6 @@ var store = [{
         "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
         "title": "Ma première roue artisanale",
         "excerpt":"Caractéristiques Composants Jante Moyeu Rayons Ecrous Boyau Attache rapide Cassette Patin de freins Conception Longueur des rayons Montage Outils Laçage Mise sous tension Boyau Prolongateur de valve Cassette Mise sous pression Attache rapide Patin de freins Premier test et ajustements Récapitulatif des coûts Conclusion Références Quoi ? Pourquoi ? Comment...","categories": ["Sport"],
-        "tags": ["Sport"],
+        "tags": ["Sport","Mécanique","Cyclisme"],
         "url": "https://jluccisano.github.io/sport/wheel-building/",
         "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"}]
