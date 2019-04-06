@@ -1,35 +1,25 @@
 <!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
 
-<!-- begin SEO -->
-
-
-
-
-
-
-
-
-
-<title>Home automation - Practice makes perfect</title>
-
-
-
-
+<!-- begin _includes/seo.html --><title>Home automation - Practice makes perfect</title>
 <meta name="description" content="An amazing website.">
 
 
 
-
-<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en">
 <meta property="og:site_name" content="Practice makes perfect">
 <meta property="og:title" content="Home automation">
+<meta property="og:url" content="https://jluccisano.github.io/automation/">
 
-
-  <link rel="canonical" href="https://jluccisano.github.io/automation/">
-  <meta property="og:url" content="https://jluccisano.github.io/automation/">
 
 
 
@@ -49,6 +39,10 @@
 
 
 
+
+
+
+
   
 
   
@@ -56,9 +50,7 @@
   
 
 
-
-
-
+<link rel="canonical" href="https://jluccisano.github.io/automation/">
 
 
 
@@ -68,11 +60,11 @@
 
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "Joseph Luccisano",
-      "url" : "https://jluccisano.github.io",
-      "sameAs" : null
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joseph Luccisano",
+      "url": "https://jluccisano.github.io",
+      "sameAs": null
     }
   </script>
 
@@ -81,14 +73,13 @@
 
 
 
-<!-- end SEO -->
+
+<!-- end _includes/seo.html -->
 
 
-<link href="https://jluccisano.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Practice makes perfect Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Practice makes perfect Feed">
 
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
+<!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -96,40 +87,64 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://jluccisano.github.io/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 
-<meta http-equiv="cleartype" content="on">
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
   </head>
 
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
-    <div class="masthead">
+
+    
+
+<div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://jluccisano.github.io/">Practice makes perfect</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://jluccisano.github.io/tutorials/">Tutorials</a></li>
-          
-        </ul>
+        
+        <a class="site-title" href="/">Practice makes perfect</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
 
-    
+
+    <div class="initial-content">
+      
 
 
   
@@ -138,12 +153,12 @@
 
 
 <nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     
     
     
       
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="https://jluccisano.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
           <meta itemprop="position" content="1" />
         </li>
@@ -155,6 +170,7 @@
     
   </ol>
 </nav>
+
   
 
 
@@ -163,18 +179,23 @@
   <div class="sidebar sticky">
   
 
-<div itemscope itemtype="http://schema.org/Person">
+
+<div itemscope itemtype="https://schema.org/Person">
 
   
     <div class="author__avatar">
       
-        <img src="https://jluccisano.github.io/assets/images/me.jpg" class="author__avatar" alt="Joseph Luccisano" itemprop="image">
+
+      
+        <img src="/assets/images/me.jpg" alt="Joseph Luccisano" itemprop="image">
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">Joseph Luccisano</h3>
+    
+      <h3 class="author__name" itemprop="name">Joseph Luccisano</h3>
+    
     
       <p class="author__bio" itemprop="description">
         Full Stack Developer
@@ -186,15 +207,31 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Toulouse, France</span>
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Toulouse, France</span>
         </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
 
       
         <li>
           <a href="http://j.luccisano.free.fr" itemprop="url">
-            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Online CV
+            <i class="fas fa-fw fa-link" aria-hidden="true"></i> Website
           </a>
         </li>
       
@@ -205,8 +242,8 @@
 
       
         <li>
-          <a href="https://twitter.com/joluccisano" itemprop="sameAs">
-            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          <a href="https://twitter.com/joluccisano" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
           </a>
         </li>
       
@@ -214,11 +251,9 @@
       
 
       
-
-      
         <li>
-          <a href="https://www.linkedin.com/in/jluccisano" itemprop="sameAs">
-            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          <a href="https://www.linkedin.com/in/jluccisano" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
           </a>
         </li>
       
@@ -233,10 +268,12 @@
 
       
         <li>
-          <a href="https://github.com/jluccisano" itemprop="sameAs">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          <a href="https://github.com/jluccisano" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
+      
+
       
 
       
@@ -265,8 +302,8 @@
 
       <!--
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
 -->
@@ -280,7 +317,7 @@
 
   <div class="archive">
     
-      <h1 class="page__title">Home automation</h1>
+      <h1 id="page-title" class="page__title">Home automation</h1>
     
     
 <!--
@@ -571,11 +608,11 @@
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="permalink">Use Netatmo rain sensor to regulate your sprinkler
+        <a href="/automation/sprinkler-netatmo/" rel="permalink">Use Netatmo rain sensor to regulate your sprinkler
 </a>
       
     </h2>
@@ -584,17 +621,18 @@
 </p>
   </article>
 </div>
+
 		
 			
 
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/automation/sprinkler-software/" rel="permalink">Software part
+        <a href="/automation/sprinkler-software/" rel="permalink">Software part
 </a>
       
     </h2>
@@ -604,17 +642,18 @@
 </p>
   </article>
 </div>
+
 		
 			
 
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/automation/sprinkler-elec/" rel="permalink">Create a sprinkler system: Electrical part
+        <a href="/automation/sprinkler-elec/" rel="permalink">Create a sprinkler system: Electrical part
 </a>
       
     </h2>
@@ -623,17 +662,18 @@
 we will be able to control the sprinkler system f...</p>
   </article>
 </div>
+
 		
 			
 
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/automation/sprinkler-hydraulic/" rel="permalink">Create a sprinkler system: Hydraulic part
+        <a href="/automation/sprinkler-hydraulic/" rel="permalink">Create a sprinkler system: Hydraulic part
 </a>
       
     </h2>
@@ -643,17 +683,18 @@ we will be able to control the sprinkler system f...</p>
 </p>
   </article>
 </div>
+
 		
 			
 
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/automation/reactive-weather-station/" rel="permalink">Create a reactive weather station
+        <a href="/automation/reactive-weather-station/" rel="permalink">Create a reactive weather station
 </a>
       
     </h2>
@@ -662,17 +703,18 @@ we will be able to control the sprinkler system f...</p>
 μService producing temperature and humidity dat...</p>
   </article>
 </div>
+
 		
 			
 
 
 
 <div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://jluccisano.github.io/automation/sprinkler/" rel="permalink">Create a sprinkler system
+        <a href="/automation/sprinkler/" rel="permalink">Create a sprinkler system
 </a>
       
     </h2>
@@ -682,6 +724,7 @@ we will be able to control the sprinkler system f...</p>
 </p>
   </article>
 </div>
+
 		
 	
 
@@ -703,6 +746,9 @@ we will be able to control the sprinkler system f...</p>
 
   </div>
 </div>
+    </div>
+
+    
 
     <div class="page__footer">
       <footer>
@@ -714,40 +760,23 @@ we will be able to control the sprinkler system f...</p>
     
       <li><strong>Follow:</strong></li>
     
+
     
-      <li><a href="https://twitter.com/joluccisano"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    
-    
-      <li><a href="https://facebook.com/joseph.luccisano"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    
-    
-      <li><a href="http://github.com/jluccisano"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    <li><a href="https://jluccisano.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
       </footer>
     </div>
 
-    <script src="https://jluccisano.github.io/assets/js/main.min.js"></script>
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
 
-
-
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-90338151-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
 
 
 

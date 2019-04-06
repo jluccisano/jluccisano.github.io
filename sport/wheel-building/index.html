@@ -1,39 +1,31 @@
 <!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
 
-<!-- begin SEO -->
-
-
-
-
-
-
-
-
-
-<title>Ma première roue artisanale - Practice makes perfect</title>
-
-
-
-
+<!-- begin _includes/seo.html --><title>Ma première roue artisanale - Practice makes perfect</title>
 <meta name="description" content="  Caractéristiques">
 
 
 
-
-<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en">
 <meta property="og:site_name" content="Practice makes perfect">
 <meta property="og:title" content="Ma première roue artisanale">
-
-
-  <link rel="canonical" href="https://jluccisano.github.io/sport/wheel-building/">
-  <meta property="og:url" content="https://jluccisano.github.io/sport/wheel-building/">
-
+<meta property="og:url" content="https://jluccisano.github.io/sport/wheel-building/">
 
 
   <meta property="og:description" content="  Caractéristiques">
+
+
+
+  <meta property="og:image" content="https://jluccisano.github.io/assets/images/wheel-building/cover.jpg">
 
 
 
@@ -43,13 +35,17 @@
   <meta name="twitter:url" content="https://jluccisano.github.io/sport/wheel-building/">
 
   
-    <meta name="twitter:card" content="summary">
-    
-      <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/wheel-building/cover.jpg">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://jluccisano.github.io/assets/images/wheel-building/cover.jpg">
   
 
   
+
+
+
+  <meta property="article:published_time" content="2019-03-04T00:00:00+00:00">
+
+
 
 
 
@@ -60,14 +56,7 @@
   
 
 
-
-  <meta property="og:image" content="https://jluccisano.github.io/assets/images/wheel-building/cover.jpg">
-
-
-
-  <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2019-03-04T00:00:00+00:00">
-
+<link rel="canonical" href="https://jluccisano.github.io/sport/wheel-building/">
 
 
 
@@ -77,11 +66,11 @@
 
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "Joseph Luccisano",
-      "url" : "https://jluccisano.github.io",
-      "sameAs" : null
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joseph Luccisano",
+      "url": "https://jluccisano.github.io",
+      "sameAs": null
     }
   </script>
 
@@ -90,14 +79,13 @@
 
 
 
-<!-- end SEO -->
+
+<!-- end _includes/seo.html -->
 
 
-<link href="https://jluccisano.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Practice makes perfect Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Practice makes perfect Feed">
 
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
+<!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -105,41 +93,69 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://jluccisano.github.io/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 
-<meta http-equiv="cleartype" content="on">
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
   </head>
 
   <body class="layout--single">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
-    <div class="masthead">
+
+    
+
+<div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://jluccisano.github.io/">Practice makes perfect</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://jluccisano.github.io/tutorials/">Tutorials</a></li>
-          
-        </ul>
+        
+        <a class="site-title" href="/">Practice makes perfect</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
 
-    
+
+    <div class="initial-content">
+      
   
+
+
+
+
 
 
 
@@ -148,11 +164,11 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: url('https://jluccisano.github.io/assets/images/wheel-building/cover.jpg');"
+  style=" background-image: url('/assets/images/wheel-building/cover.jpg');"
 >
   
     <div class="wrapper">
-      <h1 class="page__title" itemprop="headline">
+      <h1 id="page-title" class="page__title" itemprop="headline">
         
           Ma première roue artisanale
 
@@ -160,10 +176,11 @@
       </h1>
       
         <p class="page__lead"><ul>
-  <li><a href="#caractéristiques">Caractéristiques</a></li>
+  <li><a href="#caracteristiques">Caractéristiques</a></li>
 </ul>
 
 </p>
+      
       
       
       
@@ -177,18 +194,19 @@
 
 
 
+
   
     
 
 
 
 <nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     
     
     
       
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="https://jluccisano.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
           <meta itemprop="position" content="1" />
         </li>
@@ -196,8 +214,8 @@
       
       
         
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="https://jluccisano.github.io/sport" itemprop="item"><span itemprop="name">Sport</span></a>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#sport" itemprop="item"><span itemprop="name">Sport</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -210,6 +228,7 @@
     
   </ol>
 </nav>
+
   
 
 
@@ -218,18 +237,23 @@
   <div class="sidebar sticky">
   
 
-<div itemscope itemtype="http://schema.org/Person">
+
+<div itemscope itemtype="https://schema.org/Person">
 
   
     <div class="author__avatar">
       
-        <img src="https://jluccisano.github.io/assets/images/me.jpg" class="author__avatar" alt="Joseph Luccisano" itemprop="image">
+
+      
+        <img src="/assets/images/me.jpg" alt="Joseph Luccisano" itemprop="image">
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">Joseph Luccisano</h3>
+    
+      <h3 class="author__name" itemprop="name">Joseph Luccisano</h3>
+    
     
       <p class="author__bio" itemprop="description">
         Full Stack Developer
@@ -241,15 +265,31 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Toulouse, France</span>
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Toulouse, France</span>
         </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
 
       
         <li>
           <a href="http://j.luccisano.free.fr" itemprop="url">
-            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Online CV
+            <i class="fas fa-fw fa-link" aria-hidden="true"></i> Website
           </a>
         </li>
       
@@ -260,8 +300,8 @@
 
       
         <li>
-          <a href="https://twitter.com/joluccisano" itemprop="sameAs">
-            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          <a href="https://twitter.com/joluccisano" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
           </a>
         </li>
       
@@ -269,11 +309,9 @@
       
 
       
-
-      
         <li>
-          <a href="https://www.linkedin.com/in/jluccisano" itemprop="sameAs">
-            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          <a href="https://www.linkedin.com/in/jluccisano" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
           </a>
         </li>
       
@@ -288,10 +326,12 @@
 
       
         <li>
-          <a href="https://github.com/jluccisano" itemprop="sameAs">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          <a href="https://github.com/jluccisano" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
+      
+
       
 
       
@@ -320,8 +360,8 @@
 
       <!--
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
 -->
@@ -333,7 +373,7 @@
   </div>
 
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Ma première roue artisanale">
     <meta itemprop="description" content="  Caractéristiques">
     <meta itemprop="datePublished" content="March 04, 2019">
@@ -343,13 +383,14 @@
       
 
       <section class="page__content" itemprop="text">
+        
         <ul>
   <li>
-    <p><a href="#caractéristiques">Caractéristiques</a></p>
+    <p><a href="#caracteristiques">Caractéristiques</a></p>
   </li>
   <li><a href="#composants">Composants</a>
     <ul>
-      <li><a href="#jantes">Jante</a></li>
+      <li><a href="#jante">Jante</a></li>
       <li><a href="#moyeu">Moyeu</a></li>
       <li><a href="#rayons">Rayons</a></li>
       <li><a href="#ecrous">Ecrous</a></li>
@@ -383,55 +424,948 @@
   <li><a href="#références">Références</a></li>
 </ul>
 
+<p>Quoi ?</p>
+
+<p>Pourquoi ?</p>
+
+<p>Comment ?</p>
+
+<p class="text-justify">Tout au long de cet article, j’explique les choix que j’ai fait pour mon usage personnel. 
+Je veux réaliser une roue aérodynamique et rigide pour rouler sur le plat (ou peu vallonnée)
+Ex: Triathlon, CLM</p>
+
+<p>Je suis passionné de sport et de part mon métier d’ingénieur, je suis toujours à soif
+de connaissance et d’apprendre de nouvelles choses. Quand j’ai débuté le vélo je me suis très
+vite intéressé au roue de vélo, et très vite compris l’intérêt qu’elles pouvaient apporter
+pour la qualité, la performance et le confort. Je me suis fait monter par un professionnel
+mes premières roues carbonnes artisanales. 38mm de hauteur, 23mm de large sur boyau, 24 rayons
+à l’arrière (dont 8 radial à côté gauche) et 20 rayons à l’avant avec 2 croisemments. Je reviendrais
+plus loin pour expliquer chaque paramètre leur caractéristiques. C’est roue sont top, elle m’apporte
+une réactivité et un confort. Idéal pour la montage et parcours vallonnée. Ce sont vraiment des bonnes
+roues. Au bout de 4 ans, un rayon m’a lâché, je me suis dit qu’est-ce que je fais, je fais des km
+pour faire réparer ma roue où si je le faisais moi-même. Et j’ai commencé à me documenter sur la 
+réparation d’un simple rayon qui lâche et au fur et à mesure que je me documentais, je vite trouver
+intérêt à comprendre comment tout cela fonctionnait. J’avais déjà pour projet de me faire une roue
+arrière aerodynamique et du coup c’était l’occasion d’essayer de le faire soi-même. Je me suis vite
+rendu compte qu’il était assez facile de se procurer tout le matériel. Dans un premier temps
+j’ai fait pas mal de recherche sur internet, lu des tas d’articles et puis je suis tombé
+sur 2 livres Roger Musson et Jobst ?. Que je vous conseille de lire. Ce sont de très beaux
+ouvrages qui permettent de comprendre comment fonctionne une roue et tous les éléments. Et explique
+comment les monter. Le but de cet article n’est pas d’expliquer tout ça, l’idée c’est d’expliquer
+mes choix pour arriver à finaliser ma roue.</p>
+
+<p class="text-justify">Et surtout un bon petit jeu de mots “ne pas réinventé la roue”</p>
+
+<h1 id="caractéristiques">Caractéristiques</h1>
+
+<p>La force Radial:
+Vient essentiellement du poids du cycliste.</p>
+
+<p>Latéral:
+Quand on se fait en danseuse</p>
+
+<p>Torsional:
+Quand on appuie sur la pédale</p>
+
+<p>Rigidité</p>
+<ul>
+  <li>Radial</li>
+  <li>Latéral</li>
+  <li>
+    <p>Torsional</p>
+  </li>
+  <li>On joue sur le nombre de rayons , 24 est un bon compromis</li>
+  <li></li>
+  <li>Une jante haute</li>
+  <li>Une flange haute</li>
+  <li>Plus de rayons</li>
+</ul>
+
+<p>Aérodynamique</p>
+<ul>
+  <li>Il faut rouler à une certaine vitesse</li>
+  <li>Une jambes haute</li>
+  <li>Largeur de la jante</li>
+  <li>Qualité du boyau</li>
+</ul>
+
+<p>Dynamique</p>
+<ul>
+  <li>Légèreté du moyeu</li>
+  <li>Moins de rayons</li>
+</ul>
+
+<p>Confort:</p>
+<ul>
+  <li>La qualité du boyau</li>
+  <li>La largeur de la jante et boyau</li>
+</ul>
+
+<p>Une bonne roue résulte d’une bonne combinaison de tous ses composants selon le besoin du coureur:</p>
+<ul>
+  <li>Le type de parcours (vallonnée, vent, montagne)</li>
+  <li>Le type du coureur (poids, puissance)</li>
+</ul>
+
+<p>Et surtout on peut pas dire que c’est une bonne roue parce qu’elle est belle au visuel.</p>
+
+<p class="text-justify">Ce que je conseille, c’est d’avoir plusieurs type de roue selon le parcours et les conditions. C’est sûr on
+Peut pas avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de cas.</p>
+
+<h1 id="composants">Composants</h1>
+<h2 id="jante">Jante</h2>
+
+<p>Caractéristiques:</p>
+<ul>
+  <li>Matériau: carbone , T800 3K (TODO)</li>
+  <li>Boyau ou Pneu
+    <ul>
+      <li>Hauteur</li>
+    </ul>
+  </li>
+  <li>Nombre de trous</li>
+  <li>Largeur</li>
+</ul>
+
+<p>Ce que j’ai choisi…</p>
+
+<p><img src="/assets/images/wheel-building/cover.jpg" alt="moyeu" height="120px" width="120px" /> 
+<img src="/assets/images/wheel-building/rim2.jpeg" alt="moyeu" height="120px" width="120px" /> 
+<img src="/assets/images/wheel-building/rim3.jpeg" alt="moyeu" height="120px" width="120px" /></p>
+
 <h2 id="moyeu">Moyeu</h2>
 
-<p><img src="/assets/images/wheel-building/centreur_roue.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/cle_rayon.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/compas_a_pointe.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/cover.jpg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/double_square.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/elongation.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/elongation2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/equerre.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/erd.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/erd2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/erd3.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/erd_demonstration.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/erd_demonstration2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/erd_demonstration3.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/flange_support.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/flange_support2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/galliper.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/gauge.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/hub_flange_l.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/hub_flange_r.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/hub_mesurement.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/hub_mesurement2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/hub_mesures.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/hub_novatec.jpeg" alt="moyeu" height="120px" width="120px" /> 
+<p>Caractéristiques:</p>
+
+<ul>
+  <li>Matériau : Alu</li>
+  <li>Taille de la flange (rayons plus cours donc plus de rigidité)</li>
+  <li>Le Nombre de trou</li>
+  <li>Le poids</li>
+  <li>Les roulements (entretien, qualité…)</li>
+</ul>
+
+<p>Moyeu compatible avec son groupe (11 vitesses corps Shimano)</p>
+
+<p>Ce que j’ai choisi par rapport à mon choix de jante.</p>
+
+<p>Entraxe Ecartement de 130mm spécificité du cadre.</p>
+
+<p class="text-justify">j’ai dans un premier regardé qu’est-ce qu’il faisait c’est un bon moyeu ou pas. Sur le marché
+il y a tous les prix donc le plus cher est-ce vraiment le mieux ? La question est-ce qu’il 
+correspond à mon besoin.</p>
+
+<p>Poids
+Billes céramique
+Entretien
+Matériau
+Hauteur de flange</p>
+
+<p><img src="/assets/images/wheel-building/hub_novatec.jpeg" alt="moyeu" height="120px" width="120px" /> 
 <img src="/assets/images/wheel-building/hub_novatec2.jpeg" alt="moyeu" height="120px" width="120px" /> 
 <img src="/assets/images/wheel-building/hub_novatec3.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/moyeu_ar_1.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/nipple_black.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/nipple_red.JPG" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/nipples_screwdriver.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/outil_rayon_plat.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/rayon1.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/rayon2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/rim2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/rim3.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/ruban_adhesif.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/tensionmeter.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/centreur_roue.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/cle_rayon.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/compas_a_pointe.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/cover.jpg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/double_square.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/elongation.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/elongation2.jpeg" alt="moyeu" height="120px" width="120px" /> 
-<img src="/assets/images/wheel-building/equerre.jpeg" alt="moyeu" height="120px" width="120px" /></p>
+<img src="/assets/images/wheel-building/moyeu_ar_1.jpeg" alt="moyeu" height="120px" width="120px" /></p>
+
+<p>Il existe des moyeu straight pull un peu à la mode sois disant plus 
+moins de</p>
+
+<h2 id="rayons">Rayons</h2>
+
+<p>Etant que je recherche une roue aérodynamique, je me suis direct tourné vers des rayons plat.</p>
+
+<p>Pourquoi les Sapim: poids, materiau, tension N/mm</p>
+
+<p class="text-justify">J’ai fait un choix de rayons mais attention ne surtout pas acheter les rayons maintenant
+Il faut d’abord calculer leurs longueurs exactes.</p>
+
+<p>Caractéristiques:</p>
+
+<ul>
+  <li>Matière</li>
+  <li>Poids</li>
+  <li>Diamètre</li>
+  <li>Forme (plat)</li>
+  <li>Couleur</li>
+</ul>
+
+<p>Ce que j’ai choisi</p>
+
+<p><img src="/assets/images/wheel-building/rayon1.jpeg" alt="moyeu" height="120px" width="120px" /> 
+<img src="/assets/images/wheel-building/rayon2.jpeg" alt="moyeu" height="120px" width="120px" /></p>
+
+<h2 id="ecrous">Ecrous</h2>
+
+<p>Caractéristiques:</p>
+
+<ul>
+  <li>Matière</li>
+  <li>Longueur 12-14-16mm</li>
+  <li>Type de tête (quel type de tournevis)</li>
+  <li>Couleur</li>
+</ul>
+
+<p>Ce que j’ai choisi</p>
+
+<p class="text-justify">Concernant les écrous on peut prendre ce que l’on veut, chaque marque propose
+des longueurs différentes ou des têtes différents. Mon choix c’est tourner comme
+pour les rayons chez Sapim et notamment double square. Alors tout simplement
+que les double square on une tête carré ce qui permet d’utiliser cet outil (image).
+Etant donné la hauteur de la jante 88mm ce genre d’outil permet facilement de visser
+on le verra lors du montage.</p>
+
+<p><img src="/assets/images/wheel-building/nipple_black.jpeg" alt="moyeu" height="120px" width="120px" /> 
+<img src="/assets/images/wheel-building/nipple_red.JPG" alt="moyeu" height="120px" width="120px" /></p>
+
+<h2 id="pneu-ou-boyau">Pneu ou Boyau</h2>
+
+<p>Pneu</p>
+
+<ul>
+  <li>Plus facile à changer</li>
+  <li>Juste une chambre à air à prendre sur soi</li>
+  <li>Moins cher après crevaison juste une chambre à air</li>
+</ul>
+
+<p>Boyau</p>
+<ul>
+  <li>Confort (les forces radial moins répercuter sur la jante, plus d’épaisseur TPI )</li>
+  <li>Moins soumis au crevaison (lente)</li>
+  <li>Plus léger</li>
+  <li>Toujours avoir un spare</li>
+  <li>Difficile à changer</li>
+  <li>Installation</li>
+  <li>Plus cher quand crevaison</li>
+  <li>Plus de pression</li>
+  <li>Freinage moins précis (sauf si votre moyeu est à disque biensûr)</li>
+</ul>
+
+<p class="text-justify">Pour moi ils sont un peu plus performant car plus léger et plus confortable encore faut-il en choisir un de bonne qualité.
+Depuis que je roule en boyau, je ne voudrais plus revenir au pneu mais c’est mon avis perso.
+Mais il est important de choisir un boyau ou pneu de bonne qualité car ce serait dommage de perdre l’effort mis dans les
+Composants sous-jacents. C’est-à-dire que le boyau ou pneu est le dernier élément avant la route donc il faut pouvoir
+Transmettre le maximum de la force avec le moins de perte.</p>
+
+<ol>
+  <li>Caractéristiques</li>
+</ol>
+
+<ul>
+  <li>La largeur
+La largeur va d’abord dépendre de la largeur de la jante.  Voir dans le paragraphe suivant</li>
+</ul>
+
+<p>23 ou 25
+TODO: trouver un tableau récapitulatif avec les associations possible.</p>
+
+<p>23</p>
+
+<p>Plus léger
+Plus flexible</p>
+
+<p>25</p>
+
+<p>Plus aérodynamique car l’écoulement de l’air se fait mieux sur les côtés
+Plus confortable</p>
+
+<p>Rendement quasi identique alors pourquoi se priver du confort :-)</p>
+
+<ul>
+  <li>TPI</li>
+  <li>Matière</li>
+  <li>Longueur de valve:
+La longueur de valve est importante pour savoir quelle taille de prolongateur de valve, j’aurai besoin.</li>
+</ul>
+
+<ol>
+  <li>Ce que j’ai choisi</li>
+</ol>
+
+<ul>
+  <li>Prix: 34.99</li>
+</ul>
+
+<p>Moins de freingage</p>
+
+<h2 id="attache-rapide">Attache rapide</h2>
+<h2 id="cassette">Cassette</h2>
+<h2 id="patin-de-freins">Patin de freins</h2>
+
+<h1 id="conception">Conception</h1>
+
+<h2 id="longueur-des-rayons">Longueur des rayons</h2>
+
+<p>Le choix de la bonne longueur des rayons est sans doute la partie la plus importante et la
+plus délicate. En effet, se tromper de 1mm trop court ou trop long peu empêcher le montage de la roue 
+au moment de la mise sous tension. La longueur des rayons va dépendre du moyeu, de la jante,
+du nombre de rayons et la manière dont on veut lacer les rayons. En gros tout ce qui a été choisi
+précédement va rentrer en paramètre pour définir la longueur des rayons. Vous l’aurez bien compris, 
+c’est pourquoi on ne peut pas acheter les rayons avant d’avoir choisi tous les éléments précédent.</p>
+
+<p class="text-justify">Pour ce faire, il va falloir récolter un certain nombre de paramètres afin de pouvoir déterminer la bonne
+longueur. Certaines mesures peuvent être récoltées auprès des fabriquants mais il y a souvent des erreurs 
+donc comme il faut être très précis autant vérifier soi-même. Tous les paramètres en main, il est possible
+d’utiliser des configurateurs en ligne qui détermineront directement la bonne longueurs de vos rayons.
+Mais je suis curieux… et pour bien maitriser quelque chose, je pense
+qu’il faut vraiment comprendre ce qu’il y a derrière un algorithme, certes très utile pour gagner du
+temps. Donc durant tout ce chapitre je vais démontrer comment je suis arriver à ma longueur de rayons
+étape par étape.</p>
+
+<h3 id="vue-densemble">Vue d’ensemble</h3>
+
+<p>J’aime bien démontrer quelque chose en partant par le résultat final, donc voici ci-dessous une vue d’ensemble de ce
+que l’on recherche à déterminer (S).</p>
+
+<p><img src="/assets/images/wheel-building/erd_demonstration.jpeg" alt="moyeu" class="align-left text-justify" width="480px" /></p>
+
+<p>Dans le schema j’ai représenté une vue de face à gauche et une vue de dessus à droite. Le rayon en position tendu
+est représentée en rouge avec la variable pour l’instant inconnu S que l’on va déterminer.
+On constate que le moyeu est centré par rapport à la jante ce qui provoque un angle pour 
+le rayon pour atteindre la jante. En vert, j’ai représenté l’écrou est surtout où le rayon va se loger en position
+tendu. En dessous, j’ai simplifié les 2 schemas en 2 triangles HLR et LSF avec pour l’instant que des inconnues mais
+que l’on va pouvoir substituer.</p>
+
+<p><img src="/assets/images/wheel-building/erd_demonstration4.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p>Triangle HLR</p>
+<ul class="notice--primary">
+  <li>H = La distance entre le centre du moyeu et le trou où va se loger le rayon</li>
+  <li>L = Une longueur intermédiaire qui va permettre de faire le lien entre les 2 triangles</li>
+  <li>R’= ERD/2 Il s’agit du rayon effectif de la jante (je vais détailler cela dans le chapitre suivant)</li>
+  <li>Phi = Angle que va prendre le rayon selon le nombre de croisements</li>
+</ul>
+
+<p><img src="/assets/images/wheel-building/erd_demonstration3.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p>Triangle LSF</p>
+<ul class="notice--primary">
+  <li>L = Longueur intermédiaire calculer dans le triangle HLR</li>
+  <li>S = La longueur du rayon</li>
+  <li>F = La distance entre la flange du moyeu et son milieu</li>
+</ul>
+
+<p class="text-justify">Donc dans un premier temps, je vais décrire comment prendre les différentes mesures sur la jante et le moyeu. Puis
+dans un second temps je vais pouvoir en déduire la valeur de L dans le triangle HLR et enfin  substituer L dans le 
+triangle LSF afin d’en déduire la valeur de S.</p>
+
+<h3 id="mesure-de-lerd">Mesure de l’ERD</h3>
+
+<p class="text-justify">L’ERD (Effective Rim Diameter) comme je l’ai dit ci-dessus, il s’agit de la diamètre de la jante
+mais en prenons en compte la distance où va vraiment se loger les rayons dans les écrous. l’ERD
+est fourni quand on achète une jante mais ils ne prennent souvent pas en compte le type d’ecrou, il s’agit
+du diamète à l’intérieur de la jante. Mon fournisseur ma donnée 464.5mm, on verra qu’au final
+nous serons très loin de cette valeur. Alors comment le mesurer, j’ai regardé pas mal de vidéos et de
+tutoriaux et celui qui m’a paru le plus simple, précis et efficace est le suivant, encore une fois
+c’est mon avis personnel. Cette façon vient du livre de Roger Musson (TODO)</p>
+
+<p><img src="/assets/images/wheel-building/erd3.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p>Donc il suffit de prendre 2 rayons, 2 écrous, du ruban adhésif, un élastique et un pied 
+à coulisse (une simple mètre peu suffire).</p>
+
+<ul class="text-justify">
+  <li>
+    <p>Je prends les 2 rayons que j’ai acheté séparémment, j’ai pris des 200mm, on peut prendre ce qu’on veut.</p>
+  </li>
+  <li>
+    <p>On les insèrent dans la jante avec les écrous. Mais là, il faut être rigoureux,
+la position du rayon doit arriver exactement où l’on veut qu’il soit quand ce sera sous 
+tension. Moi j’ai choisi des Sapim double square (voir paragraphe ci-dessus)</p>
+  </li>
+</ul>
+
+<p><img src="/assets/images/wheel-building/double_square.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<p class="text-justify">Dans ce schema, j’ai représenté là où va se loger le rayon dans l’écrou une fois sur tension.</p>
+
+<p><img src="/assets/images/wheel-building/erd2.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<p class="text-justify">Les rayons fixés à la bonne position avec les écrous il suffit de raccorder avec un elastique
+et du ruban adhésif (voir image ci-dessous).</p>
+
+<p><img src="/assets/images/wheel-building/erd.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p>Enfin, il reste plus qu’à prendre la mesure entre les 2 extrémités des rayons. En effet, étant donné que les 2 rayons
+ font 200mm.</p>
+
+<ul class="notice--primary">
+  <li>ERD = 200 x 2 + la mesure entre les 2 extrémités.</li>
+  <li>ERD = 200 x 2 + 71 = 471mm</li>
+</ul>
+
+<p>Très loin des 464.5mm du fournisseur. Et voilà une première valeur que l’on pourra substituer dans les équations
+suivantes.</p>
+
+<h3 id="mesure-du-moyeu">Mesure du moyeu</h3>
+
+<p class="text-justify">Le schema ci-dessous représente le moyeu arrière, j’ai représenté le centre de celui en pointillé bleu, c’est là 
+ où la jante devra être aligné. On remarque bien pourquoi les longueurs des rayons ne seront pas les mêmes pour une 
+ roue arrière étant donné qu’il y a la cassette à prendre en compte.</p>
+
+<p><img src="/assets/images/wheel-building/hub_mesures.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p class="text-justify">a) La valeur de X est facile à déterminer, il s’agit de la largeur du moyeu là où le moyeu sera installé sur le cadre
+ (entraxe). 
+Il s’agit d’une valeur normalisée sur les cadres. Sur les vélos de route classiques, cette distance est souvent de 
+130mm. C’est un paramètre à prendre en compte avant d’acheter le moyeu, je l’avais préalablement vérifié avant 
+d’acheter mon moyeu (voir chapitre “choix du moyeu”)</p>
+
+<p>b) Les valeurs qui vont nous intéresser à de déterminer sont les valeurs C et D qui seront substituées
+à H (voir image)</p>
+
+<p>H = C pour les rayons côté gauche et D pour les rayons côté droit.</p>
+
+<p class="text-justify">Pour y arriver il faut mesurer y et z pour ce faire j’ai utilisé un bout de bois où j’ai fait un trou assez gros pour 
+pouvoir poser l’extrémité du moyeu de chaque côté</p>
+
+<p><img src="/assets/images/wheel-building/flange_support.jpeg" alt="moyeu" height="480px" width="480px" /></p>
+
+<p>Ensuite j’ai positionné le moyeu et j’ai les pris les mesures de chaque côté à l’aide d’une équerre.</p>
+
+<p><img src="/assets/images/wheel-building/hub_mesurement.jpeg" alt="moyeu" height="240px" width="240px" /> 
+<img src="/assets/images/wheel-building/hub_mesurement2.jpeg" alt="moyeu" height="240px" width="240px" /></p>
+
+<p>Voici les valeurs relevées.</p>
+
+<p><script type="math/tex">Y = 29mm</script>
+<script type="math/tex">Z = 48mm</script></p>
+
+<p>Etant donné que le trait en pointillé bleu représente le milieu du moyeu X/2 on peut en déduire 
+la valeur de C et D.</p>
+
+<p><script type="math/tex">C = X/2 - Y = 130/2 - 29 = 36mm</script>
+<script type="math/tex">D = X/2 - Z = 130/2 - 48 = 17mm</script></p>
+
+<p class="text-justify">c) Maintenant je vais mesurer A et B pour déterminer la valeur de H (voir schema TODO). Et donc H n’est ni plus ni moins
+ A/2 et B/2. Donc pour mesurer ce diamètre, j’ai utilisé 2 bouts de carton voir schema ci-dessous (difficile à réaliser
+ avec un pied à coulisse).</p>
+
+<p><img src="/assets/images/wheel-building/flange_support2.jpeg" alt="moyeu" height="480px" width="480px" /></p>
+
+<p>Ensuite, il suffit de repérer le centre de 2 trous opposés sur la flange et mesurer cette
+distance avec un règle.</p>
+
+<p><img src="/assets/images/wheel-building/hub_flange_l.jpeg" alt="moyeu" height="240px" width="240px" /> 
+<img src="/assets/images/wheel-building/hub_flange_r.jpeg" alt="moyeu" height="240px" width="240px" /></p>
+
+<p>J’obtiens les valeurs suivantes</p>
+
+<script type="math/tex; mode=display">A = 41mm \\
+B = 49mm \\
+H = A/2 = 20.5 pour la partie gauche \\
+H = B/2 = 24.5 pour la partie droite</script>
+
+<h3 id="calcul-de-l">Calcul de L</h3>
+
+<p><img src="/assets/images/wheel-building/erd_demonstration4.jpg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p class="text-justify">Donc si on revient au triangle 1 HLR. on connaît H mesuré précédement et ERD aussi
+on va donc pouvoir déterminer la valeur de L. La difficulté dans ce triangle c’est qu’il
+n’est pas rectangle donc on ne peut pas appliquer un simple théorème de Pythagore. Mais on peut démontrer
+la loi du cosinus dans un triangle  à angles aigus utilisant le théorème de Pythagore sur un sous-triangle rectangle
+ formé en prenant le pied de la hauteur (voir trait rouge).
+Pour appliquer ces lois trigonométriques, il nous faut connaître la valeur de l’angle ϕ, ça tombe bien on peut le 
+déterminer ! On connaît le nombre de trous de la jante (24) ! donc l’angle entre chaque trous est de 360°/24 soit 15°.
+Etant donné que je vais faire un laçage avec 2 croisements je vais avoir 4 trous de décalage sur chaque rayon. Je 
+détaillerai tout ça dans le chapitre dédié au laçage.</p>
+
+<p><a href="https://fr.wikipedia.org/wiki/Loi_des_cosinus">Loi du cosinus</a></p>
+
+<p><img src="/assets/images/wheel-building/angle_phi.jpg" alt="angle_phi" class="align-center" width="480px" /></p>
+
+<p>On obtient un angle 15° x 4 = 60°.</p>
+
+<p>Maintenant j’ai tout ce qu’il faut pour appliquer la loi du cosinus et obtenir la valeur de L.</p>
+
+<p>TODO refaire un schema
+<img src="/assets/images/wheel-building/erd_demonstration4.jpg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<script type="math/tex; mode=display">R = ERD/2 \\
+R2 = R - R1 \\</script>
+
+<p>Pour déterminer R1 on peut facilement appliquer la loi trigonométrique suivante:</p>
+
+<script type="math/tex; mode=display">cos\varphi =\frac{R1}{H} \\
+R1 = Hcos\varphi</script>
+
+<p>Donc par substitution on obtient</p>
+
+<script type="math/tex; mode=display">R2 = R -  Hcos\varphi</script>
+
+<p>Enfin la hauteur H’ en rouge, on peut appliquer la loi trigonométrique suivante:</p>
+
+<script type="math/tex; mode=display">H'= H sin \varphi</script>
+
+<p>On a tout ce qu’il faut pour appliquer la loi de Pythagore sur le triangle H’LR2</p>
+
+<script type="math/tex; mode=display">L^2 = H'^2 + R2^2 \\
+L^2 = (H sin \varphi)^2 + (R -  Hcos\varphi)^2 \\</script>
+
+<p>Voilà on a tout ce qu’il faut, je vais maintenant factoriser cette équation pour faciliter les 
+calculs qui vont suivre.</p>
+
+<p>On reconnaît facilement l’idendité remarquable <script type="math/tex">(a - b)^2</script></p>
+
+<script type="math/tex; mode=display">L^2 = (H sin \varphi)^2 +  \underbrace { \color{Red} {(R - Hcos\varphi)^2} }_{(a - b)^2 = a^2 -2ab + b^2}     \\</script>
+
+<p>On peut donc écrire</p>
+
+<script type="math/tex; mode=display">L^2 = (H sin \varphi)^2 + R^2 - 2RHcos\varphi + (Hcos\varphi)^2 \\</script>
+
+<p>Une petite factorisation, ce qui permet d’appliquer une autre identité remarquable <script type="math/tex">sin \varphi^2 + cos \varphi^2 = 1</script></p>
+
+<script type="math/tex; mode=display">L^2 = H^2 \underbrace { \color{Red} {(sin \varphi^2 + cos \varphi^2)}}_{sin \varphi^2 + cos \varphi^2 = 1} + R^2 - 2RHcos\varphi \\</script>
+
+<p>On obtient une équation plus lisible.</p>
+
+<script type="math/tex; mode=display">\boxed{
+L^2 = H^2 + R^2 - 2RHcos\varphi
+}</script>
+
+<h3 id="calcul-de-s">Calcul de S</h3>
+
+<p>Maintenant grâce à la valeur L, on peut appliquer un simple théorème de pythagore sur le triange LSF afin
+de déterminer S.</p>
+
+<p><img src="/assets/images/wheel-building/erd_demonstration3.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<p>Théorème de Pythagore sur le LSF avec S comme hypothénuse. 
+<a href="https://fr.wikipedia.org/wiki/Théorème_de_Pythagore">Théorème de Pythagore</a></p>
+
+<script type="math/tex; mode=display">S^2 = F^2 + L^2</script>
+
+<p>Je substitue la valeur de <script type="math/tex">L^2</script> , obtenu précédémment</p>
+
+<script type="math/tex; mode=display">S^2 = F^2 + H^2 + R^2 - 2RHcos\varphi</script>
+
+<p>On obtient une équation que l’on peut résoudre.</p>
+
+<script type="math/tex; mode=display">\boxed{
+S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi}
+}</script>
+
+<h4 id="calcul-de-s-pour-les-rayons-de-gauche">Calcul de S pour les rayons de gauche</h4>
+
+<p>Je reprends le valeurs mesurées précédemment</p>
+
+<script type="math/tex; mode=display">H = A/2 = 41/2 = 20.5mm \\
+F = 36mm \\
+R = ERD/2 = 471/2= 235.5mm
+\varphi = 60°</script>
+
+<p>Je remplace les variables par les valeurs</p>
+
+<p><script type="math/tex">S = \sqrt{36^2 + 20.5^2 + 235.5^2 - 2*235.5*20.5cos(60°)} \\
+S = \sqrt{1296 + 420.25 + 55460.25 - 9655.5*cos(60°)} \\
+S = \sqrt{57176.5 - 9655.5*0.5} \\
+S = \sqrt{57176.5 - 4827.75} \\
+S = \sqrt{52348.75}</script>
+<script type="math/tex">\boxed{
+S = 228.798mm
+}</script></p>
+
+<h4 id="calcul-de-s-pour-les-rayons-de-droite">Calcul de S pour les rayons de droite</h4>
+
+<script type="math/tex; mode=display">H = B/2 = 49/2 = 24.5mm \\
+F = 17mm \\
+R = ERD/2 = 471/2= 235.5mm \\
+\varphi = 60°</script>
+
+<p>Je remplace les variables par les valeurs</p>
+
+<p><script type="math/tex">S = \sqrt{17^2 + 24.5^2 + 235.5^2 - 2*235.5*24.5cos(60°)} \\
+S = \sqrt{289 + 600.25 + 55460.25 - 11539.5*cos(60°)} \\
+S = \sqrt{56349.5 - 11539.5*0.5} \\
+S = \sqrt{56349.5 - 5769.75} \\
+S = \sqrt{50579.75}</script>
+<script type="math/tex">\boxed{
+S = 224.899mm
+}</script></p>
+
+<h3 id="ajustement-1">Ajustement 1</h3>
+
+<p class="text-justify">Sur le schema ci-dessous je représente comment le rayon va se loger dans le trou du moyeu. Pour tous les calculs
+précédent j’ai pris les mesures au centre du trou du moyeu, notamment pour la mesure de A et B. Mais 
+Si on prend la documentation des rayons SAPIM CX-Ray la longueur du rayon part de l’intérieur  du coude. Donc 
+il faut enlever le rayon du trou du moyeu pour obtenir la taille réelle du rayon (en vert sur le schema)</p>
+
+<p><img src="/assets/images/wheel-building/erd_demonstration2.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p>A l’aide du pied à coulisse j’obtiens un diamètre de d=2.6mm, donc on obtient un rayon</p>
+
+<script type="math/tex; mode=display">r = d/2 = 2.6/2 = 1.3mm</script>
+
+<p>If suffit de soustraire cette valeur au taille de rayon précédemment calculées.</p>
+
+<p>Côté gauche</p>
+
+<script type="math/tex; mode=display">S = 228.798 - 1.3</script>
+
+<script type="math/tex; mode=display">\boxed{
+S = 227.498mm
+}</script>
+
+<p>Côté droit</p>
+
+<script type="math/tex; mode=display">S = 224.899 - 1.3</script>
+
+<script type="math/tex; mode=display">\boxed{
+S = 223.599mm
+}</script>
+
+<p>On peut mettre à jour la formule comme ceci:</p>
+
+<script type="math/tex; mode=display">S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r</script>
+
+<h3 id="ajustement-2">Ajustement 2</h3>
+
+<p class="text-justify">Maintenant que j’ai les valeurs théoriques, je vais ajuster la formule en prenant en compte
+les forces physiques qui y seront appliquées. En effet, les rayons mis sous tension vont s’étirer, 
+certes petit peu mais vous allez le voir cela pourrait changer le choix entre 2 tailles de rayons. Donc pour calculer 
+l’élongation du rayon je vais utiliser le <a href="https://fr.wikipedia.org/wiki/Loi_de_Hooke">Loi de Hooke</a></p>
+
+<p><img src="/assets/images/wheel-building/elongation.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<p>Loi de Hooke appliquer à un cylindre
+<script type="math/tex">L'/L = 1/E * F/A \\
+L' = F/A * L/E</script></p>
+
+<p>Avec</p>
+
+<ul>
+  <li>E = Module de Elasticité de l’acier voir <a href="https://fr.wikipedia.org/wiki/Module_de_Young">module de Young</a></li>
+</ul>
+
+<p>Soit 210 GPA</p>
+
+<ul>
+  <li>
+    <p>L = Longueur du rayon précédemment calculé
+L Gauche = 227.498mm = 0.227498m <br />
+L Droite = 223.599mm = 0.223599m \</p>
+  </li>
+  <li>
+    <p>F = Force = Masse * Accélération = m * a</p>
+  </li>
+</ul>
+
+<p>Masse maximale = 100kg</p>
+
+<script type="math/tex; mode=display">Accélération = 9.81m/s^2</script>
+
+<ul>
+  <li>A = L’aire de la section = π * R^2</li>
+  <li>R est le rayon du rayon avant qu’il soit forgé. En effet les SAPIM CX-Ray sont cylindriques aux extrémitées
+et plat au milieu. Mais avant transformation le rayon était bien cylindrique. Donc il faut faire un peu
+de recherche ou demander directement au fournisseur de rayon pour avoir cette information. Donc les SAPIM
+CX-RAY font 1.5mm de diamètre avant d’être forgé. 
+Soit</li>
+</ul>
+
+<script type="math/tex; mode=display">R=d/2=1.5/2=0.075mm=0.000075m</script>
+
+<p><img src="/assets/images/wheel-building/elongation2.jpeg" alt="moyeu" class="align-center" width="480px" /></p>
+
+<script type="math/tex; mode=display">E = 210 GPA = 210e^9 \\
+A = π * R^2 = π * 0.00075^2 = 1.76e^6m^2
+F = 981N</script>
+
+<p>Côté gauche:</p>
+
+<script type="math/tex; mode=display">L' = 981/1.76e^-6 * 0.227498/210e^9
+L' = 0.000601m=0.601mm</script>
+
+<p>Longueur réelle avant d’être étiré:</p>
+
+<script type="math/tex; mode=display">227.498 - 0.601 = 226.897mm</script>
+
+<p>Côté droit:</p>
+
+<script type="math/tex; mode=display">L' = 981/1.76e^-6 * 0.223599/210e^9
+L' = 0.000591m=0.591mm</script>
+
+<p>Longueur réelle avant d’être étiré:</p>
+
+<script type="math/tex; mode=display">223.599 - 0.591 = 222.999mm</script>
+
+<p>La formule final devient:</p>
+
+<script type="math/tex; mode=display">S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r - L'</script>
+
+<h3 id="résultats">Résultats</h3>
+
+<p>Voilà j’ai enfin tous les élements pour enfin commander mes rayons.</p>
+
+<p class="text-justify">J’obtiens 226.897 pour côté gauche et 222.999 pour le côté droit. 
+Mais quand on veut commander les rayons les tailles vont de 130-310mm en chiffre paire
+Cela veut dire que l’on peut acheter du 220mm-222mm-224mm-226mm… Alors que choisir selon les résultats obtenus. 
+C’est assez simple il faut pas dépasser un écart de plus d’1mm sinon ça pourrait rendre difficile le
+montage.</p>
+
+<p>Donc j’ai commandé 12 rayons 226mm pour le côté gauche et 12 rayons 222mm pour le côté droit.</p>
+
+<h1 id="montage">Montage</h1>
+
+<p class="text-justify">Maintenant que j’ai les rayons, les écrous, le moyeu et la jante. J’ai donc tout ce qu’il me faut pour attaquer
+le montage. Enfin, pour ce faire il me manque quelques outils. J’ai investi dans des outils qui seront très vite
+amorti.</p>
+
+<h2 id="outils">Outils</h2>
+
+<h3 id="centreur-de-roue">Centreur de roue</h3>
+
+<p class="text-justify">Le centreur de roue va permettre de dévoiler la roue pendant la mise sous tension, jusqu’à obtenir une roue non voilée.
+Cette outil sera très utile pour entretenir ses roues durant tout son cycle de vie. Tout cycliste devrait en avoir
+à la maison afin de surveiller ces roues de temps en temps, trop de gens roulent avec des roues voilées…</p>
+
+<p><img src="/assets/images/wheel-building/centreur_roue.jpeg" alt="Centreur de roue" class="align-center" width="240px" /></p>
+
+<h3 id="une-jauge-de-centrage-ou-comparateur-dalignement">Une jauge de centrage ou comparateur d’alignement</h3>
+
+<p class="text-justify">Cet outil est très important, il va permettre de vérifier que le moyeu est bien aligné avec la jante. Je l’utiliserai
+comme pour le centreur tout au long de la mise sous tension.</p>
+
+<p><img src="/assets/images/wheel-building/gauge.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<h3 id="un-tournevis-à-ecrous-tête-hexagonale">Un tournevis à ecrous (tête hexagonale)</h3>
+
+<p class="text-justify">Mon choix des écrous double square de chez Sapim était surtout pour leur tête hexagonale ce qui m’a permis d’utiliser
+ce type tournevis qui est assez long pour travailler sur des jantes hautes de plus de 80mm. Il y plusieurs type de tête
+d’écrou, de taille et donc des types différents de tournevis. Il y a aussi des marques qui ont leur propre standard
+comme dt-swiss qui obligent d’acheter leur écrous et d’utiliser leurs outils.</p>
+
+<p><img src="/assets/images/wheel-building/nipples_screwdriver.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<h3 id="clé-de-maintien-pour-rayon-plat">Clé de maintien pour rayon plat</h3>
+
+<p class="text-justify">Cet outil est spécifique au rayon plat, il permet de maintenir le rayon dans la bonne direction pendant le serrage
+de l’écrou.</p>
+
+<p><img src="/assets/images/wheel-building/outil_rayon_plat.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<h3 id="clé-à-rayon">Clé à rayon</h3>
+
+<p class="text-justify">Contrairement au tournevis qui va permettre de serrer le rayon depuis l’intérieur du rayon, la clé à rayon
+va permettre de régler la tension des rayons directement depuis la tête extérieur ce qui sera utile quand le boyau
+sera installé. Seul bémole l’outil abime la peinture des rayons  de couleur.</p>
+
+<p><img src="/assets/images/wheel-building/cle_rayon.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<h3 id="ruban-adhésif">Ruban adhésif</h3>
+
+<p class="text-justify">Le ruban adhésif sera très utile pour mettre des repères sur les rayons pendant le dévoilage de la roue.</p>
+
+<p><img src="/assets/images/wheel-building/ruban_adhesif.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<h3 id="tensiomètre">Tensiomètre</h3>
+
+<p class="text-justify">Le tensiomètre va permettre de vérifier la bonne tension sur l’ensemble des rayons.</p>
+
+<p><img src="/assets/images/wheel-building/tensionmeter.jpeg" alt="moyeu" class="align-center" width="240px" /></p>
+
+<h3 id="coûts">Coûts</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th style="text-align: center">Prix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Centreur de roue Tacx</td>
+      <td style="text-align: center">47.90</td>
+    </tr>
+    <tr>
+      <td>Une jauge de centrage Tacx</td>
+      <td style="text-align: center">34.99</td>
+    </tr>
+    <tr>
+      <td>Un tournevis à ecrous Park Tool</td>
+      <td style="text-align: center">12.85</td>
+    </tr>
+    <tr>
+      <td>Clé de maintien pour rayon plat Park Tool</td>
+      <td style="text-align: center">13.83</td>
+    </tr>
+    <tr>
+      <td>Clé à rayon</td>
+      <td style="text-align: center">6.90</td>
+    </tr>
+    <tr>
+      <td>Ruban adhésif</td>
+      <td style="text-align: center">0.96</td>
+    </tr>
+    <tr>
+      <td>Tensiomètre</td>
+      <td style="text-align: center">45.79</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td style="text-align: center">163.22</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="laçage">Laçage</h2>
+
+<p>Tout est décrit dans la littérature et il y a plein de video sur youtube pour aider à comprendre
+mais le top c’est cette application que j’ai trouvé par hasard qui est énorme. Elle permet d’avoir
+une à 360° et selon le nombre de rayons et de croisements que l’on souhaite faire. On va pouvoir
+décomposer chaque étape est pouvoir regarder sous tous les angles.</p>
+
+<ul>
+  <li>TODO Radial pas radial</li>
+  <li>TODO type de laçage</li>
+  <li>TODO 2 croisements</li>
+  <li>TODO application 3D</li>
+</ul>
+
+<p><img src="/assets/images/wheel-building/lacage_step9.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<h3 id="etape-1">Etape 1:</h3>
+
+<p><img src="/assets/images/wheel-building/lacage_step1.jpg" alt="moyeu" class="align-left" width="320px" />
+Moyeu côté cassette en face de moi et repère de valve aligné perpendiculairement. Pour avoir une roue bien fini
+le top c’est d’avoir le logo du moyeu aligné avec la valve. Pour y arriver, il suffit de penser à l’angle que va prendre
+les rayons au moment du laçage, on le verra à l’étape suivante. La technique c’est juste de prendre le milieu
+du logo du moyeu et compté 3 trous vers la gauche on le verra ensuite pourquoi 3. Mais simplement lors du laçage
+avec un croisements par 2, ça va tomber pile poil en face la valve.</p>
+
+<p><img src="/assets/images/wheel-building/lacage_step10.jpg" alt="moyeu" height="320px" width="320px" />
+<img src="/assets/images/wheel-building/lacage_step11.jpg" alt="moyeu" height="320px" width="320px" /></p>
+
+<hr />
+<h3 id="etape-2">Etape 2:</h3>
+
+<p><img src="/assets/images/wheel-building/lacage_step6.jpg" alt="moyeu" class="align-left" width="320px" />
+Je commence côté cassette donc bien prendre les bon rayons. Surtout bien les séparer pour ne pas les mélanger…
+A partir de cette étape, il faut prendre son temps. Donc je prends 6 rayons de 222mm (côté cassette) et je pars du 
+centre du moyeu, en rentrant par l’extérieur et j’insère le rayon dans le premier trou à gauche de la valve. Je prends
+un écrou et je le serre légèrement justement pour qu’il tienne seule. Ensuite j’alterne tous les 2 trous côté moyeu
+et tous les 4 trous côté jante.</p>
+
+<p><img src="/assets/images/wheel-building/lacage_step12.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<hr />
+<h3 id="etape-3">Etape 3:</h3>
+
+<p><img src="/assets/images/wheel-building/lacage_step7.jpg" alt="moyeu" class="align-left" width="320px" /> Je n’affiche
+pas les rayons de l’étape 2 pour une meilleur lisibilité. On retourne la jante, je fais la même opération mais en 
+prenant les rayons de 226mm (côté gauche). Moi j’ai pris des écrous de différentes couleurs juste pour le style, donc
+ pour obtenir une alternance j’ai utilisé des rouges
+côté cassette et des noirs côté gauche. De plus de style, ça ma super aider comme repère lors du dévoilage.</p>
+
+<p><img src="/assets/images/wheel-building/lacage_step13.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<hr />
+<h3 id="etape-4">Etape 4:</h3>
+
+<p><img src="/assets/images/wheel-building/lacage_step2.jpg" alt="moyeu" class="align-left" width="320px" /> Idem que 
+précédemment j’ai omis les rayons de l’autre côté pour une meilleur lisibilité.
+Je prends le moyeu côté cassette et je le tourne dans le sens inverse d’une aiguille d’une montre jusqu’à que ça bloque.
+On atteint l’angle voulu dans tous les calculs précédents. Et c’est avec cette rotation que l’on va recentrer le logo
+du moyeu en face de la valve. On comprend pourquoi j’ai fait un décalage du moyeu en étape 1.</p>
+
+<hr />
+<h3 id="etape-5">Etape 5:</h3>
+
+<p><img src="/assets/images/wheel-building/lacage_step3.jpg" alt="moyeu" class="align-left" width="320px" />
+Je n’affiche que les rayons côté cassette pour que ce soit plus lisible. Donc je reprends de nouveau 6 rayons de 222m 
+(côté cassette) et j’insère les rayons dans les trous restants mais cette
+fois-ci je vais rentrer par l’intérieur, puis faire un croisement en passant en dessous du rayon adjacent pour 
+atteindre (voir schema ci-dessous). Le rayon doit rejoindre le trou dans la jante comme sur le schema ci-contre.
+Il faut maintenant ne pas hésiter à plier le rayon pour atteindre le trou. Enfin toujours pareil il suffit de juste 
+assez visser pour que le rayon tienne.</p>
+
+<p><img src="/assets/images/wheel-building/lacage_step8.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<p>Voici le résultat si j’affiche les rayons des 2 côtés.</p>
+
+<p><img src="/assets/images/wheel-building/lacage_step4.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<p><img src="/assets/images/wheel-building/lacage_step14.jpg" alt="moyeu" height="240px" width="240px" /></p>
+
+<hr />
+<h3 id="etape-6">Etape 6:</h3>
+
+<p><img src="/assets/images/wheel-building/lacage_step5.jpg" alt="moyeu" class="align-left" width="320px" />
+Il suffit maintenant de mettre les 6 derniers rayons de la même manière mais du côté gauche. Voici ci-contre la
+roue complètement lacé de chaque côté.</p>
+
+<p><img src="/assets/images/wheel-building/lacage_step16.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<h2 id="mise-sous-tension-et-dévoilage">Mise sous tension et dévoilage</h2>
+
+<p>La roue est prête pour être mise sous tension, je vais la posée sur le centreur de</p>
+
+<p><img src="/assets/images/wheel-building/lacage_step17.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<p>1) j’ai commencé par mettre les écrous au même niveau
+2) Ensuite j’ai appliqué petit à petit un serrage</p>
+
+<h2 id="assemblage">Assemblage</h2>
+
+<p>La roue nue est prête, il faut maintenant possible d’assembler les éléments pour qu’elle puisse
+intérargir avec la route et l’attacher au cadre du vélo. Je ne vais pas détailler ce que j’ai fait
+car ce serait réinventer la “roue”, voici des videos Youtube qui correspondent à ce que j’ai fait.</p>
+
+<h3 id="mise-en-place-du-prolongateur-de-valve">Mise en place du prolongateur de valve.</h3>
+
+<p><a href="https://www.youtube.com/watch?v=EbA5ZBZa5IQ">Prolongateur de valve</a></p>
+
+<p><img src="/assets/images/wheel-building/prolongateur_valve_miche.jpg" alt="moyeu" class="align-center" width="240px" /> 
+<img src="/assets/images/wheel-building/prolongateur1.jpg" alt="moyeu" class="align-center" width="320px" />
+<img src="/assets/images/wheel-building/prolongateur2.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<ul class="notice--primary">
+  <li>Une petite clé est souvent livré avec les prolongateurs de valve afin d’enleve l’obu facilement</li>
+  <li>Il existe des anti-vibrateurs à coller afin que la valve ne vibre sur la jante pendant que l’on roule. En effet
+contrairement à une valve de chambre à air qui ne bougera pas à la mise sous pression, sur un boyau c’est différent
+le boyau plus rigide ne permet pas cela. Les prolongateurs de valve Miche contiennent directement leurs anti-vibrateurs
+qui sont top. Sinon il est possible de mettre juste de passer un ruban adhésif gratuit mais moins esthétique.</li>
+</ul>
+
+<h3 id="collage-du-boyau">Collage du boyau</h3>
+
+<p><a href="https://www.youtube.com/watch?v=R7_9_BGsdGo">Collage du boyau</a></p>
+
+<ul class="notice--primary">
+  <li>J’ai une vieille jante que j’ai récupéré dans une déchetterie que j’utilise essentiellement pour étendre
+mes boyaux avant collage.</li>
+  <li>Je ponce la jante pour enlever l’ancienne colle ou quand la jante est neuve pour la rendre un peu rugueuse
+afin que la colle adhère plus facilement.</li>
+  <li>J’utilise de l’essence F pour nettoyer ma jante pour enlever tous les résidus de colle qui débordent.</li>
+</ul>
+
+<h3 id="cassette-1">Cassette</h3>
+
+<p><a href="https://www.youtube.com/watch?v=9KAaP7pbFV0">Installation d’un cassette</a></p>
+
+<p><img src="/assets/images/wheel-building/cassette1.jpg" alt="moyeu" class="align-center" width="320px" /></p>
+
+<ul class="notice--primary">
+  <li>Je profite du changement de cassette pour bien la nettoyer et dégraisser</li>
+</ul>
+
+<h2 id="mise-sous-pression">Mise sous pression</h2>
+
+<p>Pourquoi ? La pression et si importante pour l’adhérence au sol….</p>
+
+<h2 id="attache-rapide-1">Attache rapide</h2>
+<h2 id="patin-de-freins-1">Patin de freins</h2>
+
+<p>Special pour jante carbone sur boyau</p>
+
+<p>Alors depuis que je roule en boyau effectivement on a un peu moins de freinage</p>
+
+<h2 id="premier-test-et-ajustements">Premier test et ajustements</h2>
 
 <h1 id="récaptitulatif-des-coûts">Récaptitulatif des coûts</h1>
+
+<p>Une roue arrière coûte plus cher, plus de rayons, moyeu plus cher, plus de rayons et une cassette.</p>
+
+<p>Roue nue</p>
 
 <table>
   <thead>
@@ -441,76 +1375,116 @@
       <th style="text-align: center">Quantité</th>
       <th style="text-align: center">Prix unit.</th>
       <th style="text-align: center">Prix Total</th>
-      <th style="text-align: left">Poids Total</th>
+      <th style="text-align: center">Poids Total</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">Jante Carbone H=88mm L=25mm;24 Trous;Boyau    525g</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">1O3.67</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: center">Jante Carbone H=88mm L=25mm;24 Trous;Boyau</td>
+      <td style="text-align: center">525g</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">103.67</td>
+      <td style="text-align: center">103.67</td>
+      <td style="text-align: center">525g</td>
     </tr>
     <tr>
-      <td style="text-align: center">Moyeu Novatec FS482SB 24 Trous                229g</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: center">Moyeu Novatec FS482SB 24 Trous</td>
+      <td style="text-align: center">229g</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">59.98</td>
+      <td style="text-align: center">59.98</td>
+      <td style="text-align: center">229g</td>
     </tr>
     <tr>
       <td style="text-align: center">Rayons Sapim CX-Ray Noir</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: center">4g</td>
+      <td style="text-align: center">24</td>
+      <td style="text-align: center">2.20</td>
+      <td style="text-align: center">52.8</td>
+      <td style="text-align: center">96g</td>
     </tr>
     <tr>
       <td style="text-align: center">Ecrous Sapim Double Square Rouge</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: center">0.4g</td>
+      <td style="text-align: center">24</td>
+      <td style="text-align: center">0.30</td>
+      <td style="text-align: center">7.2</td>
+      <td style="text-align: center">9.6g</td>
     </tr>
     <tr>
-      <td style="text-align: center">Boyau Vittoria CX 25c 320TPI</td>
+      <td style="text-align: center">Total</td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Prolongateur de valve Miche 70mm rouge</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Attache rapide Mavic</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Cassette 11s Shimano</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: center">223.65</td>
+      <td style="text-align: center">860g</td>
     </tr>
   </tbody>
 </table>
+
+<p>Accessoires:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Boyau Vittoria CX 25c 320TPI</td>
+      <td>250g</td>
+      <td>1</td>
+      <td>34.99</td>
+      <td>34.99</td>
+      <td>250g</td>
+    </tr>
+    <tr>
+      <td>Prolongateur Miche 70mm rouge (vendu par 2)</td>
+      <td>10g</td>
+      <td>1</td>
+      <td>16.99</td>
+      <td>16.99</td>
+      <td>10g</td>
+    </tr>
+    <tr>
+      <td>Attache rapide Mavic Arrière Axe 9mm 130mm</td>
+      <td>50g</td>
+      <td>1</td>
+      <td>25.00</td>
+      <td>25.00</td>
+      <td>50g</td>
+    </tr>
+    <tr>
+      <td>Cassette 11s Shimano</td>
+      <td>228g</td>
+      <td>1</td>
+      <td>59.99</td>
+      <td>59.99</td>
+      <td>228g</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>136.97</td>
+      <td>538g `</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p class="text-justify">J’espère que cet article permettra à d’autres perssonnes de trouver des réponses ou de tenter
+l’expérience. Pour ma part, je suis très fier du résultat et je projette de me faire d’autres
+montage (Moyeu straight pull) et pourquoi pas monter son vélo soi-même.</p>
+
+<h1 id="références">Références</h1>
+
+<p><a href="https://www.wheelpro.co.uk/wheelbuilding/book.php">Professionnal Guide to Wheel Building</a> - Roger Musson
+<a href="http://caravan.hobby.ru/materiel/Bicycle_Wheel_-_Jobst_Brandt.pdf">Bicycle Wheel</a> - Jobst Brandt
+<a href="http://mgagnon.net/velo/roue_montage.fr.php">Le montage de roues</a> - Sheldon Brown et John Allen</p>
+
+<p><img src="/assets/images/wheel-building/compas_a_pointe.jpeg" alt="moyeu" height="120px" width="120px" /> 
+<img src="/assets/images/wheel-building/compas_a_pointe.jpeg" alt="moyeu" height="120px" width="120px" /> 
+<img src="/assets/images/wheel-building/equerre.jpeg" alt="moyeu" height="120px" width="120px" /> 
+<img src="/assets/images/wheel-building/galliper.jpeg" alt="moyeu" height="120px" width="120px" /></p>
 
 
         
@@ -527,12 +1501,12 @@
   
 
   <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
     
       
       
-      <a href="https://jluccisano.github.io/tags/#sport" class="page__taxonomy-item" rel="tag">Sport</a>
+      <a href="/tags/#sport" class="page__taxonomy-item" rel="tag">Sport</a>
     
     </span>
   </p>
@@ -548,19 +1522,19 @@
   
 
   <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
     <span itemprop="keywords">
     
       
       
-      <a href="https://jluccisano.github.io/categories/#sport" class="page__taxonomy-item" rel="tag">Sport</a>
+      <a href="/categories/#sport" class="page__taxonomy-item" rel="tag">Sport</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-04T00:00:00+00:00">March 04, 2019</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-04T00:00:00+00:00">March 04, 2019</time></p>
         
       </footer>
 
@@ -569,20 +1543,18 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Ma première roue artisanale https://jluccisano.github.io/sport/wheel-building/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=joluccisano&text=Ma+premi%C3%A8re+roue+artisanale%20https%3A%2F%2Fjluccisano.github.io%2Fsport%2Fwheel-building%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://jluccisano.github.io/sport/wheel-building/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjluccisano.github.io%2Fsport%2Fwheel-building%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https://jluccisano.github.io/sport/wheel-building/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jluccisano.github.io/sport/wheel-building/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fjluccisano.github.io%2Fsport%2Fwheel-building%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="https://jluccisano.github.io/automation/sprinkler-netatmo/" class="pagination--pager" title="Use Netatmo rain sensor to regulate your sprinkler
+      <a href="/automation/sprinkler-netatmo/" class="pagination--pager" title="Use Netatmo rain sensor to regulate your sprinkler
 ">Previous</a>
     
     
@@ -593,198 +1565,144 @@
     </div>
 
     
-      <div class="page__comments">
-  
-  
-    <h4 class="page__comments-title">Leave a Comment</h4>
-    <section id="disqus_thread"></section>
-  
-</div>
-    
   </article>
 
   
   
-    
-    
-      
-      
-      
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
           
-      
-      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-      
-      
+      <div class="archive__item-teaser">
+        <img src=
           
-      
-      
-    
-      
-      
+            "/assets/images/anthony-rossbach-59486.jpg"
           
-      
-      
+          alt="">
+      </div>
     
+    <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="/automation/sprinkler-netatmo/" rel="permalink">Use Netatmo rain sensor to regulate your sprinkler
+</a>
       
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
           
-      
-      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-      
-      
+      <div class="archive__item-teaser">
+        <img src=
           
-      
-      
-    
-      
-      
+            "/assets/images/maico-amorim-57141.jpg"
           
-      
-      
+          alt="">
+      </div>
     
+    <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="/computer/travis/" rel="permalink">Deploy release with Travis CI
+</a>
       
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub
+
+</p>
+  </article>
+</div>
+
+        
           
-      
-      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-      
-      
+      <div class="archive__item-teaser">
+        <img src=
           
-      
-      
-    
-      
-      
+            "/assets/images/maico-amorim-57141.jpg"
           
-      
-      
+          alt="">
+      </div>
     
+    <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="/computer/organize-photo-library/" rel="permalink">Organize photo library
+</a>
       
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Environment
+  Upload
+  Consolidate
+  Backups
+  Show
+
+
+</p>
+  </article>
+</div>
+
+        
           
-      
-      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-      
-      
+      <div class="archive__item-teaser">
+        <img src=
           
-      
-      
-    
-      
-      
+            "/assets/images/maico-amorim-57141.jpg"
           
-      
-      
+          alt="">
+      </div>
     
+    <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="/computer/useful-linux-commands/" rel="permalink">Useful linux commands
+</a>
       
-          
-      
-      
+    </h2>
     
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-      
-      
-          
-      
-      
-    
-    
+    <p class="archive__item-excerpt" itemprop="description">Useful commands
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
   
 </div>
+
+    </div>
+
+    
 
     <div class="page__footer">
       <footer>
@@ -796,70 +1714,45 @@
     
       <li><strong>Follow:</strong></li>
     
+
     
-      <li><a href="https://twitter.com/joluccisano"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    
-    
-      <li><a href="https://facebook.com/joseph.luccisano"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    
-    
-      <li><a href="http://github.com/jluccisano"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    <li><a href="https://jluccisano.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
       </footer>
     </div>
 
-    <script src="https://jluccisano.github.io/assets/js/main.min.js"></script>
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
 
 
 
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-90338151-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
 
 
 
-
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://jluccisano.github.io/sport/wheel-building/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/sport/wheel-building"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jluccisano.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
   
-  <script type="text/javascript">
-  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-  	var disqus_shortname = 'jluccisano';
-
-  	/* * * DON'T EDIT BELOW THIS LINE * * */
-  	(function() {
-  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  	})();
-
-  	/* * * DON'T EDIT BELOW THIS LINE * * */
-  	(function () {
-  		var s = document.createElement('script'); s.async = true;
-  		s.type = 'text/javascript';
-  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  	}());
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-
 
 
 
