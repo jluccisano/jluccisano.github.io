@@ -145,7 +145,7 @@ var store = [{
         "url": "https://jluccisano.github.io/automation/sprinkler-netatmo/",
         "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
         "title": "Ma première roue artisanale",
-        "excerpt":"Caractéristiques Composants Jante Moyeu Rayons Ecrous Boyau Attache rapide Cassette Patin de freins Conception Longueur des rayons Montage Outils Laçage Mise sous tension Boyau Prolongateur de valve Cassette Mise sous pression Attache rapide Patin de freins Premier test et ajustements Récapitulatif des coûts Conclusion Références Quoi ? Pourquoi ? Comment...","categories": ["Sport"],
+        "excerpt":"Tout au long de cet article, j’explique les choix que j’ai fait pour mon usage personnel. Je veux réaliser une roue aérodynamique et rigide pour rouler sur le plat (ou peu vallonnée) Ex: Triathlon, CLM Je suis passionné de sport et de part mon métier d’ingénieur, je suis toujours à...","categories": ["Sport"],
         "tags": ["Sport","Mécanique","Cyclisme"],
         "url": "https://jluccisano.github.io/sport/wheel-building/",
         "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"}]
