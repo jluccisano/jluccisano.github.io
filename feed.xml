@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-13T16:40:29+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-13T17:29:31+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Dès que j’ai débuté le vélo je me suis très vite intéressé aux roues de vélo et compris l’importance 
 qu’elles avaient en terme de performance, de confort et de sensation. J’ai acheté plusieurs paires bon marché sans me
@@ -370,7 +370,7 @@ que l’on va pouvoir substituer.&lt;/p&gt;
   &lt;li&gt;Phi = Angle que va prendre le rayon selon le nombre de croisements&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration6.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Triangle LSF&lt;/p&gt;
 &lt;ul class=&quot;notice--primary&quot;&gt;
@@ -379,7 +379,7 @@ que l’on va pouvoir substituer.&lt;/p&gt;
   &lt;li&gt;F = La distance entre la flange du moyeu et son milieu&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration6.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Donc dans un premier temps, je vais décrire comment prendre les différentes mesures sur la jante et le moyeu. Puis
 dans un second temps je vais pouvoir en déduire la valeur de L dans le triangle HLR et enfin  substituer L dans le 
