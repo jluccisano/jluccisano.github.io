@@ -1,29 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-10T06:58:06+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p class=&quot;text-justify&quot;&gt;Tout au long de cet article, j’explique les choix que j’ai fait pour mon usage personnel. 
-Je veux réaliser une roue aérodynamique et rigide pour rouler sur le plat (ou peu vallonnée)
-Ex: Triathlon, CLM&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-13T13:23:01+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;Je suis passionné de sport et de part mon métier d’ingénieur, je suis toujours à soif
-de connaissance et d’apprendre de nouvelles choses. Quand j’ai débuté le vélo je me suis très
-vite intéressé au roue de vélo, et très vite compris l’intérêt qu’elles pouvaient apporter
-pour la qualité, la performance et le confort. Je me suis fait monter par un professionnel
-mes premières roues carbonnes artisanales. 38mm de hauteur, 23mm de large sur boyau, 24 rayons
-à l’arrière (dont 8 radial à côté gauche) et 20 rayons à l’avant avec 2 croisemments. Je reviendrais
-plus loin pour expliquer chaque paramètre leur caractéristiques. C’est roue sont top, elle m’apporte
-une réactivité et un confort. Idéal pour la montage et parcours vallonnée. Ce sont vraiment des bonnes
-roues. Au bout de 4 ans, un rayon m’a lâché, je me suis dit qu’est-ce que je fais, je fais des km
-pour faire réparer ma roue où si je le faisais moi-même. Et j’ai commencé à me documenter sur la 
-réparation d’un simple rayon qui lâche et au fur et à mesure que je me documentais, je vite trouver
-intérêt à comprendre comment tout cela fonctionnait. J’avais déjà pour projet de me faire une roue
-arrière aerodynamique et du coup c’était l’occasion d’essayer de le faire soi-même. Je me suis vite
-rendu compte qu’il était assez facile de se procurer tout le matériel. Dans un premier temps
-j’ai fait pas mal de recherche sur internet, lu des tas d’articles et puis je suis tombé
-sur 2 livres Roger Musson et Jobst ?. Que je vous conseille de lire. Ce sont de très beaux
-ouvrages qui permettent de comprendre comment fonctionne une roue et tous les éléments. Et explique
-comment les monter. Le but de cet article n’est pas d’expliquer tout ça, l’idée c’est d’expliquer
-mes choix pour arriver à finaliser ma roue.
-Et surtout un bon petit jeu de mots “ne pas réinventé la roue”&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Dès que j’ai débuté le vélo je me suis très vite intéressé aux roues de vélo et compris l’importance 
+qu’elles avaient en terme de performance, de confort et de sensation. J’ai acheté plusieurs paires bon marché sans me
+soucier de tous les critères que l’on verra à travers cet article. Puis je me suis fait monter une paire
+de roue artisanale (38mm) par un professionnel. Des roues qui passent partout, elles sont légères ce qui les
+rend réactives et leur hauteur  permet d’avoir une touche d’aérodynamisme. Un jour, un rayon m’a lâché et c’est à 
+partir de là que j’ai commencé à m’intéresser au roue. En effet, j’ai commencé par réparer mon rayon cassé ce qui 
+m’a amené à entamé mes recherches et approfondir mes connaissances sur le sujet. Je suis passionné de sport et de part 
+mon métier d’ingénieur, je suis toujours à soif de connaissance et d’apprendre de nouvelles choses. Je me suis lancé
+dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique pour les parcours plats que l’on 
+retrouve sur certain triathlon ou duathlon que j’ai l’habitude de pratiquer. Une roue aérodynamique qui une fois lancée
+offre une bonne inertie et assez légère et rigide pour pouvoir relancer efficacement et transmettre avec le moins de
+perte possible toute la puissance fourni par le bonhomme.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Mon but est de ne pas “réinventer la roue”, je vais donc essentiellement partager mon retour d’expérience,
+partager ce que j’ai appris, les choix que j’ai fait, les articles et les livres qui m’ont permis de finaliser ma 
+première roue. Je détaillerai toutes les étapes pour bien choisir tous les composants, puis je partagerai l’expérience
+du montage jusqu’au premier test sur route.&lt;/p&gt;
 
 &lt;h1 id=&quot;caractéristiques&quot;&gt;Caractéristiques&lt;/h1&gt;
+
+&lt;p&gt;Une roue parfaite, adaptée pour tous les parcours
+ et conditions climatiques n’existe pas. C’est pourquoi les cyclistes possèdent généralement plusieurs paires que ce soit
+juste pour avoir une paire pour l’entrainement et une pour la compétition. Il est possible de réaliser aujourd’hui de nombreux montages
+pour répondre à tout type de parcours (Montagne, plat ou vallonnée), condition climatique (sens et force du vent, 
+pluie) et le type de coureur (grimpeur, rouleur, puncheur…). Vous comprenez qu’avec tout ces paramètres il faudrait
+20 paires dans son garage pour répondre à toutes ces conditions ce qui est assez difficile à réaliser surtout pour 
+faire accepter ça à sa femme. Il faut donc faire des compromis, pour cela il faut se poser les bonnes questions:
+quel est vraiment mon besoin ?.&lt;/p&gt;
 
 &lt;p&gt;La force Radial:
 Vient essentiellement du poids du cycliste.&lt;/p&gt;
@@ -244,13 +248,12 @@ on le verra par la suite choisir la bonne longueur des rayons.&lt;/li&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;C’est toujours la grande question chez les cyclistes. Je vais vous donner mon avis personnel à ce sujet. Le boyau
 et le pneu offrent tout d’eux des caractéristiques différentes de part leurs conceptions et peuvent apportés des 
-avantages différentq tout dépend  encore des compromis que vous êtes prêts à faire selon son besoin. Dans
+avantages différents tout dépend  encore des compromis que vous êtes prêts à faire selon votre besoin. Dans
 tous les cas un pneu de bonne qualité sera toujours meilleur qu’un boyau entrée de gamme et inversemment. Il y a
-déjà beaucoup d’articles qui parlent de ce sujet, je vous invite à lire celui qui résume bien le sujet&lt;/p&gt;
+déjà beaucoup d’articles qui parlent de ce sujet, je vous invite à lire celui qui résume bien le sujet:
+&lt;a href=&quot;https://www.roue-carbone.com/guide-achat/difference-entre-pneu-boyau-de-velo&quot; target=&quot;_blank&quot;&gt;Différence entre Pneu ou Boyau&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.roue-carbone.com/guide-achat/difference-entre-pneu-boyau-de-velo&quot;&gt;Différence entre Pneu ou Boyau&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Même si le boyau a beaucoup de points négatifs en terme de praticité, en effet:&lt;/p&gt;
+&lt;p&gt;Même si le boyau a beaucoup de points négatifs en terme de praticité:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Il faut toujours avoir un spare sur soi&lt;/li&gt;
   &lt;li&gt;l’installation est un peu plus périeuse et longue, il faut le faire en plusieurs étapes et il faut acheter de la 
@@ -259,7 +262,7 @@ colle.&lt;/li&gt;
   &lt;li&gt;Le freinage moins précis (sauf si votre moyeu est à disque biensûr)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;Mais elles apportent des avantages en terme de performance, ils sont souvent plus léger pour une gamme équivalente
+&lt;p class=&quot;text-justify&quot;&gt;Mais ils apportent des avantages en terme de performance, ils sont souvent plus léger pour une gamme équivalente
 en pneu, ils absorbent mieux les défauts de la route ce qui les rend plus performant et aussi plus confortable. De plus
 on peu mettre une plus grande pression ce qui permet moins d’adhérence avec le sol et donc moins de 
 frottement. Mais encore faut-il en choisir un de bonne qualité. Depuis que je roule en boyau, je ne voudrais plus revenir 
@@ -271,53 +274,39 @@ dommage de perdre l’effort mis dans les composants sous-jacents. C’est-à-di
 
 &lt;h3 id=&quot;tpi&quot;&gt;TPI&lt;/h3&gt;
 
+&lt;p&gt;TPI = Threads Per Inch&lt;/p&gt;
+
+&lt;p&gt;Il s’agit du nombre de fils constituant la carcassse.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Plus la valeur est haute plus la carcasse sera à la fois souple (car les fils sont plus fins) et difficle à percer mais
+ au détriment du poids, enfin tout dépend des matériaux.&lt;/p&gt;
+
 &lt;h3 id=&quot;largeur&quot;&gt;Largeur&lt;/h3&gt;
 
-&lt;p&gt;La largeur va d’abord dépendre de la largeur de la jante.  Voir dans le paragraphe suivant&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://engineerstalk.mavic.com/fr/a-chaque-jante-sa-largeur-de-pneu/&quot; target=&quot;_blank&quot;&gt;A chaque jante sa largeur de pneu&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.alltricks.fr/surl/commentchoisirsespneusroute_v2&quot;&gt;Choisir un pneu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.matosvelo.fr/index.php?post/2013/04/14/23-ou-25mm-quelle-section-choisir-sur-la-route&quot;&gt;23 ou 25mm&lt;/a&gt;
-23 ou 25
-TODO: trouver un tableau récapitulatif avec les associations possible.&lt;/p&gt;
-
-&lt;p&gt;23&lt;/p&gt;
-
-&lt;p&gt;Plus léger
-Plus flexible&lt;/p&gt;
-
-&lt;p&gt;25&lt;/p&gt;
-
-&lt;p&gt;Plus aérodynamique car l’écoulement de l’air se fait mieux sur les côtés
-Plus confortable&lt;/p&gt;
-
-&lt;p&gt;Rendement quasi identique alors pourquoi se priver du confort :-)&lt;/p&gt;
-
-&lt;p&gt;Ce qu’il faut regarder pour choisir un boyau&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Après voir lu cet article, on comprend bien l’intérêt d’avoir une largeur plus large à l’arrière notamment quand
+on recherche de l’aérodynamisme et en plus améliore le confort, c’est pourquoi j’ai choisi une jante 25mm
+et des boyaux 25mm&lt;/p&gt;
 
 &lt;h3 id=&quot;autres&quot;&gt;Autres&lt;/h3&gt;
 
+&lt;p&gt;Il y a plein d’autres paramètres qu’il faut regarder notamment le type de valve et surtout sa longueur. En effet,
+étant donné la hauteur de jante de 88mm il me faudra un prolongateur de valve. Il faut également prêter attention
+à la matière qui va jouer sur les performances: adhérence, l’usure, le comportement sur route mouillé… Il faut
+enfin regarder le poids et biensûr de trouver le meilleur rapport qualité prix par rapport à son besoin et budget.&lt;/p&gt;
+
+&lt;p&gt;Enfin voici ce que j’ai choisi en terme de rapport qualité/prix et répondant à mes besoins:&lt;/p&gt;
+
+&lt;p&gt;Les Boyau Vittoria CX ont vraiment des caractéristiques haut de gamme pour un prix raisonnable. J’avais déjà
+ choisi ces boyaux pour mes 38mm, j’en suis très content depuis des années et plusieurs milliers de kilomètres.&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Matière&lt;/li&gt;
-  &lt;li&gt;Le type de valve&lt;/li&gt;
-  &lt;li&gt;La longueur de la valve&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La longueur de valve est importante pour savoir quelle taille de prolongateur de valve, j’aurai besoin.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Poids:&lt;/li&gt;
-  &lt;li&gt;Prix:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Enfin voici ce que j’ai choisi en terme de qualité/prix et mes besoins:&lt;/p&gt;
-
-&lt;p&gt;Boyau Vittoria CX&lt;/p&gt;
-&lt;ul&gt;
+  &lt;li&gt;Valve Presta 34 mm&lt;/li&gt;
   &lt;li&gt;25c&lt;/li&gt;
   &lt;li&gt;320 TPI&lt;/li&gt;
   &lt;li&gt;250g&lt;/li&gt;
-  &lt;li&gt;34.99€&lt;/li&gt;
+  &lt;li&gt;Prix: 34.99€&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;attache-rapide&quot;&gt;Attache rapide&lt;/h2&gt;
@@ -373,8 +362,6 @@ le rayon pour atteindre la jante. En vert, j’ai représenté l’écrou est su
 tendu. En dessous, j’ai simplifié les 2 schemas en 2 triangles HLR et LSF avec pour l’instant que des inconnues mais
 que l’on va pouvoir substituer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;Triangle HLR&lt;/p&gt;
 &lt;ul class=&quot;notice--primary&quot;&gt;
   &lt;li&gt;H = La distance entre le centre du moyeu et le trou où va se loger le rayon&lt;/li&gt;
@@ -383,7 +370,7 @@ que l’on va pouvoir substituer.&lt;/p&gt;
   &lt;li&gt;Phi = Angle que va prendre le rayon selon le nombre de croisements&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration3.jpeg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Triangle LSF&lt;/p&gt;
 &lt;ul class=&quot;notice--primary&quot;&gt;
@@ -391,6 +378,8 @@ que l’on va pouvoir substituer.&lt;/p&gt;
   &lt;li&gt;S = La longueur du rayon&lt;/li&gt;
   &lt;li&gt;F = La distance entre la flange du moyeu et son milieu&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration6.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Donc dans un premier temps, je vais décrire comment prendre les différentes mesures sur la jante et le moyeu. Puis
 dans un second temps je vais pouvoir en déduire la valeur de L dans le triangle HLR et enfin  substituer L dans le 
@@ -406,7 +395,7 @@ nous serons très loin de cette valeur. Alors comment le mesurer, j’ai regard�
 tutoriaux et celui qui m’a paru le plus simple, précis et efficace est le suivant, encore une fois
 c’est mon avis personnel. Cette façon vient du livre de Roger Musson (TODO)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd3.jpeg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd3.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Donc il suffit de prendre 2 rayons, 2 écrous, du ruban adhésif, un élastique et un pied 
 à coulisse (une simple mètre peu suffire).&lt;/p&gt;
@@ -450,7 +439,8 @@ suivantes.&lt;/p&gt;
  où la jante devra être aligné. On remarque bien pourquoi les longueurs des rayons ne seront pas les mêmes pour une 
  roue arrière étant donné qu’il y a la cassette à prendre en compte.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/hub_mesures.jpeg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration5.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;
+&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration3.jpg&quot; alt=&quot;moyeu&quot; height=&quot;320px&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;a) La valeur de X est facile à déterminer, il s’agit de la largeur du moyeu là où le moyeu sera installé sur le cadre
  (entraxe). 
@@ -466,7 +456,7 @@ d’acheter mon moyeu (voir chapitre “choix du moyeu”)&lt;/p&gt;
 &lt;p class=&quot;text-justify&quot;&gt;Pour y arriver il faut mesurer y et z pour ce faire j’ai utilisé un bout de bois où j’ai fait un trou assez gros pour 
 pouvoir poser l’extrémité du moyeu de chaque côté&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/flange_support.jpeg&quot; alt=&quot;moyeu&quot; height=&quot;480px&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/flange_support.jpeg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ensuite j’ai positionné le moyeu et j’ai les pris les mesures de chaque côté à l’aide d’une équerre.&lt;/p&gt;
 
@@ -475,14 +465,14 @@ pouvoir poser l’extrémité du moyeu de chaque côté&lt;/p&gt;
 
 &lt;p&gt;Voici les valeurs relevées.&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;Y = 29mm&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;Z = 48mm&lt;/script&gt;&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = 29mm \\
+Z = 48mm&lt;/script&gt;
 
 &lt;p&gt;Etant donné que le trait en pointillé bleu représente le milieu du moyeu X/2 on peut en déduire 
 la valeur de C et D.&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;C = X/2 - Y = 130/2 - 29 = 36mm&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;D = X/2 - Z = 130/2 - 48 = 17mm&lt;/script&gt;&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;C = X/2 - Y = 130/2 - 29 = \boxed{36mm} \\
+D = X/2 - Z = 130/2 - 48 = \boxed{17mm}&lt;/script&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;c) Maintenant je vais mesurer A et B pour déterminer la valeur de H (voir schema TODO). Et donc H n’est ni plus ni moins
  A/2 et B/2. Donc pour mesurer ce diamètre, j’ai utilisé 2 bouts de carton voir schema ci-dessous (difficile à réaliser
@@ -526,7 +516,7 @@ détaillerai tout ça dans le chapitre dédié au laçage.&lt;/p&gt;
 &lt;p&gt;Maintenant j’ai tout ce qu’il faut pour appliquer la loi du cosinus et obtenir la valeur de L.&lt;/p&gt;
 
 &lt;p&gt;TODO refaire un schema
-&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration6.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;R = ERD/2 \\
 R2 = R - R1 \\&lt;/script&gt;
@@ -603,14 +593,14 @@ R = ERD/2 = 471/2= 235.5mm
 
 &lt;p&gt;Je remplace les variables par les valeurs&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;S = \sqrt{36^2 + 20.5^2 + 235.5^2 - 2*235.5*20.5cos(60°)} \\
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S = \sqrt{36^2 + 20.5^2 + 235.5^2 - 2*235.5*20.5cos(60°)} \\
 S = \sqrt{1296 + 420.25 + 55460.25 - 9655.5*cos(60°)} \\
 S = \sqrt{57176.5 - 9655.5*0.5} \\
 S = \sqrt{57176.5 - 4827.75} \\
-S = \sqrt{52348.75}&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\boxed{
+S = \sqrt{52348.75} \\
+\boxed{
 S = 228.798mm
-}&lt;/script&gt;&lt;/p&gt;
+}&lt;/script&gt;
 
 &lt;h4 id=&quot;calcul-de-s-pour-les-rayons-de-droite&quot;&gt;Calcul de S pour les rayons de droite&lt;/h4&gt;
 
@@ -621,14 +611,14 @@ R = ERD/2 = 471/2= 235.5mm \\
 
 &lt;p&gt;Je remplace les variables par les valeurs&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;S = \sqrt{17^2 + 24.5^2 + 235.5^2 - 2*235.5*24.5cos(60°)} \\
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S = \sqrt{17^2 + 24.5^2 + 235.5^2 - 2*235.5*24.5cos(60°)} \\
 S = \sqrt{289 + 600.25 + 55460.25 - 11539.5*cos(60°)} \\
 S = \sqrt{56349.5 - 11539.5*0.5} \\
 S = \sqrt{56349.5 - 5769.75} \\
-S = \sqrt{50579.75}&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\boxed{
+S = \sqrt{50579.75} \\
+\boxed{
 S = 224.899mm
-}&lt;/script&gt;&lt;/p&gt;
+}&lt;/script&gt;
 
 &lt;h3 id=&quot;ajustement-1&quot;&gt;Ajustement 1&lt;/h3&gt;
 
@@ -663,7 +653,9 @@ S = 223.599mm
 
 &lt;p&gt;On peut mettre à jour la formule comme ceci:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boxed{
+S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r
+}&lt;/script&gt;
 
 &lt;h3 id=&quot;ajustement-2&quot;&gt;Ajustement 2&lt;/h3&gt;
 
@@ -674,9 +666,10 @@ l’élongation du rayon je vais utiliser le &lt;a href=&quot;https://fr.wikiped
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/elongation.jpeg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Loi de Hooke appliquer à un cylindre
-&lt;script type=&quot;math/tex&quot;&gt;L'/L = 1/E * F/A \\
-L' = F/A * L/E&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Loi de Hooke appliquer à un cylindre&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L'/L = 1/E * F/A \\
+L' = F/A * L/E&lt;/script&gt;
 
 &lt;p&gt;Avec&lt;/p&gt;
 
@@ -687,19 +680,19 @@ L' = F/A * L/E&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;Soit 210 GPA&lt;/p&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;L = Longueur du rayon précédemment calculé&lt;/li&gt;
+  &lt;li&gt;L Gauche = 227.498mm = 0.227498m&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;L = Longueur du rayon précédemment calculé
-L Gauche = 227.498mm = 0.227498m &lt;br /&gt;
-L Droite = 223.599mm = 0.223599m \&lt;/p&gt;
+    &lt;p&gt;L Droite = 223.599mm = 0.223599m&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;F = Force = Masse * Accélération = m * a&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;F = Force = Masse * Accélération = m * a&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Masse maximale = 100kg&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Accélération = 9.81m/s^2&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boxed{
+Accélération = 9.81m/s^2
+}&lt;/script&gt;
 
 &lt;ul&gt;
   &lt;li&gt;A = L’aire de la section = π * R^2&lt;/li&gt;
@@ -725,7 +718,7 @@ L' = 0.000601m=0.601mm&lt;/script&gt;
 
 &lt;p&gt;Longueur réelle avant d’être étiré:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;227.498 - 0.601 = 226.897mm&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;227.498 - 0.601 = \boxed{226.897mm}&lt;/script&gt;
 
 &lt;p&gt;Côté droit:&lt;/p&gt;
 
@@ -734,11 +727,13 @@ L' = 0.000591m=0.591mm&lt;/script&gt;
 
 &lt;p&gt;Longueur réelle avant d’être étiré:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;223.599 - 0.591 = 222.999mm&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;223.599 - 0.591 = \boxed{222.999mm}&lt;/script&gt;
 
 &lt;p&gt;La formule final devient:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r - L'&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\boxed{
+S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r - L'
+}&lt;/script&gt;
 
 &lt;h3 id=&quot;résultats&quot;&gt;Résultats&lt;/h3&gt;
 
@@ -933,7 +928,7 @@ assez visser pour que le rayon tienne.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/lacage_step4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/lacage_step14.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/lacage_step14.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;h3 id=&quot;etape-6&quot;&gt;Etape 6:&lt;/h3&gt;
@@ -1244,7 +1239,7 @@ montage (Moyeu straight pull) et pourquoi pas monter son vélo soi-même.&lt;/p&
   &lt;li&gt;&lt;a href=&quot;https://www.wheelpro.co.uk/wheelbuilding/book.php&quot;&gt;Professionnal Guide to Wheel Building&lt;/a&gt; - Roger Musson&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://caravan.hobby.ru/materiel/Bicycle_Wheel_-_Jobst_Brandt.pdf&quot;&gt;Bicycle Wheel&lt;/a&gt; - Jobst Brandt&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://mgagnon.net/velo/roue_montage.fr.php&quot;&gt;Le montage de roues&lt;/a&gt; - Sheldon Brown et John Allen&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><category term="Mécanique" /><category term="Cyclisme" /><summary type="html">Tout au long de cet article, j’explique les choix que j’ai fait pour mon usage personnel. Je veux réaliser une roue aérodynamique et rigide pour rouler sur le plat (ou peu vallonnée) Ex: Triathlon, CLM</summary></entry><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><category term="Mécanique" /><category term="Cyclisme" /><summary type="html">Dans cet article je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.</summary></entry><entry><title type="html">Use Netatmo rain sensor to regulate your sprinkler</title><link href="https://jluccisano.github.io/automation/sprinkler-netatmo/" rel="alternate" type="text/html" title="Use Netatmo rain sensor to regulate your sprinkler" /><published>2018-12-06T00:00:00+00:00</published><updated>2018-12-06T00:00:00+00:00</updated><id>https://jluccisano.github.io/automation/sprinkler-netatmo</id><content type="html" xml:base="https://jluccisano.github.io/automation/sprinkler-netatmo/"></content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Software" /><category term="Python" /><category term="Git" /><category term="Linux" /><category term="IoT" /><category term="Netatmo" /><summary type="html"></summary></entry><entry><title type="html">Deploy release with Travis CI</title><link href="https://jluccisano.github.io/computer/travis/" rel="alternate" type="text/html" title="Deploy release with Travis CI" /><published>2018-11-10T00:00:00+00:00</published><updated>2018-11-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/travis</id><content type="html" xml:base="https://jluccisano.github.io/computer/travis/">&lt;p&gt;The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
