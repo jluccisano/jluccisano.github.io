@@ -145,7 +145,7 @@ var store = [{
         "url": "https://jluccisano.github.io/automation/sprinkler-netatmo/",
         "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
         "title": "Ma première roue artisanale",
-        "excerpt":"Dans cet article je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale. Dès que j’ai débuté le vélo je me suis très vite intéressé aux roues de vélo et compris l’importance qu’elles avaient en terme de performance, de confort et de sensation. J’ai acheté...","categories": ["Sport"],
+        "excerpt":"Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale. Dès que j’ai débuté le vélo, je me suis très vite intéressé aux roues de vélo et compris l’importance qu’elles avaient en terme de performance, de confort et de sensations. J’ai acheté...","categories": ["Sport"],
         "tags": ["Sport","Mécanique","Cyclisme"],
         "url": "https://jluccisano.github.io/sport/wheel-building/",
         "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"}]
