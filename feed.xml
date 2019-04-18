@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-18T14:08:51+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-18T14:29:05+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Dès que j’ai débuté le vélo, je me suis très vite intéressé aux roues de vélo et compris l’importance 
 qu’elles avaient en terme de performance, de confort et de sensations. J’ai acheté plusieurs paires, bon marché sans 
@@ -500,7 +500,7 @@ H = B/2 = 24.5 pour la partie droite&lt;/script&gt;
 
 &lt;h3 id=&quot;calcul-de-l&quot;&gt;Calcul de L&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration6.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Donc si on revient au triangle 1 HLR. on connaît H mesuré précédemment et l’ERD aussi,
 on va donc pouvoir déterminer la valeur de L. La difficulté dans ce triangle c’est qu’il 
@@ -514,14 +514,13 @@ détaillerai tout ça dans le chapitre dédié au laçage.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://fr.wikipedia.org/wiki/Loi_des_cosinus&quot;&gt;Loi du cosinus&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/angle_phi.jpg&quot; alt=&quot;angle_phi&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/angle_phi.jpg&quot; alt=&quot;angle_phi&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On obtient un angle 15° x 4 = 60°.&lt;/p&gt;
 
 &lt;p&gt;Maintenant j’ai tout ce qu’il faut pour appliquer la loi du cosinus et obtenir la valeur de L.&lt;/p&gt;
 
-&lt;p&gt;TODO refaire un schema
-&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration6.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/erd_demonstration4.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;480px&quot; /&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;R = ERD/2 \\
 R2 = R - R1 \\&lt;/script&gt;

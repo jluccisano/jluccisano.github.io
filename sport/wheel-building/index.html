@@ -111,11 +111,17 @@
 <![endif]-->
 
 
-  
-    
-    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
 
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+       </script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
@@ -995,7 +1001,7 @@ H = B/2 = 24.5 pour la partie droite</script>
 
 <h3 id="calcul-de-l">Calcul de L</h3>
 
-<p><img src="/assets/images/wheel-building/erd_demonstration4.jpg" alt="moyeu" class="align-center" width="480px" /></p>
+<p><img src="/assets/images/wheel-building/erd_demonstration6.jpg" alt="moyeu" class="align-center" width="320px" /></p>
 
 <p class="text-justify">Donc si on revient au triangle 1 HLR. on connaît H mesuré précédemment et l’ERD aussi,
 on va donc pouvoir déterminer la valeur de L. La difficulté dans ce triangle c’est qu’il 
@@ -1009,14 +1015,13 @@ détaillerai tout ça dans le chapitre dédié au laçage.</p>
 
 <p><a href="https://fr.wikipedia.org/wiki/Loi_des_cosinus">Loi du cosinus</a></p>
 
-<p><img src="/assets/images/wheel-building/angle_phi.jpg" alt="angle_phi" class="align-center" width="480px" /></p>
+<p><img src="/assets/images/wheel-building/angle_phi.jpg" alt="angle_phi" class="align-center" width="320px" /></p>
 
 <p>On obtient un angle 15° x 4 = 60°.</p>
 
 <p>Maintenant j’ai tout ce qu’il faut pour appliquer la loi du cosinus et obtenir la valeur de L.</p>
 
-<p>TODO refaire un schema
-<img src="/assets/images/wheel-building/erd_demonstration6.jpg" alt="moyeu" class="align-center" width="480px" /></p>
+<p><img src="/assets/images/wheel-building/erd_demonstration4.jpg" alt="moyeu" class="align-center" width="480px" /></p>
 
 <script type="math/tex; mode=display">R = ERD/2 \\
 R2 = R - R1 \\</script>
