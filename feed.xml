@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-18T11:54:59+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2019-04-18T14:08:51+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Dès que j’ai débuté le vélo, je me suis très vite intéressé aux roues de vélo et compris l’importance 
 qu’elles avaient en terme de performance, de confort et de sensations. J’ai acheté plusieurs paires, bon marché sans 
@@ -988,8 +988,8 @@ vissé chaque rayon jusqu’à que le filetage ne soit plus visible.&lt;/p&gt;
 &lt;p class=&quot;text-justify&quot;&gt;A l’aide de la jauge de centrage je vérifie l’état de mon alignement. Pour l’instant il est complètement faux ce qui 
 normal. Mais on constate bien qu’il va ramener le moyeu au centre de la jante. Pour cela il va falloir plus visser 
 les rayons d’un côté. Donc pour faire simple, si je visse les rayons côté cassette cela va ramener la jante vers la 
-droite (Quand on sert les rayons il faut bien comprendre que c’est la jante qui bouge et pas le moyeu) et inversement 
-si je sers ce de gauche. Donc selon l’état de l’alignement il faut jouer sur les rayons de gauche et droite. Donc 
+droite (quand on sert les rayons il faut bien comprendre que c’est la jante qui bouge et pas le moyeu) et inversement 
+si je sers ce de gauche. Donc selon l’état de l’alignement il faut jouer sur les rayons de gauche et de droite. Donc, 
 je sers de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir 
 que plus on va avancer dans la mise sous tension plus il faudra limiter le nombre de tour jusqu’à faire des quarts 
 de tour pour les derniers ajustements. Si on ne fait pas progressivement, il sera impossible de dévoiler la roue 
@@ -997,10 +997,10 @@ dans les étapes suivantes.&lt;/p&gt;
 
 &lt;h3 id=&quot;etape-3-1&quot;&gt;Etape 3&lt;/h3&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;J’ai serré mes rayons des 2 côtés de manière équilibré afin d’arriver à un alignement un peu près correct, j’ai 2mm
-d’erreur ce qui est normal à cette étape. Mais il est pas la peine de continuer si l’erreur est plus grande car plus
+&lt;p class=&quot;text-justify&quot;&gt;J’ai serré mes rayons des 2 côtés de manière équilibré afin d’arriver à un alignement à peu près correct, j’ai 2mm 
+d’erreur ce qui est normal à cette étape. Mais c’est pas la peine de continuer si l’erreur est plus grande, car plus 
 les rayons seront sous tension plus il sera difficile de corriger une erreur d’alignement. J’ai donc vérifié 
-l’alignement fréquememnt tout au long de la mise sous tension. On constate bien l’alignement à obtenir dans le schema
+l’alignement fréquemment tout au long de la mise sous tension. On constate bien l’alignement à obtenir dans le schéma 
 ci-dessous.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/alignement1.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
@@ -1011,37 +1011,37 @@ ci-dessous.&lt;/p&gt;
 
 &lt;h3 id=&quot;etape-4-1&quot;&gt;Etape 4&lt;/h3&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;La roue à maintenant un alignement correct, je vais pouvoir continuer la mise sous tension. Je vais dans cette étape
-dévoilé la roue. Donc avec le centreur c’est assez simple mais il faut prendre son temps. J’ai utilisé du ruban 
-adéhsif pour mettre des repères sur les rayons qui posent problèmes. Ensuite, comme je l’ai dit précédement si je veux
+&lt;p class=&quot;text-justify&quot;&gt;La roue a maintenant un alignement correct, je vais pouvoir continuer la mise sous tension. Je vais dans cette étape 
+dévoiler la roue. Donc avec le centreur c’est assez simple, mais il faut prendre son temps. J’ai utilisé du ruban 
+adhésif pour mettre des repères sur les rayons qui posent problèmes. Ensuite, comme je l’ai dit précédemment si je veux 
 ramener ma jante à droite, je serre les rayons qui sont rattachés à la partie droite du moyeu et inversement pour 
-l’autre côté. Ce qui veut dire aussi qu’il est possible à cette étape de devoir déserrer un peu certain rayon. 
-J’effectue des quarts de tour et je regarde le résultat et j’itère jusqu’à obtenir une roue non voilée. On peu sentir
-si des rayons sont moins tendus que d’autres il faut essayer d’arriver à avoir une tension uniforme, on peut le faire
-facilement au touché, juste pressant sur les rayons entres eux.&lt;/p&gt;
+  l’autre côté. Ce qui veut dire aussi qu’il est possible à cette étape de devoir desserrer un peu certain rayon. 
+J’effectue des quarts de tour et je regarde le résultat et j’itère jusqu’à obtenir une roue non voilée. On peut sentir 
+si des rayons sont moins tendus que d’autres il faut essayer d’arriver à avoir une tension uniforme, on peut le faire 
+facilement au toucher, juste pressant sur les rayons entre eux.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=gJgH63gQmrE&quot;&gt;Dévoilé une roue&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;etape-5-1&quot;&gt;Etape 5&lt;/h3&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;La roue est dévoilée et alignée, il faut maintenant finalisé la mise sous tension. Je fais des quarts de tours sur tous
-les rayons tout en vérifiant de garder l’alignement et de ne pas voilée la roue. Je sens que ma roue commence à être
-bien, rien qu’au touché on sent qu’ils sont bons. Il est normal que les rayons côté droit soit plus tendu que ce de
-gauche de part la géométrie du moyeu. Il est surtout important que la tension côté cassette soit bonnes sur tous
-les rayons car c’est de ce côté que les forces vont être le plus sollicitées. J’utilise enfin un tensionmètre 
+&lt;p class=&quot;text-justify&quot;&gt;La roue est dévoilée et alignée, il faut maintenant finaliser la mise sous tension. Je fais des quarts de tours sur 
+tous les rayons tout en vérifiant de garder l’alignement et de ne pas voilée la roue. Je sens que ma roue commence à être 
+bien, rien qu’au toucher on sent qu’ils sont bons. Il est normal que les rayons côté droit soit plus tendu que ce de 
+gauche de part la géométrie du moyeu. Il est surtout important que la tension, côté cassette soit bonne sur tous 
+les rayons, car c’est de ce côté que les forces vont être le plus sollicitées. J’utilise enfin un tensiomètre 
 pour vérifier que j’ai une tension équivalent pour tous les rayons de chaque côté. Pour le niveau de tension il 
-y a plusieurs école, les gens qui utilisent juste le touché ou le son quand on pince les rayons et d’autres à la valeur
-de la tension. J’avoue que la méthode au touché suffit car il faut savoir que des rayons trop tendu n’apporteront pas
-plus de rigidité et au contraire fatigué le rayon plus rapidement. Evidement un rayon pas assez tendu aura aussi des 
-conséquences sur la longétivité des rayons et de résistance au poids du bonhomme et aux contraintes  de la route. Donc
-il faut trouver le bon compromis, moi j’ai fait au touché puis vérifier au tensionmètre pour voir ce que ça valait.
-Mais je n’ai pas mis exactement la tension indiqué pour mon poids.&lt;/p&gt;
+y a plusieurs écoles, des gens utilisent juste le toucher ou le son, quand on pince les rayons et d’autres à la 
+valeur de la tension. J’avoue que la méthode au toucher suffit, car il faut savoir que des rayons trop tendus n’apporteront 
+pas plus de rigidité et au contraire fatigué le rayon plus rapidement. Evidemment un rayon pas assez tendu aura aussi
+ des conséquences sur la longévité des rayons et de résistance au poids du bonhomme et aux contraintes  de la route. Donc 
+il faut trouver le bon compromis, moi j’ai fait au toucher puis vérifier au tensiomètre pour voir ce que ça valait. 
+Mais je n’ai pas mis exactement la tension indiquée pour mon poids.&lt;/p&gt;
 
 &lt;h2 id=&quot;assemblage&quot;&gt;Assemblage&lt;/h2&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;La roue nue est prête, il faut maintenant possible d’assembler les éléments pour qu’elle puisse
-intérargir avec la route et l’attacher au cadre du vélo. Je ne vais pas détailler ce que j’ai fait
-car ce serait réinventer la “roue”, voici des videos Youtube qui correspondent à ce que j’ai fait.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;La roue nue est prête, il faut maintenant possible d’assembler les éléments pour qu’elle puisse 
+interargir avec la route et l’attacher au cadre du vélo. Je ne vais pas détailler ce que j’ai fait, 
+car ce serait “réinventer la roue”, voici des videos Youtube qui correspondent à ce que j’ai fait.&lt;/p&gt;
 
 &lt;h3 id=&quot;mise-en-place-du-prolongateur-de-valve&quot;&gt;Mise en place du prolongateur de valve.&lt;/h3&gt;
 
@@ -1052,11 +1052,11 @@ car ce serait réinventer la “roue”, voici des videos Youtube qui correspond
 &lt;img src=&quot;/assets/images/wheel-building/prolongateur_valve_miche.jpg&quot; alt=&quot;moyeu&quot; height=&quot;200px&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
 
 &lt;ul class=&quot;notice--primary&quot;&gt;
-  &lt;li&gt;Une petite clé est souvent livré avec les prolongateurs de valve afin d’enleve l’obu facilement&lt;/li&gt;
-  &lt;li&gt;Il existe des anti-vibrateurs à coller afin que la valve ne vibre sur la jante pendant que l’on roule. En effet
-contrairement à une valve de chambre à air qui ne bougera pas à la mise sous pression, sur un boyau c’est différent
-le boyau plus rigide ne permet pas cela. Les prolongateurs de valve Miche contiennent directement leurs anti-vibrateurs
-qui sont top. Sinon il est possible de mettre juste de passer un ruban adhésif gratuit mais moins esthétique.&lt;/li&gt;
+  &lt;li&gt;Une petite clé est souvent livrée avec les prolongateurs de valve afin d’enleve l’obu facilement&lt;/li&gt;
+  &lt;li&gt;Il existe des anti-vibrateurs à coller afin que la valve ne vibre sur la jante pendant que l’on roule. En effet, 
+contrairement à une valve de chambre à air qui ne bougera pas à la mise sous pression, sur un boyau c’est différent 
+le boyau plus rigide ne permet pas cela. Les prolongateurs de valve Miche contiennent directement leurs anti-vibrateurs 
+qui sont top. Sinon il est possible de mettre juste de passer un ruban adhésif gratuit, mais moins esthétique.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;collage-du-boyau&quot;&gt;Collage du boyau&lt;/h3&gt;
@@ -1064,9 +1064,9 @@ qui sont top. Sinon il est possible de mettre juste de passer un ruban adhésif 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=R7_9_BGsdGo&quot;&gt;Collage du boyau&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul class=&quot;notice--primary&quot;&gt;
-  &lt;li&gt;J’ai une vieille jante que j’ai récupéré dans une déchetterie que j’utilise essentiellement pour étendre
+  &lt;li&gt;J’ai une vieille jante que j’ai récupéré dans une déchetterie que j’utilise essentiellement pour étendre 
 mes boyaux avant collage.&lt;/li&gt;
-  &lt;li&gt;Je ponce la jante pour enlever l’ancienne colle ou quand la jante est neuve pour la rendre un peu rugueuse
+  &lt;li&gt;Je ponce la jante pour enlever l’ancienne colle ou quand la jante est neuve pour la rendre un peu rugueuse 
 afin que la colle adhère plus facilement.&lt;/li&gt;
   &lt;li&gt;J’utilise de l’essence F pour nettoyer ma jante pour enlever tous les résidus de colle qui débordent.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1078,35 +1078,35 @@ afin que la colle adhère plus facilement.&lt;/li&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/cassette1.jpg&quot; alt=&quot;moyeu&quot; class=&quot;align-center&quot; width=&quot;320px&quot; /&gt;&lt;/p&gt;
 
 &lt;ul class=&quot;notice--primary&quot;&gt;
-  &lt;li&gt;Je profite du changement de cassette pour bien la nettoyer et dégraisser&lt;/li&gt;
+  &lt;li&gt;Je profite du changement de cassette pour bien la nettoyer et dégraisser.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;mise-sous-pression&quot;&gt;Mise sous pression&lt;/h2&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;Il est temps de confler le boyau, je mets 9-10Bars en général. Tout dépend de la limite indiqué par le revendeur
-et ce qui est recommender par la jante. Mais plus on pourra mettre de pression, plus le boyau aura moins d’adhérence
-avec le sol donc moins de frottement et donc plus de vitesse pour le même effort fourni. Le seul compromis c’est que
-plus on a de pression plus on perd on confort car le moindre choc est plus répercuté jusqu’au cycliste. Avec moins de
-pression les chocs sont plus absorbés par le boyau. Encore une fois un compromis à faire.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Il est temps de gonfler le boyau, je mets 9-10Bars en général. Tout dépend de la limite indiquée par la marque 
+et ce qui est recommandée par la jante. Mais plus on pourra mettre de pression, plus le boyau aura moins d’adhérence 
+avec le sol donc moins de frottement et donc plus de vitesse pour le même effort fourni. Le seul compromis c’est que 
+plus on a de pression plus on perd en confort, car le moindre choc est plus répercuté jusqu’au cycliste. Avec moins de 
+pression les chocs sont plus absorbés par le boyau. Encore une fois, un compromis à faire.&lt;/p&gt;
 
 &lt;h2 id=&quot;attache-rapide-1&quot;&gt;Attache rapide&lt;/h2&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;Pour les attaches rapide, j’en ai pas acheté de nouveaux, j’utilise les meême pour toutes mes roues c’est pas 
-contraignant à interchanger. Il est tout de même important d’avoir une bonne paire d’attache rapide surtout en terme
-de légèreté car il est facile d’alourdir la roue en prenant du bas de gamme, ce serait dommage de perdre les 
+&lt;p class=&quot;text-justify&quot;&gt;Pour les attaches rapides, j’en ai pas acheté de nouveaux, j’utilise les mêmes pour toutes mes roues ce n’est pas 
+contraignant à interchanger. Il est tout de même important d’avoir une bonne paire d’attache rapide surtout en terme 
+de légèreté, car il est facile d’alourdir la roue en prenant du bas de gamme, ce serait dommage de perdre les 
 grammes gagnés sur le moyeu et la jante…&lt;/p&gt;
 
 &lt;h2 id=&quot;patin-de-freins-1&quot;&gt;Patin de freins&lt;/h2&gt;
 
-&lt;p&gt;Etant donné que sur une jante à boyau le freinage va se faire directement sur le boyau contraiement sur des jantes
-à pneu où un cercle en alu est rajouté. Il faut donc des pâtins de freins spéciaux, moi j’utilise des SwissStop Flash
-Pro qui fonctionne sur tout type de jante ce qui est pratique quand je mets mes roues à pneu.&lt;/p&gt;
+&lt;p&gt;Etant donné que sur une jante à boyau le freinage va se faire directement sur le boyau contrairement sur des jantes 
+à pneu où un cercle en alu est rajouté. Il faut donc des patins de freins spéciaux, moi j’utilise des SwissStop Flash 
+Pro qui fonctionne sur tous types de jante ce qui est pratique quand je mets mes roues à pneu.&lt;/p&gt;
 
 &lt;h2 id=&quot;premier-test-et-ajustements&quot;&gt;Premier test et ajustements&lt;/h2&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;Etant donné que j’ai opté pour une roue de largeur 25mm, il faut que j’écarte un peu mon étrier de frein afin que ma
-roue puisse passer. Mon étrier est compatible avec des jantes jusqu’à 28mm donc pas de souci mais ça se vérifie avant
-d’acheter. C’est assez facile avec une clé allen, c’est vite régler. J’installe la roue sans problème et voilà le
+&lt;p class=&quot;text-justify&quot;&gt;Etant donné que j’ai opté pour une roue de largeur 25mm, il faut que j’écarte un peu mon étrier de frein afin que ma 
+roue puisse passer. Mon étrier est compatible avec des jantes jusqu’à 28mm donc pas de souci mais ça se vérifie avant 
+d’acheter. C’est assez facile avec une clé Allen, c’est vite réglé. J’installe la roue sans problème et voilà le 
 résultat en image ci-dessous.&lt;/p&gt;
 
 &lt;!-- Courtesy of embedresponsively.com //--&gt;
@@ -1253,13 +1253,12 @@ résultat en image ci-dessous.&lt;/p&gt;
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;J’espère que cet article permettra à d’autres perssonnes de trouver des réponses ou de tenter
-l’expérience. Pour ma part, je suis très fier du résultat et je projette de me faire d’autres
-montage (Moyeu straight pull) et pourquoi pas monter son vélo soi-même.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;J’espère que cet article permettra à d’autres personnes de trouver des réponses ou de tenter 
+l’expérience. Pour ma part, je suis très fier du résultat et je projette de me faire d’autres 
+montages (Moyeu Straight Pull) et pourquoi pas monter mon vélo de A-Z.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wheel-building/result1.jpg&quot; alt=&quot;moyeu&quot; height=&quot;200px&quot; width=&quot;240px&quot; /&gt; 
 &lt;img src=&quot;/assets/images/wheel-building/result2.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt; 
-&lt;img src=&quot;/assets/images/wheel-building/result3.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt; 
 &lt;img src=&quot;/assets/images/wheel-building/result4.jpg&quot; alt=&quot;moyeu&quot; height=&quot;240px&quot; width=&quot;240px&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;références&quot;&gt;Références&lt;/h1&gt;
