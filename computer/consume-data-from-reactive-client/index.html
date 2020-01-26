@@ -455,7 +455,7 @@
 
 <h5 id="simple">Simple</h5>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nx">ReactiveWeatherStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
   <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
@@ -472,13 +472,13 @@
 
 <h5 id="with-jsx">With JSX</h5>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nx">ReactiveWeatherStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
   <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">super</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="na">title</span><span class="p">:</span> <span class="s2">"Hello World!"</span>
+      <span class="na">title</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Hello World!</span><span class="dl">"</span>
     <span class="p">};</span>
   <span class="p">}</span>
 
@@ -515,10 +515,10 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout step2-create-websocket-client
 </code></pre></div></div>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="s1">'Config'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">sockjs-client</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">stompjs</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">Config</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
   <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
@@ -533,7 +533,7 @@
 
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">connect</span><span class="p">({},</span> <span class="nx">frame</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`connected, </span><span class="p">${</span><span class="nx">frame</span><span class="p">}</span><span class="s2">!`</span><span class="p">);</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'/queue/DHT22'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="dl">'</span><span class="s1">/queue/DHT22</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">));</span>
         <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">)});</span>
       <span class="p">});</span>
@@ -574,12 +574,12 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout step3-get-data-from-rest-api
 </code></pre></div></div>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="s1">'Config'</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'react-bootstrap'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Moment</span> <span class="k">from</span> <span class="s1">'react-moment'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">sockjs-client</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">stompjs</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">Config</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-bootstrap</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Moment</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-moment</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
   <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
@@ -596,7 +596,7 @@
 
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">connect</span><span class="p">({},</span> <span class="nx">frame</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`connected, </span><span class="p">${</span><span class="nx">frame</span><span class="p">}</span><span class="s2">!`</span><span class="p">);</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'/queue/DHT22'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="dl">'</span><span class="s1">/queue/DHT22</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">));</span>
         <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">)});</span>
       <span class="p">});</span>
@@ -632,7 +632,7 @@
         <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">row</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
           <span class="k">return</span> <span class="p">(</span>
             <span class="o">&lt;</span><span class="nx">tr</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span><span class="o">&gt;</span>
-              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="nx">Moment</span> <span class="nx">format</span><span class="o">=</span><span class="s2">"MMMM Do YYYY"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">time</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Moment&gt;&lt;/</span><span class="nx">td</span><span class="o">&gt;</span>
+              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="nx">Moment</span> <span class="nx">format</span><span class="o">=</span><span class="dl">"</span><span class="s2">MMMM Do YYYY</span><span class="dl">"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">time</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Moment&gt;&lt;/</span><span class="nx">td</span><span class="o">&gt;</span>
               <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">min_temperature</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">/</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">max_temperature</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
 </span>              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">mean_temperature</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
 </span>              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">min_humidity</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">/</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">max_humidity</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="o">%&lt;</span><span class="sr">/td</span><span class="err">&gt;
@@ -690,14 +690,14 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout step4-show-consume-data-with-d3js
 </code></pre></div></div>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">'react'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="s1">'sockjs-client'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="s1">'stompjs'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="s1">'Config'</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">LineChart</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'react-d3-basic'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">d3</span> <span class="k">from</span> <span class="s1">'d3'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Moment</span> <span class="k">from</span> <span class="s1">'react-moment'</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="k">from</span> <span class="s1">'react-bootstrap'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">SockJS</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">sockjs-client</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Stomp</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">stompjs</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Config</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">Config</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">LineChart</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-d3-basic</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">d3</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">d3</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Moment</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-moment</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Table</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-bootstrap</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nx">ReactiveMeteoStation</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
   <span class="kd">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
@@ -714,7 +714,7 @@
 
     <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">connect</span><span class="p">({},</span> <span class="nx">frame</span> <span class="o">=&gt;</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`connected, </span><span class="p">${</span><span class="nx">frame</span><span class="p">}</span><span class="s2">!`</span><span class="p">);</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'/queue/DHT22'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">stompClient</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="dl">'</span><span class="s1">/queue/DHT22</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">));</span>
         <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">dht22</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">body</span><span class="p">)});</span>
       <span class="p">});</span>
@@ -748,9 +748,9 @@
 
     <span class="kd">const</span> <span class="nx">chartSeries</span> <span class="o">=</span> <span class="p">[</span>
       <span class="p">{</span>
-        <span class="na">field</span><span class="p">:</span> <span class="s1">'mean_temperature'</span><span class="p">,</span>
-        <span class="na">name</span><span class="p">:</span> <span class="s1">'Temperature'</span><span class="p">,</span>
-        <span class="na">color</span><span class="p">:</span> <span class="s1">'#ff7f0e'</span><span class="p">,</span>
+        <span class="na">field</span><span class="p">:</span> <span class="dl">'</span><span class="s1">mean_temperature</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Temperature</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">color</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#ff7f0e</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">style</span><span class="p">:</span> <span class="p">{</span>
           <span class="na">strokeWidth</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
           <span class="na">strokeOpacity</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
@@ -758,9 +758,9 @@
         <span class="p">}</span>
       <span class="p">},</span>
       <span class="p">{</span>
-        <span class="na">field</span><span class="p">:</span> <span class="s1">'mean_humidity'</span><span class="p">,</span>
-        <span class="na">name</span><span class="p">:</span> <span class="s1">'Humidity'</span><span class="p">,</span>
-        <span class="na">color</span><span class="p">:</span> <span class="s1">'#65b2ff'</span><span class="p">,</span>
+        <span class="na">field</span><span class="p">:</span> <span class="dl">'</span><span class="s1">mean_humidity</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Humidity</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">color</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#65b2ff</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">style</span><span class="p">:</span> <span class="p">{</span>
           <span class="na">strokeWidth</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
           <span class="na">strokeOpacity</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
@@ -774,7 +774,7 @@
         <span class="kd">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">lastWeekData</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">row</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
           <span class="k">return</span> <span class="p">(</span>
             <span class="o">&lt;</span><span class="nx">tr</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span><span class="o">&gt;</span>
-              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="nx">Moment</span> <span class="nx">format</span><span class="o">=</span><span class="s2">"MMMM Do YYYY"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">time</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Moment&gt;&lt;/</span><span class="nx">td</span><span class="o">&gt;</span>
+              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;&lt;</span><span class="nx">Moment</span> <span class="nx">format</span><span class="o">=</span><span class="dl">"</span><span class="s2">MMMM Do YYYY</span><span class="dl">"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">time</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/Moment&gt;&lt;/</span><span class="nx">td</span><span class="o">&gt;</span>
               <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">min_temperature</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">/</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">max_temperature</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
 </span>              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">mean_temperature</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">&lt;</span><span class="sr">/td</span><span class="err">&gt;
 </span>              <span class="o">&lt;</span><span class="nx">td</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">min_humidity</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">°</span><span class="nx">C</span><span class="o">/</span><span class="p">{</span><span class="nx">row</span><span class="p">.</span><span class="nx">max_humidity</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="o">%&lt;</span><span class="sr">/td</span><span class="err">&gt;
@@ -800,7 +800,7 @@
       <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kd">const</span> <span class="nx">parseISODate</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">time</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">'%Y-%m-%dT%H:%M:%SZ'</span><span class="p">).</span><span class="nx">parse</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">parseISODate</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">time</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="dl">'</span><span class="s1">%Y-%m-%dT%H:%M:%SZ</span><span class="dl">'</span><span class="p">).</span><span class="nx">parse</span><span class="p">;</span>
 
     <span class="kd">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">parseISODate</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">time</span><span class="p">);</span>
@@ -809,7 +809,7 @@
       <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
         <span class="o">&lt;</span><span class="nx">h3</span><span class="o">&gt;</span><span class="na">Temperature</span><span class="p">:</span> <span class="p">{</span><span class="nx">dht22</span><span class="p">.</span><span class="nx">temperature</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span> <span class="err">°</span><span class="nx">C</span><span class="o">&lt;</span><span class="sr">/h3</span><span class="err">&gt;
 </span>        <span class="o">&lt;</span><span class="nx">h3</span><span class="o">&gt;</span><span class="na">Humidity</span><span class="p">:</span> <span class="p">{</span><span class="nx">dht22</span><span class="p">.</span><span class="nx">humidity</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span> <span class="o">%&lt;</span><span class="sr">/h3</span><span class="err">&gt;
-</span>        <span class="o">&lt;</span><span class="nx">LineChart</span> <span class="nx">width</span><span class="o">=</span><span class="p">{</span><span class="mi">800</span><span class="p">}</span> <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">200</span><span class="p">}</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">dataProvider</span><span class="p">}</span> <span class="nx">chartSeries</span><span class="o">=</span><span class="p">{</span><span class="nx">chartSeries</span><span class="p">}</span> <span class="nx">x</span><span class="o">=</span><span class="p">{</span><span class="nx">x</span><span class="p">}</span> <span class="nx">xScale</span><span class="o">=</span><span class="p">{</span><span class="s2">"time"</span><span class="p">}</span> <span class="nx">yScale</span><span class="o">=</span><span class="p">{</span><span class="s2">"linear"</span><span class="p">}</span><span class="sr">/</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">LineChart</span> <span class="nx">width</span><span class="o">=</span><span class="p">{</span><span class="mi">800</span><span class="p">}</span> <span class="nx">height</span><span class="o">=</span><span class="p">{</span><span class="mi">200</span><span class="p">}</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">dataProvider</span><span class="p">}</span> <span class="nx">chartSeries</span><span class="o">=</span><span class="p">{</span><span class="nx">chartSeries</span><span class="p">}</span> <span class="nx">x</span><span class="o">=</span><span class="p">{</span><span class="nx">x</span><span class="p">}</span> <span class="nx">xScale</span><span class="o">=</span><span class="p">{</span><span class="dl">"</span><span class="s2">time</span><span class="dl">"</span><span class="p">}</span> <span class="nx">yScale</span><span class="o">=</span><span class="p">{</span><span class="dl">"</span><span class="s2">linear</span><span class="dl">"</span><span class="p">}</span><span class="sr">/</span><span class="err">&gt;
 </span>        <span class="o">&lt;</span><span class="nx">LastWeekDataTable</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">lastWeekData</span><span class="p">}</span><span class="sr">/</span><span class="err">&gt;
 </span>      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
 </span>    <span class="p">);</span>
@@ -1128,7 +1128,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Joseph Luccisano. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

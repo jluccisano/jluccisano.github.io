@@ -425,7 +425,7 @@
 <p>Compose is a tool for defining and running multi-container Docker applications…
 See more <a href="https://docs.docker.com/compose/overview/">here</a></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> <span class="s2">"https://github.com/docker/compose/releases/download/1.10.0/docker-compose-</span><span class="k">$(</span><span class="nb">uname</span> <span class="nt">-s</span><span class="k">)</span><span class="s2">-</span><span class="k">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="k">)</span><span class="s2">"</span> <span class="nt">-o</span> /usr/local/bin/docker-compose
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> <span class="s2">"https://github.com/docker/compose/releases/download/1.10.0/docker-compose-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-s</span><span class="si">)</span><span class="s2">-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="si">)</span><span class="s2">"</span> <span class="nt">-o</span> /usr/local/bin/docker-compose
 <span class="nb">chmod</span> +x /usr/local/bin/docker-compose
 docker-compose <span class="nt">--version</span>
 </code></pre></div></div>
@@ -487,7 +487,7 @@ usermod <span class="nt">-aG</span> docker YOUR_USER
   <li>Set DOCKER_OPTS</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vim /etc/default/docker <span class="o">&gt;&gt;</span> <span class="nv">DOCKER_OPTS</span><span class="o">=</span><span class="s2">"-g </span><span class="k">$(</span><span class="nb">readlink</span> <span class="nt">-f</span> /var/lib/docker<span class="k">)</span><span class="s2">"</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>vim /etc/default/docker <span class="o">&gt;&gt;</span> <span class="nv">DOCKER_OPTS</span><span class="o">=</span><span class="s2">"-g </span><span class="si">$(</span><span class="nb">readlink</span> <span class="nt">-f</span> /var/lib/docker<span class="si">)</span><span class="s2">"</span>
 </code></pre></div></div>
 
 <h3 id="install-on-raspberry">Install on Raspberry</h3>
@@ -747,7 +747,7 @@ usermod <span class="nt">-aG</span> docker YOUR_USER
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Joseph Luccisano. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Joseph Luccisano. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
