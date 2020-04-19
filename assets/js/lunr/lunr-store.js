@@ -150,7 +150,7 @@ var store = [{
         "url": "https://jluccisano.github.io/sport/wheel-building/",
         "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"},{
         "title": "Bike building",
-        "excerpt":"Introd Components Description Site Unit price QTY Total Frame TT-X21 Carbon T800 www.tantancycling.com     788,00€ - Carbon T700/T800 inner cable-frame+fork+seatpost+headset+handlebar   $579.00 1   - Custom paint matt   $70.00 1   - Custom logo   $50.00 1   - Delivery + transaction fees   $150+22.60€     Groupset...","categories": ["Sport"],
+        "excerpt":"Intro Components Description Site Unit price QTY Total Frame TT-X21 Carbon T800 www.tantancycling.com     788,00€ - Carbon T700/T800 inner cable-frame+fork+seatpost+headset+handlebar   $579.00 1   - Custom paint matt   $70.00 1   - Custom logo   $50.00 1   - Delivery + transaction fees   $150+22.60€     Groupset...","categories": ["Sport"],
         "tags": ["Sport","Cycling","DIY"],
         "url": "https://jluccisano.github.io/sport/bike-building/",
         "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"}]
