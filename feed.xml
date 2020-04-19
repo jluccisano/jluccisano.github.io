@@ -1,4 +1,244 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2020-02-28T18:06:47+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2020-04-19T13:37:57+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Bike building</title><link href="https://jluccisano.github.io/sport/bike-building/" rel="alternate" type="text/html" title="Bike building" /><published>2020-02-29T00:00:00+00:00</published><updated>2020-02-29T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/bike-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/bike-building/">&lt;p&gt;Introd&lt;/p&gt;
+
+&lt;p&gt;Components&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Site&lt;/th&gt;
+      &lt;th&gt;Unit price&lt;/th&gt;
+      &lt;th&gt;QTY&lt;/th&gt;
+      &lt;th&gt;Total&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Frame TT-X21 Carbon T800&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.tantancycling.com&quot;&gt;www.tantancycling.com&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;788,00€&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Carbon T700/T800 inner cable-frame+fork+seatpost+headset+handlebar&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$579.00&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Custom paint matt&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$70.00&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Custom logo&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$50.00&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Delivery + transaction fees&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$150+22.60€&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Groupset SRAM Force etap AXS Hydraulic&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;1169,99€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;1169,99€&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Disc Centerline XR 160 mm&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Rear Derailleur&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Front Derailleur&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Shift/Brake Lever Left/Right&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Battery charger&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bottom bracket SRAM DUB Pressfit BB86&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.bike-components.de&quot;&gt;www.bike-components.de&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;29,23€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;29,23€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cassette SRAM XG-1270 12v&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.bike-components.de&quot;&gt;www.bike-components.de&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;140,17€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;140,17€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Crankset SRAM Red 2x12v&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.rosebikes.fr&quot;&gt;www.rosebikes.fr&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;462,86€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;462,86€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chain SRAM Force 12v&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.chainreactioncycles.com&quot;&gt;www.chainreactioncycles.com&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;32,39€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;32,39€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tubular tire VITTORIA CORSA CX ISOGRIP 700x25c&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.probikeshop.fr&quot;&gt;www.probikeshop.fr&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;32,99€&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;65,98€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bar tape Lizard Skins DSP 2.5mm&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.chainreactioncycles.com&quot;&gt;www.chainreactioncycles.com&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;18,59€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;18,59€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Valve extender MICHE Presta 40mm&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.probikeshop.fr&quot;&gt;www.probikeshop.fr&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;22,90€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;22,90€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Wheels set &amp;amp; accessories&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.tantancycling.com&quot;&gt;www.tantancycling.com&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;787,00€&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- DT240 hubs DT SWISS 240S - Disc Road - Front/Rear 24H&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$389.00&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Thru axle,Front 100x12mm Rear 142x12mm&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$10.00&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Spokes SAPIM CX-RAY&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$2.30&lt;/td&gt;
+      &lt;td&gt;48&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Nipples SAPIM double square&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$0.30&lt;/td&gt;
+      &lt;td&gt;48&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Rims Depth: 50mm – Width:25mm–Tubular–Holes:24H–Weave:3K&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$90.00&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Adapter XDR 12 speed&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$45.00&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Saddle carbon+leather 135g&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$39.00&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Computer Mount carbon&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;$8.00&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;- Delivery + transaction fees&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;70.00$+22.39€&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Adapter DT Swiss Center Lock&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;11,99€&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;23.98€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Frame protection kit&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.bicistickers.com&quot;&gt;www.bicistickers.com&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;9,95€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;9,95€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bike stickers&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;www.bicistickers.com&quot;&gt;www.bicistickers.com&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;16,95€&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;16,95€&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;3567,99 €&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><category term="Cycling" /><category term="DIY" /><summary type="html">Introd</summary></entry><entry><title type="html">Ma première roue artisanale</title><link href="https://jluccisano.github.io/sport/wheel-building/" rel="alternate" type="text/html" title="Ma première roue artisanale" /><published>2019-03-04T00:00:00+00:00</published><updated>2019-03-04T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/wheel-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/wheel-building/">&lt;p&gt;Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Dès que j’ai débuté le vélo, je me suis très vite intéressé aux roues de vélo et compris l’importance 
 qu’elles avaient en terme de performance, de confort et de sensations. J’ai acheté plusieurs paires, bon marché sans 
@@ -1912,27 +2152,27 @@ Requires:
 
 &lt;p&gt;Get state of each valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Get state of specific zone&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Set state of specific valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Set state of each valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Toggle state of specific valve&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toggle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zone_control&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toggle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zone&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now we are able to control sprinkler system from a Raspberry PI. That’s already a good point but we need to 
@@ -2668,158 +2908,4 @@ part to automatize the system.&lt;/p&gt;
     &lt;figcaption&gt;
       Sprinkler final result
 
-    &lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sprinkler" /><category term="Hidraulic" /><summary type="html">The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.</summary></entry><entry><title type="html">Install Xiaomi Camera</title><link href="https://jluccisano.github.io/computer/install-xiaomi-camera/" rel="alternate" type="text/html" title="Install Xiaomi Camera " /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/install-xiaomi-camera</id><content type="html" xml:base="https://jluccisano.github.io/computer/install-xiaomi-camera/">&lt;p&gt;The objective of this tutorial is to set up a Xiaomi Camera&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#hacking&quot;&gt;Hacking&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#flashing&quot;&gt;flashing&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#qr&quot;&gt;qr&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#synology_surveillance&quot;&gt;Synology Surveillance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Components &amp;lt; 60 EUR:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Component&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Site&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Price&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Xiaomi XiaoFang Camera IP&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323&quot;&gt;Gearbest&lt;/a&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;37.69 EUR&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Micro SD Card (32 Go class 10)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.amazon.com&quot;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;9.99 EUR&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Total:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;56.67 EUR&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;diskutil partitionDisk /dev/disk2 GPT FAT32 PART1 100M ExFAT PART2 R&lt;/p&gt;
-
-&lt;p&gt;wget https://github.com/samtap/fang-hacks/releases/download/0.2.0/fanghacks_v0.2.0.zip&lt;/p&gt;
-
-&lt;p&gt;http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk2
-
-Started erase on disk1
-Unmounting disk
-Creating the partition map
-Waiting &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;partitions to activate
-Formatting disk1s1 as MS-DOS &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;FAT32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; with name CAMERA
-512 bytes per physical sector
-/dev/rdisk1s1: 60746752 sectors &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;1898336 FAT32 clusters &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;16384 bytes/cluster&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;bps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;512 &lt;span class=&quot;nv&quot;&gt;spc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;32 &lt;span class=&quot;nv&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;32 &lt;span class=&quot;nv&quot;&gt;nft&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;nv&quot;&gt;mid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0xf8 &lt;span class=&quot;nv&quot;&gt;spt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;32 &lt;span class=&quot;nv&quot;&gt;hds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;255 &lt;span class=&quot;nv&quot;&gt;hid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;nv&quot;&gt;drv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x80 &lt;span class=&quot;nv&quot;&gt;bsec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;60776446 &lt;span class=&quot;nv&quot;&gt;bspf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;14831 &lt;span class=&quot;nv&quot;&gt;rdcl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;nv&quot;&gt;infs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;bkbs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;6
-Mounting disk
-Finished erase on disk1
-
-
-diskutil unmountDisk /dev/disk2
-
-Unmount of all volumes on disk1 was successful
-
-
-&lt;span class=&quot;nb&quot;&gt;sudo dd &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1m &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Users/Lucci/Downloads/fanghacks_v0.2.0.img  &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/disk2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;CTRL-T&lt;/p&gt;
-
-&lt;p&gt;160+0 records in
-159+0 records out
-166723584 bytes transferred in 99.281523 secs (1679301 bytes/sec)&lt;/p&gt;
-
-&lt;p&gt;Eject&lt;/p&gt;
-
-&lt;p&gt;power on camera&lt;/p&gt;
-
-&lt;p&gt;Put sd card wait clanking&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nmap &lt;span class=&quot;nt&quot;&gt;-sn&lt;/span&gt; 192.168.0.0/24
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Starting Nmap 7.12 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; https://nmap.org &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; at 2017-07-18 22:08 CEST
-Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.10
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0099s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.12
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.012s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.14
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0041s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.15
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.00029s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.18
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0023s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-Nmap scan report &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;192.168.0.254
-Host is up &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0025s latency&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-Nmap &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;: 256 IP addresses &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;6 hosts up&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; scanned &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;2.69 seconds
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;http://192.168.0.18/cgi-bin/hello.cgi&lt;/p&gt;
-
-&lt;p&gt;set static ip on specific mac address on your router&lt;/p&gt;
-
-&lt;p&gt;not update the firmware otherwise downgrade it&lt;/p&gt;
-
-&lt;p&gt;https://ahkhai.com/tag/surveillance-station/&lt;/p&gt;
-
-&lt;p&gt;https://miui-france.org/threads/utilisation-de-la-xiaomi-smart-camera-avec-synology.22774/&lt;/p&gt;
-
-&lt;p&gt;Known issue https&lt;/p&gt;
-
-&lt;p&gt;https://home-assistant.io/components/camera.synology/&lt;/p&gt;
-
-&lt;p&gt;sudo vim /volume1/@appstore/SurveillanceStation/device_pack/camera_support/Xiaomi.conf&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Xiaomi&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;XiaoFang]
-api &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; custom
-default_fps_h264_1920×1080 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 10
-default_image-quality &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5
-h264 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; rtsp
-mpeg4 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; rtsp
-mjpeg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; rtsp
-motion &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; h264,mpeg4,mjpeg
-motion_param &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sensitivity,threshold
-rtsp_keepalive &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; none
-rtsp_protocol &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; auto,udp,tcp
-resolutions_mjpeg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1280x720,1920×1080
-resolutions_mpeg4 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1280x720,1920×1080
-resolutions_h264 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1280x720,1920×1080
-fps_mjpeg_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5,10,15,20,25,30
-fps_mpeg4_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5,10,15,20,25,30
-fps_h264_[1280x720,1920×1080] &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5,10,15,20,25,30
-audio_format &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; G726,PCM
-default_audio_format &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; PCM
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;http://www.gearbest.com/ip-cameras/pp_487830.html&lt;/p&gt;
-
-&lt;p&gt;sudo vim /volume1/document/SSCamExport_export-xiaomi/.ExpCam&lt;/p&gt;
-
-&lt;p&gt;refresh before import&lt;/p&gt;
-
-&lt;p&gt;path = ‘/unicast’
-live_path = ‘/unicast’
-http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review&lt;/p&gt;
-
-&lt;p&gt;see more &lt;a href=&quot;https://github.com/samtap/fang-hacks&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Linux" /><category term="SSH" /><summary type="html">The objective of this tutorial is to set up a Xiaomi Camera</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sprinkler" /><category term="Hidraulic" /><summary type="html">The objective of this tutorial is to describe step by step how to make the hydraulic part of a sprinkler system.</summary></entry></feed>

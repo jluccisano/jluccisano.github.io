@@ -523,9 +523,9 @@ pip <span class="nb">install </span>adafruit_python_dht
 </span><span class="kn">import</span> <span class="nn">Adafruit_DHT</span>
 
 <span class="k">def</span> <span class="nf">getData_func</span><span class="p">():</span>
-    <span class="n">humidity</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="o">.</span><span class="n">read_retry</span><span class="p">(</span><span class="n">Adafruit_DHT</span><span class="o">.</span><span class="n">DHT22</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">humidity</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="p">.</span><span class="n">read_retry</span><span class="p">(</span><span class="n">Adafruit_DHT</span><span class="p">.</span><span class="n">DHT22</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">humidity</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">and</span> <span class="n">temperature</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">'Temperature={0:0.1f}*C  Humidity={1:0.1f}</span><span class="si">%</span><span class="s">'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">humidity</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Temperature={0:0.1f}*C  Humidity={1:0.1f}%'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">humidity</span><span class="p">))</span>
         <span class="k">return</span>  <span class="p">{</span> <span class="s">'@type'</span><span class="p">:</span><span class="s">'DHT22'</span><span class="p">,</span> <span class="s">'temperature'</span><span class="p">:</span> <span class="n">temperature</span><span class="p">,</span> <span class="s">'humidity'</span><span class="p">:</span> <span class="n">humidity</span> <span class="p">}</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="s">'Failed to get reading. Try again!'</span><span class="p">)</span>
@@ -659,6 +659,35 @@ pip <span class="nb">install </span>adafruit_python_dht
       <div class="archive__item-teaser">
         <img src=
           
+            "/assets/images/bike-building/IMG_4560.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/sport/bike-building/" rel="permalink">Bike building
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Introd
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
             "/assets/images/wheel-building/cover.jpg"
           
           alt="">
@@ -729,41 +758,6 @@ pip <span class="nb">install </span>adafruit_python_dht
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/maico-amorim-57141.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/computer/organize-photo-library/" rel="permalink">Organize photo library
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-  Environment
-  Upload
-  Consolidate
-  Backups
-  Show
-
 
 </p>
   </article>
