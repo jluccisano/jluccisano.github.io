@@ -150,7 +150,7 @@ var store = [{
         "url": "https://jluccisano.github.io/sport/wheel-building/",
         "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"},{
         "title": "Bike building",
-        "excerpt":"Intro Components Description Site Unit price QTY Total Frame TT-X21 Carbon T800 www.tantancycling.com     788,00€ - Carbon T700/T800 inner cable-frame+fork+seatpost+headset+handlebar   $579.00 1   - Custom paint matt   $70.00 1   - Custom logo   $50.00 1   - Delivery + transaction fees   $150+22.60€     Groupset...","categories": ["Sport"],
-        "tags": ["Sport","Cycling","DIY"],
+        "excerpt":"I want to share with you how we can build your own hand-crafted bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known...","categories": ["Sport"],
+        "tags": ["Sport","Cycling","DIY","Bike","Handcrafted"],
         "url": "https://jluccisano.github.io/sport/bike-building/",
         "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"}]
