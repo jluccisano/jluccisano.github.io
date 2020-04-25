@@ -1,6 +1,6 @@
 var store = [{
         "title": "Create a sprinkler system",
-        "excerpt":"The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.      Hydraulic part   Electonic part   Software part   Final Result   ","categories": ["Automation"],
+        "excerpt":"The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.      Hydraulic part   Electronic part   Software part   Final Result   ","categories": ["Automation"],
         "tags": ["Raspberry PI","Hydraulic","Electronic","Electrical","Python","Linux","SSH","REST","Internet of Things"],
         "url": "https://jluccisano.github.io/automation/sprinkler/",
         "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
