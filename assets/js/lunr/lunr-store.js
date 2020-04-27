@@ -150,7 +150,12 @@ var store = [{
         "url": "https://jluccisano.github.io/sport/wheel-building/",
         "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"},{
         "title": "Bike building",
-        "excerpt":"I want to share with you how we can build your own hand-crafted bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known...","categories": ["Sport"],
+        "excerpt":"I want to share with you how we can build your own custom bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known...","categories": ["Sport"],
         "tags": ["Sport","Cycling","DIY","Bike","Handcrafted"],
         "url": "https://jluccisano.github.io/sport/bike-building/",
-        "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"}]
+        "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"},{
+        "title": "My first drone DIY",
+        "excerpt":"Here my first take off drone DIY !    ","categories": ["DIY"],
+        "tags": ["Drone","Python","Electonics","DIY"],
+        "url": "https://jluccisano.github.io/diy/drone-diy/",
+        "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"}]
