@@ -147,7 +147,7 @@ var store = [{
         "title": "Ma première roue artisanale",
         "excerpt":"Dans cet article, je vais décrire toutes les étapes qui m’ont permis de réaliser ma première roue artisanale. Dès que j’ai débuté le vélo, je me suis très vite intéressé aux roues de vélo et compris l’importance qu’elles avaient en terme de performance, de confort et de sensations. J’ai acheté...","categories": ["Sport"],
         "tags": ["Sport","Mécanique","Cyclisme"],
-        "url": "https://jluccisano.github.io/sport/wheel-building/",
+        "url": "https://jluccisano.github.io/sport/wheel-building_fr/",
         "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"},{
         "title": "Bike building",
         "excerpt":"I want to share with you how we can build your own custom bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known...","categories": ["Sport"],
@@ -158,4 +158,9 @@ var store = [{
         "excerpt":"Here my first take off drone DIY !    ","categories": ["DIY"],
         "tags": ["Drone","Python","Electonics","DIY"],
         "url": "https://jluccisano.github.io/diy/drone-diy/",
-        "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"}]
+        "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
+        "title": "How to hand-build your wheel",
+        "excerpt":"In this article, I will describe all the steps that allowed me to make my first homemade wheel. As soon as I started cycling, I quickly became interested in bicycle wheels and understood the importance that they had in terms of performance, comfort and sensations. I bought several pairs, inexpensive...","categories": ["Sport"],
+        "tags": ["Sport","Mechanical","Cycling","Wheel building"],
+        "url": "https://jluccisano.github.io/sport/wheel-building_en/",
+        "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"}]
