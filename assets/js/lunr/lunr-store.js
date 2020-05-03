@@ -155,7 +155,7 @@ var store = [{
         "url": "https://jluccisano.github.io/sport/bike-building/",
         "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"},{
         "title": "My first drone DIY",
-        "excerpt":"Here my first take off drone DIY !    ","categories": ["DIY"],
+        "excerpt":"How to build a drone from scratch Here my first take off drone DIY ! List of components Component Price Link Ardupilot APM 2.8 Flight Controller Board 32.37€ https://www.banggood.com/Ardupilot-APM-2_8-Flight-Control-Board-Bend-Pin-with-Protective-Case-p-1123217.html?rmmds=myorder&amp;ID=528423&amp;cur_warehouse=CN Carbon Fiber Frame Kit Mini Quadcopter 15.45€ https://www.banggood.com/Lisam-LS-210-210mm-Carbon-Fiber-Frame-Kit-Mini-Quadcopter-p-1001216.html?rmmds=myorder&amp;cur_warehouse=CN 4X Racerstar Racing motors 40.03€ https://www.banggood.com/4X-Racerstar-Racing-Edition-2205-BR2205-2300KV-2-4S-Brushless-Motor-For-QAV250-ZMR250-RC-Drone-FPV-Racing-p-1066837.html?rmmds=myorder&amp;cur_warehouse=HK Propeller for Racing 7.22€ https://www.banggood.com/10-Pairs-Kingkong-LDARC-5040-5x4x3-3-Blade-Single-Color-CW-CCW-Propeller-for-Racing-Drone-p-1067875.html?rmmds=myorder&amp;ID=226&amp;cur_warehouse=CN FlySky FS-i6...","categories": ["DIY"],
         "tags": ["Drone","Python","Electonics","DIY"],
         "url": "https://jluccisano.github.io/diy/drone-diy/",
         "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
