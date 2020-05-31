@@ -155,7 +155,7 @@ var store = [{
         "url": "https://jluccisano.github.io/sport/bike-building/",
         "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"},{
         "title": "My first drone DIY",
-        "excerpt":"How to build a drone from scratch Here my first take off drone DIY ! List of components   Component Price Link         Ardupilot APM 2.8 Flight Controller Board 32.37€ https://www.banggood.com         Carbon Fiber Frame Kit Mini Quadcopter 15.45€ https://www.banggood.com        ...","categories": ["DIY"],
+        "excerpt":"How to build a drone from scratch Here my first take off drone DIY ! List of components   Component Price Link Ardupilot APM 2.8 Flight Controller Board 32.37€ https://www.banggood.com Carbon Fiber Frame Kit Mini Quadcopter 15.45€ https://www.banggood.com 4X Racerstar Racing motors 40.03€ https://www.banggood.com Propeller for Racing 7.22€ https://www.banggood.com FlySky...","categories": ["DIY"],
         "tags": ["Drone","Electronic","DIY"],
         "url": "https://jluccisano.github.io/diy/drone-diy/",
         "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
