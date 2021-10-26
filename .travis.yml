@@ -6,7 +6,7 @@ before_script:
 script: "./scripts/cibuild.sh"
 env:
   global:
-  - ENCRYPTION_LABEL: 9010d6b0979c
+  - ENCRYPTION_LABEL: 8ebb1ef83f64
   - COMMIT_AUTHOR_EMAIL: joseph.luccisano@gmail.com
 sudo: false
 branches:
@@ -19,5 +19,3 @@ after_success:
 before_install:
 - openssl aes-256-cbc -K $encrypted_8ebb1ef83f64_key -iv $encrypted_8ebb1ef83f64_iv
   -in github_deploy_key.enc -out github_deploy_key -d
-- openssl aes-256-cbc -K $encrypted_9010d6b0979c_key -iv $encrypted_9010d6b0979c_iv
-  -in deploy_key.enc -out deploy_key -d
