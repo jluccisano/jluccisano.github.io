@@ -130,7 +130,6 @@ j'oublie que je pédale.
 ![Mesure diamètre de roue](/assets/images/keep-active-at-home/mesure_diameter.jpg){:height="320px" width="320px"}
 ![Diamètre de roue](/assets/images/keep-active-at-home/wheel_diameter.jpg){:height="320px" width="320px"}
 
-
 ![Activity report](/assets/images/keep-active-at-home/activity_report.jpg)
 
 ![Vélo bureau](/assets/images/keep-active-at-home/velo_bureau.jpg){: .align-center :height="320px" width="320px"}
