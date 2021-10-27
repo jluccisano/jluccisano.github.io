@@ -29,7 +29,6 @@ jobs:
 
           # Save some useful information
           REPO=`git config remote.origin.url`
-          SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
           SHA=`git rev-parse --verify HEAD`
 
 
@@ -49,6 +48,8 @@ jobs:
           cd $HOME/out
           cp --verbose -Rf $HOME/_site/* .
 
+          echo ${{ secrets.GITHUB_TOKEN }}
+
           git config user.name "Travis CI"
           git config user.email "$COMMIT_AUTHOR_EMAIL"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
@@ -59,4 +60,4 @@ jobs:
           git commit   --verbose -m "Deploy to GitHub Pages: ${SHA}"
 
           echo "pushing\n"
-          git push --verbose $SSH_REPO $TARGET_BRANCH
+          git push --verbose $TARGET_BRANCH
