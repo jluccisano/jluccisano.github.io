@@ -58,8 +58,8 @@ les avantages du Télétravail ?
 # Un bureau assis-debout
 
 J'ai tout d'abord été séduit par le concept du bureau assis/debout.
-Alterner avec une position debout est forcément bénéfique pour le corps mais au fil du temps je me suis rendu que je
-ne l'utilisais que 10 à 15 min par jour en moyenne. En effet, je l'utilise naturellement quand je fais un meeting et 
+Alterner avec une position debout est forcément bénéfique pour le corps mais au fil du temps je me suis rendu 
+compte que je ne l'utilisais que 10 à 15 mins par jour en moyenne. En effet, je l'utilise naturellement quand je fais un meeting et 
 que j'ai besoin d'écrire sur mon tableau ou quand je fais des allers retours cuisine/bureau pendant que je me prépare à 
 manger. C'est toujours mieux que rien mais on ne peut pas dire que ça va me rendre plus actif.
 {: .text-justify}
@@ -84,17 +84,19 @@ la défouler. C'est trop bien cette complicité, Java est devenu un membre de la
 # Peu, mais tous les jours !
 
 Ensuite, je me suis dit qu'il faudrait que j'intègre une activité physique courte et simple n'imposant pas de 
-contraintes particulières afin de pouvoir l'installer sur le long terme. Alors je me suis mis à faire 2-3 min de gainage
+contraintes particulières afin de pouvoir l'installer sur le long terme. Alors je me suis mis à faire 2-3 mins de 
+gainage
 et d'étirements tous les jours. C'est court et sur le long terme ça permet d'entretenir ses muscles et l'élasticité
 de son corps. Pour avoir une bonne condition physique, il faut de la régularité et de la progressivité. Certains diront
-2-3 min ce n'est pas suffisant... moi je dis ça dépend pour quel objectif. Si c'est pour faire 3 semaines intensives
+2-3 mins ce n'est pas suffisant... moi je dis ça dépend pour quel objectif. Si c'est pour faire 3 semaines intensives
 avec 3-4 sessions de 45 mins et puis tout arrêter pour finalement revenir en quelques semaines au point de départ,
 cela n'a aucun intérêt. Il n'y a pas de progressivité, la barre est mise trop haute et très vite on s'attend à
 des résultats, la contrainte est forte et petit à petit perte de motivation voir même une blessure...
 La progressivité et la régularité sont les clés pour avoir un réel impact. Il sera donc 
-largement préférable de faire 2-3 min par jour régulièrement. La contrainte est faible ce qui permet de s'installer 
+largement préférable de faire 2-3 mins par jour régulièrement. La contrainte est faible ce qui permet de s'installer 
 sur le long terme. Pour un sportif, il faudrait en effet coupler 3 semaines intensives pour progresser puis entretenir 
-avec les 2-3 min le reste du temps. Pour un sédentaire les 2-3 min suffiront et auront un impact positif sur sa condition
+avec les 2-3 mins le reste du temps. Pour un sédentaire les 2-3 mins suffiront et auront un impact positif sur sa 
+condition
 physique. Je peux vous dire que ça marche, je n'ai même pas besoin de dire qu'il faut que je m'accroche, qu'il faut 
 passer des paliers... Il n'y a pas de contraintes, c'est devenu depuis des mois
 mon rituel quotidien. J'ai un rappel tous les jours à 11h parfois je décale dans la journée selon les disponibilités. 
@@ -108,7 +110,7 @@ Quelques minutes après je suis de retour sur ma chaise et la journée continue.
 # Pédaler en travaillant
 
 Le gainage et les étirements sont bénéfiques mais il manque quelque chose qui fait travailler le cardio et fait brûler
-des calories. Il faudrait que je puisse faire l'équivalent de 30 à 60 min de marche. L'idéal serait de pouvoir le 
+des calories. Il faudrait que je puisse faire l'équivalent de 30 à 60 mins de marche. L'idéal serait de pouvoir le 
 faire en parallèle de mon temps de travail. Je me suis tourné vers les tapis et vélos bureau. Très vite j'ai 
 constaté que c'était cher et qu'il n'y avait pas vraiment de retour d'expérience. Du coup, j'ai commencé à réfléchir
 pour m'en faire un. Je me suis dit, si je mets un vélo d'appartement sous le bureau, en lui enlèvant le guidon et en
@@ -151,7 +153,7 @@ Ma recette qui marche pour moi tout est optionnel bien sûr à chacun de trouver
 
 - <strong>Un bureau assis/debout</strong>
 - <strong>Avoir un chien</strong>
-- <strong>2-3 min de gainage par jour</strong>
+- <strong>2-3 mins de gainage par jour</strong>
 - <strong>Un vélo d'appartement à 10 balles!</strong>
 - <strong>Utiliser au maximum son vélo dans le quotidien (Projet en cours: aller faire les courses avec une remorque)</strong>
 
