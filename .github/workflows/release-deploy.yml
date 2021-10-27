@@ -49,6 +49,9 @@ jobs:
           cd $HOME/out
           cp --verbose -Rf $HOME/_site/* .
 
+          git config user.name "Travis CI"
+          git config user.email "$COMMIT_AUTHOR_EMAIL"
+
           echo "adding\n"
           git add --verbose -A .
           echo "commit\n"
