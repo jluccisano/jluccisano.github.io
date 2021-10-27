@@ -18,4 +18,41 @@ jobs:
       - name: build site
         run: ./scripts/cibuild.sh
       - name: deploy site
-        run: ./scripts/deploy.sh
+        run: |
+          SOURCE_BRANCH="develop"
+          TARGET_BRANCH="master"
+
+          echo "Starting to update master\n"
+
+          #copy data we're interested in to other place
+          cp -R --verbose _site $HOME/_site
+
+          # Save some useful information
+          REPO=`git config remote.origin.url`
+          SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+          SHA=`git rev-parse --verify HEAD`
+
+
+          # Clone the existing master for this repo into out/
+          # Create a new empty branch if master doesn't exist yet (should only happen on first deply)
+          echo "cloning\n"
+          # Now let's go have some fun with the cloned repo
+          git clone --verbose $REPO $HOME/out
+          cd $HOME/out
+          git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+          cd ..
+          # Clean out existing contents
+          echo "deleting\n"
+          rm --verbose -rf $HOME/out/**/* || exit
+          #go into directory and copy data we're interested in to that directory
+
+          cd $HOME/out
+          cp --verbose -Rf $HOME/_site/* .
+
+          echo "adding\n"
+          git add --verbose -A .
+          echo "commit\n"
+          git commit   --verbose -m "Deploy to GitHub Pages: ${SHA}"
+
+          echo "pushing\n"
+          git push --verbose $SSH_REPO $TARGET_BRANCH
