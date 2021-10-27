@@ -21,6 +21,7 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
+
 # Clone the existing master for this repo into out/
 # Create a new empty branch if master doesn't exist yet (should only happen on first deply)
 echo "cloning\n"
@@ -56,17 +57,19 @@ git add --verbose -A .
 echo "commit\n"
 git commit   --verbose -m "Deploy to GitHub Pages: ${SHA}"
 
-# Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
+# Get the deploy key by using Travis's stored variables to decrypt github_deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
 ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
 ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
 ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in /home/travis/build/jluccisano/jluccisano.github.io/deploy_key.enc -out /home/travis/build/jluccisano/jluccisano.github.io/deploy_key -d
-chmod 600 /home/travis/build/jluccisano/jluccisano.github.io/deploy_key
+openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in /home/travis/build/jluccisano/jluccisano.github.io/github_deploy_key.enc -out /home/travis/build/jluccisano/jluccisano.github.io/github_deploy_key -d
+chmod 600 /home/travis/build/jluccisano/jluccisano.github.io/github_deploy_key
 eval `ssh-agent -s`
-ssh-add /home/travis/build/jluccisano/jluccisano.github.io/deploy_key
+ssh-add /home/travis/build/jluccisano/jluccisano.github.io/github_deploy_key
 #pwd
 
 # Now that we're all set up, we can push.
 echo "pushing\n"
 git push --verbose $SSH_REPO $TARGET_BRANCH
+
+

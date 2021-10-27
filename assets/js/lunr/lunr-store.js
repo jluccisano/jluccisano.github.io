@@ -158,9 +158,14 @@ var store = [{
         "excerpt":"How to build a drone from scratch Here my first build and take off quadcopter DIY ! List of components   Component Price Link Ardupilot APM 2.8 Flight Controller Board 32.37€ https://www.banggood.com Carbon Fiber Frame Kit Mini Quadcopter 15.45€ https://www.banggood.com 4X Racerstar Racing motors 40.03€ https://www.banggood.com Propeller for Racing 7.22€...","categories": ["DIY"],
         "tags": ["Drone","Electronic","DIY","quadcopter"],
         "url": "https://jluccisano.github.io/diy/drone-diy/",
-        "teaser":"https://jluccisano.github.io/assets/images/anthony-rossbach-59486.jpg"},{
+        "teaser":"https://jluccisano.github.io/assets/images/drone/IMG_4659.jpg"},{
         "title": "How to hand-build your wheel",
         "excerpt":"In this article, I will describe all the steps that allowed me to make my first homemade wheel. As soon as I started cycling, I quickly became interested in bicycle wheels and understood the importance that they had in terms of performance, comfort and sensations. I bought several pairs, inexpensive...","categories": ["Sport"],
         "tags": ["Sport","Mechanical","Cycling","Wheel building"],
         "url": "https://jluccisano.github.io/sport/wheel-building_en/",
-        "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"}]
+        "teaser":"https://jluccisano.github.io/assets/images/wheel-building/cover.jpg"},{
+        "title": "Rester actif en télétravail",
+        "excerpt":"Mon retour d’expérience J’ai eu envie d’écrire cet article pour partager mon expérience sur le télétravail et plus particulièrement comment j’en ai tiré le meilleur de ces avantages tout en restant physiquement actif. Mon objectif est de partager certaines pratiques qui ont fonctionnées pour moi afin de motiver et convaincre...","categories": ["remote-working"],
+        "tags": ["Remote working"],
+        "url": "https://jluccisano.github.io/remote-working/keep-active-at-home-fr/",
+        "teaser":"https://jluccisano.github.io/assets/images/keep-active-at-home/velo_bureau.jpg"}]
