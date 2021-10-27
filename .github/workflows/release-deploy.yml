@@ -61,4 +61,4 @@ jobs:
           git commit   --verbose -m "Deploy to GitHub Pages: ${SHA}"
 
           echo "pushing\n"
-          git push --verbose $TARGET_BRANCH
+          git push --verbose origin/master
