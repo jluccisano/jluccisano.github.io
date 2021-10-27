@@ -48,8 +48,6 @@ jobs:
           cd $HOME/out
           cp --verbose -Rf $HOME/_site/* .
 
-          echo ${{ secrets.GITHUB_TOKEN }}
-
           git config user.name "Travis CI"
           git config user.email "$COMMIT_AUTHOR_EMAIL"
           git remote set-url origin https://x-token-auth:${{ secrets.GITHUB_TOKEN }}@github.com/jluccisano/jluccisano.github.io.git
@@ -61,4 +59,4 @@ jobs:
           git commit   --verbose -m "Deploy to GitHub Pages: ${SHA}"
 
           echo "pushing\n"
-          git push --verbose origin/master
+          git push --verbose origin master
