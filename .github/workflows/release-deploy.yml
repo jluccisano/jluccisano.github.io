@@ -52,7 +52,8 @@ jobs:
 
           git config user.name "Travis CI"
           git config user.email "$COMMIT_AUTHOR_EMAIL"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git remote set-url origin https://x-token-auth:${{ secrets.GITHUB_TOKEN }}@github.com/jluccisano/jluccisano.github.io.git
+
 
           echo "adding\n"
           git add --verbose -A .
