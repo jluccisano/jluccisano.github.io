@@ -21,6 +21,7 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
+
 # Clone the existing master for this repo into out/
 # Create a new empty branch if master doesn't exist yet (should only happen on first deply)
 echo "cloning\n"
@@ -70,3 +71,5 @@ ssh-add /home/travis/build/jluccisano/jluccisano.github.io/deploy_key
 # Now that we're all set up, we can push.
 echo "pushing\n"
 git push --verbose $SSH_REPO $TARGET_BRANCH
+
+
