@@ -169,7 +169,7 @@ var store = [{
         "tags": ["Remote working"],
         "url": "https://jluccisano.github.io/remote-working/keep-active-at-home-fr/",
         "teaser":"https://jluccisano.github.io/assets/images/keep-active-at-home/velo_bureau.jpg"},{
-        "title": "Bike building",
+        "title": "Time trial building",
         "excerpt":"I want to share with you how we can build your own custom bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known...","categories": ["Sport"],
         "tags": ["Sport","Cycling","DIY","Bike","Handcrafted"],
         "url": "https://jluccisano.github.io/sport/time-trial-building/",
