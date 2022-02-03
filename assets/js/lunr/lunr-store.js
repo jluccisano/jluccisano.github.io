@@ -168,4 +168,9 @@ var store = [{
         "excerpt":"Mon retour d’expérience J’ai eu envie d’écrire cet article pour partager mon expérience sur le télétravail et plus particulièrement comment j’en ai tiré le meilleur de ces avantages tout en restant physiquement actif. Mon objectif est de partager certaines pratiques qui ont fonctionnées pour moi afin de motiver et convaincre...","categories": ["remote-working"],
         "tags": ["Remote working"],
         "url": "https://jluccisano.github.io/remote-working/keep-active-at-home-fr/",
-        "teaser":"https://jluccisano.github.io/assets/images/keep-active-at-home/velo_bureau.jpg"}]
+        "teaser":"https://jluccisano.github.io/assets/images/keep-active-at-home/velo_bureau.jpg"},{
+        "title": "Bike building",
+        "excerpt":"I want to share with you how we can build your own custom bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known...","categories": ["Sport"],
+        "tags": ["Sport","Cycling","DIY","Bike","Handcrafted"],
+        "url": "https://jluccisano.github.io/sport/time-trial-building/",
+        "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"}]
