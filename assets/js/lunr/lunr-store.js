@@ -173,4 +173,9 @@ var store = [{
         "excerpt":"I want to share with you how we can build your own custom bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known...","categories": ["Sport"],
         "tags": ["Sport","Cycling","DIY","Bike","Handcrafted"],
         "url": "https://jluccisano.github.io/sport/time-trial-building/",
-        "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"}]
+        "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_4560.jpg"},{
+        "title": "Bio",
+        "excerpt":"Why ? Looking for a job has changed a lot, at least in the world of IT. Before, you had to apply with a CV and a cover letter To get an interview. Today, recruiters come directly to us. We are not going to complain about this situation, quite the...","categories": ["Misc"],
+        "tags": ["Bio"],
+        "url": "https://jluccisano.github.io/misc/bio/",
+        "teaser":"https://jluccisano.github.io/assets/images/markus-spiske-109588.jpg"}]

@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2022-02-03T19:33:09+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Time trial building</title><link href="https://jluccisano.github.io/sport/time-trial-building/" rel="alternate" type="text/html" title="Time trial building" /><published>2021-11-27T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/time-trial-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/time-trial-building/">&lt;p&gt;I want to share with you how we can build your own custom bike , top of the line with
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2022-03-20T14:46:34+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Bio</title><link href="https://jluccisano.github.io/misc/bio/" rel="alternate" type="text/html" title="Bio" /><published>2022-03-20T00:00:00+00:00</published><updated>2022-03-20T00:00:00+00:00</updated><id>https://jluccisano.github.io/misc/bio</id><content type="html" xml:base="https://jluccisano.github.io/misc/bio/">&lt;p&gt;Why ?&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Looking for a job has changed a lot, at least in the world of IT. Before, you had to apply with a CV and a cover letter
+To get an interview. Today, recruiters come directly to us. We are not going to complain about this situation, quite the contrary.
+In order not to waste time for both parties, I wanted to describe who I am, my vision, what I can do…&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;I’m a kind of hybrid, I can be Developer, Architect, DevOps, SRE, Full Stack… I don’t really have a specific hat.
+I don’t consider myself as an expert in every fields, frameworks or languages, I explored. Rather than multifaceted who is able to take actions
+on every layers of a software development. My job is to find technical solutions which rely to a functional requirement. The engineer’s job
+Is not to know everything but to know how to find relevant information in order to solve an issue or put a new piece of the “puzzle”.
+For several years, I work as a SRE (Site Reliability Engineer) which correspond to my philosophy. No day is the same, every day I learn new things,
+that’s why my job is a passion.  The age of Cloud computing and SaaS platform made software ever more complex. We are way off the CD-ROM
+following a V model. Today we talk about scalability, high availability, big data or containers following an agility model.
+We need to develop, deploy and test bugs, new features but also scale and migrate quickly in order to keep the high availability.
+Working with different teams with a specific role would take too much time. To answer that, we split and separated the service into micro-services with
+Small teams in charge of development and support of a specific component including testing, monitoring, operations, automation, maintenance, documentation, delivery…
+But these teams must keep a global vision on the whole service in order to move forward in the same way and share knowledge.
+The knowledge acquired allows me to be comfortable with this new software engineer paradigm.
+Always learning, watching new technologies, improving, refactoring… and don’t be afraid of change and so adapt to meet the needs of the moment.
+Always questioning yourself, accepting criticism, communicating and sharing to try to do better.
+The experience allows to go faster, make better decisions, have more creativity and more responsiveness to go even further.
+These are for me the capacities that the software engineer must have rather than a language or a framework which is only a means.
+Yesterday I was developing in Java today in Clojure and tomorrow ?&lt;/p&gt;
+
+&lt;h1 id=&quot;what-i-can-do-&quot;&gt;What I can do ?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Build distributed oriented data-driven or event-driven architectures&lt;/li&gt;
+  &lt;li&gt;Deploy a complete architecture on the Cloud&lt;/li&gt;
+  &lt;li&gt;Work with system of containerized applications&lt;/li&gt;
+  &lt;li&gt;Think scaling, migration, decoupling, agnostic solution before coding&lt;/li&gt;
+  &lt;li&gt;Develop micro-services and APIs&lt;/li&gt;
+  &lt;li&gt;Quickly develop an end-to-end PoC with GUI+Backend+…&lt;/li&gt;
+  &lt;li&gt;Interact with SQL, NoSQL, memory cache databases.&lt;/li&gt;
+  &lt;li&gt;Set up a continuous integration and delivery system (CI/CD).&lt;/li&gt;
+  &lt;li&gt;Automate recurring tasks as much as possible&lt;/li&gt;
+  &lt;li&gt;Set up alarms, metrics, dashboards that will allow to operate and monitor.&lt;/li&gt;
+  &lt;li&gt;Create an integration test environment&lt;/li&gt;
+  &lt;li&gt;Work in an international context even if I am not bilingual&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;what-do-i-like-to-do&quot;&gt;What do I like to do?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I like to refactor, migrate or even better start from scratch on a new architecture with everything to do&lt;/li&gt;
+  &lt;li&gt;I like having a goal and being given the autonomy to achieve it.&lt;/li&gt;
+  &lt;li&gt;My 3 pillars are my family, sport and IT. Sport allows me to evacuate and free my mind.&lt;/li&gt;
+  &lt;li&gt;I like to stop everything and then resume the next day after a good night’s sleep or a good sports session and unblock a situation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;what-dont-i-like-to-do&quot;&gt;What don’t I like to do?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Large teams with lots of processes&lt;/li&gt;
+  &lt;li&gt;I don’t like to be restrained, I have to be able to go at my own pace&lt;/li&gt;
+  &lt;li&gt;I don’t support repetitive tasks&lt;/li&gt;
+  &lt;li&gt;I avoid and make sure not to do what does not interest me&lt;/li&gt;
+  &lt;li&gt;Imposing a programming language and/or an OS&lt;/li&gt;
+  &lt;li&gt;I can’t stand boredom, I need challenges to keep my motivation&lt;/li&gt;
+  &lt;li&gt;Too many meetings to speculate. I like to go straight to the point.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;qualitiesflaws-according-to-the-point-of-view&quot;&gt;Qualities/Flaws according to the point of view&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I say what I think&lt;/li&gt;
+  &lt;li&gt;Very persistent&lt;/li&gt;
+  &lt;li&gt;I work on several subjects at the same time&lt;/li&gt;
+  &lt;li&gt;I like to work alone and then integrate with others&lt;/li&gt;
+  &lt;li&gt;Not afraid to try, I go for it.&lt;/li&gt;
+  &lt;li&gt;I’m working to make it work. I’d rather iterate than never deliver while waiting for perfection&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-work-environment&quot;&gt;The work environment&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Full remote&lt;/li&gt;
+  &lt;li&gt;Freelancer or CDI&lt;/li&gt;
+  &lt;li&gt;MacOS&lt;/li&gt;
+  &lt;li&gt;Great autonomy&lt;/li&gt;
+  &lt;li&gt;No imposition of language or other&lt;/li&gt;
+  &lt;li&gt;A business area that has meaning for me: the environment, personal assistance and especially sport&lt;/li&gt;
+  &lt;li&gt;Project from scratch / refactoring / migration / new architecture&lt;/li&gt;
+  &lt;li&gt;Prioritize small teams&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Misc" /><category term="Bio" /><summary type="html">Why ?</summary></entry><entry><title type="html">Time trial building</title><link href="https://jluccisano.github.io/sport/time-trial-building/" rel="alternate" type="text/html" title="Time trial building" /><published>2021-11-27T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/time-trial-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/time-trial-building/">&lt;p&gt;I want to share with you how we can build your own custom bike , top of the line with
 an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or
 quality. I bought carbon gears in the same OEM Manufacturer like well-known brand, I just removed intermediaries.&lt;/p&gt;
 
@@ -3548,76 +3632,4 @@ One distant backup in the OVH Server&lt;/p&gt;
 &lt;p&gt;Access to DS Photo anywhere from anydevice`&lt;/p&gt;
 
 &lt;p&gt;You manage your library as you want. we aren’t coupled with any applicaton
-unlike using Apple photo, Microsoft or others.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Computer" /><category term="Linux" /><summary type="html">Environment Upload Consolidate Backups Show</summary></entry><entry><title type="html">Tunelling itunes server</title><link href="https://jluccisano.github.io/computer/tuneling-itunes-server/" rel="alternate" type="text/html" title="Tunelling itunes server" /><published>2017-10-10T00:00:00+00:00</published><updated>2017-10-10T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/tuneling-itunes-server</id><content type="html" xml:base="https://jluccisano.github.io/computer/tuneling-itunes-server/">&lt;p&gt;Tunneling Itunes server over SSH&lt;/p&gt;
-
-&lt;p&gt;Itunes server&lt;/p&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;h4 id=&quot;ssh-config&quot;&gt;SSH Config&lt;/h4&gt;
-
-&lt;p&gt;Check your SSH server config:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim /etc/sshd_config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You need to have these params&lt;/p&gt;
-
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AllowTcpForwarding yes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;router-config&quot;&gt;Router config&lt;/h4&gt;
-
-&lt;p&gt;Don’t forget forwarding port&lt;/p&gt;
-
-&lt;h4 id=&quot;restart-the-ssh-daemon&quot;&gt;Restart the SSH daemon&lt;/h4&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;synoservicectl &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; sshd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;manual&quot;&gt;Manual&lt;/h3&gt;
-
-&lt;h3 id=&quot;scripting&quot;&gt;Scripting&lt;/h3&gt;
-
-&lt;h4 id=&quot;create-an-rsa-key&quot;&gt;Create an RSA key&lt;/h4&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;synoservicectl &lt;span class=&quot;nt&quot;&gt;--restart&lt;/span&gt; sshd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;read + write
-chmod 600 Authorized_keys 
-RSAAuthentication yes&lt;/p&gt;
-
-&lt;p&gt;sudo synoservicectl –restart sshd
-sudo chmod -R 755 /volume1/homes/YOUR_USER&lt;/p&gt;
-
-&lt;p&gt;http://www.uponmyshoulder.com/blog/2010/tunneling-itunes-through-ssh/&lt;/p&gt;
-
-&lt;p&gt;ssh -p 87 -N jluccisano@81.56.136.120  -L 3690:localhost:3689 -f
-ssh -A -L 3690:localhost:3689 -N -f jluccisano@81.56.136.120
-ssh -p 87 -N -L 3690:localhost:3689 jluccisano@81.56.136.120
-ssh -p 87 -C -N -L  3692:localhost:3689 jluccisano@81.56.136.120&lt;/p&gt;
-
-&lt;p&gt;dns-sd -P jluccisano _daap._tcp local 3690 localhost 127.0.0.1 &amp;amp;
-dns-sd -P name type domain port host IP [key=value …]
-dns-sd -P jluccisano _daap._tcp local. 3690 localhost. 127.0.0.1
-dns-sd -P jluccisano _daap._tcp local 3692 localhost.local 127.0.0.1 “ffid=12345”&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lsof -i -n&lt;/td&gt;
-      &lt;td&gt;egrep ‘&amp;lt;ssh&amp;gt;’&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;lsof -i tcp&lt;/td&gt;
-      &lt;td&gt;grep ^ssh&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;The following just searches for iTunes Home Sharing instances&lt;/p&gt;
-
-&lt;p&gt;dns-sd -B
-dns-sd -B _home-sharing._tcp
-dns-sd -B _daap._tcp&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Computer" /><category term="ssh" /><summary type="html">Tunneling Itunes server over SSH</summary></entry></feed>
+unlike using Apple photo, Microsoft or others.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Computer" /><category term="Linux" /><summary type="html">Environment Upload Consolidate Backups Show</summary></entry></feed>
