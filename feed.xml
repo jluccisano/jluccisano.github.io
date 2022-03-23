@@ -1,42 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2022-03-23T10:14:07+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Bio</title><link href="https://jluccisano.github.io/misc/bio/" rel="alternate" type="text/html" title="Bio" /><published>2022-03-20T00:00:00+00:00</published><updated>2022-03-20T00:00:00+00:00</updated><id>https://jluccisano.github.io/misc/bio</id><content type="html" xml:base="https://jluccisano.github.io/misc/bio/">&lt;p&gt;Why ?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2022-03-23T10:26:07+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Bio</title><link href="https://jluccisano.github.io/misc/bio/" rel="alternate" type="text/html" title="Bio" /><published>2022-03-20T00:00:00+00:00</published><updated>2022-03-20T00:00:00+00:00</updated><id>https://jluccisano.github.io/misc/bio</id><content type="html" xml:base="https://jluccisano.github.io/misc/bio/">&lt;p&gt;Why ?&lt;/p&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;Looking for a job has changed a lot, at least in the world of IT. Before, you had to apply with a CV and a cover letter
+&lt;p class=&quot;text-justify&quot;&gt;Looking for a job has changed a lot, at least in the world of IT. Before, you had to apply with a CV, and a cover letter
 To get an interview. Today, recruiters come directly to us. We are not going to complain about this situation, quite the contrary.
 In order not to waste time for both parties, I wanted to describe who I am, my vision, what I can do…&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;I’m a kind of hybrid, I can be Developer, Architect, DevOps, SRE, Full Stack… I don’t really have a specific hat.
 I don’t consider myself as an expert in every fields, frameworks or languages, I explored. Rather than multifaceted who is able to take actions
-on every layers of a software development. My job is to find technical solutions which rely to a functional requirement. The engineer’s job
-is not to know everything but to know how to find relevant information in order to solve an issue or put a new piece of the “puzzle”.
-For several years, I work as a SRE (Site Reliability Engineer) which correspond to my philosophy. No day is the same, every day I learn new things,
+on every layers of a software development. My job is to find technical solutions which rely on a functional requirement. The engineer’s job
+is not to know everything but to know how to find relevant information in order to solve an issue or put a new piece of the “puzzle”.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;For several years, I work as a SRE (Site Reliability Engineer) which correspond to my philosophy. No day is the same, every day I learn new things,
 that’s why my job is a passion.  The age of Cloud computing and SaaS platform made software ever more complex. We are way off the CD-ROM
 following a V model. Today we talk about scalability, high availability, big data or containers following an agility model.
 We need to develop, deploy and test bugs, new features but also scale and migrate quickly in order to keep the high availability.
 Working with different teams with a specific role would take too much time. To answer that, we split and separated the service into micro-services with
 small teams in charge of development and support of a specific component including testing, monitoring, operations, automation, maintenance, documentation, delivery…
-But these teams must keep a global vision on the whole service in order to move forward in the same way and share knowledge.
-The knowledge acquired allows me to be comfortable with this new software engineer paradigm.
+But these teams must keep a global vision on the whole service in order to move forward in the same way and share knowledge.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The knowledge acquired allows me to be comfortable with this new software engineer paradigm.
 Always learning, watching new technologies, improving, refactoring… and don’t be afraid of change and so adapt to meet the needs of the moment.
 Always questioning yourself, accepting criticism, communicating and sharing to try to do better.
-The experience allows to go faster, make better decisions, have more creativity and more responsiveness to go even further.
-These are for me the capacities that the software engineer must have rather than a language or a framework which is only a mean.
+The experience allows going faster, make better decisions, have more creativity and more responsiveness to go even further.
+These are for me the capacities that the software engineer must have rather than a language, or a framework which is only a mean.
 Yesterday I was developing in Java today in Clojure and tomorrow ?&lt;/p&gt;
 
 &lt;h1 id=&quot;what-can-i-do-&quot;&gt;What can I do ?&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Build distributed oriented data-driven or event-driven architectures&lt;/li&gt;
-  &lt;li&gt;Deploy a complete architecture on the Cloud&lt;/li&gt;
-  &lt;li&gt;Work with system of containerized applications&lt;/li&gt;
-  &lt;li&gt;Think scaling, migration, decoupling, agnostic solution before coding&lt;/li&gt;
-  &lt;li&gt;Develop micro-services and APIs&lt;/li&gt;
-  &lt;li&gt;Quickly develop an end-to-end PoC with GUI+Backend+…&lt;/li&gt;
-  &lt;li&gt;Interact with SQL, NoSQL, memory cache databases.&lt;/li&gt;
-  &lt;li&gt;Set up a continuous integration and delivery system (CI/CD).&lt;/li&gt;
-  &lt;li&gt;Automate recurring tasks as much as possible&lt;/li&gt;
-  &lt;li&gt;Set up alarms, metrics, dashboards that will allow to operate and monitor.&lt;/li&gt;
-  &lt;li&gt;Create an integration test environment&lt;/li&gt;
-  &lt;li&gt;Work in an international context even if I am not bilingual&lt;/li&gt;
+  &lt;li&gt;Build distributed oriented data-driven or event-driven architectures;&lt;/li&gt;
+  &lt;li&gt;Deploy a complete architecture on the Cloud;&lt;/li&gt;
+  &lt;li&gt;Work with system of containerized applications;&lt;/li&gt;
+  &lt;li&gt;Think scaling, migration, decoupling, agnostic solution before coding;&lt;/li&gt;
+  &lt;li&gt;Develop micro-services and APIs;&lt;/li&gt;
+  &lt;li&gt;Quickly develop an end-to-end PoC with GUI+Backend+…;&lt;/li&gt;
+  &lt;li&gt;Interact with SQL, NoSQL, memory cache databases;&lt;/li&gt;
+  &lt;li&gt;Set up a continuous integration and delivery system (CI/CD);&lt;/li&gt;
+  &lt;li&gt;Automate recurring tasks as much as possible;&lt;/li&gt;
+  &lt;li&gt;Set up alarms, metrics, dashboards that will allow operating and monitoring;&lt;/li&gt;
+  &lt;li&gt;Create an integration test environment;&lt;/li&gt;
+  &lt;li&gt;Work in an international context even if I am not bilingual.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;what-i-like-to-do&quot;&gt;What I like to do?&lt;/h1&gt;
@@ -46,9 +48,9 @@ Yesterday I was developing in Java today in Clojure and tomorrow ?&lt;/p&gt;
   &lt;li&gt;I like having a goal and being given the autonomy to achieve it.&lt;/li&gt;
   &lt;li&gt;My 3 pillars are my family, sport and IT. Sport allows me free my mind. 
 I practise a lot of endurance sport: triathlon, swimming, cycling, running, skate skiing… I practise when I want 
-in harmony with the nature. Sport and IT are the same philosophy for myself: train, optimize,
-iterate and rest to meet a personal performance , go further and faster.&lt;/li&gt;
-  &lt;li&gt;I like to stop everything and then resume the next day after a good night’s sleep or a good sports session and unblock a situation.&lt;/li&gt;
+in harmony with the nature. Sport, and IT are the same philosophy for myself: train, optimize,
+iterate and rest to meet a personal performance, go further and faster.&lt;/li&gt;
+  &lt;li&gt;I like to stop everything and then resume the next day after a good night’s sleep, or a good sports session and unblock a situation.&lt;/li&gt;
   &lt;li&gt;I like to develop concrete project for my personal use. So I created for several years some projects, I posted all
 my experiences in this site to share knowledge with each others. I created my own sprinkler system, my home alarm.
 I built my bikes and wheels, my drone…&lt;/li&gt;
@@ -82,7 +84,7 @@ I built my bikes and wheels, my drone…&lt;/li&gt;
 &lt;ul&gt;
   &lt;li&gt;Full remote&lt;/li&gt;
   &lt;li&gt;Freelancer or permanent contract (CDI)&lt;/li&gt;
-  &lt;li&gt;Work on MacOS&lt;/li&gt;
+  &lt;li&gt;Work on macOS&lt;/li&gt;
   &lt;li&gt;Great autonomy&lt;/li&gt;
   &lt;li&gt;No imposition of language or others&lt;/li&gt;
   &lt;li&gt;A business area that has meaning for me: the environment, personal assistance and especially sport&lt;/li&gt;
