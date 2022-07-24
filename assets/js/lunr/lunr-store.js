@@ -170,7 +170,7 @@ var store = [{
         "url": "https://jluccisano.github.io/remote-working/keep-active-at-home-fr/",
         "teaser":"https://jluccisano.github.io/assets/images/keep-active-at-home/velo_bureau.jpg"},{
         "title": "Time trial building",
-        "excerpt":"This my time trial building based on the generic mould FM109-D. I shared below all components I bought. I also shared some videos on my youtube channel. Components Description Site Unit price QTY Price Kit Frame Hongfu shippment 157$         0.868499 * 904= 785.12 + fees 23.48...","categories": ["Sport"],
+        "excerpt":"This is my time trial building based on the generic mould FM109-D. I shared below all components I bought. I also shared some videos on my youtube channel. Components Description Site Unit price QTY Price Kit Frame Hongfu shippment 157$         0.868499 * 904= 785.12 + fees...","categories": ["Sport"],
         "tags": ["Sport","Cycling","DIY","Bike","Handcrafted"],
         "url": "https://jluccisano.github.io/sport/time-trial-building/",
         "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_7804.jpg"},{
@@ -180,7 +180,7 @@ var store = [{
         "url": "https://jluccisano.github.io/misc/bio/",
         "teaser":"https://jluccisano.github.io/assets/images/markus-spiske-109588.jpg"},{
         "title": "Mountain bike building",
-        "excerpt":"This my mountain bike building based on the generic mould FM10. I shared below all components I bought. Components Description Site Unit price QTY Price+shipping Kit Frame TantanCycling 670.22 1 670.22 Handlebar 740mm 20*0.86 TantanCycling 17.2 1 17.2 Fourche ROCKSHOX PIKE ULTIMATE CHARGER 2.1 RC2 27,5” 150 mm DebonAir Conique...","categories": ["Sport"],
+        "excerpt":"This is my mountain bike building based on the generic mould FM10. I shared below all components I bought. Components Description Site Unit price QTY Price+shipping Kit Frame TantanCycling 670.22 1 670.22 Handlebar 740mm 20*0.86 TantanCycling 17.2 1 17.2 Fourche ROCKSHOX PIKE ULTIMATE CHARGER 2.1 RC2 27,5” 150 mm DebonAir...","categories": ["Sport"],
         "tags": ["Sport","Cycling","DIY","Bike","Handcrafted","Mountain bike"],
         "url": "https://jluccisano.github.io/sport/mountain-bike-building/",
         "teaser":"https://jluccisano.github.io/assets/images/bike-building/IMG_5581.jpg"}]
