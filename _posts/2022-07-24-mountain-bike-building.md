@@ -19,7 +19,7 @@ tags:
 This is my mountain bike building based on the open mould FM10.
 I shared below all components I bought.
 
-![Mountain_bike_building](/assets/images/bike-building/IMG_5508.jpg)
+![Mountain_bike_building](/assets/images/bike-building/IMG_5508.JPG)
 
 ![Mountain_bike_building](/assets/images/bike-building/IMG_5581.jpg)
 
