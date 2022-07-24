@@ -1,145 +1,243 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2022-03-23T10:26:07+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Bio</title><link href="https://jluccisano.github.io/misc/bio/" rel="alternate" type="text/html" title="Bio" /><published>2022-03-20T00:00:00+00:00</published><updated>2022-03-20T00:00:00+00:00</updated><id>https://jluccisano.github.io/misc/bio</id><content type="html" xml:base="https://jluccisano.github.io/misc/bio/">&lt;p&gt;Why ?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://jluccisano.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jluccisano.github.io/" rel="alternate" type="text/html" /><updated>2022-07-24T13:33:43+00:00</updated><id>https://jluccisano.github.io/feed.xml</id><title type="html">Practice makes perfect</title><subtitle>An amazing website.</subtitle><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><entry><title type="html">Mountain bike building</title><link href="https://jluccisano.github.io/sport/mountain-bike-building/" rel="alternate" type="text/html" title="Mountain bike building" /><published>2022-07-24T00:00:00+00:00</published><updated>2022-07-24T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/mountain-bike-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/mountain-bike-building/">&lt;p&gt;This my mountain bike building based on the generic mould FM10.
+I shared below all components I bought.&lt;/p&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;Looking for a job has changed a lot, at least in the world of IT. Before, you had to apply with a CV, and a cover letter
-To get an interview. Today, recruiters come directly to us. We are not going to complain about this situation, quite the contrary.
-In order not to waste time for both parties, I wanted to describe who I am, my vision, what I can do…&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/bike-building/IMG_5508 .jpg&quot; alt=&quot;Mountain_bike_building&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;I’m a kind of hybrid, I can be Developer, Architect, DevOps, SRE, Full Stack… I don’t really have a specific hat.
-I don’t consider myself as an expert in every fields, frameworks or languages, I explored. Rather than multifaceted who is able to take actions
-on every layers of a software development. My job is to find technical solutions which rely on a functional requirement. The engineer’s job
-is not to know everything but to know how to find relevant information in order to solve an issue or put a new piece of the “puzzle”.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;For several years, I work as a SRE (Site Reliability Engineer) which correspond to my philosophy. No day is the same, every day I learn new things,
-that’s why my job is a passion.  The age of Cloud computing and SaaS platform made software ever more complex. We are way off the CD-ROM
-following a V model. Today we talk about scalability, high availability, big data or containers following an agility model.
-We need to develop, deploy and test bugs, new features but also scale and migrate quickly in order to keep the high availability.
-Working with different teams with a specific role would take too much time. To answer that, we split and separated the service into micro-services with
-small teams in charge of development and support of a specific component including testing, monitoring, operations, automation, maintenance, documentation, delivery…
-But these teams must keep a global vision on the whole service in order to move forward in the same way and share knowledge.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;The knowledge acquired allows me to be comfortable with this new software engineer paradigm.
-Always learning, watching new technologies, improving, refactoring… and don’t be afraid of change and so adapt to meet the needs of the moment.
-Always questioning yourself, accepting criticism, communicating and sharing to try to do better.
-The experience allows going faster, make better decisions, have more creativity and more responsiveness to go even further.
-These are for me the capacities that the software engineer must have rather than a language, or a framework which is only a mean.
-Yesterday I was developing in Java today in Clojure and tomorrow ?&lt;/p&gt;
-
-&lt;h1 id=&quot;what-can-i-do-&quot;&gt;What can I do ?&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Build distributed oriented data-driven or event-driven architectures;&lt;/li&gt;
-  &lt;li&gt;Deploy a complete architecture on the Cloud;&lt;/li&gt;
-  &lt;li&gt;Work with system of containerized applications;&lt;/li&gt;
-  &lt;li&gt;Think scaling, migration, decoupling, agnostic solution before coding;&lt;/li&gt;
-  &lt;li&gt;Develop micro-services and APIs;&lt;/li&gt;
-  &lt;li&gt;Quickly develop an end-to-end PoC with GUI+Backend+…;&lt;/li&gt;
-  &lt;li&gt;Interact with SQL, NoSQL, memory cache databases;&lt;/li&gt;
-  &lt;li&gt;Set up a continuous integration and delivery system (CI/CD);&lt;/li&gt;
-  &lt;li&gt;Automate recurring tasks as much as possible;&lt;/li&gt;
-  &lt;li&gt;Set up alarms, metrics, dashboards that will allow operating and monitoring;&lt;/li&gt;
-  &lt;li&gt;Create an integration test environment;&lt;/li&gt;
-  &lt;li&gt;Work in an international context even if I am not bilingual.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;what-i-like-to-do&quot;&gt;What I like to do?&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I like to refactor, migrate or even better start from scratch on a new architecture with everything to do&lt;/li&gt;
-  &lt;li&gt;I like having a goal and being given the autonomy to achieve it.&lt;/li&gt;
-  &lt;li&gt;My 3 pillars are my family, sport and IT. Sport allows me free my mind. 
-I practise a lot of endurance sport: triathlon, swimming, cycling, running, skate skiing… I practise when I want 
-in harmony with the nature. Sport, and IT are the same philosophy for myself: train, optimize,
-iterate and rest to meet a personal performance, go further and faster.&lt;/li&gt;
-  &lt;li&gt;I like to stop everything and then resume the next day after a good night’s sleep, or a good sports session and unblock a situation.&lt;/li&gt;
-  &lt;li&gt;I like to develop concrete project for my personal use. So I created for several years some projects, I posted all
-my experiences in this site to share knowledge with each others. I created my own sprinkler system, my home alarm.
-I built my bikes and wheels, my drone…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;what-dont-i-like&quot;&gt;What don’t I like?&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Large teams with lots of processes&lt;/li&gt;
-  &lt;li&gt;I don’t like to be restrained, I have to be able to go at my own pace&lt;/li&gt;
-  &lt;li&gt;I don’t support repetitive tasks&lt;/li&gt;
-  &lt;li&gt;I avoid and make sure not to do what does not interest me&lt;/li&gt;
-  &lt;li&gt;Imposing a programming language and/or an OS&lt;/li&gt;
-  &lt;li&gt;I can’t stand boredom, I need challenges to keep my motivation&lt;/li&gt;
-  &lt;li&gt;Too many meetings to speculate. I like to go straight to the point.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;qualitiesflaws-according-to-the-point-of-view&quot;&gt;Qualities/Flaws according to the point of view&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I say what I think&lt;/li&gt;
-  &lt;li&gt;Very persistent&lt;/li&gt;
-  &lt;li&gt;I work on several subjects at the same time&lt;/li&gt;
-  &lt;li&gt;I like to work alone and then integrate with others&lt;/li&gt;
-  &lt;li&gt;Not afraid to try, I go for it.&lt;/li&gt;
-  &lt;li&gt;I’m working to make it work. I’d rather iterate than never deliver while waiting for perfection&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;the-work-environment&quot;&gt;The work environment&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Full remote&lt;/li&gt;
-  &lt;li&gt;Freelancer or permanent contract (CDI)&lt;/li&gt;
-  &lt;li&gt;Work on macOS&lt;/li&gt;
-  &lt;li&gt;Great autonomy&lt;/li&gt;
-  &lt;li&gt;No imposition of language or others&lt;/li&gt;
-  &lt;li&gt;A business area that has meaning for me: the environment, personal assistance and especially sport&lt;/li&gt;
-  &lt;li&gt;Project from scratch / refactoring / migration / new architecture&lt;/li&gt;
-  &lt;li&gt;Prioritize small teams&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Misc" /><category term="Bio" /><summary type="html">Why ?</summary></entry><entry><title type="html">Time trial building</title><link href="https://jluccisano.github.io/sport/time-trial-building/" rel="alternate" type="text/html" title="Time trial building" /><published>2021-11-27T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/time-trial-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/time-trial-building/">&lt;p&gt;I want to share with you how we can build your own custom bike , top of the line with
-an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or
-quality. I bought carbon gears in the same OEM Manufacturer like well-known brand, I just removed intermediaries.&lt;/p&gt;
-
-&lt;p&gt;If like me, you are passionate, curious and you always want to learn more !
-Let’s share knowledge together ! to go ever further !&lt;/p&gt;
-
-&lt;p&gt;If we can do a top of line less than 4000€, we can do a quality bike for 1500€.&lt;/p&gt;
-
-&lt;p&gt;If you want more details about my experience, will let me know, follow me!&lt;/p&gt;
-
-&lt;p&gt;I will share my experience in details soon. Below the teaser and the list of components I used.&lt;/p&gt;
-
-&lt;p&gt;Let’s enjoy to ride with our own build bike , it’s so amazing!&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-
-  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/s0pH78SQslI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/bike-building/IMG_5581.jpg&quot; alt=&quot;Mountain_bike_building&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;components&quot;&gt;Components&lt;/h1&gt;
 
-&lt;p&gt;| Description                                                           | Site                                          | Unit price | QTY | Price    |
-|———————————————————————–|———————————————–|————|—–|———-|
-| Kit Frame                                                             | Hongfu shippment 157$                         |            |     |          |
-|                                                                       | 0.868499 * 904= 785.12 + fees 23.48           |            |     |          |
-|                                                                       | 0.847996 * 905 = 767.63 + fees 22.64          |            |     | 1,598.87 |
-| 1 x SRAM Red 1x12 Speed Aero                                          | mantel                                        |            | 1   | 482,97€  |
-| Sram Force D1 eTap Dérailleur Arrière 12V                             | hollandbike                                   |            | 1   | 274,66   |
-| CHAÎNE SRAM FORCE AXS D1 114LINK/POWER LOCK 12S 1PC                   | sportgoods                                    |            | 1   | 35,74 €  |
-| Etrier Hope RX4+ Flat Mount +20mm Sram DOT Bleu HBSPC74B              | alltricks                                     |            | 1   | 125      |
-| Etrier Avant Hope RX4+ Flat Mount Sram DOT Bleu HBSPC72B              | alltricks                                     |            | 1   | 125      |
-| Conduite Hydraulique Monoblock pour Red eTap® HRD                     | bike-components                               | 29.23      | 2   | 58.46    |
-| Sram Hood kit S-900 Aero Hydrot Black One Size                        | bikeinn                                       | 98.49      | 2   | 196.98   |
-| Sram Lever Kit S-900 Aero Hydrot Black One Size                       | bikeinn +4.99 shipment                        | 38.49      | 2   | 76.98    |
-| SRAM BRAKE LEVER MASTER PISTON KIT S900 AERO HRD                      | planet cyclery  $5.6 + stackry &lt;br /&gt;via aramex | $25.90     | 2   | 31.50    |
-| Boitier de Controle Sram BlipBox eTap AXS D1                          | alltricks                                     | 329.99     | 1   | 329.99   |
-| Boutons Satellites SRAM Blips 650 mm E-Tap (Paire)                    | alltricks                                     | 94.99      | 1   | 94.99    |
-| Paire de Boutons Satellites Sram Clics 650mm E-Tap pour Prolongateurs | alltricks                                     | 104.49     | 1   | 104.49   |
-| Cassette 33T                                                          |                                               |            |     |          |
-| Ruban de Cintre Lizard Skins DSP V2 Noir Jet 1.8                      | alltricks                                     | 25.99      | 1   | 25.99    |
-| Matos que j’avais déjà prix d’origine                                 |                                               |            |     |          |
-| Pédale Favero DUO                                                     | Powermeter                                    |            |     | 599      |
-| Roues lenticulaire dt350                                              | Alibaba                                       |            |     | 721      |
-| Roues dt240                                                           |                                               |            |     |          |
-| Disques                                                               |                                               |            |     |          |
-| Selle Dash                                                            |                                               |            |     |          |
-| Profile Design HSF/800+ Premium Dispositif d’hydratation              | bikester                                      |            |     | 99.99    |&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Site&lt;/th&gt;
+      &lt;th&gt;Unit price&lt;/th&gt;
+      &lt;th&gt;QTY&lt;/th&gt;
+      &lt;th&gt;Price+shipping&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Kit Frame&lt;/td&gt;
+      &lt;td&gt;TantanCycling&lt;/td&gt;
+      &lt;td&gt;670.22&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;670.22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Handlebar 740mm 20*0.86&lt;/td&gt;
+      &lt;td&gt;TantanCycling&lt;/td&gt;
+      &lt;td&gt;17.2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;17.2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Fourche ROCKSHOX PIKE ULTIMATE CHARGER 2.1 RC2 27,5” 150 mm DebonAir Conique Axe 15 mm Boost Déport 46 mm Argent 2021&lt;/td&gt;
+      &lt;td&gt;Probikeshop.fr&lt;/td&gt;
+      &lt;td&gt;765.97&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;765.97&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Rayons Competition® Straightpull 2.0 / 1.8 - 5 pièces noir/284 mm&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;6.55&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;39.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Écrous en Aluminium Pro Lock® Squorx Pro Head® 2,0 mm - 5 pièces noir/15 mm&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;4.54&lt;/td&gt;
+      &lt;td&gt;12&lt;/td&gt;
+      &lt;td&gt;54.48&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Rayons Competition® Straightpull 2.0 / 1.8 - 5 pièces noir/286 mm&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;6.04&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;36.24&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Set de 2 Pneus Souples Minion DHF/DHR II 3C MaxxTerra EXO+ WT TR 27,5” noir/27,5x2,5 / 27,5x2,4&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;115.83&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;115.83&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Set de Freins à Disque av.+arr. G2 RSC&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;236.97&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;236.97&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Moyeu Arrière 350 Straightpull VTT Boost Disc Center Lock &lt;br /&gt;noir/12 x 148 mm / 28 trous/ SRAM XD&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;166.39&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;166.39&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Moyeu Avant 350 Straightpull VTT Boost Disc Center Lock &lt;br /&gt;oir/15 x 110 mm / 28 trous&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;56.46&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;56.46&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Potence Team AM Stealth 31.8 &lt;br /&gt;lack stealth/40 mm 6°&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;40.33&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;40.33&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Jante XM 481 Disc 27,5”  black/27,5” / 28 trous&lt;/td&gt;
+      &lt;td&gt;bike-components.de&lt;/td&gt;
+      &lt;td&gt;85.66&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;181.27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pédales VTT Crankbrothers Double Shot 2&lt;/td&gt;
+      &lt;td&gt;materiel-velo.com&lt;/td&gt;
+      &lt;td&gt;69.95&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;74.94&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TiTo-selle de vélo avec nœud en titane, accessoires de cyclisme sur la route et pour vtt&lt;/td&gt;
+      &lt;td&gt;fr.aliexpress.com&lt;/td&gt;
+      &lt;td&gt;29.12&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;29.12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Lot d’Entretoises de Direction PRO 1” 1/8 Aluminium - Kit 2 / 2,5 / 5 / 10 / 20 mm&lt;/td&gt;
+      &lt;td&gt;Probikeshop.fr&lt;/td&gt;
+      &lt;td&gt;5.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;5.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bash Guard FUNN ZIPPA - 26/32&lt;/td&gt;
+      &lt;td&gt;Probikeshop.fr&lt;/td&gt;
+      &lt;td&gt;29.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;29.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cuvette Haute pour Jeu de Direction Semi-Intégré CANE CREEK FORTY 1”1/8 ZS44 Alu - Noir&lt;/td&gt;
+      &lt;td&gt;Probikeshop.fr&lt;/td&gt;
+      &lt;td&gt;21.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;25.98&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Poignées de guidon pour vélo sur route, 2 pièces/1 paire, housse de guidon en caoutchouc souple et souple, embout de poignée avec poignée&lt;/td&gt;
+      &lt;td&gt;fr.aliexpress.com&lt;/td&gt;
+      &lt;td&gt;2.91&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2.91&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Amortisseur Fox Racing Shox Float Performance DPS Evol 185*55 - Fixation Trunnion&lt;/td&gt;
+      &lt;td&gt;TrocVelo.fr&lt;/td&gt;
+      &lt;td&gt;230&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;244.95&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Groupe Sram XO1 Eagle AXS DUB 12V Boost - Pédalier 32 Dents - Noir Manivelles 170 mm&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;1299.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1299.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Disque Flottant SRAM Centerline X CenterLock Arrondi 180 mm&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;50.99&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;101.98&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Boitier de Pédalier Sram DUB PressFit 89/92mm&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;39.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;39.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Valves Tubeless Peaty’s x Chris King MK2 42mm Noir&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;24.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;24.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Liquide Préventif NEATT 1 litre&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;12.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;12.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tige de Selle Neatt Classic Aluminium Noir 31.6 x 400&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;15.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;15.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Écrou Centerlock pour axe 15-20 mm&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;10.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;10.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Adaptateur Étrier PM / PM MAGURA QM40 Disque 160/180 mm (+20 mm) - Noir&lt;/td&gt;
+      &lt;td&gt;Probikeshop.fr&lt;/td&gt;
+      &lt;td&gt;8.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;13.98&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Écrou BBB Centerlock pour Axe QR / 12 mm&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;7.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;7.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Fox Racing Shox Kit de matériel de montage 5 pièces AL 8x38,61mm&lt;/td&gt;
+      &lt;td&gt;Bikester.fr&lt;/td&gt;
+      &lt;td&gt;22&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;26.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Fond de Jante Spank Fratelli Tubeless 30mm&lt;/td&gt;
+      &lt;td&gt;Alltricks.fr&lt;/td&gt;
+      &lt;td&gt;10.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;10.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TOTAL&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;4361.41&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
 &lt;h1 id=&quot;tools&quot;&gt;Tools&lt;/h1&gt;
 
 &lt;table&gt;
@@ -257,7 +355,461 @@ Let’s share knowledge together ! to go ever further !&lt;/p&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><category term="Sport" /><category term="Cycling" /><category term="DIY" /><category term="Bike" /><category term="Handcrafted" /><summary type="html">I want to share with you how we can build your own custom bike , top of the line with an affordable price. I’m not a professional ! I want to convince those having doubts regarding skills or quality. I bought carbon gears in the same OEM Manufacturer like well-known brand, I just removed intermediaries.</summary></entry><entry><title type="html">Rester actif en télétravail</title><link href="https://jluccisano.github.io/remote-working/keep-active-at-home-fr/" rel="alternate" type="text/html" title="Rester actif en télétravail" /><published>2021-10-07T00:00:00+00:00</published><updated>2021-10-07T00:00:00+00:00</updated><id>https://jluccisano.github.io/remote-working/keep-active-at-home-fr</id><content type="html" xml:base="https://jluccisano.github.io/remote-working/keep-active-at-home-fr/">&lt;p&gt;Mon retour d’expérience&lt;/p&gt;
+&lt;/table&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><category term="Sport" /><category term="Cycling" /><category term="DIY" /><category term="Bike" /><category term="Handcrafted" /><category term="Mountain bike" /><summary type="html">This my mountain bike building based on the generic mould FM10. I shared below all components I bought.</summary></entry><entry><title type="html">Bio</title><link href="https://jluccisano.github.io/misc/bio/" rel="alternate" type="text/html" title="Bio" /><published>2022-03-20T00:00:00+00:00</published><updated>2022-03-20T00:00:00+00:00</updated><id>https://jluccisano.github.io/misc/bio</id><content type="html" xml:base="https://jluccisano.github.io/misc/bio/">&lt;p&gt;Why ?&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Looking for a job has changed a lot, at least in the world of IT. Before, you had to apply with a CV, and a cover letter
+To get an interview. Today, recruiters come directly to us. We are not going to complain about this situation, quite the contrary.
+In order not to waste time for both parties, I wanted to describe who I am, my vision, what I can do…&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;I’m a kind of hybrid, I can be Developer, Architect, DevOps, SRE, Full Stack… I don’t really have a specific hat.
+I don’t consider myself as an expert in every fields, frameworks or languages, I explored. Rather than multifaceted who is able to take actions
+on every layers of a software development. My job is to find technical solutions which rely on a functional requirement. The engineer’s job
+is not to know everything but to know how to find relevant information in order to solve an issue or put a new piece of the “puzzle”.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;For several years, I work as a SRE (Site Reliability Engineer) which correspond to my philosophy. No day is the same, every day I learn new things,
+that’s why my job is a passion.  The age of Cloud computing and SaaS platform made software ever more complex. We are way off the CD-ROM
+following a V model. Today we talk about scalability, high availability, big data or containers following an agility model.
+We need to develop, deploy and test bugs, new features but also scale and migrate quickly in order to keep the high availability.
+Working with different teams with a specific role would take too much time. To answer that, we split and separated the service into micro-services with
+small teams in charge of development and support of a specific component including testing, monitoring, operations, automation, maintenance, documentation, delivery…
+But these teams must keep a global vision on the whole service in order to move forward in the same way and share knowledge.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The knowledge acquired allows me to be comfortable with this new software engineer paradigm.
+Always learning, watching new technologies, improving, refactoring… and don’t be afraid of change and so adapt to meet the needs of the moment.
+Always questioning yourself, accepting criticism, communicating and sharing to try to do better.
+The experience allows going faster, make better decisions, have more creativity and more responsiveness to go even further.
+These are for me the capacities that the software engineer must have rather than a language, or a framework which is only a mean.
+Yesterday I was developing in Java today in Clojure and tomorrow ?&lt;/p&gt;
+
+&lt;h1 id=&quot;what-can-i-do-&quot;&gt;What can I do ?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Build distributed oriented data-driven or event-driven architectures;&lt;/li&gt;
+  &lt;li&gt;Deploy a complete architecture on the Cloud;&lt;/li&gt;
+  &lt;li&gt;Work with system of containerized applications;&lt;/li&gt;
+  &lt;li&gt;Think scaling, migration, decoupling, agnostic solution before coding;&lt;/li&gt;
+  &lt;li&gt;Develop micro-services and APIs;&lt;/li&gt;
+  &lt;li&gt;Quickly develop an end-to-end PoC with GUI+Backend+…;&lt;/li&gt;
+  &lt;li&gt;Interact with SQL, NoSQL, memory cache databases;&lt;/li&gt;
+  &lt;li&gt;Set up a continuous integration and delivery system (CI/CD);&lt;/li&gt;
+  &lt;li&gt;Automate recurring tasks as much as possible;&lt;/li&gt;
+  &lt;li&gt;Set up alarms, metrics, dashboards that will allow operating and monitoring;&lt;/li&gt;
+  &lt;li&gt;Create an integration test environment;&lt;/li&gt;
+  &lt;li&gt;Work in an international context even if I am not bilingual.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;what-i-like-to-do&quot;&gt;What I like to do?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I like to refactor, migrate or even better start from scratch on a new architecture with everything to do&lt;/li&gt;
+  &lt;li&gt;I like having a goal and being given the autonomy to achieve it.&lt;/li&gt;
+  &lt;li&gt;My 3 pillars are my family, sport and IT. Sport allows me free my mind. 
+I practise a lot of endurance sport: triathlon, swimming, cycling, running, skate skiing… I practise when I want 
+in harmony with the nature. Sport, and IT are the same philosophy for myself: train, optimize,
+iterate and rest to meet a personal performance, go further and faster.&lt;/li&gt;
+  &lt;li&gt;I like to stop everything and then resume the next day after a good night’s sleep, or a good sports session and unblock a situation.&lt;/li&gt;
+  &lt;li&gt;I like to develop concrete project for my personal use. So I created for several years some projects, I posted all
+my experiences in this site to share knowledge with each others. I created my own sprinkler system, my home alarm.
+I built my bikes and wheels, my drone…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;what-dont-i-like&quot;&gt;What don’t I like?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Large teams with lots of processes&lt;/li&gt;
+  &lt;li&gt;I don’t like to be restrained, I have to be able to go at my own pace&lt;/li&gt;
+  &lt;li&gt;I don’t support repetitive tasks&lt;/li&gt;
+  &lt;li&gt;I avoid and make sure not to do what does not interest me&lt;/li&gt;
+  &lt;li&gt;Imposing a programming language and/or an OS&lt;/li&gt;
+  &lt;li&gt;I can’t stand boredom, I need challenges to keep my motivation&lt;/li&gt;
+  &lt;li&gt;Too many meetings to speculate. I like to go straight to the point.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;qualitiesflaws-according-to-the-point-of-view&quot;&gt;Qualities/Flaws according to the point of view&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I say what I think&lt;/li&gt;
+  &lt;li&gt;Very persistent&lt;/li&gt;
+  &lt;li&gt;I work on several subjects at the same time&lt;/li&gt;
+  &lt;li&gt;I like to work alone and then integrate with others&lt;/li&gt;
+  &lt;li&gt;Not afraid to try, I go for it.&lt;/li&gt;
+  &lt;li&gt;I’m working to make it work. I’d rather iterate than never deliver while waiting for perfection&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-work-environment&quot;&gt;The work environment&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Full remote&lt;/li&gt;
+  &lt;li&gt;Freelancer or permanent contract (CDI)&lt;/li&gt;
+  &lt;li&gt;Work on macOS&lt;/li&gt;
+  &lt;li&gt;Great autonomy&lt;/li&gt;
+  &lt;li&gt;No imposition of language or others&lt;/li&gt;
+  &lt;li&gt;A business area that has meaning for me: the environment, personal assistance and especially sport&lt;/li&gt;
+  &lt;li&gt;Project from scratch / refactoring / migration / new architecture&lt;/li&gt;
+  &lt;li&gt;Prioritize small teams&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Misc" /><category term="Bio" /><summary type="html">Why ?</summary></entry><entry><title type="html">Time trial building</title><link href="https://jluccisano.github.io/sport/time-trial-building/" rel="alternate" type="text/html" title="Time trial building" /><published>2021-11-27T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>https://jluccisano.github.io/sport/time-trial-building</id><content type="html" xml:base="https://jluccisano.github.io/sport/time-trial-building/">&lt;p&gt;This my time trial building based on the generic mould FM109-D.
+I shared below all components I bought. I also shared some videos on my youtube channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bike-building/IMG_7809.jpg&quot; alt=&quot;Time_trial_building&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/DEeOx1uWiuk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&quot;components&quot;&gt;Components&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Site&lt;/th&gt;
+      &lt;th&gt;Unit price&lt;/th&gt;
+      &lt;th&gt;QTY&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Kit Frame&lt;/td&gt;
+      &lt;td&gt;Hongfu shippment 157$&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;0.868499 * 904= 785.12 + fees 23.48&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;0.847996 * 905 = 767.63 + fees 22.64&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1598.87&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1 x SRAM Red 1x12 Speed Aero&lt;/td&gt;
+      &lt;td&gt;mantel&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;482.97&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sram Force D1 eTap Dérailleur Arrière 12V&lt;/td&gt;
+      &lt;td&gt;hollandbike&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;274.66&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CHAÎNE SRAM FORCE AXS D1 114LINK/POWER LOCK 12S 1PC&lt;/td&gt;
+      &lt;td&gt;sportgoods&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;35.74&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Etrier Hope RX4+ Flat Mount +20mm Sram DOT Bleu HBSPC74B&lt;/td&gt;
+      &lt;td&gt;alltricks&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;125&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Etrier Avant Hope RX4+ Flat Mount Sram DOT Bleu HBSPC72B&lt;/td&gt;
+      &lt;td&gt;alltricks&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;125&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Conduite Hydraulique Monoblock pour Red eTap® HRD&lt;/td&gt;
+      &lt;td&gt;bike-components&lt;/td&gt;
+      &lt;td&gt;29.23&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;58.46&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sram Hood kit S-900 Aero Hydrot Black One Size&lt;/td&gt;
+      &lt;td&gt;bikeinn&lt;/td&gt;
+      &lt;td&gt;98.49&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;196.98&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sram Lever Kit S-900 Aero Hydrot Black One Size&lt;/td&gt;
+      &lt;td&gt;bikeinn +4.99 shipment&lt;/td&gt;
+      &lt;td&gt;38.49&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;76.98&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SRAM BRAKE LEVER MASTER PISTON KIT S900 AERO HRD&lt;/td&gt;
+      &lt;td&gt;planet cyclery  $5.6 + stackry &lt;br /&gt;via aramex&lt;/td&gt;
+      &lt;td&gt;$25.90&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;31.50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Boitier de Controle Sram BlipBox eTap AXS D1&lt;/td&gt;
+      &lt;td&gt;alltricks&lt;/td&gt;
+      &lt;td&gt;329.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;329.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Boutons Satellites SRAM Blips 650 mm E-Tap (Paire)&lt;/td&gt;
+      &lt;td&gt;alltricks&lt;/td&gt;
+      &lt;td&gt;94.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;94.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Paire de Boutons Satellites Sram Clics 650mm E-Tap pour Prolongateurs&lt;/td&gt;
+      &lt;td&gt;alltricks&lt;/td&gt;
+      &lt;td&gt;104.49&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;104.49&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cassette 33T modèle d’exposition&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;189.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ruban de Cintre Lizard Skins DSP V2 Noir Jet 1.8&lt;/td&gt;
+      &lt;td&gt;alltricks&lt;/td&gt;
+      &lt;td&gt;25.99&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;25.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DT Swiss 240  Straightpull Rear Hub - Centerlock - 12x142mm - SRAM XDR&lt;/td&gt;
+      &lt;td&gt;Bike 24&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;277.30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;DT Swiss 350 Straightpull Front Hub - Centerlock - 12x100mm - black&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;48.39&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Continental Sprinter Tubular Tire 28 Inch&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;35.29&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;70.58&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Miche Valve Extension Presta 70mm&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;21.13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2 Jantes 88mm/25mm 3K matte&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;225.63&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Rayons Sapim CX-RAY / Ecrous Sapim double square&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;145.36&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Disques&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;52.90&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;105.80&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Selle Dash occasion&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;140&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Profile Design HSF/800+ Premium Dispositif d’hydratation&lt;/td&gt;
+      &lt;td&gt;bikester&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;99.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TOTAL&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;4,850.05&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pédale Favero DUO&lt;/td&gt;
+      &lt;td&gt;Powermeter&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;599&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Roues lenticulaire dt350&lt;/td&gt;
+      &lt;td&gt;Alibaba&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;721&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TOTAL&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;6,170.05&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;tools&quot;&gt;Tools&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th&gt;Site&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Park Tool CT3.3 Chain tool&lt;/td&gt;
+      &lt;td&gt;43,63€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.mantel.com&quot;&gt;www.mantel.com&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Park Tool BBT-69.2 16 Notch Bottom bracket tool&lt;/td&gt;
+      &lt;td&gt;25,77€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.mantel.com&quot;&gt;www.mantel.com&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SRAM Hydraulic Hose Cutter&lt;/td&gt;
+      &lt;td&gt;15,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AVID Pitstop Dot Grease 29 ml&lt;/td&gt;
+      &lt;td&gt;7,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Muc-Off Mechanics Gloves&lt;/td&gt;
+      &lt;td&gt;9,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Avid Professional Bleed Kit w/ DOT 5.1 Brake Fluid&lt;/td&gt;
+      &lt;td&gt;65,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Continental Tubular Carbon Rim Cement (200 g)&lt;/td&gt;
+      &lt;td&gt;13,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.probikeshop.fr&quot;&gt;www.probikeshop.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FINISH LINE Grease FIBER GRIP 50 g&lt;/td&gt;
+      &lt;td&gt;8,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Burton Bikes SRAM DUB bottom bracket press tool&lt;/td&gt;
+      &lt;td&gt;21,65€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.amazon.fr&quot;&gt;www.amazon.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FINISH LINE Grease TEFLON 100 gr&lt;/td&gt;
+      &lt;td&gt;9,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PRO BIKE TOOL 1/4 inch Drive Click Torque Wrench Set&lt;/td&gt;
+      &lt;td&gt;66,79€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.amazon.fr&quot;&gt;www.amazon.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tacx Exact wheel truing stand&lt;/td&gt;
+      &lt;td&gt;47,90€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.amazon.fr&quot;&gt;www.amazon.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tacx Wheel Alignment Gauge&lt;/td&gt;
+      &lt;td&gt;34,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.amazon.fr&quot;&gt;www.amazon.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Park Tool INTERNAL NIPPLE SPOKE WRENCH — 3.2MM SQUARE&lt;/td&gt;
+      &lt;td&gt;12,85€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Park Tool BLADED SPOKE HOLDER&lt;/td&gt;
+      &lt;td&gt;13,83€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spoke Tension Meter&lt;/td&gt;
+      &lt;td&gt;45,79€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.aliexpress.com&quot;&gt;www.aliexpress.com&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Spoke wrench&lt;/td&gt;
+      &lt;td&gt;6,90€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.amazon.fr&quot;&gt;www.amazon.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Adhesive tape&lt;/td&gt;
+      &lt;td&gt;0,96€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.amazon.fr&quot;&gt;www.amazon.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Topeak Threadless Saw Guide&lt;/td&gt;
+      &lt;td&gt;23,99€&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.alltricks.fr&quot;&gt;www.alltricks.fr&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;477,98€&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Sport" /><category term="Sport" /><category term="Cycling" /><category term="DIY" /><category term="Bike" /><category term="Handcrafted" /><summary type="html">This my time trial building based on the generic mould FM109-D. I shared below all components I bought. I also shared some videos on my youtube channel.</summary></entry><entry><title type="html">Rester actif en télétravail</title><link href="https://jluccisano.github.io/remote-working/keep-active-at-home-fr/" rel="alternate" type="text/html" title="Rester actif en télétravail" /><published>2021-10-07T00:00:00+00:00</published><updated>2021-10-07T00:00:00+00:00</updated><id>https://jluccisano.github.io/remote-working/keep-active-at-home-fr</id><content type="html" xml:base="https://jluccisano.github.io/remote-working/keep-active-at-home-fr/">&lt;p&gt;Mon retour d’expérience&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;J’ai eu envie d’écrire cet article pour partager mon expérience sur le télétravail et plus particulièrement
 comment j’en ai tiré le meilleur de ces avantages tout en restant physiquement actif. Mon objectif
@@ -3546,98 +4098,4 @@ travis encrypt &lt;span class=&quot;nv&quot;&gt;DOCKER_PASS&lt;/span&gt;&lt;span
   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;secure&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;hmVbuNH4Z....&lt;/span&gt;
   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;COMMIT=${TRAVIS_COMMIT::8}&lt;/span&gt;
   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;REPO=$DOCKER_USER/chrono&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Computer" /><category term="Linux" /><category term="Travis" /><summary type="html">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub</summary></entry><entry><title type="html">Organize photo library</title><link href="https://jluccisano.github.io/computer/organize-photo-library/" rel="alternate" type="text/html" title="Organize photo library" /><published>2018-10-14T00:00:00+00:00</published><updated>2018-10-14T00:00:00+00:00</updated><id>https://jluccisano.github.io/computer/organize-photo-library</id><content type="html" xml:base="https://jluccisano.github.io/computer/organize-photo-library/">&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#environment&quot;&gt;Environment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#upload&quot;&gt;Upload&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#consolidate&quot;&gt;Consolidate&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#backups&quot;&gt;Backups&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#show&quot;&gt;Show&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;environment&quot;&gt;Environment&lt;/h3&gt;
-
-&lt;p&gt;@startuml
-[SonyA6000]
-[Iphone1]
-[Iphone2]
-[Camera XTrem]&lt;/p&gt;
-
-&lt;p&gt;[Imac]&lt;/p&gt;
-
-&lt;p&gt;[SynologyNAS]
-[DLinkDNS320]
-[OVHServer]&lt;/p&gt;
-
-&lt;p&gt;[SonyA6000]–&amp;gt;[Imac]
-[Camera XTrem]–&amp;gt;[Imac]&lt;/p&gt;
-
-&lt;p&gt;[Iphone1]—&amp;gt;[SynologyNAS]: DS Photo sync to “Last import”
-[Iphone2]—&amp;gt;[SynologyNAS]: DS Photo sync to “Last import”&lt;/p&gt;
-
-&lt;p&gt;[Imac]—&amp;gt;[SynologyNAS]: Upload to “Last import”&lt;/p&gt;
-
-&lt;p&gt;[SynologyNAS]–&amp;gt; [DLinkDNS320]: Rsync
-[SynologyNAS] –&amp;gt; [OVHServer]: Rsync
-@enduml&lt;/p&gt;
-
-&lt;h3 id=&quot;upload&quot;&gt;Upload&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Upload SD Card into Apple Photo in order to show all photos.
-Select&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;2 ways
-Use synoloy uploader in order to upload photo into Dernière importation folder&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;consolidate&quot;&gt;Consolidate&lt;/h3&gt;
-
-&lt;p&gt;LAST-IMPORT
-YEAR
-   YEAR-MONTH-DAY
-        YEAR-MONTH-DAY-HOURMINUTESECOND_INCR.EXTENSION&lt;/p&gt;
-
-&lt;p&gt;ex:&lt;/p&gt;
-
-&lt;p&gt;Dernière importation
-Iphone 1
-Iphone 2
-2018
-    …
-    2018-10-09
-        2018-10-09-056734_1.JPG
-        2018-10-09-056734_2.JPG
-        2018-10-09-076734_1.JPG
-        …
-…&lt;/p&gt;
-
-&lt;p&gt;Execute scripts:&lt;/p&gt;
-
-&lt;p&gt;Consolidate Dernière Importation to library.
-Automatically move all photo into the right directory.
-If a as the same timestamp so an incrementation is made.&lt;/p&gt;
-
-&lt;p&gt;```code
-./clean.sh -s false Dernière\ importation /volume1/photo&lt;/p&gt;
-
-&lt;p&gt;./clean.sh -s false iphone\ Lili/ /volume1/photo&lt;/p&gt;
-
-&lt;p&gt;./clean.sh -s false iphone\ Jo/ /volume1/photo
-``&lt;/p&gt;
-
-&lt;h3 id=&quot;backups&quot;&gt;Backups&lt;/h3&gt;
-
-&lt;p&gt;One local backup in the DLinkDNS320
-One distant backup in the OVH Server&lt;/p&gt;
-
-&lt;p&gt;Google photos backups&lt;/p&gt;
-
-&lt;h3 id=&quot;show&quot;&gt;Show&lt;/h3&gt;
-
-&lt;p&gt;Access to DS Photo anywhere from anydevice`&lt;/p&gt;
-
-&lt;p&gt;You manage your library as you want. we aren’t coupled with any applicaton
-unlike using Apple photo, Microsoft or others.&lt;/p&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Computer" /><category term="Linux" /><summary type="html">Environment Upload Consolidate Backups Show</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joseph Luccisano</name><uri>http://j.luccisano.free.fr</uri></author><category term="Computer" /><category term="Linux" /><category term="Travis" /><summary type="html">The objective of this tutorial is to set up Travis Ci in order to deploy release into Github and DockerHub</summary></entry></feed>
