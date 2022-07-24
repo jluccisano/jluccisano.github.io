@@ -15,7 +15,7 @@ tags:
   - Handcrafted
 ---
 
-This is my time trial building based on the generic mould FM109-D.
+This is my time trial building based on the open mould FM109-D.
 I shared below all components I bought. I also shared some videos on my youtube channel.
 
 ![Time_trial_building](/assets/images/bike-building/IMG_7809.jpg)
