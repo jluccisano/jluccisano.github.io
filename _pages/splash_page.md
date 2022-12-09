@@ -11,7 +11,7 @@ excerpt: "Share and learn more knowledge to go ever further"
 
 intro:
   - show_avatar: true
-  - excerpt: "I'm a Senior Staff Engineer at Sierra Wireless over 12 years. I acquired some knowledge in different area 
+  - excerpt: "I'm Principal Engineer at Sierra Wireless over 12 years. I acquired some knowledge in different area 
   which allow me to better understand things to go ever further. I always want to learn more, that's why I created this blog in order to share my knowledge."
 feature_row1:
   - image_path: /assets/images/bike-building/main_1.png
