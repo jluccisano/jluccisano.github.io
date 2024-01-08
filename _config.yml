@@ -92,7 +92,7 @@ social:
 analytics:
   provider: "google"
   google:
-    tracking_id: "UA-90338151-1"
+    tracking_id: "393486199"
     anonymize_ip: false # default
 
 
