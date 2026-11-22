@@ -10,7 +10,7 @@ tags:
   - SSH
   - Unix
 ---
-The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your 
+The goal of this tutorial is to generate an SSH key so you can connect to your server without typing your 
 password each time.
 
 
@@ -21,24 +21,24 @@ password each time.
 
 ### Prerequisites
 
-- SSH installed (ex: OpenSSH, OpenBSD Secure Shell server)
+- SSH installed (for example: OpenSSH, OpenBSD Secure Shell server)
 
 ### Generating new SSH Key
 
-1. Execute this command below, substuting in your email address
+1. Run the command below, replacing the email address with yours
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
-2. Add the ssh key into ssh-agent
+2. Add the SSH key to ssh-agent
 
 ```bash
 ssh-add ~/.ssh/id_rsa
 ```
-You can see more in this [tuto](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+You can find more in this [tutorial](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ### Useful commands:
 
-a. Get list of key:
+a. Get the list of keys:
 ```bash
 ssh-add -L
 ```
@@ -46,13 +46,13 @@ b. Remove a key
 ```bash
 ssh-add -D ~/.ssh/id_rsa
 ```
-c. Copy the key into the clipboard
+c. Copy the key to the clipboard
 
 ```bash
 pbcopy < id_rsa_git_evs.pub
 ```
-If you don't have pbcopy, you can install it easily. Here an example for
-[ArchLinux](https://gist.github.com/chriscandy/753eb149e9735e852b0b) users.
+If you don't have pbcopy, you can install it easily. Here is an example for
+[Arch Linux](https://gist.github.com/chriscandy/753eb149e9735e852b0b) users.
 
 
 ### Sending SSH key to a server

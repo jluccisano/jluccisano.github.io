@@ -34,7 +34,7 @@ or
 git rebase -i HEAD~1
 ```
 
-- Squash 2 commits in one
+- Squash 2 commits into one
 
 ```bash
 git rebase -i HEAD~2
@@ -43,7 +43,7 @@ git rebase -i HEAD~2
 git rebase --interactive --root
 ```
 
-- Set core editor
+- Set the core editor
 
 ```bash
 git config --global core.editor "vim"
@@ -96,7 +96,7 @@ git config user.email "foo@bar.com"
 
 [Most useful git config commands](https://gist.github.com/jexchan/2351996)
 
-- List all branch
+- List all branches
 
 ```bash
 git branch -a
@@ -132,7 +132,7 @@ git filter-branch -f --env-filter 'export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"'
 git filter-branch -f --env-filter "GIT_AUTHOR_NAME='username' GIT_AUTHOR_EMAIL='foo@bar.com'; GIT_COMMITTER_NAME='username'; GIT_COMMITTER_EMAIL='foo@bar.com';GIT_COMMITTER_DATE='Sun Feb 12 17:22 2017 +0100';GIT_AUTHOR_DATE='Sun Feb 12 17:22 2017 +0100'"
 ```
 
-- Checkout a remote branch
+- Check out a remote branch
 
 ```bash
 git checkout -b develop origin/develop

@@ -18,7 +18,7 @@ tags:
   - REST
   - Internet of Things  
 ---
-The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.
+The goal of this tutorial is to build and control a sprinkler system with a Raspberry PI.
 
 - [Hydraulic part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-hydraulic)
 - [Electronic part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-elec)

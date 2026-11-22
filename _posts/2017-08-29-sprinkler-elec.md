@@ -18,7 +18,7 @@ tags:
 ---
 
 The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
-we will be able to control the sprinkler system from a Raspberry PI.
+we will be able to control the sprinkler system from a Raspberry Pi.
 
 - [Electrical part](#electrical-part)
 - [Electronic part](#electronic-part)
@@ -43,10 +43,10 @@ box final" %}
 | ![borne_auto_levier_2](/assets/images/sprinkler/borne_auto_levier_2_file_2.5mm.jpg){:height="48px" width="96px"}  | Wago electrical lever connectors 2-way |  10 | 0.59 | 5.9
 | ![borne_auto_levier_3](/assets/images/sprinkler/borne_auto_levier_3_file_2.5mm.jpg){:height="48px" width="96px"}  | Wago electrical lever connectors 3-way |  5 | 0.78 | 3.90
 | ![borne_auto_levier_5](/assets/images/sprinkler/borne_auto_levier_5_file_2.5mm.jpg){:height="48px" width="96px"}  |  Wago electrical lever connectors 5-way |  1 | 1.04 | 1.04
-| ![boite_étanche_IP54_80x80x45](/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg){:height="48px" width="96px"}  | Water proof distribution box IP54 80x80x45 |  1 | 1.2 | 1.2
-| ![boite_étanche_IP54_D70xP40](/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg){:height="48px" width="96px"}| Water proof distribution box IP54 70x40 |  3 | 1.40 | 4.20
+| ![boite_étanche_IP54_80x80x45](/assets/images/sprinkler/boite_étanche_IP54_80x80x45.jpg){:height="48px" width="96px"}  | Waterproof distribution box IP54 80x80x45 |  1 | 1.2 | 1.2
+| ![boite_étanche_IP54_D70xP40](/assets/images/sprinkler/boite_étanche_IP54_D70xP40.jpg){:height="48px" width="96px"}| Waterproof distribution box IP54 70x40 |  3 | 1.40 | 4.20
 | ![barrette_12_dominos_2.5mm](/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg){:height="48px" width="96px"}  | Domino bar x12 |  1 | 1.9 | 1.9
-| ![multi_conducteur_7_brins](/assets/images/sprinkler/multi_conducteur_7_brins_cable_15m.jpg){:height="48px" width="96px"}  | 7 core Multi conductor cable wire 15m 1mm | 1 | 31.32 | 31.32
+| ![multi_conducteur_7_brins](/assets/images/sprinkler/multi_conducteur_7_brins_cable_15m.jpg){:height="48px" width="96px"}  | 7-core multi-conductor cable wire 15m 1mm | 1 | 31.32 | 31.32
 | ![transformer](/assets/images/sprinkler/transformer_220_24.jpg){:height="48px" width="96px"}  | Transformer 220VAC/24VAC |  1 | 31.19 | 31.19
 | - | - |  - | - | 80.65€
 
@@ -54,9 +54,9 @@ box final" %}
 
 #### Electrical connection
 
-- Join electrical box to valves boxes with 7 multi-conductors wire
-- Install one distribution box at the entrance of the valves box.
-- Connect power supply to solenoid valve 24V with a transformer.
+- Connect the electrical box to the valve boxes with a 7-core multi-conductor wire
+- Install one distribution box at the entrance of the valve box.
+- Connect the power supply to the 24V solenoid valve with a transformer.
 
 
 **Tools**: Electrical screwdriver, wire cutter, wire stripper.
@@ -68,7 +68,7 @@ box final" %}
 
 ### Prerequisites
 
- - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
+ - [Set up a Raspberry Pi 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
  - [Install Python]({{ site.url }}{{ site.baseurl }}/linux/install-python)
  
 ### Overview 
@@ -82,18 +82,18 @@ part" %}
 |:--------------:|:-------------:|:----------:|:--------:|:------:|
 | ![relay_card_raspberry](/assets/images/sprinkler/relay_card_raspberry.jpg){:height="48px" width="96px"}  | Relay AC 250V 10A ; DC 30V 10A Relay card module AC/DC 5V  4 channels | 1 | [Ebay](https://www.ebay.com) | 8.00 € |
 | ![cable_MM_MF_FF](/assets/images/sprinkler/cable_MM_MF_FF.jpg){:height="48px" width="96px"}  | 10 x Cables male/female female/female male/male |  30 | [ebay](www.ebay.com)      |   1.00 € |
-| ![raspberry_pi_3](/assets/images/sprinkler/raspberry_pi_3.jpg){:height="48px" width="96px"}   | Raspberry PI 3 | 1 | [Farnell](https://www.farnell.com)  | 37.69 € |
+| ![raspberry_pi_3](/assets/images/sprinkler/raspberry_pi_3.jpg){:height="48px" width="96px"}   | Raspberry Pi 3 | 1 | [Farnell](https://www.farnell.com)  | 37.69 € |
 | ![power_supply_micro_USB_5V_2500mA](/assets/images/sprinkler/power_supply_micro_USB_5V_2500mA.jpg){:height="48px" width="96px"}   | Power supply Micro USB 5V 2500mA | 1  | [Amazon](https://www.amazon.com) | 8.99 € |
-| ![micro_sd_16go_class_10](/assets/images/sprinkler/micro_sd_16go_class_10.jpg){:height="48px" width="96px"}  |Micro SD Card 16go class 10 | 1 | [amazon](www.amazon.com)  | 9.90€ |
-| ![breadboard_raspberry](/assets/images/sprinkler/breadboard_raspberry.jpg){:height="48px" width="96px"}  | Bread board  |  1 | [ebay](www.ebay.com)  | 3.50€ |
+| ![micro_sd_16go_class_10](/assets/images/sprinkler/micro_sd_16go_class_10.jpg){:height="48px" width="96px"}  |Micro SD Card 16GB class 10 | 1 | [amazon](www.amazon.com)  | 9.90€ |
+| ![breadboard_raspberry](/assets/images/sprinkler/breadboard_raspberry.jpg){:height="48px" width="96px"}  | Breadboard  |  1 | [ebay](www.ebay.com)  | 3.50€ |
 | -  | -  |  - | -  | 69.08 € |
 
 ### Wiring
 
 {% include figure image_path="/assets/images/schema_sprinkler.png" alt="Sprinkler Overview" caption="Sprinkler Overview" %}
 
-**Note**:Connect relay with Raspberry PI (Control electronics).
-Each relay are supplied in 3.3V via Raspberry PI.
+**Note**: Connect the relay to the Raspberry Pi (control electronics).
+Each relay is supplied with 3.3V from the Raspberry Pi.
 {: .notice--info}
 
 ## Software part
@@ -105,7 +105,7 @@ Each relay are supplied in 3.3V via Raspberry PI.
 
 ### Program
 
-Get clone from github or this project.
+Clone it from GitHub, or get this project.
 
 ```bash
 git clone https://github.com/jluccisano/rpi-sprinkler-control.git
@@ -117,7 +117,7 @@ See more details:
 https://github.com/jluccisano/raspberry-scripts/tree/master/scripts/home-automation
 ```
 
-Follow install step describe in the README.md.
+Follow the install steps described in the README.md.
 
 ```bash
 pip install https://github.com/jluccisano/rpi-sprinkler-control/archive/v0.0.2.tar.gz
@@ -130,7 +130,7 @@ pip show rpi-sprinkler-control
 ```bash
 Name: rpi-sprinkler-control
 Version: 0.0.1
-Summary: Control your sprinkler system via a Raspberry PI
+Summary: Control your sprinkler system via a Raspberry Pi
 Home-page: https://github.com/jluccisano/rpi-sprinkler-control
 Author: Joseph Luccisano
 Author-email: joseph.luccisano@gmail.com
@@ -163,7 +163,7 @@ WantedBy=multi-user.target
 
 ### Install release package
 
-- Connect to Rpi via SSH
+- Connect to the Raspberry Pi via SSH
 - Install package
 - Create Service
 - Run
@@ -171,35 +171,35 @@ WantedBy=multi-user.target
 
 ### Test
 
-Get state of each valve
+Get the state of each valve
  
 ```python
 python zone_control.py get
 ```
 
-Get state of specific zone
+Get the state of a specific zone
 
 ```python
 python zone_control.py get --zone 1
 ```
 
-Set state of specific valve
+Set the state of a specific valve
 
 ```python
 python zone_control.py set --zone 1 --state 1
 ```
 
-Set state of each valve
+Set the state of each valve
 
 ```python
 python zone_control.py set --state 1
 ```
 
-Toggle state of specific valve
+Toggle the state of a specific valve
 
 ```python
 python zone_control.py toggle --zone 1
 ```
 
-Now we are able to control sprinkler system from a Raspberry PI. That's already a good point but we need to 
-control directly from his mobile and from anywhere... Go to the next tutorial.
+Now we are able to control the sprinkler system from a Raspberry Pi. That is already a good start, but we need to 
+control it directly from a mobile phone and from anywhere... Go to the next tutorial.

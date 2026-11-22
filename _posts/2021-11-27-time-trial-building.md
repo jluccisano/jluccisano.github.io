@@ -15,8 +15,8 @@ tags:
   - Handcrafted
 ---
 
-This is my time trial building based on the open mould FM109-D.
-I shared below all components I bought. I also shared some videos on my youtube channel.
+This is my time trial build, based on the open mould FM109-D.
+Below I list all the components I bought. I have also shared some videos on my YouTube channel.
 
 ![Time_trial_building](/assets/images/bike-building/IMG_7809.jpg)
 
@@ -28,7 +28,7 @@ I shared below all components I bought. I also shared some videos on my youtube 
 
 | Description                                                               | Site                                          | Unit price | QTY | Price    |
 |---------------------------------------------------------------------------|-----------------------------------------------|------------|-----|----------|
-| Kit Frame                                                                 | Hongfu shippment 157$                         |            |     |          |
+| Kit Frame                                                                 | Hongfu shipment 157$                         |            |     |          |
 |                                                                           | 0.868499 * 904= 785.12 + fees 23.48           |            |     |          |
 |                                                                           | 0.847996 * 905 = 767.63 + fees 22.64          |            |     | 1598.87 |
 | 1 x SRAM Red 1x12 Speed Aero                                              | mantel                                        |            | 1   | 482.97  |

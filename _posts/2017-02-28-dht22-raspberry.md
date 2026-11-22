@@ -15,7 +15,7 @@ tags:
   - Python
   - Linux
 ---
-The objective of this tutorial is to develop a program interacting with DHT22 Sensor.
+The goal of this tutorial is to write a program that reads from a DHT22 sensor.
 
 
 - [Prerequisites](#prerequisites)
@@ -40,8 +40,7 @@ The objective of this tutorial is to develop a program interacting with DHT22 Se
 | 10 x Resistors 10k | [ebay](www.ebay.com)      |    1.10 EUR |
 | Total: |      |    68.67 EUR |
 
-Note: This is an example as a guide. You can buy all components in others sites
-and maybe with better prices.
+Note: This is only an example. You can buy the components from other sites, and maybe at better prices.
 
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Install Python]({{ site.url }}{{ site.baseurl }}/linux/install-python)
@@ -53,7 +52,7 @@ and maybe with better prices.
 
 ### Install Adafruit
 
-Adafruit is a Python library to read the DHT series of humidity and temperature sensors on a Raspberry Pi.
+Adafruit is a Python library that reads the DHT series of humidity and temperature sensors on a Raspberry Pi.
 
 #### Download the latest version
 ```bash
@@ -70,7 +69,7 @@ sudo python setup.py install
 ```
 See more [here](https://github.com/adafruit/Adafruit_Python_DHT)
 
-or with a virtual env
+or in a virtual environment
 
 ```bash
 virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
@@ -82,13 +81,13 @@ See how to create a virtual environment [here]({{ site.url }}{{ site.baseurl }}/
 
 ### Get Series of data
 
-Get Series of Temperature and Humdity from DHT22
+Get a series of temperature and humidity readings from the DHT22
 
 #### Create new script
 ```bash
 touch getDHT22Series.py
 ```
-#### Edit and add this code below
+#### Edit the file and add the code below
 
 ```bash
 vim getDHT22Series.py

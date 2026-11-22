@@ -48,11 +48,11 @@ tags:
 
 ### Upload
 
-- Upload SD Card into Apple Photo in order to show all photos.
+- Import the SD card into Apple Photos to show all photos.
 Select
 
-- 2 ways
-Use synoloy uploader in order to upload photo into Dernière importation folder
+- 2 ways:
+use the Synology uploader to upload photos into the Dernière importation folder
 
 ### Consolidate
 
@@ -77,9 +77,9 @@ Iphone 2
 
 Execute scripts:
 
-Consolidate Dernière Importation to library.
-Automatically move all photo into the right directory.
-If a as the same timestamp so an incrementation is made.
+Consolidate Dernière Importation into the library.
+Automatically move all photos into the right directory.
+If two files have the same timestamp, a counter is added.
 
 ```code
 ./clean.sh -s false Dernière\ importation /volume1/photo
@@ -87,21 +87,21 @@ If a as the same timestamp so an incrementation is made.
 ./clean.sh -s false iphone\ Lili/ /volume1/photo
 
 ./clean.sh -s false iphone\ Jo/ /volume1/photo
-``
+```
 
 ### Backups
 
 
-One local backup in the DLinkDNS320
-One distant backup in the OVH Server
+One local backup on the DLinkDNS320
+One remote backup on the OVH Server
 
-Google photos backups
+Google Photos backups
 
 
 ### Show
 
-Access to DS Photo anywhere from anydevice`
+Access DS Photo from anywhere, on any device.
 
 
-You manage your library as you want. we aren't coupled with any applicaton
-unlike using Apple photo, Microsoft or others.
+You manage your library as you want. It is not tied to any application,
+unlike Apple Photos, Microsoft, or others.

@@ -21,22 +21,22 @@ tags:
   - REST
   - Internet of Things
 ---
-The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
-publishing data to client via websocket.
+The goal of this tutorial is to develop a reactive server that consumes data from a RabbitMQ message broker and
+publishes data to clients via WebSocket.
 
 - [Prerequisites](#prerequisites)
 - [Architecture overview](#architecture-overview)
 - [Setup environment](#setup-environment)
-- [Consume data from Rabbitmq](#consume-data-from-rabbitmq)
+- [Consume data from RabbitMQ](#consume-data-from-rabbitmq)
 - [Store data into InfluxDB](#store-data-into-influxdb)
-- [Create Rest API with Swagger](#create-rest-api-with-swagger)
-- [Publish data to client via Websocket](#publish-data-to-client-via-websocket)
+- [Create REST API with Swagger](#create-rest-api-with-swagger)
+- [Publish data to clients via WebSocket](#publish-data-to-client-via-websocket)
 - [Final Result](#final-result)
 
 
 ###  Prerequisites
 
-You must be aware of these posts to understand the environment.
+Read these posts first to understand the environment.
 
 - [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
@@ -70,7 +70,7 @@ git clone git@github.com:jluccisano/reactive-server.git
 ```bash
 mv application.tpl.yml application.yml
 ``` 
-- Set your value into application.yml
+- Set your values in application.yml
 
 - Start server
 
@@ -78,7 +78,7 @@ mv application.tpl.yml application.yml
 mvn spring-boot:run -Drun.profiles=dev
 ```
 
-### Consume data from Rabbitmq
+### Consume data from RabbitMQ
 
 ```bash
 git checkout -b step1-consumeDataFromRabbitMQ origin/step1-consumeDataFromRabbitMQ
@@ -286,7 +286,7 @@ Using database influx_db_name
 ```
 
 
-### Create Rest API with Swagger
+### Create REST API with Swagger
 
 ```bash
 git checkout -b origin/step3-create-rest-api-with-swagger step3-create-rest-api-with-swagger
@@ -433,7 +433,7 @@ public class DHT22Controller {
 {% include figure image_path="/assets/images/step3-swagger2.png" alt="Get fresh data" caption="Get fresh data" %}
 
 
-### Publish data to client via Websocket
+### Publish data to clients via WebSocket
 
 ```bash
 git checkout -b step4-publish-to-websocket origin/step4-publish-to-websocket

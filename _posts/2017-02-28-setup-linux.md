@@ -10,7 +10,7 @@ tags:
   - Raspberry PI
   - Linux
 ---
-The objective of this tutorial is to set up basic configuration of Raspbian distribution.
+The goal of this tutorial is to set up the basic configuration of the Raspbian distribution.
 
 
 - [Prerequisites](#prerequisites)
@@ -22,9 +22,9 @@ The objective of this tutorial is to set up basic configuration of Raspbian dist
 
 ### Create user
 
-Change password root
+Change the root password
 
-Why use "adduser" instead of "useradd" ?
+Why use "adduser" instead of "useradd"?
 
 a. Add user
 ```bash
@@ -34,21 +34,21 @@ b. Set password
 ```bash
 passwd new_user
 ```
-install sudo
+Install sudo
 
 apt-get install sudo
 
-c. Add new user as sudoers
+c. Add the new user to sudoers
 
 
-d. Add new user in groups root,adm,sudo
+d. Add the new user to the groups root, adm and sudo
 ```bash
 usermod -a -G root,adm,sudo new_user
 ```
 
 ### Configure SSH
 
-a. Create group 
+a. Create a group 
 ```bash
 addgroup sshusers
 ```
@@ -63,14 +63,14 @@ vim /etc/ssh/sshd_config
 ```
 b. Change default parameters
 
-- Change ssh default port
+- Change the default SSH port
 ```text
 Port X
 ```
 
 see more [here](https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user)
 
-- Allow a specific group and user is a good practices
+- Allowing only a specific group and user is good practice
 ```text
 AllowGroups sshusers
 ```
@@ -92,7 +92,7 @@ ssh new_user@server-address -p X
 sudo vim /etc/ssh/sshd_config
 ```
 
-- No permit root login
+- Disable root login
 ```text
 PermitRootLogin no
 ```
@@ -104,7 +104,7 @@ Create a key
 
 PubkeyAuthentication yes
 
-See create an ssh rsa key
+See how to create an SSH RSA key
 
 Host nextrun2
  Hostname hostname

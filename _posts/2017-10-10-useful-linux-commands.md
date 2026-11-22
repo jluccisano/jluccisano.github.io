@@ -13,7 +13,7 @@ tags:
 
 ### Useful commands
 
-- Get procces id by port
+- Get process ID by port
 
 ```bash
 lsof -i tcp:3690
@@ -35,7 +35,7 @@ find . -type f -print0 | xargs -0 du | sort -n | tail -10 | cut -f2 | xargs -I{}
 ```bash
 find . -type d -print 0 | xargs -0 du | sort -n | tail -10 | cut -f2 | xargs -I{} du -sh {}
 ```
-- Accept port
+- Allow a port
 
 ```bash
 sudo iptables -I INPUT -p tcp --dport 5672 -j ACCEPT
@@ -53,7 +53,7 @@ uname -m
 find . ! -newermt 2017-09-06 -exec rm -rf {} \;
 ```
 
-Find list of extension in a tree
+Find the list of extensions in a tree
 
 find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u
 

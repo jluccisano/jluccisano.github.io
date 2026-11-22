@@ -11,13 +11,13 @@ tags:
   - InfluxDB
   - Docker
 ---
-The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.
+The goal of this tutorial is to install an InfluxDB container with Docker and work with it.
 
 
 - [Prerequisites](#prerequisites)
-- [Run influxDB on Docker](#run-influxdb-on-docker)
+- [Run InfluxDB on Docker](#run-influxdb-on-docker)
 - [Create Database](#create-database)
-- [Connect to influxDB](#connect-to-influxdb)
+- [Connect to InfluxDB](#connect-to-influxdb)
 - [Create retention policy](#create-retention-policy)
 - [Create continuous query](#create-continuous-query)
 - [Useful commands](#useful-commands)
@@ -28,9 +28,9 @@ The objective of this tutorial is to install an InfluxDB container with Docker a
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
 - [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
 - [Install Git (optional)](https://git-scm.com/download/linux)
-- [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
+- [Push data to RabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
 
-### Run influxDB on Docker
+### Run InfluxDB on Docker
 
 ```bash
 docker run -d -p 8083:8083 -p 8086:8086 \
@@ -46,7 +46,7 @@ see more [here](https://hub.docker.com/_/influxdb/)
 CREATE DATABASE IF NOT EXISTS sensor
 ```
 
-###  Connect to influxDB
+###  Connect to InfluxDB
 
 ```bash
 influx
