@@ -11,7 +11,7 @@ tags:
   - Unix
   - Python
 ---
-The objective of this tutorial is to install Python and run it with virtual environment.
+The goal of this tutorial is to install Python and run it in a virtual environment.
 
 
 - [Prerequisites](#prerequisites)
@@ -25,14 +25,14 @@ The objective of this tutorial is to install Python and run it with virtual envi
 
 ### Installation
 
-Usually Python is already installed with the Raspbian image.
+Python is usually already installed with the Raspbian image.
 
-Check install:
+Check the installation:
 
 ```bash
 python --version
 ```
-Otherwise you can install it 
+Otherwise, you can install it:
 ```bash
 apt-get update
 apt-get install build-essential python-dev
@@ -40,7 +40,7 @@ apt-get install build-essential python-dev
 
 ### Install PIP
 
-PIP is a package management system used to install and manage some packages written in Python.
+PIP is a package manager that installs and manages Python packages.
 
 ```bash
 wget https://bootstrap.pypa.io/get-pip.py
@@ -54,7 +54,7 @@ See more [here](https://pip.pypa.io/en/latest/installing)
 
 ### Create VirtualEnv (optional)
 
-A Virtual Environment is useful to keep the dependencies required by different projects. 
+A virtual environment is useful to keep the dependencies required by different projects. 
 
 Note: virtualenv includes PIP
 
@@ -68,7 +68,7 @@ Example:
 ```bash
 mkdir -p ~/workspace/venv2.7
 ```
-#### Create virtualenv links with Python interpreter of your choice.
+#### Create a virtualenv linked to the Python interpreter of your choice.
 Example:
 ```bash
 virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
@@ -77,7 +77,7 @@ virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
 ```bash
 source ~/workspace/venv2.7/bin/activate
 ```
-You can now install all packages you need into your isolated environment.
+You can now install the packages you need in your isolated environment.
 Example:
 ```bash
 pip install requests

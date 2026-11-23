@@ -21,22 +21,22 @@ tags:
   - Stomp
   - Internet of Things
 ---
-The objective of this tutorial is to develop a reactive client which consuming temperature and 
- humidity via websocket and showing a dashboard of continuous data via a REST API.
+The goal of this tutorial is to develop a reactive client that consumes temperature and
+ humidity via WebSocket and shows a dashboard of continuous data via a REST API.
 
 
 - [Prerequisites](#prerequisites)
 - [Architecture overview](#architecture-overview)
 - [Setup environment](#setup-environment)
 - [Create a simple ReactJS component](#create-a-simple-reactjs-component)
-- [Create a ReactJS socket module via STOMP and sockJS](#create-a-reactjs-socket-module-via-stomp-and-sockjs)
-- [Get data from Rest API](#get-data-from-rest-api)
+- [Create a ReactJS socket module via STOMP and SockJS](#create-a-reactjs-socket-module-via-stomp-and-sockjs)
+- [Get data from REST API](#get-data-from-rest-api)
 - [Create widget with D3JS](#create-widget-with-d3js)
 - [Final Result](#final-result)
 
 ###  Prerequisites
 
-You must be aware of these posts to understand the environment.
+Read these posts first to understand the environment.
 
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
@@ -128,7 +128,7 @@ gulp serve
 {% include figure image_path="/assets/images/step1-create-simple-react-component.png" alt="Simple React Component" caption="Simple React Component" %}
 
 
-### Create a ReactJS socket module via STOMP and sockJS
+### Create a ReactJS socket module via STOMP and SockJS
 
 ```bash
 git checkout step2-create-websocket-client
@@ -185,7 +185,7 @@ gulp serve
 {% include figure image_path="/assets/images/step2-create-websocket-client.png" alt="Create Websocket client" caption="Create Websocket client" %}
 
 
-### Get data from Rest API
+### Get data from REST API
 
 ```bash
 git checkout step3-get-data-from-rest-api

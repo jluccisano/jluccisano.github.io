@@ -12,7 +12,7 @@ tags:
   - Linux
   - SSH
 ---
-The objective of this tutorial is
+The goal of this tutorial is to install Kivy on a Raspberry Pi.
 
 - [Prerequisites](#prerequisites)
 

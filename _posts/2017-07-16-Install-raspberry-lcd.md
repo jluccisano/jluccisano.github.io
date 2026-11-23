@@ -12,7 +12,7 @@ tags:
   - Linux
   - SSH
 ---
-The objective of this tutorial is to set up a LCD screen on Raspberry PI 3.
+The goal of this tutorial is to set up an LCD screen on a Raspberry Pi 3.
 
 
 - [Prerequisites](#prerequisites)
@@ -27,4 +27,4 @@ git clone https://github.com/goodtft/LCD-show.git
 chmod -R 755 LCD-show
 cd LCD-show/
 sudo ./LCD35-show
-``
+```

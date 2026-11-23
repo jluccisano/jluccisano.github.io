@@ -11,7 +11,7 @@ tags:
   - Docker
   - Unix
 ---
-The objective of this tutorial is to install Docker engine and share some useful command line to interact with it.
+The goal of this tutorial is to install the Docker engine and share some useful command lines to work with it.
 
 
 - [What's Docker](#what-docker)
@@ -27,11 +27,11 @@ All you need to know about Docker is [here](https://www.docker.com/what-docker)
 
 ### Installation
 
-All is [here](https://docs.docker.com/engine/installation/)
+Everything is [here](https://docs.docker.com/engine/installation/)
 
 ### Install Portainer.io 
 
-Manage docker with GUI
+Manage Docker with a GUI
 
 ```bash
 docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
@@ -54,36 +54,36 @@ See more [here](https://docs.docker.com/compose/install/)
 
 ### Useful docker command line
 
-- Get list of running containers
+- Get the list of running containers
 ```bash
 sudo docker ps -a 
 ```
 
-- kill a container
+- Kill a container
 ```bash
 sudo docker kill YOUT_CONTAINER_ID
 ```
-- Remove container
+- Remove a container
 ```bash
 docker rm CONTAINER_ID
 ```
 
-- Get list of images
+- Get the list of images
 ```bash
 sudo docker images
 ```
 
-- Remove image
+- Remove an image
 ```bash
 docker rmi IMAGE_ID
 ```
 
-- Interacting with the container
+- Interact with the container
 ```bash
 docker exec -i -t CONTAINER_ID /bin/bash
 ```
 
-- Restart docker service
+- Restart the Docker service
 
 ```bash
 sudo systemctl restart docker
@@ -96,7 +96,7 @@ groupadd docker
 usermod -aG docker YOUR_USER
 ```
 
-- Bind your docker repository in external file system
+- Bind your Docker repository to an external file system
 
 ```bash
 sudo service docker stop
@@ -119,7 +119,7 @@ curl -sSL https://get.docker.com | sh
 
 See more [here](https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/)
 
-### Link data into other disk
+### Link data to another disk
 
 systemctl stop docker
 

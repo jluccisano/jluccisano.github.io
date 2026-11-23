@@ -16,8 +16,8 @@ tags:
   - Mountain bike
 ---
 
-This is my mountain bike building based on the open mould FM10.
-I shared below all components I bought.
+This is my mountain bike build, based on the open mould FM10.
+Below I list all the components I bought.
 
 ![Mountain_bike_building](/assets/images/bike-building/IMG_5508.JPG)
 
@@ -36,8 +36,8 @@ I shared below all components I bought.
 | Set de 2 Pneus Souples Minion DHF/DHR II 3C MaxxTerra EXO+ WT TR 27,5" noir/27,5x2,5 / 27,5x2,4                                           | bike-components.de | 115.83     | 1   | 115.83         |
 | Set de Freins à Disque av.+arr. G2 RSC                                                                                                    | bike-components.de | 236.97     | 1   | 236.97         |
 | Moyeu Arrière 350 Straightpull VTT Boost Disc Center Lock <br>noir/12 x 148 mm / 28 trous/ SRAM XD                                        | bike-components.de | 166.39     | 1   | 166.39         |
-| Moyeu Avant 350 Straightpull VTT Boost Disc Center Lock <br>oir/15 x 110 mm / 28 trous                                                    | bike-components.de | 56.46      | 1   | 56.46          |
-| Potence Team AM Stealth 31.8 <br>lack stealth/40 mm 6°                                                                                    | bike-components.de | 40.33      | 1   | 40.33          |
+| Moyeu Avant 350 Straightpull VTT Boost Disc Center Lock <br>noir/15 x 110 mm / 28 trous                                                    | bike-components.de | 56.46      | 1   | 56.46          |
+| Potence Team AM Stealth 31.8 <br>black stealth/40 mm 6°                                                                                    | bike-components.de | 40.33      | 1   | 40.33          |
 | Jante XM 481 Disc 27,5"  black/27,5" / 28 trous                                                                                           | bike-components.de | 85.66      | 2   | 181.27         |
 | Pédales VTT Crankbrothers Double Shot 2                                                                                                   | materiel-velo.com  | 69.95      | 1   | 74.94          |
 | TiTo-selle de vélo avec nœud en titane, accessoires de cyclisme sur la route et pour vtt                                                  | fr.aliexpress.com  | 29.12      | 1   | 29.12          |

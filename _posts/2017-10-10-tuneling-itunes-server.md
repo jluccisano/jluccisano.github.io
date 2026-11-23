@@ -11,9 +11,9 @@ tags:
   - ssh
 ---
 
-Tunneling Itunes server over SSH
+Tunneling iTunes server over SSH
 
-Itunes server 
+iTunes server 
 
 ###  Prerequisites
 
@@ -25,7 +25,7 @@ Check your SSH server config:
 vim /etc/sshd_config
 ```
 
-You need to have these params
+You need to have these parameters
 
 ```text
 AllowTcpForwarding yes
@@ -33,7 +33,7 @@ AllowTcpForwarding yes
 
 #### Router config
 
-Don't forget forwarding port
+Don't forget to forward the port
 
 #### Restart the SSH daemon
 
@@ -73,7 +73,7 @@ dns-sd -P jluccisano _daap._tcp local 3692 localhost.local 127.0.0.1 "ffid=12345
 lsof -i -n | egrep '\<ssh\>'
 lsof -i tcp | grep ^ssh
  
-The following just searches for iTunes Home Sharing instances
+The following commands search for iTunes Home Sharing instances
 
 dns-sd -B
 dns-sd -B _home-sharing._tcp

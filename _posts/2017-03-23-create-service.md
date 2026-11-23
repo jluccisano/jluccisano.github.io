@@ -11,7 +11,7 @@ tags:
   - Raspberry PI
   - Unix
 ---
-The objective of this tutorial is to create a system service in order to run a standalone program on background.
+The goal of this tutorial is to create a system service that runs a standalone program in the background.
 
 
 - [Prerequisites](#prerequisites)
@@ -24,7 +24,7 @@ The objective of this tutorial is to create a system service in order to run a s
 
 ### Create Service
 
-a. Create new service
+a. Create a new service
 
 ```bash
 sudo vim /lib/systemd/system/myservice.service
@@ -62,7 +62,7 @@ e. Create symbolic link
 ```bash
 sudo ln -s /opt/script.py /usr/bin/myservice
 ```
-f. Reload daemon 
+f. Reload the daemon 
 ```bash
 sudo systemctl daemon-reload
 ```
@@ -74,7 +74,7 @@ h. Start the service
 ```bash
 sudo systemctl start myservice.service
 ```
-i. Check status
+i. Check the status
 ```bash
 sudo systemctl status myservice.service
 ```

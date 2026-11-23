@@ -15,20 +15,18 @@ tags:
   - Handcrafted
 ---
 
-I want to share with you how we can build your own custom bike , top of the line with
-an affordable price. I'm not a professional ! I want to convince those having doubts regarding skills or
-quality. I bought carbon gears in the same OEM Manufacturer like well-known brand, I just removed intermediaries.
+I want to share with you how we can build your own custom bike, top of the line, at an affordable price. I'm not a professional! I want to convince those who doubt their skills or the quality. I bought carbon components from the same OEM manufacturer as a well-known brand. I just removed the middlemen.
 
-If like me, you are passionate, curious and you always want to learn more !
-Let's share knowledge together ! to go ever further ! 
+If, like me, you are passionate and curious, and you always want to learn more!
+Let's share knowledge together and go even further! 
 
-If we can do a top of line less than 4000€, we can do a quality bike for 1500€.
+If we can do a top-of-the-line bike for less than 4000€, we can do a quality bike for 1500€.
 
-If you want more details about my experience, will let me know, follow me!
+If you want more details about my experience, let me know and follow me!
 
-I will share my experience in details soon. Below the teaser and the list of components I used.
+I will share my experience in detail soon. Below are the teaser and the list of components I used.
 
-Let's enjoy to ride with our own build bike , it's so amazing!
+Let's enjoy riding a bike we built ourselves. It's amazing!
 
 {% include video id="s0pH78SQslI" provider="youtube" %}
 

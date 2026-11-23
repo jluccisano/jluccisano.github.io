@@ -11,7 +11,7 @@ tags:
   - Linux
   - SSH
 ---
-The objective of this tutorial is to set up a Xiaomi Camera 
+The goal of this tutorial is to set up a Xiaomi camera.
 
 - [Prerequisites](#prerequisites)
 - [Hacking](#hacking)
@@ -26,7 +26,7 @@ The objective of this tutorial is to set up a Xiaomi Camera
 | Component        | Site           | Price  |
 | ------------- |:-------------:| -----:|
 | Xiaomi XiaoFang Camera IP   | [Gearbest](http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323) | 37.69 EUR |
-| Micro SD Card (32 Go class 10)  | [Amazon](https://www.amazon.com) | 9.99 EUR |
+| Micro SD Card (32 GB class 10)  | [Amazon](https://www.amazon.com) | 9.99 EUR |
 | Total: |      |    56.67 EUR |
 
 
@@ -77,9 +77,9 @@ CTRL-T
 
 Eject
 
-power on camera
+Power on the camera
 
-Put sd card wait clanking
+Insert the SD card and wait for it to stop clanking
 
 ```bash
 nmap -sn 192.168.0.0/24
@@ -104,9 +104,9 @@ Nmap done: 256 IP addresses (6 hosts up) scanned in 2.69 seconds
 
 http://192.168.0.18/cgi-bin/hello.cgi
 
-set static ip on specific mac address on your router 
+Set a static IP for the camera's MAC address on your router 
 
-not update the firmware otherwise downgrade it
+Do not update the firmware, or you will have to downgrade it
 
 https://ahkhai.com/tag/surveillance-station/
 
@@ -144,13 +144,13 @@ http://www.gearbest.com/ip-cameras/pp_487830.html
 
 sudo vim /volume1/document/SSCamExport_export-xiaomi/.ExpCam
 
-refresh before import 
+Refresh before importing 
 
 path = '/unicast'
 live_path = '/unicast'
 http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review
 
-see more [here](https://github.com/samtap/fang-hacks)
+See more [here](https://github.com/samtap/fang-hacks)
 
 
 https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks

@@ -28,7 +28,7 @@ tags:
   - REST
   - Internet of Things
 ---
-The objective of this tutorial is to design a full reactive architecture interacting with a Raspberry PI 3 as
+The goal of this tutorial is to design a full reactive architecture that works with a Raspberry PI 3 as a
 μService producing temperature and humidity data.
 
 - [Prerequisites](#prerequisites)
@@ -38,7 +38,7 @@ The objective of this tutorial is to design a full reactive architecture interac
 
 ###  Prerequisites
 
-You must be aware of these posts to understand the environment.
+Read these posts first to understand the environment.
 
 -  [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 -  [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
@@ -53,19 +53,19 @@ You must be aware of these posts to understand the environment.
 
 | Component        |    Role       | Description  |
 | ------------- |:-------------:|-------------|
-| Raspberry PI 3   | μService | The Raspberry PI get data sensor and push them over RabbitMQ |
-| Mock device  | μService | This Raspberry mock device to provide random data |
-| RabbitMQ  | MOM(message-oriented middleware) | RabbitMQ is message broker that implements the Advanced Message Queuing Protocol (AMQP)  see more [here](https://www.rabbitmq.com/features.html)|
-| Reactive-server  | Proxy | The server has 2 functions: consumes data from the RabbitMQ and push data directly on the socket |
+| Raspberry PI 3   | μService | The Raspberry PI gets data from the sensor and pushes it over RabbitMQ |
+| Mock device  | μService | This mock Raspberry device provides random data |
+| RabbitMQ  | MOM (message-oriented middleware) | RabbitMQ is a message broker that implements the Advanced Message Queuing Protocol (AMQP). See more [here](https://www.rabbitmq.com/features.html)|
+| Reactive-server  | Proxy | The server has 2 functions: it consumes data from RabbitMQ and pushes it directly to the socket |
 | InfluxDB  | Metric database | InfluxDB is a time series database.|
-| Grafana  | Data visualization | Create dynamic dashboard from InfluxDB DataSource |
-| Reactive-client  | GUI | The GUI consumes data via WebSocket with Reactive-Server |
+| Grafana  | Data visualization | Create dynamic dashboards from an InfluxDB data source |
+| Reactive-client  | GUI | The GUI consumes data from Reactive-Server via WebSocket |
 
 
 ### Start the full stack with docker-compose
 
 
-#### Adapt the docker-compose file according your environment
+#### Adapt the docker-compose file according to your environment
 
 ```yaml
 version: '2'
@@ -133,7 +133,7 @@ services:
       - RABBITMQ_GATEWAYID=your_gateway_id
       - PUBLISH_INTERVAL=60
 ```
-Note: mock-raspberry is optional if you are a Raspberry PI running.
+Note: mock-raspberry is optional if you run it on a Raspberry Pi.
 
 [See code here](https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml)
 

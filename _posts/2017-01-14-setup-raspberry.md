@@ -12,7 +12,7 @@ tags:
   - Linux
   - SSH
 ---
-The objective of this tutorial is to set up a Raspberry PI 3 from scratch.
+The goal of this tutorial is to set up a Raspberry PI 3 from scratch.
 
 
 - [Prerequisites](#prerequisites)
@@ -34,16 +34,15 @@ The objective of this tutorial is to set up a Raspberry PI 3 from scratch.
 | Micro SD Card (16 Go class 10)  | [Amazon](https://www.amazon.com) | 9.99 EUR |
 | Total: |      |    56.67 EUR |
 
-Note: This is an example as a guide. You can buy all components in others sites
-and maybe with better prices.
+Note: This is only an example. You can buy the components from other sites, and maybe at better prices.
 
 ### Installation
 
  1. Download the latest version of [Raspbian image](https://www.raspberrypi.org/downloads/raspbian)
- 2. Write image into the SD Card
+ 2. Write the image to the SD card
  
  Follow this [guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) according to your OS
- or follow this [tutorial](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here my commands on 
+ or follow this [tutorial](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here are my commands on 
  my Mac.
     
 a. Retrieve the SD card mount point
@@ -67,7 +66,7 @@ Output:
    1:             Windows_FAT_32 NO NAME                 15.9 GB    disk2s1 
 ```
     
-Note: We can see the SD Card is mounted on "dev/disk2 (external, physical)" 
+Note: The SD card is mounted on "/dev/disk2 (external, physical)"
     
 b. Format the SD Card 
 
@@ -128,7 +127,7 @@ Output:
 
 e. Enable SSH
 
-In order to enable SSH, all you need to do is to put a file called ssh in the /boot/ directory.
+To enable SSH, you only need to create a file called ssh in the /boot/ directory.
  
 ```bash
 cd /Volumes/boot
@@ -151,15 +150,15 @@ Output:
 ```bash
 Disk /dev/disk2 ejected
 ```
-Now, the SD Card is ready to use.
+The SD card is now ready to use.
 
-g. Plug an ethernet cable and swicth on the power supply.
+g. Plug an ethernet cable and switch on the power supply.
  
  See more [here](https://www.raspberrypi.org/learning/hardware-guide/quickstart/)
  
- Now your Raspberry PI is ready!!! But how can I retrieve it in my LAN ?
+ Now your Raspberry PI is ready! But how do I find it on my LAN?
  
- Note: If you use a screen monitor, keyboard and mouse with your Raspberry, you can skip this part and
+ Note: If you use a monitor, keyboard and mouse with your Raspberry, you can skip this part and
  go to "Set a static IP Address" section.
 
  See more [here](https://www.raspberrypi.org/learning/hardware-guide/equipment)
@@ -167,7 +166,7 @@ g. Plug an ethernet cable and swicth on the power supply.
  
 ### Retrieve Raspberry PI 3
 
-1) unplug the ethernet cable and run the nmap command
+1) Unplug the ethernet cable and run the nmap command
  
 Follow this [tutorial](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 Example:
@@ -192,7 +191,7 @@ Nmap scan report for 192.168.0.254
 Host is up (0.0075s latency).
 Nmap done: 256 IP addresses (7 hosts up) scanned in 3.04 seconds
 ```
-2) plug the ethernet cable et re-run the nmap command
+2) Plug in the ethernet cable and run the nmap command again
 Example:
 ```bash
 nmap -sn 192.168.0.0/24
@@ -217,7 +216,7 @@ Nmap scan report for 192.168.0.254
 Host is up (0.0075s latency).
 Nmap done: 256 IP addresses (7 hosts up) scanned in 3.04 seconds
 ```
-As we can see, a new IP address 192.168.0.19 was scanned. It's your Raspberry PI.
+As we can see, a new IP address, 192.168.0.19, has appeared. It is your Raspberry PI.
 
 ```bash
 Host is up (0.0025s latency).
@@ -242,7 +241,7 @@ Default username: pi
 Default password: raspberry
 ```
 
-Note: first of all change your password with command 
+Note: first, change your password with this command
 
 ```bash
 passwd
@@ -255,9 +254,9 @@ Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ````
-See this post in order to perform Raspbian basic administration [here]({{ site.url }}{{ site.baseurl }}/raspberry/setup-linux)
+See this post for Raspbian basic administration [here]({{ site.url }}{{ site.baseurl }}/raspberry/setup-linux)
 
-### Update the Rasbpian
+### Update the Raspbian
 
 ```bash
 sudo apt-get update && sudo  apt-get upgrade
@@ -291,11 +290,11 @@ iface eth0 inet static
     gateway 192.168.0.254
 ```
 
-or Set Permanent DHCP IP on your router
+or set a permanent DHCP IP on your router
 
 {% include figure image_path="/assets/images/setup-permanent-dhcp.png" alt="Set up permanent IP" caption="Set up permanent IP" %}
 
-For me it's a best practise.
+In my opinion, this is best practice.
 
 ### Enable WIFI
 
@@ -304,7 +303,7 @@ a. Edit
 sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-b. Adapt according to your security protocol
+b. Adapt it to your security protocol
 
 See specification [wpa_supplicant.conf](http://w1.fi/gitweb/gitweb.cgi?p=hostap.git;a=blob_plain;f=wpa_supplicant/wpa_supplicant.conf)
 
@@ -314,7 +313,7 @@ Generate key
 sudo wpa_passphrase "testing" "testingPassword" >> /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-Note don't forget to remove the comment with your clear password
+Note: don't forget to remove the comment with your clear password
 
 ```text
    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -332,7 +331,7 @@ c. Edit
 sudo vim /etc/network/interfaces
 ```
 
-e. Set static IP and wpa-conf to wlan0
+d. Set static IP and wpa-conf to wlan0
 ```text
 auto wlan0
 iface wlan0 inet static
@@ -389,12 +388,12 @@ g. Connection
 ```bash
 ip link show wlan0
 ```
-As we can see wlan0 is currently DOWN
+As we can see, wlan0 is currently DOWN
 ```bash
 3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state DOWN mode DORMANT group default qlen 1000
      link/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
 ```
-Start UP the interface
+Start the interface
 ```bash
 sudo ip link set wlan0 up
 ```
@@ -417,17 +416,17 @@ sudo raspi-config
 
 {% include figure image_path="/assets/images/raspconfig-1.png" alt="Set wait for network" caption="Set wait for network" %}
 
-h. Reboot
+i. Reboot
 
-You can now unplug your ethernet wire and reboot
+You can now unplug the ethernet cable and reboot
 ```bash
 sudo reboot
 ```
  
-Great !! now you can access to your Raspberry PI anywhere on your LAN with static IP address over Wifi or Ethernet. 
+Great! Now you can access your Raspberry PI from anywhere on your LAN, with a static IP address over Wi-Fi or Ethernet. 
 
-Note: if you want to access to your Raspberry outside your LAN. You must
-forward port on your router.
+Note: if you want to access your Raspberry from outside your LAN, you must
+forward a port on your router.
 
 Useful links: 
  - [Automatically connect a raspberry pi to a wifi network]("http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/")
