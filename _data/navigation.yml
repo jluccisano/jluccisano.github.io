@@ -1,6 +1,10 @@
-# main links
+# Main navigation (header)
 main:
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "About"
+    url: /about/
+  - title: "Experience"
+    url: /experience/
+  - title: "Projects"
+    url: /projects/
   - title: "Tutorials"
     url: /tutorials/

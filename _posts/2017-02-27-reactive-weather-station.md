@@ -28,6 +28,9 @@ tags:
   - REST
   - Internet of Things
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to design a full reactive architecture that works with a Raspberry PI 3 as a
 μService producing temperature and humidity data.
 
@@ -150,7 +153,7 @@ docker-compose up -d
 
 Go to http://${YOUR_HOST}:8089
 
-[Show online version here](http://192.95.25.173:8089)
+[Show online version here](http://<your-public-ip>:8089)
 
 ### Final Result
 

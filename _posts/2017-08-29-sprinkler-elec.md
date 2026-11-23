@@ -17,6 +17,8 @@ tags:
   
 ---
 
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
 we will be able to control the sprinkler system from a Raspberry Pi.
 
@@ -81,7 +83,7 @@ part" %}
 | Component      | Description   | Quantity   | Site     | Price  |
 |:--------------:|:-------------:|:----------:|:--------:|:------:|
 | ![relay_card_raspberry](/assets/images/sprinkler/relay_card_raspberry.jpg){:height="48px" width="96px"}  | Relay AC 250V 10A ; DC 30V 10A Relay card module AC/DC 5V  4 channels | 1 | [Ebay](https://www.ebay.com) | 8.00 € |
-| ![cable_MM_MF_FF](/assets/images/sprinkler/cable_MM_MF_FF.jpg){:height="48px" width="96px"}  | 10 x Cables male/female female/female male/male |  30 | [ebay](www.ebay.com)      |   1.00 € |
+| ![cable_MM_MF_FF](/assets/images/sprinkler/cable_MM_MF_FF.jpg){:height="48px" width="96px"}  | 10 x Cables male/female female/female male/male |  10 | [ebay](www.ebay.com)      |   1.00 € |
 | ![raspberry_pi_3](/assets/images/sprinkler/raspberry_pi_3.jpg){:height="48px" width="96px"}   | Raspberry Pi 3 | 1 | [Farnell](https://www.farnell.com)  | 37.69 € |
 | ![power_supply_micro_USB_5V_2500mA](/assets/images/sprinkler/power_supply_micro_USB_5V_2500mA.jpg){:height="48px" width="96px"}   | Power supply Micro USB 5V 2500mA | 1  | [Amazon](https://www.amazon.com) | 8.99 € |
 | ![micro_sd_16go_class_10](/assets/images/sprinkler/micro_sd_16go_class_10.jpg){:height="48px" width="96px"}  |Micro SD Card 16GB class 10 | 1 | [amazon](www.amazon.com)  | 9.90€ |
@@ -133,7 +135,7 @@ Version: 0.0.1
 Summary: Control your sprinkler system via a Raspberry Pi
 Home-page: https://github.com/jluccisano/rpi-sprinkler-control
 Author: Joseph Luccisano
-Author-email: joseph.luccisano@gmail.com
+Author-email: <your-email>
 License: UNKNOWN
 Location: /home/pi/.local/lib/python2.7/site-packages
 Requires:
@@ -152,7 +154,6 @@ After=multi-user.target
 [Service]
 ExecStart=/usr/bin/python /opt/home-automation/server.py
 Type=simple
-Restart=on-abort
 Restart=always
 RestartSec=10
 

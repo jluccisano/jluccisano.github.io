@@ -11,6 +11,8 @@ tags:
   - linux
 ---
 
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 ### Useful commands
 
 - Get process ID by port
@@ -33,7 +35,7 @@ find . -type f -print0 | xargs -0 du | sort -n | tail -10 | cut -f2 | xargs -I{}
 - Find the largest 10 directories
 
 ```bash
-find . -type d -print 0 | xargs -0 du | sort -n | tail -10 | cut -f2 | xargs -I{} du -sh {}
+find . -type d -print0 | xargs -0 du | sort -n | tail -10 | cut -f2 | xargs -I{} du -sh {}
 ```
 - Allow a port
 
@@ -41,13 +43,13 @@ find . -type d -print 0 | xargs -0 du | sort -n | tail -10 | cut -f2 | xargs -I{
 sudo iptables -I INPUT -p tcp --dport 5672 -j ACCEPT
 ```
 
-- Get processor type
+- Get the machine hardware architecture (not the processor type)
 
 ```bash
 uname -m
 ```
 
-- Delete all file avant la date défini
+- Delete all files older than the given date
 
 ```bash
 find . ! -newermt 2017-09-06 -exec rm -rf {} \;

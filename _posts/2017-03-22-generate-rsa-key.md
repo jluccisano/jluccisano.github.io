@@ -10,6 +10,9 @@ tags:
   - SSH
   - Unix
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to generate an SSH key so you can connect to your server without typing your 
 password each time.
 
@@ -42,9 +45,9 @@ a. Get the list of keys:
 ```bash
 ssh-add -L
 ```
-b. Remove a key
+b. Remove a single key (`ssh-add -D` removes all identities, so use `-d` for one key)
 ```bash
-ssh-add -D ~/.ssh/id_rsa
+ssh-add -d ~/.ssh/id_rsa
 ```
 c. Copy the key to the clipboard
 
@@ -67,9 +70,9 @@ RSAAuthentication yes
 PubkeyAuthentication yes
 AuthorizedKeysFile      .ssh/authorized_keys
 
-chmod 700 /var/services/homes/jluccisano/.ssh
-chmod 644 /var/services/homes/jluccisano/.ssh/authorized_keys
-chmod 755 /var/services/homes/jluccisano
+chmod 700 /var/services/homes/<user>/.ssh
+chmod 644 /var/services/homes/<user>/.ssh/authorized_keys
+chmod 755 /var/services/homes/<user>
 
 
 sudo synoservicectl --reload sshd
@@ -88,8 +91,8 @@ subl -a config
 
 ```
 Host syno
- Hostname luccihermes.synology.me
- User jluccisano
+ Hostname <your-host.example.com>
+ User <user>
  Port 87
  AddKeysToAgent yes
  UseKeychain yes

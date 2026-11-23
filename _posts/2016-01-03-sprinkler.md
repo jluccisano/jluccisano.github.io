@@ -18,6 +18,9 @@ tags:
   - REST
   - Internet of Things  
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to build and control a sprinkler system with a Raspberry PI.
 
 - [Hydraulic part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-hydraulic)

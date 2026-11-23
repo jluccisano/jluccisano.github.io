@@ -11,6 +11,9 @@ tags:
   - InfluxDB
   - Docker
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to install an InfluxDB container with Docker and work with it.
 
 

@@ -11,6 +11,8 @@ tags:
   - Linux
 ---
 
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 - [Environment](#environment)
 - [Upload](#upload)
 - [Consolidate](#consolidate)
