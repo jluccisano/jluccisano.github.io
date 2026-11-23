@@ -21,8 +21,8 @@ feature_row1:
     btn_label: "Read more"
     btn_class: "btn--inverse"
 feature_row2:
-  - image_path: /assets/images/reactive-architecture.png
-    alt: "Reactive architecture diagram"
+  - image_path: /assets/images/experience-architecture.svg
+    alt: "Diagram of a cloud-native, event-driven data platform"
     title: "Experience"
     excerpt: "My career so far, from IoT integrations to the AirVantage cloud platform."
     url: /experience/
