@@ -81,3 +81,9 @@ Yesterday I was developing in Java, today I work in Clojure, and tomorrow?
 - Projects from scratch, refactoring, migration or new architecture;
 - Small teams;
 - I work on macOS.
+
+## Skills and languages
+
+- Event-driven architecture, distributed systems and cloud-native architecture
+- Technologies: AWS, Kubernetes, Clojure, Python, Java, PostgreSQL, Redis, Docker, GitHub Actions
+- Languages: French (native), English (full professional)

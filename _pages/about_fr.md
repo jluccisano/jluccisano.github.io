@@ -81,3 +81,9 @@ Hier je développais en Java, aujourd'hui en Clojure, et demain ?
 - Projets à partir de zéro, refactoring, migration ou nouvelle architecture ;
 - Petites équipes ;
 - Je travaille sous macOS.
+
+## Compétences et langues
+
+- Architecture event-driven, systèmes distribués et architecture cloud-native ;
+- Technologies : AWS, Kubernetes, Clojure, Python, Java, PostgreSQL, Redis, Docker, GitHub Actions ;
+- Langues : français (natif), anglais (professionnel complet).

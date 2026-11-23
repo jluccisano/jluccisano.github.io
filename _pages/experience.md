@@ -73,10 +73,10 @@ Seventeen years in engineering, mostly on IoT, telecom and cloud platforms.
 
 ## Education
 
-**ENSEEIHT**, engineering degree in computer science and telecommunications, 2025 to 2026
+**ENSEEIHT (N7)**, engineering degree in computer science and telecommunications, 2025 to 2026
 
 **Université Henri Poincaré (Nancy I)**, Master's degree in system engineering (electronics, electrical engineering, automation, production and networks), 2007 to 2009
 
 **Université Henri Poincaré (Nancy I)**, Licence in electronics, electrical engineering, automation and networks, 2006 to 2007
 
-**DUT in industrial electrical and computer engineering**, Nancy, 2003 to 2006
+**DUT in industrial electrical and computer engineering (GEII)**, IUT de Saint-Dié-des-Vosges, 2003 to 2006
