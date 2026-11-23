@@ -118,6 +118,16 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jluccisano"
 
+# Plugins (loaded by Jekyll 4; the Gemfile provides them)
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jemoji
+
 # Reading Files
 include:
   - .htaccess
