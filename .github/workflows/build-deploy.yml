@@ -20,6 +20,8 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # needed to push the generated site to master
     steps:
       - uses: actions/checkout@v4
 
