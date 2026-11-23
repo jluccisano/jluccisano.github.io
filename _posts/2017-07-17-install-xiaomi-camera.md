@@ -11,6 +11,9 @@ tags:
   - Linux
   - SSH
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to set up a Xiaomi camera.
 
 - [Prerequisites](#prerequisites)
@@ -66,7 +69,7 @@ diskutil unmountDisk /dev/disk2
 Unmount of all volumes on disk1 was successful
 
 
-sudo dd bs=1m if=/Users/Lucci/Downloads/fanghacks_v0.2.0.img  of=/dev/disk2
+sudo dd bs=1m if=/Users/<user>/Downloads/fanghacks_v0.2.0.img  of=/dev/disk2
 ```
 
 CTRL-T

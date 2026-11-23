@@ -15,6 +15,8 @@ tags:
   
 ---
 
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The aim of this tutorial is to control the sprinkler from a smartphone, anywhere, without an SSH connection.
 
 In the previous tutorial, I explained how to control the sprinkler from the command line, directly through a daemon service

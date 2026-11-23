@@ -16,6 +16,9 @@ tags:
   - μService
   - Internet of Things
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
 

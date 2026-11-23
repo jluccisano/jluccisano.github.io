@@ -10,6 +10,9 @@ tags:
   - Raspberry PI
   - Linux
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to set up the basic configuration of the Raspbian distribution.
 
 
@@ -108,7 +111,7 @@ See how to create an SSH RSA key
 
 Host nextrun2
  Hostname hostname
- User jluccisano
+ User <user>
  Port 22
  AddKeysToAgent yes
  UseKeychain yes
@@ -131,7 +134,7 @@ image configure_rsync_backup.png
 sudo apt-get install rsync
 
 sudo vi /etc/default/rsync
-et modifier la ligne RSYNC à true
+and set the RSYNC line to true
 
 RSYNC_ENABLE=true
 
@@ -147,7 +150,7 @@ gid = rsync_user
 max connections = 4
 [nas_rsync]
 path = /home/rsync_user
-comment = Synchro des fichiers avec mon NAS
+comment = File sync with my NAS
 read only = false
 ```
 

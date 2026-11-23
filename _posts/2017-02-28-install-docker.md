@@ -11,6 +11,9 @@ tags:
   - Docker
   - Unix
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to install the Docker engine and share some useful command lines to work with it.
 
 
@@ -111,6 +114,8 @@ sudo service docker start
 sudo vim /etc/default/docker >> DOCKER_OPTS="-g $(readlink -f /var/lib/docker)"
 ```
 
+DOCKER_OPTS is deprecated in recent Docker versions; use /etc/docker/daemon.json instead.
+
 ### Install on Raspberry
 
 ```bash
@@ -123,9 +128,9 @@ See more [here](https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/)
 
 systemctl stop docker
 
-mv /var/lib/docker /home/jluccisano/docker
+mv /var/lib/docker /home/<user>/docker
 
-ln -s /home/jluccisano/docker /var/lib/docker
+ln -s /home/<user>/docker /var/lib/docker
 
 systemctl start docker
 

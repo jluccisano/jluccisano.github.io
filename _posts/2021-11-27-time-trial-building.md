@@ -32,10 +32,10 @@ Below I list all the components I bought. I have also shared some videos on my Y
 |                                                                           | 0.868499 * 904= 785.12 + fees 23.48           |            |     |          |
 |                                                                           | 0.847996 * 905 = 767.63 + fees 22.64          |            |     | 1598.87 |
 | 1 x SRAM Red 1x12 Speed Aero                                              | mantel                                        |            | 1   | 482.97  |
-| Sram Force D1 eTap Dérailleur Arrière 12V                                 | hollandbike                                   |            | 1   | 274.66   |
+| Sram Force D1 eTap Rear derailleur 12V                                 | hollandbike                                   |            | 1   | 274.66   |
 | CHAÎNE SRAM FORCE AXS D1 114LINK/POWER LOCK 12S 1PC                       | sportgoods                                    |            | 1   | 35.74  |
-| Etrier Hope RX4+ Flat Mount +20mm Sram DOT Bleu HBSPC74B                  | alltricks                                     |            | 1   | 125      |
-| Etrier Avant Hope RX4+ Flat Mount Sram DOT Bleu HBSPC72B                  | alltricks                                     |            | 1   | 125      |
+| Etrier Hope RX4+ Flat Mount +20mm Sram DOT Blue HBSPC74B                  | alltricks                                     |            | 1   | 125      |
+| Etrier Avant Hope RX4+ Flat Mount Sram DOT Blue HBSPC72B                  | alltricks                                     |            | 1   | 125      |
 | Conduite Hydraulique Monoblock pour Red eTap® HRD                         | bike-components                               | 29.23      | 2   | 58.46    |
 | Sram Hood kit S-900 Aero Hydrot Black One Size                            | bikeinn                                       | 98.49      | 2   | 196.98   |
 | Sram Lever Kit S-900 Aero Hydrot Black One Size                           | bikeinn +4.99 shipment                        | 38.49      | 2   | 76.98    |
@@ -43,8 +43,8 @@ Below I list all the components I bought. I have also shared some videos on my Y
 | Boitier de Controle Sram BlipBox eTap AXS D1                              | alltricks                                     | 329.99     | 1   | 329.99   |
 | Boutons Satellites SRAM Blips 650 mm E-Tap (Paire)                        | alltricks                                     | 94.99      | 1   | 94.99    |
 | Paire de Boutons Satellites Sram Clics 650mm E-Tap pour Prolongateurs     | alltricks                                     | 104.49     | 1   | 104.49   |
-| Cassette 33T modèle d'exposition                                          |                                               |            | 1   | 189.99   |
-| Ruban de Cintre Lizard Skins DSP V2 Noir Jet 1.8                          | alltricks                                     | 25.99      | 1   | 25.99    |
+| Cassette 33T Display model                                          |                                               |            | 1   | 189.99   |
+| Ruban de Cintre Lizard Skins DSP V2 Black Jet 1.8                          | alltricks                                     | 25.99      | 1   | 25.99    |
 |                                                                           |                                               |            |     |          |
 | DT Swiss 240  Straightpull Rear Hub - Centerlock - 12x142mm - SRAM XDR    | Bike 24                                       |            | 1   | 277.30   |
 | DT Swiss 350 Straightpull Front Hub - Centerlock - 12x100mm - black       |                                               |            | 1   | 48.39    |
@@ -53,11 +53,11 @@ Below I list all the components I bought. I have also shared some videos on my Y
 | 2 Jantes 88mm/25mm 3K matte                                               |                                               |            | 1   | 225.63   |
 | Rayons Sapim CX-RAY / Ecrous Sapim double square                          |                                               |            | 1   | 145.36   |
 | Disques                                                                   |                                               | 52.90      | 2   | 105.80   |
-| Selle Dash occasion                                                       |                                               |            | 1   | 140      |
-| Profile Design HSF/800+ Premium Dispositif d'hydratation                  | bikester                                      |            | 1   | 99.99    |  
+| Used Dash saddle                                                       |                                               |            | 1   | 140      |
+| Profile Design HSF/800+ Premium Hydration system                  | bikester                                      |            | 1   | 99.99    |  
 | TOTAL                                                                     |                                               |            |     | 4,850.05 |
 | Pédale Favero DUO                                                         | Powermeter                                    |            | 1   | 599      |
-| Roues lenticulaire dt350                                                  | Alibaba                                       |            | 1   | 721      |
+| Lenticular wheels dt350                                                  | Alibaba                                       |            | 1   | 721      |
 | TOTAL                                                                     |                                               |            |     | 6,170.05 |
       
 # Tools

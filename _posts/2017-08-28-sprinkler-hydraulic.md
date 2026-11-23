@@ -12,6 +12,8 @@ tags:
 
 ---
 
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to describe, step by step, how to build the hydraulic part of a sprinkler system.
 
 

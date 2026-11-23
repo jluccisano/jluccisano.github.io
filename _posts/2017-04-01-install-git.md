@@ -11,6 +11,8 @@ tags:
   - Git
 ---
 
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 ### Useful commands
 
 [Most useful git commands](https://orga.cat/posts/most-useful-git-commands)
@@ -89,7 +91,7 @@ git rebase develop
 - Config
 
 ```bash
-git config remote.origin.url git@github.com:your_username/your_project.git
+git remote set-url origin git@github.com:your_username/your_project.git
 git config user.name "foo"
 git config user.email "foo@bar.com"
 ```
@@ -105,7 +107,7 @@ git branch -a
 - Force overwrite origin
 
 ```bash
-git push --force
+git push --force-with-lease
 ```
 
 - Push and track local branch to origin

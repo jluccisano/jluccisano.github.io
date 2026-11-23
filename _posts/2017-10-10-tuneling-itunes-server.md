@@ -11,6 +11,8 @@ tags:
   - ssh
 ---
 
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 Tunneling iTunes server over SSH
 
 iTunes server 
@@ -60,15 +62,15 @@ sudo chmod -R 755 /volume1/homes/YOUR_USER
 
 http://www.uponmyshoulder.com/blog/2010/tunneling-itunes-through-ssh/
 
-ssh -p 87 -N jluccisano@81.56.136.120  -L 3690:localhost:3689 -f
-ssh -A -L 3690:localhost:3689 -N -f jluccisano@81.56.136.120
-ssh -p 87 -N -L 3690:localhost:3689 jluccisano@81.56.136.120
-ssh -p 87 -C -N -L  3692:localhost:3689 jluccisano@81.56.136.120
+ssh -p 87 -N <user>@<your-public-ip>  -L 3690:localhost:3689 -f
+ssh -A -L 3690:localhost:3689 -N -f <user>@<your-public-ip>
+ssh -p 87 -N -L 3690:localhost:3689 <user>@<your-public-ip>
+ssh -p 87 -C -N -L  3692:localhost:3689 <user>@<your-public-ip>
 
-dns-sd -P jluccisano _daap._tcp local 3690 localhost 127.0.0.1 &
+dns-sd -P <user> _daap._tcp local 3690 localhost 127.0.0.1 &
 dns-sd -P name type domain port host IP [key=value ...]
-dns-sd -P jluccisano _daap._tcp local. 3690 localhost. 127.0.0.1
-dns-sd -P jluccisano _daap._tcp local 3692 localhost.local 127.0.0.1 "ffid=12345"
+dns-sd -P <user> _daap._tcp local. 3690 localhost. 127.0.0.1
+dns-sd -P <user> _daap._tcp local 3692 localhost.local 127.0.0.1 "ffid=12345"
 
 lsof -i -n | egrep '\<ssh\>'
 lsof -i tcp | grep ^ssh

@@ -12,6 +12,9 @@ tags:
   - Linux
   - SSH
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to set up a Raspberry PI 3 from scratch.
 
 
@@ -109,7 +112,7 @@ Unmount of all volumes on disk2 was successful
 d. Write image into the SD Card
 
 ```bash
-sudo dd bs=1m if=/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  of=/dev/disk2
+sudo dd bs=1m if=/Users/<user>/Downloads/2017-03-02-raspbian-jessie.img  of=/dev/disk2
 ```
 
 template: 
@@ -232,7 +235,7 @@ ssh pi@192.168.0.19
 if you want to use X11
 
 ```bash
-ssh -Y pi@192.168.0.119
+ssh -Y pi@192.168.0.19
 ```
 
 Note: 
@@ -320,8 +323,8 @@ Note: don't forget to remove the comment with your clear password
    update_config=1 
    country=FR
    network={
-           ssid="freebox_lucci1"
-           psk=22889c61e999b046d86190ca2dc9a9a82c80027f8f28a6372d760a8320a91858
+           ssid="<your-ssid>"
+           psk=<your-wpa-passphrase>
    }
 
 ```
@@ -378,7 +381,7 @@ phy#0
 	Interface wlan0
 		ifindex 3
 		wdev 0x1
-		addr b8:27:eb:62:22:ca
+		addr xx:xx:xx:xx:xx:xx
 		ssid YOUR_NETWORK_SSID
 		type managed
 ```

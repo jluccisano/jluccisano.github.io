@@ -29,31 +29,31 @@ Below I list all the components I bought.
 |-------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------------|-----|----------------|
 | Kit Frame                                                                                                                                 | TantanCycling      | 670.22     | 1   | 670.22         |
 | Handlebar 740mm 20*0.86                                                                                                                   | TantanCycling      | 17.2       | 1   | 17.2           |
-| Fourche ROCKSHOX PIKE ULTIMATE CHARGER 2.1 RC2 27,5" 150 mm DebonAir Conique Axe 15 mm Boost Déport 46 mm Argent 2021                     | Probikeshop.fr     | 765.97     | 1   | 765.97         |
-| Rayons Competition® Straightpull 2.0 / 1.8 - 5 pièces noir/284 mm                                                                         | bike-components.de | 6.55       | 6   | 39.3           |
-| Écrous en Aluminium Pro Lock® Squorx Pro Head® 2,0 mm - 5 pièces noir/15 mm                                                               | bike-components.de | 4.54       | 12  | 54.48          |
-| Rayons Competition® Straightpull 2.0 / 1.8 - 5 pièces noir/286 mm                                                                         | bike-components.de | 6.04       | 6   | 36.24          |
-| Set de 2 Pneus Souples Minion DHF/DHR II 3C MaxxTerra EXO+ WT TR 27,5" noir/27,5x2,5 / 27,5x2,4                                           | bike-components.de | 115.83     | 1   | 115.83         |
+| Fourche ROCKSHOX PIKE ULTIMATE CHARGER 2.1 RC2 27,5" 150 mm DebonAir Conique Axe 15 mm Boost Déport 46 mm Silver 2021                     | Probikeshop.fr     | 765.97     | 1   | 765.97         |
+| Rayons Competition® Straightpull 2.0 / 1.8 - 5 pièces black/284 mm                                                                         | bike-components.de | 6.55       | 6   | 39.3           |
+| Écrous en Aluminium Pro Lock® Squorx Pro Head® 2,0 mm - 5 pièces black/15 mm                                                               | bike-components.de | 4.54       | 12  | 54.48          |
+| Rayons Competition® Straightpull 2.0 / 1.8 - 5 pièces black/286 mm                                                                         | bike-components.de | 6.04       | 6   | 36.24          |
+| Set de 2 Pneus Souples Minion DHF/DHR II 3C MaxxTerra EXO+ WT TR 27,5" black/27,5x2,5 / 27,5x2,4                                           | bike-components.de | 115.83     | 1   | 115.83         |
 | Set de Freins à Disque av.+arr. G2 RSC                                                                                                    | bike-components.de | 236.97     | 1   | 236.97         |
-| Moyeu Arrière 350 Straightpull VTT Boost Disc Center Lock <br>noir/12 x 148 mm / 28 trous/ SRAM XD                                        | bike-components.de | 166.39     | 1   | 166.39         |
-| Moyeu Avant 350 Straightpull VTT Boost Disc Center Lock <br>noir/15 x 110 mm / 28 trous                                                    | bike-components.de | 56.46      | 1   | 56.46          |
+| Moyeu Arrière 350 Straightpull VTT Boost Disc Center Lock <br>black/12 x 148 mm / 28 trous/ SRAM XD                                        | bike-components.de | 166.39     | 1   | 166.39         |
+| Moyeu Avant 350 Straightpull VTT Boost Disc Center Lock <br>black/15 x 110 mm / 28 trous                                                    | bike-components.de | 56.46      | 1   | 56.46          |
 | Potence Team AM Stealth 31.8 <br>black stealth/40 mm 6°                                                                                    | bike-components.de | 40.33      | 1   | 40.33          |
 | Jante XM 481 Disc 27,5"  black/27,5" / 28 trous                                                                                           | bike-components.de | 85.66      | 2   | 181.27         |
 | Pédales VTT Crankbrothers Double Shot 2                                                                                                   | materiel-velo.com  | 69.95      | 1   | 74.94          |
 | TiTo-selle de vélo avec nœud en titane, accessoires de cyclisme sur la route et pour vtt                                                  | fr.aliexpress.com  | 29.12      | 1   | 29.12          |
 | Lot d'Entretoises de Direction PRO 1" 1/8 Aluminium - Kit 2 / 2,5 / 5 / 10 / 20 mm                                                        | Probikeshop.fr     | 5.99       | 1   | 5.99           |
 | Bash Guard FUNN ZIPPA - 26/32                                                                                                             | Probikeshop.fr     | 29.99      | 1   | 29.99          |
-| Cuvette Haute pour Jeu de Direction Semi-Intégré CANE CREEK FORTY 1"1/8 ZS44 Alu - Noir                                                   | Probikeshop.fr     | 21.99      | 1   | 25.98          |
+| Cuvette Haute pour Jeu de Direction Semi-Intégré CANE CREEK FORTY 1"1/8 ZS44 Alu - Black                                                   | Probikeshop.fr     | 21.99      | 1   | 25.98          |
 | Poignées de guidon pour vélo sur route, 2 pièces/1 paire, housse de guidon en caoutchouc souple et souple, embout de poignée avec poignée | fr.aliexpress.com  | 2.91       | 1   | 2.91           |
 | Amortisseur Fox Racing Shox Float Performance DPS Evol 185*55 - Fixation Trunnion                                                         | TrocVelo.fr        | 230        | 1   | 244.95         |
-| Groupe Sram XO1 Eagle AXS DUB 12V Boost - Pédalier 32 Dents - Noir Manivelles 170 mm                                                      | Alltricks.fr       | 1299.99    | 1   | 1299.99        |
+| Groupe Sram XO1 Eagle AXS DUB 12V Boost - Pédalier 32 Dents - Black Manivelles 170 mm                                                      | Alltricks.fr       | 1299.99    | 1   | 1299.99        |
 | Disque Flottant SRAM Centerline X CenterLock Arrondi 180 mm                                                                               | Alltricks.fr       | 50.99      | 2   | 101.98         |
 | Boitier de Pédalier Sram DUB PressFit 89/92mm                                                                                             | Alltricks.fr       | 39.99      | 1   | 39.99          |
-| Valves Tubeless Peaty's x Chris King MK2 42mm Noir                                                                                        | Alltricks.fr       | 24.99      | 1   | 24.99          |
+| Valves Tubeless Peaty's x Chris King MK2 42mm Black                                                                                        | Alltricks.fr       | 24.99      | 1   | 24.99          |
 | Liquide Préventif NEATT 1 litre                                                                                                           | Alltricks.fr       | 12.99      | 1   | 12.99          |
-| Tige de Selle Neatt Classic Aluminium Noir 31.6 x 400                                                                                     | Alltricks.fr       | 15.99      | 1   | 15.99          |
+| Tige de Selle Neatt Classic Aluminium Black 31.6 x 400                                                                                     | Alltricks.fr       | 15.99      | 1   | 15.99          |
 | Écrou Centerlock pour axe 15-20 mm                                                                                                        | Alltricks.fr       | 10.99      | 1   | 10.99          |
-| Adaptateur Étrier PM / PM MAGURA QM40 Disque 160/180 mm (+20 mm) - Noir                                                                   | Probikeshop.fr     | 8.99       | 1   | 13.98          |
+| Adaptateur Étrier PM / PM MAGURA QM40 Disque 160/180 mm (+20 mm) - Black                                                                   | Probikeshop.fr     | 8.99       | 1   | 13.98          |
 | Écrou BBB Centerlock pour Axe QR / 12 mm                                                                                                  | Alltricks.fr       | 7.99       | 1   | 7.99           |
 | Fox Racing Shox Kit de matériel de montage 5 pièces AL 8x38,61mm                                                                          | Bikester.fr        | 22         | 1   | 26.99          |
 | Fond de Jante Spank Fratelli Tubeless 30mm                                                                                                | Alltricks.fr       | 10.99      | 1   | 10.99          |

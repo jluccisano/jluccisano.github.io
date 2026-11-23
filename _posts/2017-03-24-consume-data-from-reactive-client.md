@@ -21,6 +21,9 @@ tags:
   - Stomp
   - Internet of Things
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to develop a reactive client that consumes temperature and
  humidity via WebSocket and shows a dashboard of continuous data via a REST API.
 
@@ -452,7 +455,7 @@ gulp serve
 
 [Get full source here](https://github.com/jluccisano/reactive-client)
 
-[Show online version](http://hermes.ddns.net:8089)
+[Show online version](http://<your-host.example.com>:8089)
 
 {% include figure image_path="/assets/images/final-result.png" alt="Final result" caption="Final result" %}
 

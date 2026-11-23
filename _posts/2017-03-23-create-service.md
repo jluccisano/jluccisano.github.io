@@ -11,6 +11,9 @@ tags:
   - Raspberry PI
   - Unix
 ---
+
+> **Legacy post.** This article was written between 2016 and 2018. Software versions, commands and services mentioned here may be outdated. Check the official documentation before running anything.
+
 The goal of this tutorial is to create a system service that runs a standalone program in the background.
 
 
@@ -40,7 +43,6 @@ After=multi-user.target
 [Service]
 Type=simple
 ExecStart=/usr/bin/python /opt/script.py
-Restart=on-abort
 Restart=always
 RestartSec=10
 
@@ -48,7 +50,7 @@ RestartSec=10
 WantedBy=multi-user.target
 ```
 
-c. Enable execution permission of your service
+c. Make the service file readable by root
 
 ```bash
 sudo chmod 644 /lib/systemd/system/myservice.service
