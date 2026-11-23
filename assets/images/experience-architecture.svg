@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="t d">
+  <title id="t">Cloud-native, event-driven data platform</title>
+  <desc id="d">Devices and M2M connectivity send events to an event stream. Services running on Kubernetes on AWS process them, store data in managed databases, and feed billing, monitoring and anomaly detection.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5a6a"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #1f3a52; stroke-width: 2; rx: 12; }
+      .zone { fill: #eef4f8; stroke: #8aa3b8; stroke-width: 1.5; stroke-dasharray: 6 5; rx: 16; }
+      .label { font: 600 17px -apple-system, "Helvetica Neue", Arial, sans-serif; fill: #1f3a52; }
+      .small { font: 400 14px -apple-system, "Helvetica Neue", Arial, sans-serif; fill: #4a5a6a; }
+      .zonetitle { font: 700 13px -apple-system, "Helvetica Neue", Arial, sans-serif; fill: #5b7a94; letter-spacing: 1px; }
+      .flow { stroke: #4a5a6a; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .accent { fill: #e8f1f8; stroke: #2f6f9f; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="960" height="540" fill="#ffffff"/>
+
+  <!-- Zone 1: devices and connectivity -->
+  <rect class="zone" x="20" y="60" width="200" height="420"/>
+  <text class="zonetitle" x="40" y="88">DEVICES</text>
+  <rect class="box" x="40" y="110" width="160" height="90"/>
+  <text class="label" x="120" y="150" text-anchor="middle">IoT devices</text>
+  <text class="small" x="120" y="175" text-anchor="middle">sensors and gateways</text>
+  <rect class="box" x="40" y="250" width="160" height="90"/>
+  <text class="label" x="120" y="290" text-anchor="middle">Connectivity</text>
+  <text class="small" x="120" y="315" text-anchor="middle">MVNO / M2M data</text>
+  <rect class="box" x="40" y="390" width="160" height="60"/>
+  <text class="label" x="120" y="426" text-anchor="middle">Operators</text>
+
+  <!-- Zone 2: event stream -->
+  <rect class="zone" x="260" y="60" width="180" height="420"/>
+  <text class="zonetitle" x="280" y="88">EVENTS</text>
+  <rect class="accent" x="280" y="200" width="140" height="150" rx="14"/>
+  <text class="label" x="350" y="262" text-anchor="middle">Event</text>
+  <text class="label" x="350" y="286" text-anchor="middle">stream</text>
+  <text class="small" x="350" y="318" text-anchor="middle">real-time</text>
+
+  <!-- Zone 3: cloud platform -->
+  <rect class="zone" x="480" y="60" width="290" height="420"/>
+  <text class="zonetitle" x="500" y="88">CLOUD (AWS + KUBERNETES)</text>
+  <rect class="box" x="500" y="110" width="250" height="90"/>
+  <text class="label" x="625" y="150" text-anchor="middle">Usage processing</text>
+  <text class="small" x="625" y="175" text-anchor="middle">micro-services, multi-region</text>
+  <rect class="box" x="500" y="230" width="250" height="90"/>
+  <text class="label" x="625" y="270" text-anchor="middle">Billing</text>
+  <text class="small" x="625" y="295" text-anchor="middle">rating and invoicing</text>
+  <rect class="box" x="500" y="350" width="250" height="90"/>
+  <text class="label" x="625" y="390" text-anchor="middle">Reliability</text>
+  <text class="small" x="625" y="415" text-anchor="middle">monitoring, anomaly detection</text>
+
+  <!-- Zone 4: data and operations -->
+  <rect class="zone" x="800" y="60" width="140" height="420"/>
+  <text class="zonetitle" x="818" y="88">DATA</text>
+  <rect class="box" x="815" y="110" width="110" height="110"/>
+  <text class="label" x="870" y="155" text-anchor="middle">Databases</text>
+  <text class="small" x="870" y="180" text-anchor="middle">SQL, NoSQL,</text>
+  <text class="small" x="870" y="198" text-anchor="middle">caches</text>
+  <rect class="box" x="815" y="250" width="110" height="110"/>
+  <text class="label" x="870" y="295" text-anchor="middle">Analytics</text>
+  <text class="small" x="870" y="320" text-anchor="middle">warehouse</text>
+
+  <!-- Flows -->
+  <path class="flow" d="M200,155 H240 V225 H280"/>
+  <path class="flow" d="M200,295 H280"/>
+  <path class="flow" d="M200,420 H240 V320 H280"/>
+  <path class="flow" d="M420,275 H500"/>
+  <path class="flow" d="M750,155 H815"/>
+  <path class="flow" d="M750,275 H815"/>
+  <path class="flow" d="M625,200 V230"/>
+  <path class="flow" d="M625,320 V350"/>
+  <path class="flow" d="M420,235 Q460,160 500,155"/>
+</svg>
