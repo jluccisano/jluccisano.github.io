@@ -11,7 +11,7 @@ excerpt: "Share and learn more knowledge to go ever further"
 
 intro:
   - show_avatar: true
-  - excerpt: "I'm a Senior Principal Engineer at Semtech with over 14 years of experience. I have acquired knowledge in different areas,
+  - excerpt: "I'm a Senior Principal Engineer at Semtech with over 17 years of experience. I have acquired knowledge in different areas,
   which helps me better understand things and go ever further. I always want to learn more, that's why I created this blog in order to share my knowledge."
 feature_row1:
   - image_path: /assets/images/bike-building/main_1.png
