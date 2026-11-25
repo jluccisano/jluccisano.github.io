@@ -18,3 +18,5 @@ Supprimerait .idea/modules.xml
 Supprimerait .idea/workspace.xml
 deploy_key
 .idea/
+# Private Claude Code notes: not for the public site
+CLAUDE.md
